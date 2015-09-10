@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<center><font size=5 color="blue"><br><br><b> DATOS DE IDENTIFICACION </b><br><br></font></center>
+</head>
+<body>
+
+<form action="altas.php" method="post">
+
+  <table width="314" border="0" align="center">
+    <tr>
+      <td width="163">IDENTIFICACION:</td>
+      <td width="156"><input type="text" name="clave" id="clave" required></td>
+    </tr>
+    <tr>
+      <td width="163">PUESTO A CUBRIR:</td>
+      <td width="156"><input type="text" name="puesto" id="puesto" required></td>
+    </tr>
+    <tr>
+      <td>NOMBRE:</td>
+      <td><input type="text" name="nombre" id="nombre"></td>
+    </tr>
+    <tr>
+      <td>EMAIL:</td>
+      <td><input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+      <td>DIRECCION:</td>
+      <td><input type="text" name="direccion" id="direccion"></td>
+    </tr>
+    <tr>
+      <td>FECHA DE NACIMIENTO</td>
+      <td><input type="date" name="fecha" id="fecha"></td>
+    </tr>
+    <tr>
+      <td>ESTADO CIVIL:</td>
+      <td><input type="text" name="estadocivil" id="estadocivil"></td>
+    </tr>
+     <tr>
+      <td>TELEFONO:</td>
+      <td><input type="tel" name="telefono" id="telefono"></td>
+    </tr>
+    <tr>
+      <td>NIVEL ACADEMICO:</td>
+      <td><input type="text" name="nivelacademico" id="nivelacademico"></td>
+    </tr>
+  </table>
+
+<p align="center">
+  <input type="submit" id="insertar" value="GUARDAR" name="guardar">
+  <input type="reset" id="cancelar" value="CANCELAR" name="cancelar">
+  <input type="button" onClick="window.location='index.html'" id="regresar" value="REGRESAR" name="regresar">
+</p>
+</form>
+</body>
+</html>
