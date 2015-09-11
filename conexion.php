@@ -5,7 +5,7 @@
 	$usuario="u340419796_pract";
 	$password="4WuNtS27";
 	$bd="u340419796_capit";
-	$conexion=mysql_connect($servidor,$usuario,$password);
+	$conexion= new mysqli($servidor,$usuario,$password,$bd);
 	if (!$conexion)
 	{
 		echo"ERROR AL CONECTARCE CON EL SERVIDOR";
