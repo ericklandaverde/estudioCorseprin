@@ -3,7 +3,7 @@
    {
 	$servidor="mysql.hostinger.es";
 	$usuario="u340419796_pract";
-	$password="4WuNtS27";
+	$password="YES";
 	$bd="u340419796_capit";
 	$conexion= new mysqli($servidor,$usuario,$password,$bd);
 	if (!$conexion)
@@ -12,7 +12,7 @@
 		exit();
 	}
 
-	$coneccion=mysql_select_db($bd,$conexion);
+	$coneccion=mysqli_select_db($conexion,$bd);
 
 	if (!$coneccion)
 	{
