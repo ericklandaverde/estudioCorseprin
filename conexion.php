@@ -1,10 +1,10 @@
 <?php 
    function conectar()
    {
-	$servidor="localhost";
-	$usuario="root";
-	$password="";
-	$bd="capitalhumano";
+	$servidor="mysql.hostinger.es";
+	$usuario="u340419796_pract";
+	$password="4WuNtS27";
+	$bd="u340419796_capit";
 	$conexion=mysql_connect($servidor,$usuario,$password);
 	if (!$conexion)
 	{
