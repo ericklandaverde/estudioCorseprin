@@ -21,7 +21,7 @@ $conexion=conectar();
 		$consulta=mysqli_query($conexion,"select * FROM identificacion");
 		$cantidad = mysqli_num_rows($consulta);
 	    if (isset($_POST['buscar'])){
-			$consulta=mysqli_query("select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
+			$consulta=mysqli_query($conexion,"select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
 		}
 	
   while($filas=mysql_fetch_array($consulta)){
