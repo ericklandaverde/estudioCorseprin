@@ -23,7 +23,7 @@ mssql_close($conexionsql);*/
 
 $sql="insert identificacion(clave, puesto, nombre, email, direccion, fecha, estadocivil, telefono, nivelacademico) 
 values('$clave','$puesto','$nombre','$email','$direccion','$fecha','$estadocivil','$telefono','$nivelacademico')";
-$registro=mysql_query($sql,$conexion);
+$registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
 echo"
