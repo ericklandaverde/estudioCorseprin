@@ -17,14 +17,14 @@ $conexion=conectar();
           <td  bgcolor="#CCCCCC">NIVEL ACADEMICO</td>
           <td  bgcolor="#CCCCCC">REPORTE</td> -->
       </tr>
-      <?php 
+    <?php
     $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
     $cantidad = mysql_num_rows($consulta);
       if (isset($_POST['buscar'])){
       $consulta = mysqli_query($conexion,"SELECT * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
     }
   
-    while($filas= mysql_fetch_array($consulta)){
+    while($filas= mysqli_fetch_array($consulta)){
       $clave=$filas['clave'];
       $puesto=$filas['puesto'];
       $nombre=$filas['nombre'];
