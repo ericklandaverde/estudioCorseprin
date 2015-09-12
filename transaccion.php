@@ -9,13 +9,13 @@ $conexion=conectar();
           <td  bgcolor="#CCCCCC">IDENTIFIACION</td>
           <td  bgcolor="#CCCCCC">PUESTO</td>
           <td  bgcolor="#CCCCCC">NOMBRE</td>
-          <!-- <td  bgcolor="#CCCCCC">EMAIL</td>
+          <td  bgcolor="#CCCCCC">EMAIL</td>
           <td  bgcolor="#CCCCCC">DIRECCION</td>
           <td  bgcolor="#CCCCCC">FECHA</td>
           <td  bgcolor="#CCCCCC">ESTADO CIVIL</td>
           <td  bgcolor="#CCCCCC">TELEFONO</td>
           <td  bgcolor="#CCCCCC">NIVEL ACADEMICO</td>
-          <td  bgcolor="#CCCCCC">REPORTE</td> -->
+          <td  bgcolor="#CCCCCC">REPORTE</td>
       </tr>
     <?php
     $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
@@ -28,23 +28,23 @@ $conexion=conectar();
       $clave=$filas['clave'];
       $puesto=$filas['puesto'];
       $nombre=$filas['nombre'];
-      // $email=$filas['email'];
-      // $direccion=$filas['direccion'];
-      // $fecha=$filas['fecha'];
-      // $estadocivil=$filas['estadocivil'];
-      // $telefono=$filas['telefono'];
-      // $nivelacademico=$filas['nivelacademico'];
+      $email=$filas['email'];
+      $direccion=$filas['direccion'];
+      $fecha=$filas['fecha'];
+      $estadocivil=$filas['estadocivil'];
+      $telefono=$filas['telefono'];
+      $nivelacademico=$filas['nivelacademico'];
         ?>
       <tr>
           <td><?php echo $clave ?></td>
           <td><?php echo $puesto ?></td>
           <td><?php echo $nombre ?></td>
-          <!-- <td><?php echo $email ?></td>
+          <td><?php echo $email ?></td>
           <td align="center"><?php echo $direccion ?></td>
-            <td align="center"><?php echo $fecha ?></td>
-            <td align="center"><?php echo $estadocivil ?></td>
-            <td align="center"><?php echo $telefono ?></td>
-            <td align="center"><?php echo $nivelacademico ?></td> -->
+          <td align="center"><?php echo $fecha ?></td>
+          <td align="center"><?php echo $estadocivil ?></td>
+          <td align="center"><?php echo $telefono ?></td>
+          <td align="center"><?php echo $nivelacademico ?></td>
           
 <!--      <td align="center">    
           <form action="transaccion2.php" method="post" name="editar">
@@ -58,12 +58,12 @@ $conexion=conectar();
               </form>
             </td> -->
 
-            <!-- <td align="center">
+            <td align="center">
               <form action="reporte.php" method="post" name="reporte">
               <input name="clave" type="hidden" value="<?php echo $clave ?>" />
               <input type="submit" value="Generar" alt="cambio" title="Generar"/>
               </form>
-            </td> -->
+            </td>
       </tr>
       <p>
         <?php }?>
