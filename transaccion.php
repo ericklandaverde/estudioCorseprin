@@ -18,7 +18,7 @@ $conexion=conectar();
           <td  bgcolor="#CCCCCC">REPORTE</td>
       </tr>
       <?php 
-    $consulta=mysql_query("select * FROM identificacion");
+    $consulta=mysql_query($conexion, "select * FROM identificacion");
     $cantidad = mysql_num_rows($consulta);
       if (isset($_POST['buscar'])){
       $consulta=mysql_query("select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
