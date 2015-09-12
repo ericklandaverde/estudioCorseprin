@@ -1,18 +1,14 @@
 <?php 
    function conectar()
    {
-	$servidor="mysql.hostinger.es";
-	$usuario="u340419796_pract";
-	$password="YES";
-	$bd="u340419796_capit";
-	$conexion= new mysqli($servidor,$usuario,$password,$bd);
+    $conexion=mysqli_connect("mysql.hostinger.es","u340419796_pract","4WuNtS10","u340419796_capit") or die("No hay conexion");
 	if (!$conexion)
 	{
 		echo"ERROR AL CONECTARCE CON EL SERVIDOR";
 		exit();
 	}
 
-	$coneccion=mysqli_select_db($conexion,$bd);
+	$coneccion=mysqli_select_db($conexion,"u340419796_capit") or die("No existe base de datos");
 
 	if (!$coneccion)
 	{
