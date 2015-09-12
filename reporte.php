@@ -127,7 +127,7 @@ function Header()
 
 	$num= $_POST['clave'];
 	$strConsulta = "SELECT * FROM identificacion where clave =  '$num'";
-	$alumno = mysql_query($strConsulta);
+	$alumno = mysqli_query($conexion,$strConsulta);
 	$fila = mysql_fetch_array($alumno);
 	
 	
