@@ -128,7 +128,7 @@ function Header()
 	$num= $_POST['clave'];
 	$strConsulta = "SELECT * FROM identificacion where clave =  '$num'";
 	$alumno = mysqli_query($conexion,$strConsulta);
-	$fila = mysql_fetch_array($alumno);
+	$fila = mysqli_fetch_array($alumno);
 	
 	
 	$pdf=new PDF('P','mm','A4');
