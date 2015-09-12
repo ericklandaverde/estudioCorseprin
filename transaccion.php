@@ -24,7 +24,7 @@ $conexion=conectar();
 			$consulta=mysqli_query("select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
 		}
 	
-		while($filas=mysql_fetch_array($consulta)){
+		while($filas=mysql_fetch_array($conexion,$consulta)){
 			$clave=$filas['clave'];
       $puesto=$filas['puesto'];
 			$nombre=$filas['nombre'];
