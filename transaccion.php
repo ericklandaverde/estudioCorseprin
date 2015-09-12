@@ -18,13 +18,13 @@ $conexion=conectar();
           <td  bgcolor="#CCCCCC">REPORTE</td>
       </tr>
       <?php 
-    $consulta= mysqli_query($conexion, "select * FROM identificacion");
+    $consulta= mysqli_query($conexion, "SELECT * FROM identificacion");
     $cantidad = mysql_num_rows($consulta);
       if (isset($_POST['buscar'])){
-      $consulta = mysqli_query($conexion, "select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
+      $consulta = mysqli_query($conexion, "SELECT * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
     }
   
-    while($filas=mysql_fetch_array($consulta)){
+    while($filas= mysql_fetch_array($consulta)){
       $clave=$filas['clave'];
       $puesto=$filas['puesto'];
       $nombre=$filas['nombre'];
@@ -46,7 +46,7 @@ $conexion=conectar();
             <td align="center"><?php echo $telefono ?></td>
             <td align="center"><?php echo $nivelacademico ?></td>
           
-<!--           <td align="center">    
+<!--      <td align="center">    
           <form action="transaccion2.php" method="post" name="editar">
               <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                   <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
@@ -61,7 +61,7 @@ $conexion=conectar();
             <td align="center">
               <form action="reporte.php" method="post" name="reporte">
               <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-              <input type="submit" value="Generar" alt="cambio" title="Generar Reporte PDF"/>
+              <input type="submit" value="Generar" alt="cambio" title="Generar"/>
               </form>
             </td>
       </tr>
