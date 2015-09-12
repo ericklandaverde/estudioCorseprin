@@ -19,7 +19,7 @@ $conexion=conectar();
     	</tr>
     	<?php 
 		$consulta=mysqli_query($conexion,"select * FROM identificacion" or die ("Tabla de datos no encontrada"));
-		$cantidad = mysql_num_rows($consulta);
+		$cantidad = mysqli_num_rows($consulta);
 	    if (isset($_POST['buscar'])){
 			$consulta=mysqli_query($conexion,"select * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
 		}
