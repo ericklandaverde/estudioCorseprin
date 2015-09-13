@@ -28,8 +28,8 @@ if(!$registro)
 {
 echo"
 <script language='javascript'>
-alert('ERROR AL GUARDAR DATOS, PROBABLE CLAVE REPETIDA')
-window.location='formularioDocumentos.html'
+alert('ERROR AL GUARDAR DATOS, REVISA TUS DATOS')
+window.location='formularioIdentificacion.html'
 </script>";
 exit();
 }
@@ -38,7 +38,7 @@ else
 echo"
 <script language='javascript'>
 alert('DATOS GUARDADOS CORRECTAMENTE')
-window.location='index.html'
+window.location='formularioDocumentos.html'
 </script>";
 }
 ?>
