@@ -3,12 +3,11 @@
 include('conexion.php');
 $conexion=conectar();
 
-$clave=$_POST['clave'];
 $puesto=$_POST['puesto'];
 $nombre=$_POST['nombre'];
-$email=$_POST['email'];
 $direccion=$_POST['direccion'];
 $fecha=$_POST['fecha'];
+$edad=$_POST['edad'];
 $estadocivil=$_POST['estadocivil'];
 $telefono=$_POST['telefono'];
 $nivelacademico=$_POST['nivelacademico'];
@@ -21,15 +20,15 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
   die("Error SQL");
 mssql_close($conexionsql);*/
 
-$sql="insert identificacion(clave, puesto, nombre, email, direccion, fecha, estadocivil, telefono, nivelacademico) 
-values('$clave','$puesto','$nombre','$email','$direccion','$fecha','$estadocivil','$telefono','$nivelacademico')";
+$sql="insert identificacion(puesto, nombre, direccion, fecha, edad, estadocivil, telefono, nivelacademico) 
+values($puesto','$nombre','$direccion','$fecha','$edad',$estadocivil','$telefono','$nivelacademico')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
 echo"
 <script language='javascript'>
 alert('ERROR AL GUARDAR DATOS, PROBABLE CLAVE REPETIDA')
-window.location='altas.html'
+window.location='formulario.html'
 </script>";
 exit();
 }
@@ -38,7 +37,7 @@ else
 echo"
 <script language='javascript'>
 alert('DATOS GUARDADOS CORRECTAMENTE')
-window.location='altas.html'
+window.location='index.html'
 </script>";
 }
 ?>
