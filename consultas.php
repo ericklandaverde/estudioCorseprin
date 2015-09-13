@@ -63,15 +63,14 @@ $conexion=conectar();
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-            <table width="900" border="1">
+            <table width="900" border="1" align="center">
               <tr align="center">
                   <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                   <td  bgcolor="#CCCCCC">PUESTO</td>
                   <td  bgcolor="#CCCCCC">NOMBRE</td>
                   <td  bgcolor="#CCCCCC">EMAIL</td>
                   <td  bgcolor="#CCCCCC">DIRECCION</td>
-                  <td  bgcolor="#CCCCCC">FECHA</td>
-                  <td  bgcolor="#CCCCCC">EDAD</td>
+                  <td  bgcolor="#CCCCCC">FECHA</td>z
                   <td  bgcolor="#CCCCCC">ESTADO CIVIL</td>
                   <td  bgcolor="#CCCCCC">TELEFONO</td>
                   <td  bgcolor="#CCCCCC">NIVEL ACADEMICO</td>
@@ -91,7 +90,6 @@ $conexion=conectar();
             $email=$filas['email'];
             $direccion=$filas['direccion'];
             $fecha=$filas['fecha'];
-            $edad=$filas['edad'];
             $estadocivil=$filas['estadocivil'];
             $telefono=$filas['telefono'];
             $nivelacademico=$filas['nivelacademico'];
@@ -101,12 +99,11 @@ $conexion=conectar();
                 <td><?php echo $puesto ?></td>
                 <td><?php echo $nombre ?></td>
                 <td><?php echo $email ?></td>
-                <td><?php echo $direccion ?></td>
-                <td><?php echo $fecha ?></td>
-                <td><?php echo $edad ?></td>
-                <td><?php echo $estadocivil ?></td>
-                <td><?php echo $telefono ?></td>
-                <td><?php echo $nivelacademico ?></td>
+                <td align="center"><?php echo $direccion ?></td>
+                <td align="center"><?php echo $fecha ?></td>
+                <td align="center"><?php echo $estadocivil ?></td>
+                <td align="center"><?php echo $telefono ?></td>
+                <td align="center"><?php echo $nivelacademico ?></td>
                 
                 <!-- <td align="center">    
                 <form action="transaccion2.php" method="post" name="editar">
@@ -121,7 +118,7 @@ $conexion=conectar();
                   </td> -->
 
                   <td align="center">
-                    <form action= "reporte.php" method="post" name="reporte">
+                    <form action="reporte.php" method="post" name="reporte">
                     <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                     <input type="submit" value="Generar" alt="cambio" title="Generar"/>
                     </form>
@@ -138,7 +135,7 @@ $conexion=conectar();
 
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
-          <input type="submit" id="insertar" value="SIGUIENTE" name="guardar" class="btn btn-theme btn-lg btn-block">
+          <input type="submit" id="insertar" value="GUARDAR" name="guardar" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">  
           <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
           </div>
