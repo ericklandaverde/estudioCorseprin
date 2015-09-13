@@ -2,6 +2,7 @@
 include("conexion.php");
 $conexion=conectar();
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -61,8 +62,9 @@ $conexion=conectar();
 
         <form action="formulario.php" method="post" class="form-horizontal" role="form">
           <div class="form-group">
-           <center><h2><b>CONSULTAR SOLICITUDES</b></h2>
-               <table width="900" border="1" align="center">
+          <div class="col-md-offset-2 col-md-8">
+            <center><h2><b>CONSULTAR SOLICITUDES</b></h2>
+<table width="900" border="1" align="center">
       <tr align="center">
           <td  bgcolor="#CCCCCC">IDENTIFIACION</td>
           <td  bgcolor="#CCCCCC">PUESTO</td>
@@ -126,6 +128,9 @@ $conexion=conectar();
       <p>
         <?php }?>
       </table>
+          </div>
+          </div>
+
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
           <input type="submit" id="insertar" value="GUARDAR" name="guardar" class="btn btn-theme btn-lg btn-block">
