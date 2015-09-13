@@ -41,12 +41,7 @@
 				  <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
-					 <p>DATOS DE IDENTIFICACION</p>
-				     <p>ESTAS REALIZANDO EL ESTUDIO EL DIA: </p>
-	               <script>  
-	                  var f = new Date();
-	                  document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-	               </script>
+					 <p>REVISION DE DOCUMENTOS</p>
 					</div>
 				  </div>
 			  </div>
@@ -56,61 +51,35 @@
 	  			<div class="col-md-offset-1 col-md-10">
 
 				<form action="formularioDocumentos.php" method="post" class="form-horizontal" role="form">
-				    <div class="form-group">
+				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Clave CURP: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu clave CURP" name="clave" required>
+					  <label>Actas de registro civil: </label>
+					  <label>Nacimiento: </label>
+					    <input type="radio" name="nacimiento" value="Si" checked placeholder="Selecciona una opcion" class="form-control" checked required>Si
+                        <input type="radio" name="nacimiento" value="No" checked placeholder="Selecciona una opcion" class="form-control" checked required>No
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Puesto a cubrir: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" required>
+					  <label>Matrimonio: </label>
+					    <input type="radio" name="matrimonio" value="Si" checked placeholder="Selecciona una opcion" class="form-control" checked required>Si
+                        <input type="radio" name="matrimonio" value="No" checked placeholder="Selecciona una opcion" class="form-control" checked required>No
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
+						<label>Identificacion peronal  </label>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" pattern="[A-Z]" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" pattern="[A-Z]" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" pattern="[A-Z]" required>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de nacimiento" name="fecha" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <select type="text" class="form-control" id="inputClave" placeholder="Estado civil" name="estadocivil" required>
-                        <option selected value="#">Seleccionar estado civil</option>
-                        <option value="Soltero">Soltero</option>
-                        <option value="Casado">Casado</option>
-                      </select>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <select type="text" class="form-control" id="inputClave" placeholder="Nivel academico" name="nivelacademico" required>
-					  	<option selected value="#">Seleccionar Nivel academico</option>
-                        <option value="Primaria">Primaria</option>
-                        <option value="Secuandaria">Secundaria</option>
-                        <option value="Media Superior">Media Superior</option>
-                        <option value="Superior">Superior</option>
-                      </select>
+						<label>Seguridad social  </label>
+					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" pattern="[A-Z]" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" pattern="[A-Z]" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" pattern="[A-Z]" required>
 					</div>
 				  </div>
 				  <div class="form-group">
