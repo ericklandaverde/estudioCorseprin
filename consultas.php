@@ -94,7 +94,7 @@ $conexion=conectar();
             <button class="dl-trigger">Open Menu</button>
             <ul class="dl-menu">
               <li>
-                <a href="#intro">Home</a>
+                <a href="index.html">Principal</a>
               </li>
               <li><a href="altas.html">Realiza tu estudio socioecomico</a></li>
               <li><a href="bajas.html">Eliminar registro</a></li>
