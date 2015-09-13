@@ -22,9 +22,9 @@ $conexion=conectar();
             <button class="dl-trigger">Open Menu</button>
             <ul class="dl-menu">
               <li>
-                <a href="index.hmtl">Principal</a>
+                <a href="index.html">Principal</a>
               </li>
-              <li><a href="formulario.html">Formulario</a></li>
+              <li><a href="formularioIdentificacion.html">Formulario</a></li>
               <li><a href="bajas.html">Eliminar</a></li>
               <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
