@@ -22,7 +22,7 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
 mssql_close($conexionsql);*/
 
 $sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, nivelacademico) 
-values('$clave', '$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$nivelacademico')";
+values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$nivelacademico')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
