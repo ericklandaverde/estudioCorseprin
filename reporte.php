@@ -1,4 +1,5 @@
 <?php
+
 require('fpdf/fpdf.php');
 include("conexion.php");
 $conexion=conectar();
@@ -133,7 +134,6 @@ function Header()
 	$pdf=new PDF('P','mm','A4');
 	$pdf->Open();
 	$pdf->AddPage();
-	$pdf->Image('img/logo.png' , 10 ,8, 10 , 13,'PNG');
 	$pdf->SetMargins(20,20,20);
 	$pdf->Ln(55);
 
