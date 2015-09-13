@@ -121,7 +121,7 @@ $conexion=conectar();
                   </td> -->
 
                   <td align="center">
-                    <form action="reporte.php" method="post" name="reporte">
+                    <form action= "reporte.php" method="post" name="reporte">
                     <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                     <input type="submit" value="Generar" alt="cambio" title="Generar"/>
                     </form>
@@ -138,7 +138,7 @@ $conexion=conectar();
 
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
-          <input type="submit" id="insertar" value="GUARDAR" name="guardar" class="btn btn-theme btn-lg btn-block">
+          <input type="submit" id="insertar" value="SIGUIENTE" name="guardar" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">  
           <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
           </div>
