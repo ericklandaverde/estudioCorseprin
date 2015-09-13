@@ -6,7 +6,7 @@ $conexion=conectar();
 <center><h2><b>CONSULTAR SOLICITUDES</b></h2>
 <table width="900" border="1" align="center">
       <tr align="center">
-          <td  bgcolor="#CCCCCC">IDENTIFIACION</td>
+          <td  bgcolor="#CCCCCC">CLAVE CURP</td>
           <td  bgcolor="#CCCCCC">PUESTO</td>
           <td  bgcolor="#CCCCCC">NOMBRE</td>
           <td  bgcolor="#CCCCCC">EMAIL</td>
