@@ -63,7 +63,7 @@ $conexion=conectar();
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-            <table width="900" border="1" align="center">
+            <table width="900" border="1">
               <tr align="center">
                   <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                   <td  bgcolor="#CCCCCC">PUESTO</td>
@@ -101,12 +101,12 @@ $conexion=conectar();
                 <td><?php echo $puesto ?></td>
                 <td><?php echo $nombre ?></td>
                 <td><?php echo $email ?></td>
-                <td align="center"><?php echo $direccion ?></td>
-                <td align="center"><?php echo $fecha ?></td>
-                <td align="center"><?php echo $edad ?></td>
-                <td align="center"><?php echo $estadocivil ?></td>
-                <td align="center"><?php echo $telefono ?></td>
-                <td align="center"><?php echo $nivelacademico ?></td>
+                <td><?php echo $direccion ?></td>
+                <td><?php echo $fecha ?></td>
+                <td><?php echo $edad ?></td>
+                <td><?php echo $estadocivil ?></td>
+                <td><?php echo $telefono ?></td>
+                <td><?php echo $nivelacademico ?></td>
                 
                 <!-- <td align="center">    
                 <form action="transaccion2.php" method="post" name="editar">
