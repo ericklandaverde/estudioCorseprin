@@ -184,5 +184,12 @@ function Header()
 	$pdf->Ln(40);
 	$pdf->Image('imagenes/banerinferior_cecyte.jpg' , 2 ,273, 206 , 23,'JPG');
 
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+    $pdf->Ln(8);
+    $pdf->Cell(100, 8, 'ESTUDIO SOCIOECONOMICO"', 1);
+    $pdf->Ln(8);
+    $pdf->SetFont('Arial', 'B', 8);
+    $pdf->Cell(150,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
+
 $pdf->Output();
 ?>
