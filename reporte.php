@@ -115,12 +115,12 @@ function Header()
 	$this->Image('imagenes/dgeti.jpg' , 20 ,8, 22 , 18,'JPG');
 	//$this->Image('imagenes/images.jpg' , 163 ,10, 35 , 20,'JPG');
 	
-	// $this->SetFont('Arial','',11);
-	// $this->Text(60,20,utf8_decode('"ESTUDIO SOCIOECONOMICO"'),0,'C', 0);
-	// $this->SetFont('Arial','',10);
-	// $this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
+	$this->SetFont('Arial','',11);
+	$this->Text(60,20,utf8_decode('"ESTUDIO SOCIOECONOMICO"'),0,'C', 0);
+	$this->SetFont('Arial','',10);
+	$this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
 	
-	// $this->Ln(27);
+	$this->Ln(27);
 }
 
 }
@@ -136,27 +136,22 @@ function Header()
 	$pdf->AddPage();
 	$pdf->SetMargins(20,20,20);
 	$pdf->Ln(55);
-	$pdf->Cell(60, 10, '', 1);
-	$pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
-	$pdf->SetFont('Arial', '', 9);
-	$pdf->Cell(30, 10, 'Fecha: '.date('d-m-Y').'', 1);
-	$pdf->Ln(11);
 
- //    $pdf->SetFont('Arial','',12);
- //    $pdf->Cell(0,6,'A QUIEN CORRESPONDA:',0,1);
-	// $pdf->Ln(20);
-	// $pdf->Cell(0,6,'Nombre:',0,1);$pdf->Cell(0,6,$fila['nombre'],0,1);
-	// $pdf->Ln(20);
+    $pdf->SetFont('Arial','',12);
+    $pdf->Cell(0,6,'A QUIEN CORRESPONDA:',0,1);
+	$pdf->Ln(20);
+	$pdf->Cell(0,6,'Nombre:',0,1);$pdf->Cell(0,6,$fila['nombre'],0,1);
+	$pdf->Ln(20);
 	
-	// $pdf->SetFont('Arial','',11);
-	// $pdf->MultiCell(177,6, utf8_decode('El que suscribe, Encargado(a) del Departamento de Titulación del CECyTE. Hace constar que el (a) C. '.utf8_decode($fila['nivelacademico']).', con Clave ').utf8_decode($fila['clave']). utf8_decode('; concluyó sus actividades en la empresa ').utf8_decode($fila['nombre'].', de la ciudad de  '.$fila['fecha']). utf8_decode('; con un salario base de ').utf8_decode($fila['fecha']) ,0,'J');
+	$pdf->SetFont('Arial','',11);
+	$pdf->MultiCell(177,6, utf8_decode('El que suscribe, Encargado(a) del Departamento de Titulación del CECyTE. Hace constar que el (a) C. '.utf8_decode($fila['nivelacademico']).', con Clave ').utf8_decode($fila['clave']). utf8_decode('; concluyó sus actividades en la empresa ').utf8_decode($fila['nombre'].', de la ciudad de  '.$fila['fecha']). utf8_decode('; con un salario base de ').utf8_decode($fila['fecha']) ,0,'J');
 	
-	// $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
- //    $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
- //    $pdf->Ln(8);
+	$dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
+    $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    $pdf->Ln(8);
 	
-	// $pdf->MultiCell(177,6,utf8_decode('A petición del interesado, se expide la presente en la H. ciudad de Juchitán de Zaragoza, Oaxaca. A los '." ".date('d')." dias del mes de ".$meses[date('n')-1]. " de ".date('Y')."." ),0,'J');
- //    $pdf->Ln(50);
+	$pdf->MultiCell(177,6,utf8_decode('A petición del interesado, se expide la presente en la H. ciudad de Juchitán de Zaragoza, Oaxaca. A los '." ".date('d')." dias del mes de ".$meses[date('n')-1]. " de ".date('Y')."." ),0,'J');
+    $pdf->Ln(50);
 	
     //-------------------------------------------------------------------------------------------------------------------------------------------
     $pdf->Cell(30, 8, 'Nivel academico', 1);
