@@ -1,5 +1,5 @@
 <?php
-require('include/fpdf.php');
+require('fpdf/fpdf.php');
 require('conexion.php');
 
 
