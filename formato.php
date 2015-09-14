@@ -13,11 +13,14 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
 $pdf->Image('imagenes/dgeti.jpg' , 10 ,8, 10 , 13,'JPG');
 //-------------------------------------------------------------------------------------------------------------------------------------------
-$pdf->Cell(60, 10, '', 1);
-$pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
-$pdf->SetFont('Arial', '', 9);
-$pdf->Cell(30, 10, 'Fecha: '.date('d-m-Y').'', 1);
-$pdf->Ln(11);
+function Header()
+{
+   $pdf->Cell(60, 10, '', 1);
+   $pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
+   $pdf->SetFont('Arial', '', 9);
+   $pdf->Cell(30, 10, 'Fecha: '.date('d-m-Y').'', 1);
+   $pdf->Ln(11);
+}
 //-------------------------------------------------------------------------------------------------------------------------------------------
 $pdf->SetFont('Arial', 'B', 11);
 $pdf->Cell(60, 5, '', 0);
@@ -67,14 +70,11 @@ $pdf->Cell(30, 8, 'Telefono', 1);
 //-------------------------------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------------------------------
 $pdf->Cell(30, 8, 'Nivel academico', 1);
-	$pdf->Cell(80, 8,$fila['nivelacademico'], 1);
+	$pdf->Cell(160, 8,$fila['nivelacademico'], 1);
 	//$pdf->Cell(40, 8, $productos2['nombre'], 0);
 	//$pdf->Cell(40, 8, $productos2['direccion'], 0);
 	$pdf->Ln(8);
 //-------------------------------------------------------------------------------------------------------------------------------------------
-$pdf->Ln(8);
-$pdf->Cell(160, 8, 'ESTUDIO SOCIOECONOMICO"', 1);
-$pdf->Ln(8);
 $pdf->SetFont('Arial', 'B', 8);
 $pdf->Cell(150,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
 $pdf->Output();
