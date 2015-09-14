@@ -188,8 +188,8 @@ function Header()
     $pdf->Ln(8);
     $pdf->Cell(100, 8, 'ESTUDIO SOCIOECONOMICO"', 1);
     $pdf->Ln(8);
-    $pdf->SetFont('Arial', 'B', 8);
-    $pdf->Cell(150,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
+    $pdf->SetFont('Arial', 'B', 5);
+    $pdf->Cell(100,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
 
     $pdf->Output();
 ?>
