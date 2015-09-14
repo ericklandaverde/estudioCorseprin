@@ -1,7 +1,7 @@
 <?php
 require('fpdf/fpdf.php');
 require('conexion.php');
-
+$conexion=conectar();
 
 $num= $_POST['clave'];
 $strConsulta = "SELECT * FROM identificacion where clave =  '$num'";
@@ -11,7 +11,7 @@ $fila = mysqli_fetch_array($alumno);
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
-$pdf->Image('img/logo.png' , 10 ,8, 10 , 13,'PNG');
+$pdf->Image('imagenes/logo.png' , 10 ,8, 10 , 13,'PNG');
 //-------------------------------------------------------------------------------------------------------------------------------------------
 $pdf->Cell(60, 10, '', 1);
 $pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
