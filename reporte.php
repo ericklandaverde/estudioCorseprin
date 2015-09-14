@@ -115,12 +115,12 @@ function Header()
 	$this->Image('imagenes/dgeti.jpg' , 20 ,8, 22 , 18,'JPG');
 	//$this->Image('imagenes/images.jpg' , 163 ,10, 35 , 20,'JPG');
 	
-	$this->SetFont('Arial','',11);
-	$this->Text(60,20,utf8_decode('"ESTUDIO SOCIOECONOMICO"'),0,'C', 0);
-	$this->SetFont('Arial','',10);
-	$this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
+	// $this->SetFont('Arial','',11);
+	// $this->Text(60,20,utf8_decode('"ESTUDIO SOCIOECONOMICO"'),0,'C', 0);
+	// $this->SetFont('Arial','',10);
+	// $this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
 	
-	$this->Ln(27);
+	// $this->Ln(27);
 }
 
 }
