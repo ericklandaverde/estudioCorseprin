@@ -3,15 +3,14 @@
 include('conexion.php');
 $conexion=conectar();
 
-$clave=$_POST['clave'];
-$puesto=$_POST['puesto'];
-$nombre=$_POST['nombre'];
-$direccion=$_POST['direccion'];
-$fecha=$_POST['fecha'];
-$edad=$_POST['edad'];
-$estadocivil=$_POST['estadocivil'];
-$telefono=$_POST['telefono'];
-$nivelacademico=$_POST['nivelacademico'];
+$nacimiento=$_POST['nacimiento'];
+$matrimonio=$_POST['matrimonio'];
+$documento=$_POST['documento'];
+$folio=$_POST['folio'];
+$vigencia=$_POST['vigencia'];
+$imms=$_POST['imms'];
+$rfc=$_POST['rfc'];
+$curp=$_POST['curp'];
 
 /*$conexionsql=mssql_connect() or
   die("Error de conexión.");
@@ -21,15 +20,15 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
   die("Error SQL");
 mssql_close($conexionsql);*/
 
-$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, nivelacademico) 
-values('$clave', '$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$nivelacademico')";
+$sql="insert documentos(nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
+values('$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$rfc','$curp')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
 echo"
 <script language='javascript'>
 alert('ERROR AL GUARDAR DATOS, PROBABLE CLAVE REPETIDA')
-window.location='formulario.html'
+window.location='formularioDocumentos.html'
 </script>";
 exit();
 }
