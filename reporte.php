@@ -113,7 +113,7 @@ function Header()
     //$this->Image('imagenes/cecyte.jpg' , 20 ,8, 23 , 18,'JPG');
 	//$this->Image('imagenes/letras3.jpg' , 45 ,13, 117 , 20,'JPG');
 	$this->Image('imagenes/dgeti.jpg' , 20 ,8, 22 , 18,'JPG');
-	$this->Image('imagenes/logo.png' , 10 ,8, 10 , 13,'PNG');
+	$this->Image('imagenes/logo.jpg' , 10 ,8, 10 , 13,'JPG');
 	//$this->Image('imagenes/images.jpg' , 163 ,10, 35 , 20,'JPG');
 	
 	$this->SetFont('Arial','',11);
