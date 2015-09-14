@@ -113,14 +113,13 @@ function Header()
     //$this->Image('imagenes/cecyte.jpg' , 20 ,8, 23 , 18,'JPG');
 	//$this->Image('imagenes/letras3.jpg' , 45 ,13, 117 , 20,'JPG');
 	$this->Image('imagenes/dgeti.jpg' , 20 ,8, 22 , 18,'JPG');
+	$this->Image('imagenes/logo.png' , 10 ,8, 10 , 13,'PNG');
 	//$this->Image('imagenes/images.jpg' , 163 ,10, 35 , 20,'JPG');
-	$pdf->Cell(60, 10, '', 1);
+	
 	$this->SetFont('Arial','',11);
-	$pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
-	$pdf->SetFont('Arial', '', 9);
-	$pdf->Cell(30, 10, 'Fecha: '.date('d-m-Y').'', 1);
-	$pdf->Ln(11);
-	// $this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
+	$this->Text(60,20,utf8_decode('"ESTUDIO SOCIOECONOMICO"'),0,'C', 0);
+	$this->SetFont('Arial','',10);
+	$this->Text(120,73,utf8_decode('Asunto: Constancia de Terminación de Estudios'),0,'C', 0);
 	
 	$this->Ln(27);
 }
