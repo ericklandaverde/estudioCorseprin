@@ -144,7 +144,7 @@ function Header()
 	$pdf->Ln(20);
 	
 	$pdf->SetFont('Arial','',11);
-	$pdf->MultiCell(177,6, utf8_decode('El que suscribe, Encargado(a) del Departamento de Titulación del CECyTE. Hace constar que el (a) C. '.utf8_decode($fila['nombre']).', con Clave ').utf8_decode($fila['clave']). utf8_decode('; concluyó sus actividades en la empresa ').utf8_decode($fila['nombre'].', de la ciudad de  '.$fila['fecha']). utf8_decode('; con un salario base de ').utf8_decode($fila['fecha']) ,0,'J');
+	$pdf->MultiCell(177,6, utf8_decode('El que suscribe, Encargado(a) del Departamento de Titulación del CECyTE. Hace constar que el (a) C. '.utf8_decode($fila['nivelacademico']).', con Clave ').utf8_decode($fila['clave']). utf8_decode('; concluyó sus actividades en la empresa ').utf8_decode($fila['nombre'].', de la ciudad de  '.$fila['fecha']). utf8_decode('; con un salario base de ').utf8_decode($fila['fecha']) ,0,'J');
 	
 	$dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
     $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
