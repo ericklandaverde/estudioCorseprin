@@ -180,10 +180,10 @@ function Header()
 	$pdf->SetXY(110, 240);
     $pdf->Cell(80, 5, 'Director de la Escuela', 0, 0, 'C', 1);             
     $y      =   130;
-    
-	$pdf->Ln(40);
-	$pdf->Image('imagenes/banerinferior_cecyte.jpg' , 2 ,273, 206 , 23,'JPG');
-
+    //-------------------------------------------------------------------------------------------------------------------------------------------
+    $pdf->Cell(30, 8, 'Nivel academico', 1);
+    $pdf->Cell(80,8,$fila['nivelacademico'],0,1);
+    $pdf->Ln(8);
 	//-------------------------------------------------------------------------------------------------------------------------------------------
     $pdf->Ln(8);
     $pdf->Cell(100, 8, 'ESTUDIO SOCIOECONOMICO"', 1);
@@ -191,5 +191,5 @@ function Header()
     $pdf->SetFont('Arial', 'B', 8);
     $pdf->Cell(150,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
 
-$pdf->Output();
+    $pdf->Output();
 ?>
