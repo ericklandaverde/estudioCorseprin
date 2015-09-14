@@ -153,33 +153,6 @@ function Header()
 	$pdf->MultiCell(177,6,utf8_decode('A petición del interesado, se expide la presente en la H. ciudad de Juchitán de Zaragoza, Oaxaca. A los '." ".date('d')." dias del mes de ".$meses[date('n')-1]. " de ".date('Y')."." ),0,'J');
     $pdf->Ln(50);
 	
-	$pdf->SetFont('Arial','',11);
-    $pdf->SetFillColor(255); 
-    
-	$pdf->SetXY(20, 205);
-    $pdf->Cell(70, 15, 'ELABORO:', 0, 0, 'C', 1);
-	
-	$pdf->SetXY(20, 230);
-    $pdf->Cell(70, 5, '______________________', 0, 0, 'C', 1);     
-    
-	$pdf->SetXY(145, 205);
-    $pdf->Cell(10, 15, 'Vo. Bo.', 0, 0, 'C', 1);
-	
-	$pdf->SetXY(145, 230);
-    $pdf->Cell(10, 5, '_______________________________________', 0, 0, 'C', 1);
-	
-	$pdf->SetXY(20, 235);
-    $pdf->Cell(70, 5, 'Nombre del Encargado', 0, 0, 'C', 1);     
-	
-	$pdf->SetXY(110, 235);
-    $pdf->Cell(80, 5, 'Nombre del Direc', 0, 0, 'C', 1);
-	
-	$pdf->SetXY(20, 240);
-    $pdf->Cell(70, 5, 'Encargado del Departamento..', 0, 0, 'C', 1);  
-	
-	$pdf->SetXY(110, 240);
-    $pdf->Cell(80, 5, 'Director de la Escuela', 0, 0, 'C', 1);             
-    $y      =   130;
     //-------------------------------------------------------------------------------------------------------------------------------------------
     $pdf->Cell(30, 8, 'Nivel academico', 1);
     $pdf->Cell(80,8,$fila['nivelacademico'],0,1);
