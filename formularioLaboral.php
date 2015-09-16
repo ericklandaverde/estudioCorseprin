@@ -37,7 +37,7 @@ else
 echo"
 <script language='javascript'>
 alert('DATOS GUARDADOS CORRECTAMENTE')
-window.location='formularioLaboral.html'
+window.location='index.html'
 </script>";
 }
 ?>
