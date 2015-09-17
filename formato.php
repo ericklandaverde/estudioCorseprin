@@ -1,5 +1,6 @@
 <?php
 require('fpdf/fpdf.php');
+require('fpdf/fpdf_alpha.php'); 
 require('conexion.php');
 $conexion=conectar();
 
@@ -14,10 +15,11 @@ $candidato = mysqli_query($conexion,$strConsulta);
 $filas = mysqli_fetch_array($candidato);
 
 
-$pdf = new FPDF();
+$pdf = new PDF_ImageAlpha(); 
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
 $pdf->Image('imagenes/dgeti.jpg' , 10 ,8, 10 , 13,'JPG');
+$pdf->ImagePngWithAlpha('logo.png',55,100,100,0);
 //-------------------------------------------------------------------------------------------------------------------------------------------
 class PDF extends FPDF
 {
