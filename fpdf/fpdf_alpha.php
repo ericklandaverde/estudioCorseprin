@@ -13,7 +13,7 @@
 * For the latter the GD 2.x extension is required.
 *******************************************************************************/ 
 
-require('fpdf.php');
+require('../fpdf.php');
 
 class PDF_ImageAlpha extends FPDF{
 

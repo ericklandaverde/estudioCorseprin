@@ -1,5 +1,5 @@
 <?php
-require('fpdf/fpdf_alpha.php');
+require('fpdf/fpdf.php');
 require('conexion.php');
 $conexion=conectar();
 
@@ -14,7 +14,7 @@ $candidato = mysqli_query($conexion,$strConsulta);
 $filas = mysqli_fetch_array($candidato);
 
 
-$pdf = new PDF_ImageAlpha();
+$pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
 $pdf->Image('imagenes/dgeti.jpg' , 10 ,8, 10 , 13,'JPG');
