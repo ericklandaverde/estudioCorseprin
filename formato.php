@@ -8,6 +8,12 @@ $strConsulta = "SELECT * FROM identificacion where clave = '$num'";
 $alumno = mysqli_query($conexion,$strConsulta);
 $fila = mysqli_fetch_array($alumno);
 
+$documentos= $_POST['clave'];
+$strConsulta = "SELECT * FROM documentos where clave = '$documentos'";
+$candidato = mysqli_query($conexion,$strConsulta);
+$filas = mysqli_fetch_array($candidato);
+
+
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
