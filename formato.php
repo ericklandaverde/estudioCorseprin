@@ -23,7 +23,7 @@ class PDF extends FPDF
 {
 	function Header()
 	{
-	   $pdf->Cell(60, 10, 'dgeti.jpg', 1);
+	   $pdf->Cell(60, 10, '', 1);
 	   $pdf->Cell(100, 10, 'ESTUDIO SOCIOECONOMICO"', 1);
 	   $pdf->SetFont('Arial', '', 9);
 	   $pdf->Cell(30, 10, 'Fecha: '.date('d-m-Y').'', 1);
