@@ -4,7 +4,7 @@ require('conexion.php');
 $conexion=conectar();
 
 $num= $_POST['clave'];
-$strConsulta = "SELECT * FROM identificacion where clave =  '$num'";
+$strConsulta = "SELECT * FROM identificacion join documentos where clave = '$num'";
 $alumno = mysqli_query($conexion,$strConsulta);
 $fila = mysqli_fetch_array($alumno);
 
@@ -78,6 +78,13 @@ $pdf->Cell(30, 8, 'Nivel academico', 1);
 	//$pdf->Cell(40, 8, $productos2['direccion'], 0);
 	$pdf->Ln(8);
 //-------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------
+$pdf->Cell(30, 8, 'Nivel academico', 1);
+	$pdf->Cell(160, 8,$fila['matrimonio'], 1);
+	//$pdf->Cell(40, 8, $productos2['nombre'], 0);
+	//$pdf->Cell(40, 8, $productos2['direccion'], 0);
+	$pdf->Ln(8);
+
 $pdf->SetFont('Arial', 'B', 8);
 $pdf->Cell(150,8,'Se prohibe la reproduccion total o parcial del presente documento sin la autorizacion correspondiente.',1);
 $pdf->Output();

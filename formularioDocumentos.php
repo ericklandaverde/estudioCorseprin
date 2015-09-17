@@ -9,7 +9,7 @@ $documento=$_POST['documento'];
 $folio=$_POST['folio'];
 $vigencia=$_POST['vigencia'];
 $imms=$_POST['imms'];
-$rfc=$_POST['rfc'];
+$rfc=$_POST['clave'];
 $curp=$_POST['curp'];
 
 /*$conexionsql=mssql_connect() or
@@ -20,8 +20,8 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
   die("Error SQL");
 mssql_close($conexionsql);*/
 
-$sql="insert documentos(nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
-values('$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$rfc','$curp')";
+$sql="insert documentos(nacimiento, matrimonio, documento, folio, vigencia, imms, clave, curp) 
+values('$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$clave','$curp')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
