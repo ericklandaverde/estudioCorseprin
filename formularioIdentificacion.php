@@ -13,7 +13,6 @@ $estadocivil=$_POST['estadocivil'];
 $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $nivelacademico=$_POST['nivelacademico'];
-$image=$_POST['image'];
 
 /*$conexionsql=mssql_connect() or
   die("Error de conexión.");
@@ -23,12 +22,12 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
   die("Error SQL");
 mssql_close($conexionsql);*/
 
-$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, image) 
-values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','image')";
+$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
+values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
-echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS, REVISA TUS DATOS')window.location='formularioIdentificacion.html'</script>";
+echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS')window.location='formularioIdentificacion.html'</script>";
 exit();
 }
 else
