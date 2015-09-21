@@ -69,11 +69,7 @@ $conexion=conectar();
                   <td  bgcolor="#CCCCCC">PUESTO</td>
                   <td  bgcolor="#CCCCCC">NOMBRE</td>
                   <td  bgcolor="#CCCCCC">EMAIL</td>
-                  <td  bgcolor="#CCCCCC">DIRECCION</td>
-                  <td  bgcolor="#CCCCCC">FECHA</td>
-                  <td  bgcolor="#CCCCCC">ESTADO CIVIL</td>
                   <td  bgcolor="#CCCCCC">TELEFONO</td>
-                  <td  bgcolor="#CCCCCC">NIVEL ACADEMICO</td>
                   <td  bgcolor="#CCCCCC">REPORTE</td>
               </tr>
           <?php
@@ -88,23 +84,14 @@ $conexion=conectar();
             $puesto=$filas['puesto'];
             $nombre=$filas['nombre'];
             $email=$filas['email'];
-            $direccion=$filas['direccion'];
-            $fecha=$filas['fecha'];
-            $estadocivil=$filas['estadocivil'];
             $telefono=$filas['telefono'];
-            $nivelacademico=$filas['nivelacademico'];
             ?>
             <tr>
                 <td><?php echo $clave ?></td>
                 <td><?php echo $puesto ?></td>
                 <td><?php echo $nombre ?></td>
                 <td><?php echo $email ?></td>
-                <td align="center"><?php echo $direccion ?></td>
-                <td align="center"><?php echo $fecha ?></td>
-                <td align="center"><?php echo $estadocivil ?></td>
-                <td align="center"><?php echo $telefono ?></td>
-                <td align="center"><?php echo $nivelacademico ?></td>
-                
+                <td align="center"><?php echo $telefono ?></td>               
                 <!-- <td align="center">    
                 <form action="transaccion2.php" method="post" name="editar">
                     <input name="clave" type="hidden" value="<?php echo $clave ?>" />
@@ -134,9 +121,7 @@ $conexion=conectar();
           </div>
 
           <div class="form-group">
-          <div class="col-md-offset-2 col-md-8">
-          <input type="submit" id="insertar" value="GUARDAR" name="guardar" class="btn btn-theme btn-lg btn-block">
-                    <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">  
+          <div class="col-md-offset-2 col-md-8"> 
           <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
           </div>
           </div>
