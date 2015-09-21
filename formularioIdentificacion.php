@@ -14,21 +14,22 @@ $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $nivelacademico=$_POST['nivelacademico'];
 
- {
-    if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
+ if(isset($_POST['guardar']))
     {
-        echo "<script language='javascript'>alert('Por favor selecciona una imagen.')</script>";
+        if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
+        {
+            echo "Por favor selecciona una imagen.";
+        }
+        else
+        {
+            $image= addslashes($_FILES['image']['tmp_name']);
+            $name= addslashes($_FILES['image']['name']);
+            $image= file_get_contents($image);
+            $image= base64_encode($image);
+            require("registro.php");
+            saveimage($name,$image);
+        }
     }
-    else
-    {
-        $image = addslashes($_FILES['image']['tmp_name']);
-        $name = addslashes($_FILES['image']['name']);
-        $image = file_get_contents($image);
-        $image = base64_encode($image);
-        require("registro.php");
-        saveimage($name,$image);
-    }
-}
 
 function saveimage($name,$image)
 {
