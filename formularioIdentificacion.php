@@ -17,7 +17,7 @@ $nivelacademico=$_POST['nivelacademico'];
  {
     if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
     {
-        echo "Por favor selecciona una imagen.";
+        echo "<script language='javascript'>alert('Por favor selecciona una imagen.')</script>";
     }
     else
     {
