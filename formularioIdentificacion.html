@@ -57,41 +57,40 @@
 
 	  			<div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioIdentificacion.php" method="post" class="form-horizontal" role="form">
+				<form action="formularioIdentificacion.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <label>Clave RFC: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu RFC" name="clave" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <label>Puesto a cubrir: </label>
-					  <select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" required>
-					  	<option selected value="">Seleccionar puesto</option>
-					  	<option value="Administrativo">Administrativo</option>
-					  	<option value="Escolta">Escolta</option>
-					  	<option value="Jefe de servicio">Jefe de servicio</option>
-					  	<option value="Jefe de turno">Jefe de turno</option>
-                        <option value="Guardia">Guardia</option>
-                        <option value="Supervisores">Supervisores</option>
-                      </select>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Nombres" name="nombre" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Primer Apellido" name="primerApellido" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Segundo Apellido" name="segundoApellido" required>
-					</div>
-				  </div>
-				  
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-						<div id="locationField">
-							<input id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" type="text" name="direccion"></input>
+						<div class="col-md-offset-2 col-md-8">
+						  <label>Clave RFC: </label>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu RFC" name="clave" required>
 						</div>
-						    <table id="address">
+				    </div>
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+						  <label>Puesto a cubrir: </label>
+						  <select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" required>
+						  	<option selected value="">Seleccionar puesto</option>
+						  	<option value="Administrativo">Administrativo</option>
+						  	<option value="Escolta">Escolta</option>
+						  	<option value="Jefe de servicio">Jefe de servicio</option>
+						  	<option value="Jefe de turno">Jefe de turno</option>
+	                        <option value="Guardia">Guardia</option>
+	                        <option value="Supervisores">Supervisores</option>
+	                      </select>
+						</div>
+					</div>
+				    <div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+						  <input type="text" class="form-control" id="inputClave" placeholder="Nombres" name="nombre" required>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Primer Apellido" name="primerApellido" required>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Segundo Apellido" name="segundoApellido" required>
+						</div>
+				    </div>
+				  
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+							<div id="locationField">
+								<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion"></input>
+							</div>
 						        <label>Dirección</label>
 						        <input class="field" id="street_number" disabled="true"></input>
 						        <input class="field" id="route" disabled="true"></input>
@@ -103,14 +102,13 @@
 						        <input class="field" id="postal_code" disabled="true"></input>
 						      	<label>Pais</label>
 						      	<input class="field" id="country" disabled="true"></input>
-						    </table>
+						</div>
 					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de nacimiento" name="fecha" required>
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de nacimiento" name="fecha" required>
+						</div>
 					</div>
-				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
@@ -154,7 +152,7 @@
 
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					<input type="submit" id="insertar" value="SIGUIENTE.." name="guardar" class="btn btn-theme btn-lg btn-block">
+					<input type="submit" id="insertar" value="SIGUIENTE.." name="sumit" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">	
 					<button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
 					</div>

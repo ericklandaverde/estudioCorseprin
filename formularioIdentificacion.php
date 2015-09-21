@@ -14,7 +14,7 @@ $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $nivelacademico=$_POST['nivelacademico'];
 
- if(isset($_POST['image']))
+ if(isset($_POST['sumit']))
     {
         if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
         {
