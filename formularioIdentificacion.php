@@ -14,6 +14,36 @@ $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $nivelacademico=$_POST['nivelacademico'];
 
+ {
+    if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
+    {
+        echo "Por favor selecciona una imagen.";
+    }
+    else
+    {
+        $image = addslashes($_FILES['image']['tmp_name']);
+        $name = addslashes($_FILES['image']['name']);
+        $image = file_get_contents($image);
+        $image = base64_encode($image);
+        require("registro.php");
+        saveimage($name,$image);
+    }
+}
+
+function saveimage($name,$image)
+{
+    $qry="insert into identificacion (name,image) values ('$name','$image')";
+    $result=mysql_query($qry,$con);
+    if($result)
+    {
+        echo"<script language='javascript'>alert('Imagen guardada.')</script>";
+    }
+    else
+    {
+    	echo"<script language='javascript'>alert('Imagen no guardada.')</script>";
+    }
+}
+
 /*$conexionsql=mssql_connect() or
   die("Error de conexión.");
 mssql_select_db( 'examen') or
