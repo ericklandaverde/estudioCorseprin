@@ -5,7 +5,7 @@ $conexion=conectar();
 
 $clave=$_POST['clave'];
 $puesto=$_POST['puesto'];
-$nombre=$_POST['nombre'];
+$nombre=$_POST['primerApellido']+" "+$_POST['segundoApellido']+" "+$_POST['nombre'];
 $direccion=$_POST['direccion'];
 $fecha=$_POST['fecha'];
 $edad=$_POST['edad'];
