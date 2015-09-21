@@ -18,7 +18,7 @@ $nivelacademico=$_POST['nivelacademico'];
     {
         if(getimagesize($_FILES['image']['tmp_name']) == FALSE)
         {
-            echo "Por favor selecciona una imagen.";
+            echo"<script language='javascript'>alert('Por favor selecciona una imagen.')</script>";
         }
         else
         {
@@ -26,7 +26,6 @@ $nivelacademico=$_POST['nivelacademico'];
             $name= addslashes($_FILES['image']['name']);
             $image= file_get_contents($image);
             $image= base64_encode($image);
-            require("registro.php");
             saveimage($name,$image);
         }
     }
@@ -58,19 +57,11 @@ values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil'
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
-echo"
-<script language='javascript'>
-alert('ERROR AL GUARDAR DATOS, REVISA TUS DATOS')
-window.location='formularioIdentificacion.html'
-</script>";
+echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS, REVISA TUS DATOS')window.location='formularioIdentificacion.html'</script>";
 exit();
 }
 else
 {
-echo"
-<script language='javascript'>
-alert('DATOS GUARDADOS CORRECTAMENTE')
-window.location='formularioDocumentos.html'
-</script>";
+echo"<script language='javascript'>alert('DATOS GUARDADOS CORRECTAMENTE')window.location='formularioDocumentos.html'</script>";
 }
 ?>
