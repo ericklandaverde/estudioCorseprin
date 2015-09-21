@@ -10,7 +10,7 @@
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=estudiocosrseprin=true&libraries=places&callback=initAutocomplete" async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&signed_in=true&libraries=places&callback=initAutocomplete"async defer></script>
    </head>
 
   <body>
@@ -61,32 +61,36 @@
 				    <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Clave CURP: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu clave CURP" name="clave" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu RFC" name="clave" required>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Puesto a cubrir: </label>
 					  <select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" required>
-					  	<option selected value="#">Seleccionar puesto</option>
-                        <option value="Primaria">Puesto Uno </option>
-                        <option value="Primaria">Puesto Uno </option>
-                        <option value="Primaria">Puesto Uno </option>
+					  	<option selected value="">Seleccionar puesto</option>
+					  	<option value="Administrativo">Administrativo</option>
+					  	<option value="Escolta">Escolta</option>
+					  	<option value="Jefe de servicio">Jefe de servicio</option>
+					  	<option value="Jefe de turno">Jefe de turno</option>
+                        <option value="Guardia">Guardia</option>
+                        <option value="Supervisores">Supervisores</option>
                       </select>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="NombreS" name="nombre" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Primer Apellido" name="nombre" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Segundo Apellido" name="nombre" required>
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 							<div id="locationField">
-							      <input id="autocomplete" placeholder="Enter your address"
-							             onFocus="geolocate()" type="text"></input>
-							    </div>
-
+							      <input id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" type="text"></input>
+							 </div>
 							    <table id="address">
 							      <tr>
 							        <td class="label">Street address</td>
@@ -114,7 +118,6 @@
 							              id="country" disabled="true"></input></td>
 							      </tr>
 							    </table>
-							</div>
 					</div>
 				  </div>
 				  <div class="form-group">
