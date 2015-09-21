@@ -68,8 +68,8 @@ $conexion=conectar();
                   <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                   <td  bgcolor="#CCCCCC">PUESTO</td>
                   <td  bgcolor="#CCCCCC">NOMBRE</td>
-                  <td  bgcolor="#CCCCCC">EMAIL</td>
                   <td  bgcolor="#CCCCCC">TELEFONO</td>
+                  <td  bgcolor="#CCCCCC">EMAIL</td>
                   <td  bgcolor="#CCCCCC">REPORTE</td>
               </tr>
           <?php
@@ -83,15 +83,15 @@ $conexion=conectar();
             $clave=$filas['clave'];
             $puesto=$filas['puesto'];
             $nombre=$filas['nombre'];
-            $email=$filas['email'];
             $telefono=$filas['telefono'];
+            $email=$filas['email'];
             ?>
             <tr>
                 <td><?php echo $clave ?></td>
                 <td><?php echo $puesto ?></td>
                 <td><?php echo $nombre ?></td>
-                <td><?php echo $email ?></td>
-                <td align="center"><?php echo $telefono ?></td>               
+                <td><?php echo $telefono ?></td>
+                <td><?php echo $email ?></td>               
                 <!-- <td align="center">    
                 <form action="transaccion2.php" method="post" name="editar">
                     <input name="clave" type="hidden" value="<?php echo $clave ?>" />

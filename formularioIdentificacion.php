@@ -5,12 +5,13 @@ $conexion=conectar();
 
 $clave=$_POST['clave'];
 $puesto=$_POST['puesto'];
-$nombre=$_POST['primerApellido']+$_POST['segundoApellido']+$_POST['nombre'];
+$nombre=$_POST['nombre'];
 $direccion=$_POST['direccion'];
 $fecha=$_POST['fecha'];
 $edad=$_POST['edad'];
 $estadocivil=$_POST['estadocivil'];
 $telefono=$_POST['telefono'];
+$email=$_POST['email'];
 $nivelacademico=$_POST['nivelacademico'];
 
 /*$conexionsql=mssql_connect() or
@@ -21,8 +22,8 @@ mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario
   die("Error SQL");
 mssql_close($conexionsql);*/
 
-$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, nivelacademico) 
-values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$nivelacademico')";
+$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, emailnivelacademico) 
+values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
