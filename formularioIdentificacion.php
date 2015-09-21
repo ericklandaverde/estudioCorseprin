@@ -27,11 +27,19 @@ values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil'
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
-echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS')window.location='formularioIdentificacion.html'</script>";
+echo"
+<script language='javascript'>
+alert('ERROR AL GUARDAR DATOS, PROBABLE CLAVE REPETIDA')
+window.location='formularioDocumentos.html'
+</script>";
 exit();
 }
 else
 {
-echo"<script language='javascript'>alert('DATOS GUARDADOS CORRECTAMENTE')window.location='formularioDocumentos.html'</script>";
+echo"
+<script language='javascript'>
+alert('DATOS GUARDADOS CORRECTAMENTE')
+window.location='formularioLaboral.html'
+</script>";
 }
 ?>
