@@ -48,51 +48,36 @@
 			  </div>
 
 	  		<div class="row">
-
 	  			<div class="col-md-offset-1 col-md-10">
+					<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
+					  <div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
+							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="relacion" required>
+							  	<option selected value="">Seleccione relacion.</option>
+							  	<option value="Amigo">Amigo</option>
+							  	<option value="Familiar">Familiar</option>
+							  	<option value="Antiguo Jefe">Antiguo Jefe</option>
+							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
+		                    </select>
+							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempo" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
+							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="Comentario" required>
+						</div>
+					  </div>
 
-				<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required>	
-					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimo" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
-					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad" name="puesto" required>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="fechaIngreso" required>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="fechaBaja" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="puestoJefe" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					<input type="submit" id="insertar" value="GUARDAR" name="guardar" class="btn btn-theme btn-lg btn-block">
-                    <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">	
-					</div>
-				  </div>
-				</form>
-	
-	  			</div>
-			
-				
-	  		</div>
+					  <div class="form-group">
+						<div class="col-md-offset-2 col-md-8">
+						<input type="submit" id="insertar" value="SIGUIENTE" name="guardar" class="btn btn-theme btn-lg btn-block">
+	                    <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">	
+						</div>
+					  </div>
+					</form>
+	            </div>
+		    </div>
+
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
