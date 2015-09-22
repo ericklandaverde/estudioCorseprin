@@ -41,7 +41,7 @@
 				  <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
-					 <p>HISTORIAL LABORAL</p>
+					 <p>REFERENCIAS PERSONALES</p>
 					 <p>CANDIDATO: </p>
 					</div>
 				  </div>
@@ -51,7 +51,7 @@
 	  			<div class="col-md-offset-1 col-md-10">
 					<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
 					  <div class="form-group">
-						<div class="col-md-offset-2 col-md-8">
+						<div id="capa" class="col-md-offset-2 col-md-8">
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
 							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
 							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="relacion" required>
@@ -65,7 +65,15 @@
 							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="Comentario" required>
+							<label for="texto">Texto:</label>
+							<input type="text" id="texto" size=40/>
 							<input type="button" onClick="addElement(getElementById('texto').value);" value="Añadir otra referencia"/>
+							 <script type="text/javascript"> 
+							 var capa = document.getElementById("capa");
+							 var h1 = document.createElement("h1");
+							 h1.innerHTML = texto;
+							 capa.appendChild(h1);
+							 </script>
 						</div>
 					  </div>
 
