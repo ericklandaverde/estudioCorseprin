@@ -141,7 +141,6 @@
 					  </div>
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
-							<label>Ingresos: </label>
                             <table>
                             	<tr>
                             		<td><label>Resumen</label></td>
@@ -165,7 +164,64 @@
                             </table>
 						</div>
 					  </div>
-
+					  <div id="Credito"class="form-group">
+						<div id="capa" class="col-md-offset-2 col-md-8">
+                            <table>
+                            	<tr>
+                            		<td><label>CREDITOS</label></td>
+                            	</tr>
+                            	<tr>							
+                            	 <td><label>Concepto</label></td>
+							     <td><label>Mensualidad</label></td>
+							     <td><label>Plazo</label></td>
+							     <td><label>Saldo</label></td>
+                            	</tr>
+                            	<tr>							
+                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="persona" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="fuente" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="monto" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            	<tr>							
+                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="persona" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="fuente" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="monto" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            	<tr>
+                            		<td><label>SEGURO</label></td>
+                            	</tr>
+                            	<tr>
+                            		<td><label>De vida: </label></td>
+                            		<td><input type="radio" name="seguroVida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+                            		<td><input type="radio" name="seguroVida" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+                            		<td><label>Monto Mensual: </label></td>
+                            		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            	<tr>
+                            		<td><label>De gastos medicos mayores: </label></td>
+                            		<td><input type="radio" name="seguroVidaMedicos" value="Si" placeholder="Selecciona una opcion"  required>Si</td>
+                            		<td><input type="radio" name="seguroVidaMedicos" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+                            		<td><label>Monto Mensual: </label></td>
+                            		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            	<tr>
+                            		<td><label>De automovil: </label></td>
+                            		<td><input type="radio" name="seguroAutomovil" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+                            		<td><input type="radio" name="seguroAutomovil" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+                            		<td><label>Monto Mensual: </label></td>
+                            		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            	<tr>
+                            		<td><label>Contra accidentes: </label></td>
+                            		<td><input type="radio" name="seguroAccidentes" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+                            		<td><input type="radio" name="seguroAccidentes" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+                            		<td><label>Monto Mensual: </label></td>
+                            		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+                            	</tr>
+                            </table>
+						</div>
+					  </div>
 					  <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
