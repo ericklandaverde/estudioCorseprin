@@ -30,7 +30,7 @@
               $('#load').hide();
 
               var ok = '<p id="alert" class="alert alert-success" align="left"><b>¡Bienvenido!, en unos segundos se redireccionara</b></p>';
-              setTimeout('window.location.href="../Administrador.php"', 1500);
+              setTimeout('window.location.href="../consultas.php"', 1500);
 
 
               $('.login-actions').before(ok);
@@ -65,7 +65,7 @@
 			</a>
 			
 			<a class="brand" href="index.html">
-				Panel de Administrador			
+				Panel de Administrador CORSEPRIN			
 			</a>		
 			
 			<div class="nav-collapse">
