@@ -1,12 +1,10 @@
 <?php
 session_start();
 	require_once('db.php');
-
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-
-	if($result = mysql_query('SELECT id, nombre, password, email FROM usuarios WHERE email=\''.$email.'\'')){
-		$row = mysql_fetch_array($result);
+	if($result = mysqli_query($conexion,'SELECT id, nombre, password, email FROM usuarios WHERE email=\''.$email.'\'')){
+		$row = mysqli_fetch_array($result);
 		if($row["password"] == $password){
 			$_SESSION['usuario'] = $result;
 			$_SESSION['id']=$row["id"];
