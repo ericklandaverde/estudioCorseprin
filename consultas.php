@@ -59,7 +59,7 @@ $conexion=conectar();
 
           <div class="col-md-offset-1 col-md-10">
 
-        <form action="formularioIdentificacion.php" method="post" class="form-horizontal" role="form">
+        <form action="" method="post" class="form-horizontal" role="form">
           <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
