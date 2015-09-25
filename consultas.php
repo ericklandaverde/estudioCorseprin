@@ -105,7 +105,7 @@ $conexion=conectar();
                   </td> -->
 
                   <td align="center">
-                    <form action="formato.php" method="post" name="reporte">
+                    <form action="reporteCandidato.php" method="post" name="reporte">
                     <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                     <input type="submit" value="Generar" alt="cambio" title="Generar"/>
                     </form>
