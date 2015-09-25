@@ -13,7 +13,7 @@ function Header()
     // Movernos a la derecha
     $this->Cell(80);
     // Título
-    $this->Cell(30,10,'Title',1,0,'C');
+    $this->Cell(30,10,'Title del documento',1,0,'C');
     // Salto de línea
     $this->Ln(20);
 }
@@ -26,7 +26,7 @@ function Footer()
     // Arial italic 8
     $this->SetFont('Arial','I',8);
     // Número de página
-    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+    $this->Cell(0,10,'Pagina '.$this->PageNo().'/{nb}',0,0,'C');
 }
 }
 // Creación del objeto de la clase heredada
@@ -34,7 +34,5 @@ $pdf = new PDF();
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Times','',12);
-for($i=1;$i<=40;$i++)
-    $pdf->Cell(0,10,'Imprimiendo línea número '.$i,0,1);
 $pdf->Output();
 ?>
