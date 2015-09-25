@@ -39,10 +39,11 @@ class PDF extends FPDF
     }
 }
 
-// Creación del objeto de la clase heredada
-$pdf = new PDF();
-$pdf->AliasNbPages();
-$pdf->AddPage();
-$pdf->SetFont('Times','',12);
-$pdf->Output();
+        // Creación del objeto de la clase heredada
+        $pdf = new PDF();
+        $pdf->AliasNbPages();
+        $pdf->AddPage();
+        $pdf->SetFont('Times','',12);
+        $this->Cell(0,0,'Aqui empiezo a escbribir',1,0,'C');
+        $pdf->Output();
 ?>
