@@ -12,7 +12,7 @@ class PDF extends FPDF
         // Arial bold 15
         $this->SetFont('Arial','B',15);
         // Movernos a la derecha
-        $this->Cell(1);
+        $this->Cell(33);
         // Título
         //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
         //Bordes(0: sin borde 1: marco)
