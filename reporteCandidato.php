@@ -22,7 +22,7 @@ class PDF extends FPDF
         C: centro
         R: alineación derecha*/
 
-        $this->Cell(30,0,'Title del documento',1,0,'C');
+        $this->Cell(30,10,'Title del documento',1,0,'C',true);
         // Salto de línea
         $this->Ln(20);
     }
