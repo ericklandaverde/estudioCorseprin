@@ -17,7 +17,7 @@ $filas = mysqli_fetch_array($candidato);
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
-$pdf->Image('imagenes/dgeti.jpg' , 10 ,8, 10 , 13,'JPG');
+$pdf->Image('imagenes/logo.png' , 10 ,8, 10 , 13,'PNG');
 //-------------------------------------------------------------------------------------------------------------------------------------------
 class PDF extends FPDF
 {
