@@ -7,13 +7,22 @@ class PDF extends FPDF
     function Header()
     {
         // Logo
+        //(Imagen,x,y,Ancho,Alto,Type,Link)
         $this->Image('imagenes/logo.png',0,0,33);
         // Arial bold 15
         $this->SetFont('Arial','B',15);
         // Movernos a la derecha
         $this->Cell(80);
         // Título
-        $this->Cell(30,10,'Title del documento',1,0,'C');
+        //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
+        //Bordes(0: sin borde 1: marco)
+        //Posicion (0: a la derecha 1: al comienzo de la siguiente línea 2: debajo)
+        /*Align
+        L o una cadena vacia: alineación izquierda (valor por defecto)
+        C: centro
+        R: alineación derecha*/
+
+        $this->Cell(30,0,'Title del documento',1,0,'C');
         // Salto de línea
         $this->Ln(20);
     }
