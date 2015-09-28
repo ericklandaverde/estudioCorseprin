@@ -1,11 +1,46 @@
 <?php
-require('conexion.php');
-$conexion=conectar();
+	include('conexion.php');
+	$conexion=conectar();
 
-$num= $_POST['clave'];
-$strConsulta = "SELECT * FROM identificacion where clave = '$num'";
-$alumno = mysqli_query($conexion,$strConsulta);
-$fila = mysqli_fetch_array($alumno);
+	$clave=$_POST['clave'];
+	$puesto=$_POST['puesto'];
+	$nombre=$_POST['nombre'];
+	$direccion=$_POST['direccion'];
+	$fecha=$_POST['fecha'];
+	$edad=$_POST['edad'];
+	$estadocivil=$_POST['estadocivil'];
+	$telefono=$_POST['telefono'];
+	$email=$_POST['email'];
+	$nivelacademico=$_POST['nivelacademico'];
+
+	/*$conexionsql=mssql_connect() or
+	  die("Error de conexión.");
+	mssql_select_db( 'examen') or
+	  die("Error de selección de base de datos.");
+	mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario_base) values('$clave','$nombre','$email','$empresa','$ciudad','$salario'") or
+	  die("Error SQL");
+	mssql_close($conexionsql);*/
+
+	$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$registro=mysqli_query($conexion,$sql);
+	if(!$registro)
+	{
+	echo"
+	<script language='javascript'>
+	alert('ERROR AL GUARDAR DATOS')
+	window.location='formularioDocumentos.html'
+	</script>";
+	exit();
+	}
+	else
+	{
+	echo"
+	<script language='javascript'>
+	alert('DATOS GUARDADOS CORRECTAMENTE')
+	window.location='formularioLaboral.html'
+	</script>";
+	}
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +77,7 @@ $fila = mysqli_fetch_array($alumno);
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
-					 <p>CANDIDATO:</p>
+					 <p>CANDIDATO: <?php echo $clave ?></p>
 						 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.html">Atras </a></p>
 						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.html">Adelante </a></p>
 					</div>
@@ -58,7 +93,7 @@ $fila = mysqli_fetch_array($alumno);
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Actas de registro civil: </label>
 					  <label>Nacimiento:              </label>
-					    <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="Aqui va el RFC">
+					    <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value={'<?php echo $clave ?>'}>
 					    <input type="radio" name="nacimiento" value="Si" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="No" placeholder="Selecciona una opcion" required>No
 					</div>
