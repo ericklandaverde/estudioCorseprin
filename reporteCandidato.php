@@ -8,11 +8,9 @@ class PDF extends FPDF
     {
         // Logo
         //(Imagen,x,y,Ancho,Alto,Type,Link)
-        $this->Image('imagenes/logo.png',0,0,33);
+        $this->Image('imagenes/logo.png',10,10,23);
         // Arial bold 15
-        $this->SetFont('Arial','B',15);
-        // Movernos a la derecha
-        $this->Cell(150);
+        $this->SetFont('Arial','B',9);
         // Título
         //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
         //Bordes(0: sin borde 1: marco)
@@ -21,10 +19,35 @@ class PDF extends FPDF
         L o una cadena vacia: alineación izquierda (valor por defecto)
         C: centro
         R: alineación derecha*/
-
-        $this->Cell(30,2,'Title del documento',1,0,'C');
-        // Salto de línea
-        $this->Ln(20);
+        $this->Cell(0,0,'',1,0,'C');
+        $this->Ln(4);
+        $this->Cell(0,0,'Clave: FO-CH-027',0,0,'R');
+        $this->Ln(4);
+        $this->Cell(0,0,'Revicion 02',0,0,'R');
+        $this->Ln(4);
+        $this->SetFont('Arial','B',11);
+        $this->Cell(0,0,'ESTUDIO SOCIOECONOMICO',0,0,'C');
+        $this->Ln(3);
+        $this->SetFont('Arial','B',9);
+        $this->Cell(0,0,'Fecha:'.date('d/m/Y').'',0,0,'R');
+        $this->Ln(3);
+        $this->Cell(0,0,'Pagina '.$this->PageNo().'/{nb}',0,0,'R');
+        $this->Ln(3);
+    }
+        // Tabla simple
+    function BasicTable($header, $data)
+    {
+        // Cabecera
+        foreach($header as $col)
+            $this->Cell(40,7,$col,1);
+        $this->Ln();
+        // Datos
+        foreach($data as $row)
+        {
+            foreach($row as $col)
+                $this->Cell(40,6,$col,1);
+            $this->Ln();
+        }
     }
 
     // Pie de página
@@ -33,9 +56,11 @@ class PDF extends FPDF
         // Posición: a 1,5 cm del final
         $this->SetY(-15);
         // Arial italic 8
-        $this->SetFont('Arial','I',8);
+        $this->SetFont('Arial','B',8);
         // Número de página
-        $this->Cell(0,10,'Pagina '.$this->PageNo().'/{nb}',0,0,'C');
+        $this->Cell(0,0,'Pagina '.$this->PageNo().'/{nb}',0,0,'C');
+        $this->SetY(-10);
+        $this->Cell(0,0,utf8_decode('Se prohíbe la reproducción total o parcial del presente documento sin la autorización correspondiente.'),0,0,'C');
     }
 }
 
@@ -45,5 +70,9 @@ class PDF extends FPDF
         $pdf->AddPage();
         $pdf->SetFont('Times','',12);
         $pdf->Cell(0,0,'',1,0,'C');
+        $pdf->Ln(3);
+        //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
+        $pdf->MultiCell(100,8,'Elemento',1,'C');
+        $pdf->MultiCell(100,10,'',1,'C');
         $pdf->Output();
 ?>

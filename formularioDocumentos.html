@@ -1,3 +1,13 @@
+<?php
+require('conexion.php');
+$conexion=conectar();
+
+$num= $_POST['clave'];
+$strConsulta = "SELECT * FROM identificacion where clave = '$num'";
+$alumno = mysqli_query($conexion,$strConsulta);
+$fila = mysqli_fetch_array($alumno);
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,7 +42,7 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p>REVISION DE DOCUMENTOS</p>
-					 <p>CANDIDATO: </p>
+					 <p>CANDIDATO: <label><?php$fila['clave']?></label></p>
 					</div>
 				  </div>
 			  </div>
@@ -46,6 +56,7 @@
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Actas de registro civil: </label>
 					  <label>Nacimiento:              </label>
+					    <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value=<?php$fila['clave']?>>
 					    <input type="radio" name="nacimiento" value="Si" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="No" placeholder="Selecciona una opcion" required>No
 					</div>
