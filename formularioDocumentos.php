@@ -21,7 +21,7 @@
 	  die("Error SQL");
 	mssql_close($conexionsql);*/
 
-	$sql="insert identificacion(clave, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
 	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
