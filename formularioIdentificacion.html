@@ -13,8 +13,8 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXvjidayUWJM8AZxrVmewY0lMMvppK4aQ&signed_in=true&libraries=places&callback=initAutocomplete"async defer></script>
 	<script type="text/javascript">
 		function upperCase() {
-		   var x=document.getElementById("fname").value
-		   document.getElementById("fname").value=x.toUpperCase()
+		   var x=document.getElementById("formulario").value
+		   document.getElementById("formulario").value=x.toUpperCase()
 		}
     </script>
     </head>
@@ -55,7 +55,7 @@
 
 	  			<div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioIdentificacion.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+				<form action="formularioIdentificacion.php" id="formulario" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <label>Clave RFC: </label>
