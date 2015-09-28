@@ -55,17 +55,17 @@
 
 	  			<div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioIdentificacion.php" id="formulario" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+				<form action="formularioIdentificacion.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <label>Clave RFC: </label>
-						  <input type="text" class="form-control" id="inputClave" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
+						  <input type="text" class="form-control" id="formulario" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
 						</div>
 				    </div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <label>Puesto a cubrir: </label>
-						  <select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" onkeyUp="this.value.toUpperCase()"required>
+						  <select type="text" class="form-control" id="formulario" placeholder="Puesto a cubrir" name="puesto" onkeyUp="this.value.toUpperCase()"required>
 						  	<option selected value="">Seleccionar puesto</option>
 						  	<option value="Administrativo">Administrativo</option>
 						  	<option value="Escolta">Escolta</option>
@@ -78,9 +78,9 @@
 					</div>
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="text" class="form-control" id="inputClave" placeholder="Nombres" name="nombre" required>
-						  <input type="text" class="form-control" id="inputClave" placeholder="Primer Apellido" name="primerApellido" required>
-						  <input type="text" class="form-control" id="inputClave" placeholder="Segundo Apellido" name="segundoApellido" required>
+						  <input type="text" class="form-control" id="formulario" placeholder="Nombres" name="nombre" required>
+						  <input type="text" class="form-control" id="formulario" placeholder="Primer Apellido" name="primerApellido" required>
+						  <input type="text" class="form-control" id="formulario" placeholder="Segundo Apellido" name="segundoApellido" required>
 						</div>
 				    </div>
 				  
@@ -114,7 +114,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <select required type="text" class="form-control" id="inputClave" placeholder="Estado civil" name="estadocivil">
+					  <select required type="text" class="form-control" id="formulario" placeholder="Estado civil" name="estadocivil">
                         <option selected value="">Seleccionar estado civil</option>
                         <option value="Soltero">Soltero</option>
                         <option value="Casado">Casado</option>
@@ -133,7 +133,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <select type="text" class="form-control" id="inputClave" placeholder="Nivel academico" name="nivelacademico" required>
+					  <select type="text" class="form-control" id="formulario" placeholder="Nivel academico" name="nivelacademico" required>
 					  	<option selected value="#">Seleccionar Nivel academico</option>
                         <option value="Primaria">Primaria</option>
                         <option value="Secuandaria">Secundaria</option>
