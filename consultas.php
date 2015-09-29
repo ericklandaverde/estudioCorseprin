@@ -80,7 +80,7 @@ $conexion=conectar();
           }
   
           while($filas= mysqli_fetch_array($consulta)){
-            $clave=$filas['clave'];
+            $clave=$filas['id_rfc'];
             $puesto=$filas['puesto'];
             $nombre=$filas['nombre'];
             $telefono=$filas['telefono'];
