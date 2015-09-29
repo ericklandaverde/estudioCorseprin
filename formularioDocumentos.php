@@ -92,7 +92,7 @@
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Actas de registro civil: </label>
 					  <label>Nacimiento:              </label>
-					    <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 					    <input type="radio" name="nacimiento" value="Si" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="No" placeholder="Selecciona una opcion" required>No
 					</div>

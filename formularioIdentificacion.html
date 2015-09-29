@@ -87,7 +87,7 @@
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 							<div id="locationField">
-								<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion"></input>
+								<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required></input>
 							</div>
 						        <label>Dirección</label>
 						        <input id="street_number" disabled="true"></input>
@@ -144,7 +144,11 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  	<input type="file" class="form-control" id="inputClave" placeholder="Selecciona una imagen" name="image" required>
+						<label>Fotografia: </label>
+						<p>La fotografía debe ser un archivo de foto formato tipo: nombre.jpg|nombre.png 
+						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
+						sin lentes, si usa bigote debe estar recortado y con el cabello corto estilo militar.</p>
+					  	<input type="file" onBlur="LimitAttach(this,1)" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="image" required>
 					</div>
 				  </div>
 
