@@ -1,5 +1,5 @@
 <?php
-require('fpdf/fpdf.php');
+require('includes/validacionFotografia.php');
 ?>
 <!DOCTYPE html>
 <html>
