@@ -28,18 +28,11 @@ $conexion=conectar();
               <li><a href="bajas.html">Eliminar</a></li>
               <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
-            <!--  <li>
-                <a href="#">Sub Menu</a>
-                <ul class="dl-submenu">
-                  <li><a href="#">Sub menu</a></li>
-                  <li><a href="#">Sub menu</a></li>
-                </ul>
-              </li> -->
             </ul>
           </div><!-- /dl-menuwrapper -->
   </div>  
     
-   <!-- Altas -->
+   <!-- Consultas -->
     <section id="contact" class="home-section bg-white">
       <div class="container">
         <div class="row">
@@ -57,10 +50,10 @@ $conexion=conectar();
 
         <div class="row">
 
-          <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-offset-1 col-md-10">
 
         <form action="" method="post" class="form-horizontal" role="form">
-          <div class="form-group">
+        <div class="form-group">
           <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
             <table width="900" border="1">
@@ -114,8 +107,8 @@ $conexion=conectar();
          <p>
             <?php }?>
          </table>
-     </p>
- <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
+         </p>
+        <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
             
           </div>
           </div>
