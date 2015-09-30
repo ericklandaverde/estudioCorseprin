@@ -13,14 +13,6 @@
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
 
-	/*$conexionsql=mssql_connect() or
-	  die("Error de conexión.");
-	mssql_select_db( 'examen') or
-	  die("Error de selección de base de datos.");
-	mssql_query("insert empleados(clave_emp, nombre, email, empresa, ciudad, salario_base) values('$clave','$nombre','$email','$empresa','$ciudad','$salario'") or
-	  die("Error SQL");
-	mssql_close($conexionsql);*/
-
 	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
 	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
 	$registro=mysqli_query($conexion,$sql);
@@ -77,8 +69,8 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-						 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.html">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.html">Adelante </a></p>
+						 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.php">Atras </a></p>
+						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Adelante </a></p>
 					</div>
 				  </div>
 			  </div>
@@ -91,7 +83,7 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Actas de registro civil: </label>
-					  <label>Nacimiento:              </label>
+					  <label>Nacimiento: </label>
 					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 					    <input type="radio" name="nacimiento" value="Si" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="No" placeholder="Selecciona una opcion" required>No
@@ -99,14 +91,14 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Matrimonio:              </label>
+					  <label>Matrimonio: </label>
 					    <input type="radio" name="matrimonio" value="Si" placeholder="Selecciona una opcion" checked required>Si
                         <input type="radio" name="matrimonio" value="No" placeholder="Selecciona una opcion" required>No
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-						<label>Identificacion peronal  </label>
+						<label>Identificacion peronal </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
@@ -114,7 +106,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-						<label>Seguridad social  </label>
+						<label>Seguridad social </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="clave" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>

@@ -41,7 +41,7 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>DATOS DE IDENTIFICACION</label></p>
-					    <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.html">Adelante</a></p>
+					    <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Adelante</a></p>
 				     <p>ESTAS REALIZANDO EL ESTUDIO EL DIA: </p>
 	               <script>  
 	                  var f = new Date();
@@ -147,7 +147,7 @@
 						<label>Fotografia: </label>
 						<p>La fotografía debe ser un archivo de foto formato tipo: nombre.jpg|nombre.png 
 						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
-						sin lentes, si usa bigote debe estar recortado y con el cabello corto estilo militar.</p>
+						sin lentes, si usa bigote debe estar recortado y con el cabello corto.</p>
 
 					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="image" required>
 					</div>
