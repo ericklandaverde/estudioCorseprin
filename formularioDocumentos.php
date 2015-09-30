@@ -46,7 +46,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
+		alertify.alert('DATOS GUARDADOS CORRECTAMENTE');
 		</script>";
 	}
 ?>
