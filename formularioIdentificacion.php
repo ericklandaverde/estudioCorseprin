@@ -161,11 +161,9 @@
 					</div>
 				  </div>
 				</form>
-	
-	  			</div>
+	  	       </div>
+			</div>
 			
-				
-	  		</div>
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>

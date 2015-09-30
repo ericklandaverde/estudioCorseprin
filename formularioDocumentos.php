@@ -13,8 +13,13 @@
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
 
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$image= addslashes($_FILES['image']['tmp_name']);
+    $name= addslashes($_FILES['image']['name']);
+    $image= file_get_contents($image);
+    $image= base64_encode($image);
+
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, image) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$image')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
