@@ -183,7 +183,7 @@ class PDF extends FPDF
         $pdf->Cell(160, 8,$fila['puesto'], 1);
         $pdf->Ln(8);
         $pdf->Cell(30, 8, 'Imagen', 1);
-        $pdf->Image($fila['name'],10,10,-300);
+        $pdf->Image($fila['name'],0,0,0);
 
         $pdf->Ln(8);
 
