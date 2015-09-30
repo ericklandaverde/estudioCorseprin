@@ -18,19 +18,19 @@
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
-	echo"
-	<script language='javascript'>
-	alert('ERROR AL GUARDAR DATOS')
-	window.location='formularioDocumentos.html'
-	</script>";
-	exit();
-	}
-	else
-	{
-	echo"
-	<script language='javascript'>
-	alert('DATOS GUARDADOS CORRECTAMENTE')
-	</script>";
+		echo"
+		<script language='javascript'>
+		alert('ERROR AL GUARDAR DATOS')
+		window.location='formularioDocumentos.html'
+		</script>";
+		exit();
+		}
+		else
+		{
+		echo"
+		<script language='javascript'>
+		alert('DATOS GUARDADOS CORRECTAMENTE')
+		</script>";
 	}
 ?>
 
@@ -55,7 +55,7 @@
 							<li>
 								<a href="index.html">Principal</a>
 							</li>
-							<li><a href="formularioIdentificacion.html">Comenzar...</a></li>
+							<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
 						</ul>
 					</div><!-- /dl-menuwrapper -->
 	</div>	
@@ -99,11 +99,11 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Identificacion peronal </label>
-					  <label>Credencial  de elector: </label>
+					  <label style="text-align: center">Credencial  de elector: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
-					  <label>Cartilla Militar: </label>
+					  <label "text-align: center">Cartilla Militar: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
-					  <label>Licencia de conducir: </label>
+					  <label "text-align: center">Licencia de conducir: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
 					</div>
 				  </div>
