@@ -15,8 +15,8 @@
 
 	$images= addslashes($_FILES['images']['tmp_name']);
     $name= addslashes($_FILES['images']['name']);
-    $images= file_get_contents($image);
-    $images= base64_encode($image);
+    $images= file_get_contents($images);
+    $images= base64_encode($images);
 
 	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, images) 
 	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$images')";
