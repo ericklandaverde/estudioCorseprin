@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="alertify/css/alertify.min.css" />
 	<!-- include a theme -->
 	<link rel="stylesheet" href="alertify/css/themes/default.min.css" />
-
+    <script type="text/javascript"> alertify.alert("Message");</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
