@@ -12,9 +12,9 @@ $conexion=conectar();
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="color/default.css" rel="stylesheet" media="screen">
-  <script src="js/modernizr.custom.js"></script>
-   </head>
+    <link href="color/default.css" rel="stylesheet" media="screen">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
 
   <body>
   <div class="menu-area">
@@ -49,12 +49,10 @@ $conexion=conectar();
         </div>
 
         <div class="row">
-
         <div class="col-md-offset-1 col-md-10">
-
-        <form action="" method="post" class="form-horizontal" role="form">
+        
         <div class="form-group">
-          <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
             <table width="900" border="1">
               <tr align="center">
@@ -65,65 +63,56 @@ $conexion=conectar();
                   <td  bgcolor="#CCCCCC">EMAIL</td>
                   <td  bgcolor="#CCCCCC">REPORTE</td>
               </tr>
-          <?php
-          $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
-          $cantidad = mysqli_num_rows($consulta);
-            if (isset($_POST['buscar'])){
-            $consulta = mysqli_query($conexion,"SELECT * FROM identificacion where nombre like '%".$_POST['buscar']."%'");
-          }
-  
-          while($filas= mysqli_fetch_array($consulta)){
-            $clave=$filas['id_rfc'];
-            $puesto=$filas['puesto'];
-            $nombre=$filas['nombre'];
-            $telefono=$filas['telefono'];
-            $email=$filas['email'];
+            <?php
+              $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
+              $cantidad = mysqli_num_rows($consulta);
+              
+              while($filas= mysqli_fetch_array($consulta)){
+              $clave=$filas['id_rfc'];
+              $puesto=$filas['puesto'];
+              $nombre=$filas['nombre'];
+              $telefono=$filas['telefono'];
+              $email=$filas['email'];
             ?>
-            <tr>
-                <td><?php echo $clave ?></td>
-                <td><?php echo $puesto ?></td>
-                <td><?php echo $nombre ?></td>
-                <td><?php echo $telefono ?></td>
-                <td><?php echo $email ?></td>               
-                <!-- <td align="center">    
-                <form action="transaccion2.php" method="post" name="editar">
-                    <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
-                        <input name="email" type="hidden" value="<?php echo $email ?>" />
-                        <input name="empresa" type="hidden" value="<?php echo $empresa ?>" />
-                        <input name="ciudad" type="hidden" value="<?php echo $ciudad ?>" />
-                        <input name="salario" type="hidden" value="<?php echo $salario ?>" />
-                    <input type="submit" value="Aplicar" class="asdasda" alt="cambio" title="Aplicar Descuento"/>
-                    </form>
-                  </td> -->
+              <tr>
+                  <td><?php echo $clave ?></td>
+                  <td><?php echo $puesto ?></td>
+                  <td><?php echo $nombre ?></td>
+                  <td><?php echo $telefono ?></td>
+                  <td><?php echo $email ?></td>               
+                  <!-- <td align="center">    
+                  <form action="transaccion2.php" method="post" name="editar">
+                      <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                          <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
+                          <input name="email" type="hidden" value="<?php echo $email ?>" />
+                          <input name="empresa" type="hidden" value="<?php echo $empresa ?>" />
+                          <input name="ciudad" type="hidden" value="<?php echo $ciudad ?>" />
+                          <input name="salario" type="hidden" value="<?php echo $salario ?>" />
+                      <input type="submit" value="Aplicar" class="asdasda" alt="cambio" title="Aplicar Descuento"/>
+                      </form>
+                    </td> -->
 
                   <td align="center">
                     <form action="reporteCandidato.php" method="post" name="reporte">
-                    <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                    <input type="submit" value="Generar" alt="cambio" title="Generar"/>
+                      <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                      <input type="submit" value="Generar" alt="cambio" title="Generar"/>
                     </form>
                   </td>
-            </tr>
-         <p>
-            <?php }?>
-         </table>
-         </p>
-        <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-            
-          </div>
-          </div>
-
-          <div class="form-group">
-          <div class="col-md-offset-2 col-md-8"> 
-          <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
-          </div>
-          </div>
-        </form>
-  
-          </div>
-      
-        
+              </tr>
+            </table>
+            <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->    
+            </div>
         </div>
+
+         <div class="form-group">
+            <div class="col-md-offset-2 col-md-8"> 
+              <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
+            </div>
+        </div>
+
+        </div>     
+      </div>
+
       <div class="row mar-top30 ">
         <div class="col-md-offset-2 col-md-8">
           <h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
@@ -159,22 +148,22 @@ $conexion=conectar();
       </div>
     </section>  
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Copyright &copy;2015 <a href="http://corseprin.com.mx/">Corseprin </a></p>
-        </div>
-      </div>    
-    </div>  
-  </footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy;2015 <a href="http://corseprin.com.mx/">Corseprin </a></p>
+          </div>
+        </div>    
+      </div>  
+    </footer>
    
    <!-- js -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.smooth-scroll.min.js"></script>
-  <script src="js/jquery.dlmenu.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/custom.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
     
 </html>
