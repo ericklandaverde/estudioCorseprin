@@ -99,8 +99,11 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Identificacion peronal </label>
+					  <label>Credencial  de elector: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
+					  <label>Cartilla Militar: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
+					  <label>Licencia de conducir: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
 					</div>
 				  </div>
