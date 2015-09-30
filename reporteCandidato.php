@@ -1,5 +1,7 @@
 <?php
-require('fpdf/fpdf.php');
+    require('fpdf/fpdf.php');
+    require('conexion.php');
+    $conexion=conectar();
 
 class PDF extends FPDF
 {
@@ -9,47 +11,56 @@ class PDF extends FPDF
      function SetWidths($w)
     {
         //Set the array of column widths
+        //Ajuste la gama de anchos de columna
         $this->widths=$w;
     }
 
     function SetAligns($a)
     {
         //Set the array of column alignments
+        //Ajuste el conjunto de alineaciones de columnas
         $this->aligns=$a;
     }
 
     function Row($data)
     {
         //Calculate the height of the row
+        //Calcular la altura de la fila
         $nb=0;
         for($i=0;$i<count($data);$i++)
             $nb=max($nb,$this->NbLines($this->widths[$i],$data[$i]));
         $h=5*$nb;
         //Issue a page break first if needed
+        //Emitir un salto de página primera , si es necesario
         $this->CheckPageBreak($h);
         //Draw the cells of the row
+        //Dibuja las células de la fila
         for($i=0;$i<count($data);$i++)
         {
             $w=$this->widths[$i];
             $a=isset($this->aligns[$i]) ? $this->aligns[$i] : 'L';
             //Save the current position
+            //Guardar la posición actual
             $x=$this->GetX();
             $y=$this->GetY();
             //Draw the border
-            
+            //Dibuja la frontera
             $this->Rect($x,$y,$w,$h);
 
             $this->MultiCell($w,5,$data[$i],0,$a,'true');
             //Put the position to the right of the cell
+            //Ponga la posición a la derecha de la celda
             $this->SetXY($x+$w,$y);
         }
         //Go to the next line
+        //Ir a la siguiente línea
         $this->Ln($h);
     }
 
     function CheckPageBreak($h)
     {
         //If the height h would cause an overflow, add a new page immediately
+        //Si la altura h provocaría un desbordamiento, añadir una nueva página de inmediato
         if($this->GetY()+$h>$this->PageBreakTrigger)
             $this->AddPage($this->CurOrientation);
     }
@@ -57,6 +68,7 @@ class PDF extends FPDF
     function NbLines($w,$txt)
     {
         //Computes the number of lines a MultiCell of width w will take
+        //Calcula el número de líneas de un MultiCell de anchura w tendrá
         $cw=&$this->CurrentFont['cw'];
         if($w==0)
             $w=$this->w-$this->rMargin-$this->x;
