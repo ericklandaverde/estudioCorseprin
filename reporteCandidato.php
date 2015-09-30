@@ -3,6 +3,12 @@
     require('conexion.php');
     $conexion=conectar();
 
+    $num= $_POST['clave'];
+    $strConsulta = "SELECT * FROM identificacion where clave = '$num'";
+    $candidato = mysqli_query($conexion,$strConsulta);
+    $fila = mysqli_fetch_array($candidato);
+
+
 class PDF extends FPDF
 {
      var $widths;
@@ -173,5 +179,10 @@ class PDF extends FPDF
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->MultiCell(100,8,'Elemento',1,'C');
         $pdf->MultiCell(100,10,'',1,'C');
+        $pdf->Cell(30, 8, 'Puesto', 1);
+        $pdf->Cell(160, 8,$fila['puesto'], 1);
+        $pdf->Ln(8);
+
+
         $pdf->Output();
 ?>
