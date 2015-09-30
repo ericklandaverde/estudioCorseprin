@@ -1,6 +1,15 @@
-<?php
+    <!-- Librerias de alertify -->
+	<!-- include the script -->
+	<script src="alertify/alertify.min.js"></script>
+	<!-- include the style -->
+	<link rel="stylesheet" href="alertify/css/alertify.min.css" />
+	<!-- include a theme -->
+	<link rel="stylesheet" href="alertify/css/themes/default.min.css" />
+
+    <?php
 	include('conexion.php');
 	$conexion=conectar();
+    
 
 	$clave=$_POST['clave'];
 	$puesto=$_POST['puesto'];
@@ -37,7 +46,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alertify.alert('DATOS GUARDADOS CORRECTAMENTE')
+		alert('DATOS GUARDADOS CORRECTAMENTE')
 		</script>";
 	}
 ?>
