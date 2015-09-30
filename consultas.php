@@ -24,7 +24,7 @@
               <li>
                 <a href="index.html">Principal</a>
               </li>
-              <li><a href="formularioIdentificacion.html">Formulario</a></li>
+              <li><a href="formularioIdentificacion.php">Formulario</a></li>
               <li><a href="bajas.html">Eliminar</a></li>
               <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
@@ -63,17 +63,17 @@
                     <td  bgcolor="#CCCCCC">EMAIL</td>
                     <td  bgcolor="#CCCCCC">REPORTE</td>
                 </tr>
-              <?php
-                $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
-                $cantidad = mysqli_num_rows($consulta);
-                
-                while($filas= mysqli_fetch_array($consulta)){
-                $clave=$filas['id_rfc'];
-                $puesto=$filas['puesto'];
-                $nombre=$filas['nombre'];
-                $telefono=$filas['telefono'];
-                $email=$filas['email'];
-              ?>
+                <?php
+                  $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
+                  $cantidad = mysqli_num_rows($consulta);
+                  
+                  while($filas= mysqli_fetch_array($consulta)){
+                  $clave=$filas['id_rfc'];
+                  $puesto=$filas['puesto'];
+                  $nombre=$filas['nombre'];
+                  $telefono=$filas['telefono'];
+                  $email=$filas['email'];
+                ?>
                 <tr>
                     <td><?php echo $clave ?></td>
                     <td><?php echo $puesto ?></td>
