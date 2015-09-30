@@ -1,3 +1,39 @@
+<?php
+	include('conexion.php');
+	$conexion=conectar();
+
+	$clave=$_POST['clave'];
+	$puesto=$_POST['puesto'];
+	$nombre=$_POST['nombre'];
+	$direccion=$_POST['direccion'];
+	$fecha=$_POST['fecha'];
+	$edad=$_POST['edad'];
+	$estadocivil=$_POST['estadocivil'];
+	$telefono=$_POST['telefono'];
+	$email=$_POST['email'];
+	$nivelacademico=$_POST['nivelacademico'];
+
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$registro=mysqli_query($conexion,$sql);
+	if(!$registro)
+	{
+		echo"
+		<script language='javascript'>
+		alert('ERROR AL GUARDAR DATOS')
+		window.location='formularioDocumentos.html'
+		</script>";
+		exit();
+		}
+		else
+		{
+		echo"
+		<script language='javascript'>
+		alert('DATOS GUARDADOS CORRECTAMENTE')
+		</script>";
+	}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +55,7 @@
 							<li>
 								<a href="index.html">Principal</a>
 							</li>
-							<li><a href="formularioIdentificacion.html">Comenzar...</a></li>
+							<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
 						</ul>
 					</div><!-- /dl-menuwrapper -->
 	</div>	
@@ -32,7 +68,7 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>INVESTIGACION SOCIAL Y FAMILIAR</label></p>
-					 <p>CANDIDATO: </p>
+					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
 					    <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioEconomico.html">Atras </a></p>
 					</div>
 				  </div>
@@ -40,7 +76,7 @@
 
 	  		<div class="row">
 	  			<div class="col-md-offset-1 col-md-10">
-	  				<form action="formularioDocumentos.php" method="post" class="form-horizontal" role="form">
+	  				<form action="#" method="post" class="form-horizontal" role="form">
 	  					<div class="form-group">
 							<div class="col-md-offset-2 col-md-8">
 							  <label> a) Datos Familiares (Personas con las que vive) </label>

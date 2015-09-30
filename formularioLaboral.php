@@ -1,3 +1,39 @@
+<?php
+	include('conexion.php');
+	$conexion=conectar();
+
+	$clave=$_POST['clave'];
+	$puesto=$_POST['puesto'];
+	$nombre=$_POST['nombre'];
+	$direccion=$_POST['direccion'];
+	$fecha=$_POST['fecha'];
+	$edad=$_POST['edad'];
+	$estadocivil=$_POST['estadocivil'];
+	$telefono=$_POST['telefono'];
+	$email=$_POST['email'];
+	$nivelacademico=$_POST['nivelacademico'];
+
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$registro=mysqli_query($conexion,$sql);
+	if(!$registro)
+	{
+		echo"
+		<script language='javascript'>
+		alert('ERROR AL GUARDAR DATOS')
+		window.location='formularioDocumentos.html'
+		</script>";
+		exit();
+		}
+		else
+		{
+		echo"
+		<script language='javascript'>
+		alert('DATOS GUARDADOS CORRECTAMENTE')
+		</script>";
+	}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,9 +68,9 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>HISTORIAL LABORAL</label></p>
-					 <p>CANDIDATO: fff</p>
-					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.html">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.html">Adelante </a></p>
+					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
+					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Atras </a></p>
+						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.php">Adelante </a></p>
 					</div>
 				  </div>
 			  </div>
@@ -42,7 +78,7 @@
 	  		<div class="row">
                 <div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
+				<form action="formularioReferencias.php" method="post" class="form-horizontal" role="form">
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required>	
