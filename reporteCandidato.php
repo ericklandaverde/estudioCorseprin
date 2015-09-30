@@ -184,6 +184,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(30, 8, 'Imagen', 1);
         $pdf->Image($fila['name'],0,0,0);
+        $pdf->Image('imagenes/candidatos/FotoPrueba.jpg',10,10,23);
 
         $pdf->Ln(8);
 

@@ -13,10 +13,13 @@
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
 
-	$images= addslashes($_FILES['images']['tmp_name']);
-    $name= addslashes($_FILES['images']['name']);
+	// $images= addslashes($_FILES['images']['tmp_name']);
+	$archivo=$_FILES['images']['tmp_name']);
+    $destino="imagenes/candidatos/".$_FILES['images']['name'];
+    move_uploaded_file($archivo, $destino);
+/*    $name= addslashes($_FILES['images']['name']);
     $images= file_get_contents($images);
-    $images= base64_encode($images);
+    $images= base64_encode($images);*/
 
 	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, images) 
 	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$images')";
