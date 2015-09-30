@@ -54,55 +54,55 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-8">
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-            <table width="900" border="1">
-              <tr align="center">
-                  <td  bgcolor="#CCCCCC">CLAVE CURP</td>
-                  <td  bgcolor="#CCCCCC">PUESTO</td>
-                  <td  bgcolor="#CCCCCC">NOMBRE</td>
-                  <td  bgcolor="#CCCCCC">TELEFONO</td>
-                  <td  bgcolor="#CCCCCC">EMAIL</td>
-                  <td  bgcolor="#CCCCCC">REPORTE</td>
-              </tr>
-            <?php
-              $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
-              $cantidad = mysqli_num_rows($consulta);
-              
-              while($filas= mysqli_fetch_array($consulta)){
-              $clave=$filas['id_rfc'];
-              $puesto=$filas['puesto'];
-              $nombre=$filas['nombre'];
-              $telefono=$filas['telefono'];
-              $email=$filas['email'];
-            ?>
-              <tr>
-                  <td><?php echo $clave ?></td>
-                  <td><?php echo $puesto ?></td>
-                  <td><?php echo $nombre ?></td>
-                  <td><?php echo $telefono ?></td>
-                  <td><?php echo $email ?></td>               
-                  <!-- <td align="center">    
-                  <form action="transaccion2.php" method="post" name="editar">
-                      <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                          <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
-                          <input name="email" type="hidden" value="<?php echo $email ?>" />
-                          <input name="empresa" type="hidden" value="<?php echo $empresa ?>" />
-                          <input name="ciudad" type="hidden" value="<?php echo $ciudad ?>" />
-                          <input name="salario" type="hidden" value="<?php echo $salario ?>" />
-                      <input type="submit" value="Aplicar" class="asdasda" alt="cambio" title="Aplicar Descuento"/>
-                      </form>
-                    </td> -->
+              <table width="900" border="1">
+                <tr align="center">
+                    <td  bgcolor="#CCCCCC">CLAVE CURP</td>
+                    <td  bgcolor="#CCCCCC">PUESTO</td>
+                    <td  bgcolor="#CCCCCC">NOMBRE</td>
+                    <td  bgcolor="#CCCCCC">TELEFONO</td>
+                    <td  bgcolor="#CCCCCC">EMAIL</td>
+                    <td  bgcolor="#CCCCCC">REPORTE</td>
+                </tr>
+              <?php
+                $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
+                $cantidad = mysqli_num_rows($consulta);
+                
+                while($filas= mysqli_fetch_array($consulta)){
+                $clave=$filas['id_rfc'];
+                $puesto=$filas['puesto'];
+                $nombre=$filas['nombre'];
+                $telefono=$filas['telefono'];
+                $email=$filas['email'];
+              ?>
+                <tr>
+                    <td><?php echo $clave ?></td>
+                    <td><?php echo $puesto ?></td>
+                    <td><?php echo $nombre ?></td>
+                    <td><?php echo $telefono ?></td>
+                    <td><?php echo $email ?></td>               
+                    <!-- <td align="center">    
+                    <form action="transaccion2.php" method="post" name="editar">
+                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                            <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
+                            <input name="email" type="hidden" value="<?php echo $email ?>" />
+                            <input name="empresa" type="hidden" value="<?php echo $empresa ?>" />
+                            <input name="ciudad" type="hidden" value="<?php echo $ciudad ?>" />
+                            <input name="salario" type="hidden" value="<?php echo $salario ?>" />
+                        <input type="submit" value="Aplicar" class="asdasda" alt="cambio" title="Aplicar Descuento"/>
+                        </form>
+                      </td> -->
 
-                  <td align="center">
-                    <form action="reporteCandidato.php" method="post" name="reporte">
-                      <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                      <input type="submit" value="Generar" alt="cambio" title="Generar"/>
-                    </form>
-                  </td>
-              </tr>
-              <p>
-            <?php }?>
-         </table>
-         </p>
+                    <td align="center">
+                      <form action="reporteCandidato.php" method="post" name="reporte">
+                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                        <input type="submit" value="Generar" alt="cambio" title="Generar"/>
+                      </form>
+                    </td>
+                </tr>
+             <p>
+              <?php }?>
+              </table>
+            </p>
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->    
             </div>
         </div>
