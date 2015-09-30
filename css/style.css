@@ -20,6 +20,10 @@ body{
 	
 }
 
+body.form.label{
+	text-align: left;
+}
+
 h1 {
 	font-size: 36px;
 }
