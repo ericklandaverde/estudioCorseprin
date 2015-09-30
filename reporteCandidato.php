@@ -171,7 +171,7 @@ class PDF extends FPDF
 
         // Creación del objeto de la clase heredada
         $pdf = new PDF();
-        $pdf->AliasNbPages();
+        //Agregada nueva pagina.
         $pdf->AddPage();
         $pdf->SetFont('Times','',12);
         $pdf->Cell(0,0,'',1,0,'C');
@@ -187,6 +187,8 @@ class PDF extends FPDF
 
         $pdf->Ln(8);
 
-
+        //Conteo de paginas
+        $pdf->AliasNbPages();
+         //Final de pdf
         $pdf->Output();
 ?>

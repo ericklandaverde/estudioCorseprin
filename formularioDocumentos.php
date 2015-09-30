@@ -28,7 +28,7 @@
 	{
 		echo"
 		<script language='javascript'>
-		alert('ERROR AL GUARDAR DATOS')
+		alertify.alert('ERROR AL GUARDAR DATOS')
 		window.location='formularioIdentificacion.php'
 		</script>";
 		exit();
@@ -37,7 +37,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
+		alertify.alert('DATOS GUARDADOS CORRECTAMENTE')
 		</script>";
 	}
 ?>
@@ -53,6 +53,14 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
+	<!-- Librerias de alertify -->
+	<!-- include the script -->
+	<script src="alertify/alertify.min.js"></script>
+	<!-- include the style -->
+	<link rel="stylesheet" href="alertify/css/alertify.min.css" />
+	<!-- include a theme -->
+	<link rel="stylesheet" href="alertify/css/themes/default.min.css" />
+
    </head>
 
   <body>
