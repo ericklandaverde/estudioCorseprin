@@ -1,6 +1,6 @@
 <?php
-include("conexion.php");
-$conexion=conectar();
+  include("conexion.php");
+  $conexion=conectar();
 ?>
 
 <!DOCTYPE html>
@@ -99,6 +99,7 @@ $conexion=conectar();
                     </form>
                   </td>
               </tr>
+
             </table>
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->    
             </div>
@@ -165,5 +166,4 @@ $conexion=conectar();
     <script src="js/jquery.dlmenu.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
-    
 </html>
