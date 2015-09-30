@@ -13,20 +13,20 @@
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
 
-	$image= addslashes($_FILES['image']['tmp_name']);
-    $name= addslashes($_FILES['image']['name']);
-    $image= file_get_contents($image);
-    $image= base64_encode($image);
+	$images= addslashes($_FILES['images']['tmp_name']);
+    $name= addslashes($_FILES['images']['name']);
+    $images= file_get_contents($image);
+    $images= base64_encode($image);
 
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, image) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$image')";
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, images) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$images')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
 		echo"
 		<script language='javascript'>
 		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioDocumentos.html'
+		window.location='formularioIdentificacion.php'
 		</script>";
 		exit();
 		}

@@ -149,7 +149,7 @@
 						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
 						sin lentes, si usa bigote debe estar recortado y con el cabello corto.</p>
 
-					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="image" required>
+					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="images" required>
 					</div>
 				  </div>
 
@@ -163,7 +163,7 @@
 				</form>
 	  	       </div>
 			</div>
-			
+
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
