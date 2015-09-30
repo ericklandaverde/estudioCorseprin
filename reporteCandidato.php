@@ -181,6 +181,9 @@ class PDF extends FPDF
         $pdf->MultiCell(100,10,'',1,'C');
         $pdf->Cell(30, 8, 'Puesto', 1);
         $pdf->Cell(160, 8,$fila['puesto'], 1);
+        $pdf->Cell(30, 8, 'Imagen', 1);
+        $pdf->Cell(160, 8,$fila['images'], 1);
+
         $pdf->Ln(8);
 
 
