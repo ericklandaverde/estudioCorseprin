@@ -1,12 +1,11 @@
 <!-- Librerias de alertify -->
 <!-- include the script -->
-<script src="alertifyjs/alertify.min.js"></script>
+<!-- <script src="alertifyjs/alertify.min.js"></script> -->
 <!-- include the style -->
-<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
+<!-- <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" /> -->
 <!-- include a theme -->
-<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
-
-<script type="text/javascript">alertify.alert('hola fuera de body');</script>
+<!-- <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" /> -->
+<!--<script type="text/javascript">alertify.alert('hola fuera de body');</script> -->
     <?php
 	include('conexion.php');
 	$conexion=conectar();
