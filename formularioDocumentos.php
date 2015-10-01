@@ -5,7 +5,7 @@
 
 	$clave=$_POST['clave'];
 	$puesto=$_POST['puesto'];
-	$nombre=$_POST['nombre'];
+	$nombre="".$_POST['nombre']." ".$_POST['apellidoPaterno']." ".$_POST['apellidoMaterno']."";
 	$direccion=$_POST['direccion'];
 	$fecha=$_POST['fecha'];
 	$edad=$_POST['edad'];
@@ -78,8 +78,8 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-						 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.php">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Adelante </a></p>
+						 <!-- <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.php">Atras </a></p>
+						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Adelante </a></p> -->
 					</div>
 				  </div>
 			  </div>

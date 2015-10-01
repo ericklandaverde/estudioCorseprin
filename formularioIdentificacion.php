@@ -41,12 +41,12 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>DATOS DE IDENTIFICACION</label></p>
-					    <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Adelante</a></p>
+                <!-- <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Adelante</a></p> -->
 				     <p>ESTAS REALIZANDO EL ESTUDIO EL DIA: </p>
-	               <script>  
+	                 <script>  
 	                  var f = new Date();
 	                  document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-	               </script>
+	                 </script>
 					</div>
 				  </div>
 			  </div>
@@ -78,9 +78,9 @@
 					</div>
 				    <div class="form-group">
 					  <div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="formulario" placeholder="Nombres" name="nombre" onblur="upperCase()" required>
-					  <input type="text" class="form-control" id="formulario" placeholder="Primer Apellido" name="primerApellido" onblur="upperCase()" required>
-					  <input type="text" class="form-control" id="formulario" placeholder="Segundo Apellido" name="segundoApellido" onblur="upperCase()" required>
+					  <input type="text" class="form-control" id="formulario" placeholder="Nombre" name="nombre" onblur="upperCase()" required>
+					  <input type="text" class="form-control" id="formulario" placeholder="Apellido paterno" name="apellidoPaterno" onblur="upperCase()" required>
+					  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
 					  </div>
 				    </div>
 				  
