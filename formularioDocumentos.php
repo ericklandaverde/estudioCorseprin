@@ -27,21 +27,22 @@
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
-		echo
-		"<script>$(function(){
-			alertify.alert('Por favor, ingrese su usuario y contraseña')window.location='formularioIdentificacion.php;
-		})</script>";
+		echo"
+		<script language='javascript'>
+		alertify.alert('ERROR AL GUARDAR DATOS')
+		window.location='formularioIdentificacion.php'
+		</script>";
 		exit();
 		}
 		else
 		{
-		echo'
-		<script language="javascript">
-		alertify.alert("DATOS GUARDADOS CORRECTAMENTE");
-		</script>';
+		echo"
+		<script language='javascript'>
+		alertify.alert('DATOS GUARDADOS CORRECTAMENTE');
+		</script>";
 	}
 ?>
-
+<script type="text/javascript">alertify.alert('hola');</script>
 <!DOCTYPE html>
 <html>
   <head>
@@ -64,7 +65,6 @@
    </head>
 
   <body>
-  	<script type="text/javascript">alertify.alert('hola');</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
