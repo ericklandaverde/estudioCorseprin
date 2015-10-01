@@ -27,14 +27,22 @@
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
-		echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS')window.location='formularioIdentificacion.php'</script>";
+		echo"
+		<script language='javascript'>
+		alert('ERROR AL GUARDAR DATOS')
+		window.location='formularioIdentificacion.html'
+		</script>";
 		exit();
 		}
 		else
 		{
-		echo"<script language='javascript'>alert('DATOS ENVIADOS CORRECTAMENTE')window.location='formularioDocumentos.php'</script>";
+		echo"
+		<script language='javascript'>
+		alert('DATOS GUARDADOS CORRECTAMENTE')
+		</script>";
 	}
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
