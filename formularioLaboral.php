@@ -113,7 +113,7 @@
 					  <label>Jefe Inmediato</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
 					  <label>Puesto del jefe</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="puestoJefe" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto del jefe" name="puestoJefe" required>
 					  <label>Motivo de separacion</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
 					</div>
@@ -122,7 +122,7 @@
 					<div class="col-md-offset-2 col-md-8">
 					<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-                    <button type="button" onClick="window.location='formularioDocumentos.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
+                    <button type="button" onClick="window.location='formularioDocumentos.php'" class="btn btn-theme btn-lg btn-block">Regresar</button>
 					</div>
 				  </div>
 				</form>
