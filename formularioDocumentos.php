@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
 <!-- include a theme -->
 <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
-<script type="text/javascript">alertify.alert('hola');</script>
+
+<script type="text/javascript">alertify.alert('hola fuera de body');</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
@@ -64,6 +65,7 @@
    </head>
 
   <body>
+  	<script type="text/javascript">alertify.alert('hola dentro de body');</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
