@@ -12,7 +12,7 @@
 	$rfc=$_POST['rfc'];
 	$curp=$_POST['curp'];
 
-	$sql="insert identificacion(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
+	$sql="insert documentos(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
 	values('$clave','$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$rfc','$curp')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
@@ -20,7 +20,7 @@
 		echo"
 		<script language='javascript'>
 		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioDocumentos.html'
+		window.location='formularioDocumentos.php'
 		</script>";
 		exit();
 		}
