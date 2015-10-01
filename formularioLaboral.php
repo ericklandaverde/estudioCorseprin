@@ -105,7 +105,7 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="puestoJefe" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="jefePuesto" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
 					</div>
 				  </div>
