@@ -1,10 +1,10 @@
     <?php
 	include('conexion.php');
-	require_once("alertifyjs/alertify.min.js");
-	require_once("alertifyjs/css/alertify.min.css");
-	require_once("alertifyjs/css/themes/default.min.css");
+	include("alertifyjs/alertify.min.js");
+	include("alertifyjs/css/alertify.min.css");
+	include("alertifyjs/css/themes/default.min.css");
 
-     echo "<script type='text/javascript'>alertify.alert('hola fuera de body');</script>";
+     echo "<script type='text/javascript'>alert('hola fuera de body');</script>";
 	$conexion=conectar();
     
 
