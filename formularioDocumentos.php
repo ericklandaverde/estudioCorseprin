@@ -1,10 +1,5 @@
     <?php
 	include('conexion.php');
-	include("alertifyjs/alertify.min.js");
-	include("alertifyjs/css/alertify.min.css");
-	include("alertifyjs/css/themes/default.min.css");
-
-     echo "<script type='text/javascript'>alert('hola fuera de body');</script>";
 	$conexion=conectar();
     
 
@@ -28,7 +23,7 @@
     // $images= base64_encode($images);
 
 	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, images) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico','$name','$images')";
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$email','$nivelacademico','$name','$images')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
@@ -43,7 +38,8 @@
 		{
 		echo"
 		<script language='javascript'>
-		alertify.alert('DATOS GUARDADOS CORRECTAMENTE');
+		alertify.alert('DATOS ENVIADOS CORRECTAMENTE')
+		window.location='formularioDocumentos.php'
 		</script>";
 	}
 ?>
@@ -68,7 +64,15 @@
    </head>
 
   <body>
-  	<script type="text/javascript">alertify.alert('hola dentro de body');</script>
+  	<script type="text/javascript">
+  	if (!<?php echo $registro; ?>) 
+  	{
+  		alertify.alert('ERROR AL GUARDAR DATOS');
+  	    else{
+  	    alertify.alert('DATOS ENVIADOS CORRECTAMENTE');
+  	};
+  };
+  	</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
