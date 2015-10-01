@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
     <!-- include a theme -->
     <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
-    <script type="text/javascript">alert('Iniciando FormularioDocumentos');</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
@@ -90,6 +89,7 @@
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
+						<script type="text/javascript">alertify.alert('Hola');</script>
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
