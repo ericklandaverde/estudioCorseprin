@@ -13,11 +13,11 @@
 	$sueldoInicial=$_POST['sueldoInicial'];
 	$sueldoFinal=$_POST['sueldoFinal'];
 	$jefe=$_POST['jefe'];
-	$jefePuesto=$_POST['jefePuesto'];
+	$puestoJefe=$_POST['puestoJefe'];
 	$motivo=$_POST['motivo'];
 
-	$sql="insert laboral(id_rfc, ultimoEmpleo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, jefePuesto, motivo) 
-    values('$clave','$ultimoEmpleo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$jefePuesto','$motivo')";
+	$sql="insert laboral(id_rfc, ultimoEmpleo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, puestoJefe, motivo) 
+    values('$clave','$ultimoEmpleo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$puestoJefe','$motivo')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{

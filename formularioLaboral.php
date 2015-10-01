@@ -80,7 +80,7 @@
 				<form action="formularioReferencias.php" method="post" class="form-horizontal" role="form">
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					  <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 					  <label>Ultimo empleo</label>	
 					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
 					  <label>Giro</label>
