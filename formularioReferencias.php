@@ -3,7 +3,7 @@
 	$conexion=conectar();
 
 	$clave=$_POST['clave'];
-	$ultimo=$_POST['ultimo'];
+	$ultimoEmpleo=$_POST['ultimoEmpleo'];
 	$giro=$_POST['giro'];
 	$telefono=$_POST['telefono'];
 	$puesto=$_POST['puesto'];
@@ -16,15 +16,15 @@
 	$puestoJefe=$_POST['puestoJefe'];
 	$motivo=$_POST['motivo'];
 
-	$sql="insert identificacion(id_rfc, ultimo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, puestoJefe, motivo) 
-    values('$clave','$ultimo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$puestoJefe','$motivo')";
+	$sql="insert laboral(id_rfc, ultimoEmpleo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, puestoJefe, motivo) 
+    values('$clave','$ultimoEmpleo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$puestoJefe','$motivo')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
 		echo"
 		<script language='javascript'>
 		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioDocumentos.html'
+		window.location='formularioDocumentos.php'
 		</script>";
 		exit();
 		}
