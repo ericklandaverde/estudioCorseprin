@@ -1,9 +1,3 @@
-    <!-- Librerias de alertify -->
-    <script src="alertifyjs/alertify.min.js"></script>
-    <!-- include the style -->
-    <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
-    <!-- include a theme -->
-    <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
     <?php
 	include('conexion.php');
 	$conexion=conectar();
@@ -62,15 +56,16 @@
 	<script src="js/modernizr.custom.js"></script>
 	<!-- Librerias de alertify -->
 	<!-- include the script -->
-	<script src="alertify/alertify.min.js"></script>
+	<script src="alertifyjs/alertify.min.js"></script>
 	<!-- include the style -->
-	<link rel="stylesheet" href="alertify/css/alertify.min.css" />
+	<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
 	<!-- include a theme -->
-	<link rel="stylesheet" href="alertify/css/themes/default.min.css" />
+	<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
 
    </head>
 
   <body>
+  	<script type="text/javascript">alertify.alert('hola');</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
@@ -89,7 +84,6 @@
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
-						<script type="text/javascript">alertify.alert('Hola');</script>
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
