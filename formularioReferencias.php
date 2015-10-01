@@ -103,9 +103,6 @@
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 							<label>Comentarios</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="Comentario" required>
-							<script type="text/javascript"> 
-							
-							 </script>
 						</div>
 					  </div>
 
