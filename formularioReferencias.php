@@ -87,7 +87,7 @@
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
 							<label>Ocupacion:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
-							<label>Tipo de relacion;</label>
+							<label>Tipo de relacion</label>
 							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="relacion" required>
 							  	<option selected value="">Seleccione relacion.</option>
 							  	<option value="Amigo">Amigo</option>

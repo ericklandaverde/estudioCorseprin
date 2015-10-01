@@ -80,9 +80,12 @@
 				<form action="formularioReferencias.php" method="post" class="form-horizontal" role="form">
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">	
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					  <label>Ultimo empleo</label>	
 					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
+					  <label>Giro</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
+					  <label>Telefono:</label>
 					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 					</div>
 				  </div>
@@ -97,15 +100,21 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad (x numero de años)" name="antiguedad" required>
+					  <label>Antiguedad</label>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad" name="antiguedad" required>
+					  <label>Sueldo Inicial</label>
 					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="sueldoInicial" required>
+					  <label>Sueldo Final</label>
 					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="sueldoFinal" required>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
+					  <label>Jefe Inmediato</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="jefePuesto" required>
+					  <label>Puesto del jefe</label>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto" name="puestoJefe" required>
+					  <label>Motivo de separacion</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
 					</div>
 				  </div>
