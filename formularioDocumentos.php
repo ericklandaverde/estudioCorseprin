@@ -1,11 +1,10 @@
     <!-- Librerias de alertify -->
-	<!-- include the script -->
-	<script src="alertify/alertify.min.js"></script>
-	<!-- include the style -->
-	<link rel="stylesheet" href="alertify/css/alertify.min.css" />
-	<!-- include a theme -->
-	<link rel="stylesheet" href="alertify/css/themes/default.min.css" />
-    <script type="text/javascript"> alertify.alert("Message");</script>
+    <script src="alertifyjs/alertify.min.js"></script>
+    <!-- include the style -->
+    <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
+    <!-- include a theme -->
+    <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
+    <script type="text/javascript"> alertify.alert('Iniciando FormularioDocumentos');</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
