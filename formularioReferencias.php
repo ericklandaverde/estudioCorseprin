@@ -72,8 +72,8 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REFERENCIAS PERSONALES</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-					     <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioEconomico.php">Adelante </a></p>
+<!-- 					     <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Atras </a></p>
+						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioEconomico.php">Adelante </a></p> -->
 					</div>
 				  </div>
 			</div>
@@ -83,8 +83,11 @@
 					<form action="formularioEconomico.php" method="post" class="form-horizontal" role="form">
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
+							<label>Nombre:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
+							<label>Ocupacion:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
+							<label>Tipo de relacion;</label>
 							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="relacion" required>
 							  	<option selected value="">Seleccione relacion.</option>
 							  	<option value="Amigo">Amigo</option>
@@ -92,9 +95,13 @@
 							  	<option value="Antiguo Jefe">Antiguo Jefe</option>
 							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
 		                    </select>
-							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo " name="tiempo" required>
+		                    <label>Tiempo de conocerlo</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempo" required>
+							<label>Direccion</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
+							<label>Telefono</label>
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
+							<label>Comentarios</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="Comentario" required>
 							<script type="text/javascript"> 
 							
