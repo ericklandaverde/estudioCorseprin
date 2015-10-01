@@ -3,18 +3,21 @@
 	$conexion=conectar();
 
 	$clave=$_POST['clave'];
-	$puesto=$_POST['puesto'];
-	$nombre=$_POST['nombre'];
-	$direccion=$_POST['direccion'];
-	$fecha=$_POST['fecha'];
-	$edad=$_POST['edad'];
-	$estadocivil=$_POST['estadocivil'];
+	$ultimo=$_POST['ultimo'];
+	$giro=$_POST['giro'];
 	$telefono=$_POST['telefono'];
-	$email=$_POST['email'];
-	$nivelacademico=$_POST['nivelacademico'];
+	$puesto=$_POST['puesto'];
+	$fechaIngreso=$_POST['fechaIngreso'];
+	$fechaBaja=$_POST['fechaBaja'];
+	$antiguedad=$_POST['antiguedad'];
+	$sueldoInicial=$_POST['sueldoInicial'];
+	$sueldoFinal=$_POST['sueldoFinal'];
+	$jefe=$_POST['jefe'];
+	$puestoJefe=$_POST['puestoJefe'];
+	$motivo=$_POST['motivo'];
 
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$sql="insert identificacion(id_rfc, ultimo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, puestoJefe, motivo) 
+    values('$clave','$ultimo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$puestoJefe','$motivo')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{

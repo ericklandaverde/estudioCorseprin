@@ -81,7 +81,7 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">	
-					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimo" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
 					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 					</div>
@@ -97,9 +97,9 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad (x numero de años)" name="puesto" required>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="fechaIngreso" required>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="fechaBaja" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad (x numero de años)" name="antiguedad" required>
+					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="sueldoInicial" required>
+					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="sueldoFinal" required>
 					</div>
 				  </div>
 				  <div class="form-group">
