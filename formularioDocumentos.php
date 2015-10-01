@@ -43,7 +43,6 @@
 	}
 ?>
 <!DOCTYPE html>
-<script type="text/javascript">alertify.alert('hola');</script>
 <html>
   <head>
     <title>Estudio SocioEconomico</title>
@@ -65,6 +64,7 @@
    </head>
 
   <body>
+  	<script type="text/javascript">alertify.alert('hola');</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
