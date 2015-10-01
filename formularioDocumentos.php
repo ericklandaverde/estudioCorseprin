@@ -62,6 +62,13 @@
 	    <link href="css/style.css" rel="stylesheet" media="screen">
 		<link href="color/default.css" rel="stylesheet" media="screen">
 		<script src="js/modernizr.custom.js"></script>
+		<!-- Librerias de alertify -->
+		<!-- include the script -->
+		<script src="alertifyjs/alertify.min.js"></script>
+		<!-- include the style -->
+		<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
+		<!-- include a theme -->
+		<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
    </head>
 
   <body>
