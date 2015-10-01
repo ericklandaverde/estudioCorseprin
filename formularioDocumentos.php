@@ -42,8 +42,8 @@
 		</script>";
 	}
 ?>
-<script type="text/javascript">alertify.alert('hola');</script>
 <!DOCTYPE html>
+<script type="text/javascript">alertify.alert('hola');</script>
 <html>
   <head>
     <title>Estudio SocioEconomico</title>
