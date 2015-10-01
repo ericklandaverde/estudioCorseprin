@@ -87,7 +87,6 @@
 	  		<div class="row">
                <div class="col-md-offset-1 col-md-10">
 				<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
-
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Actas de registro civil: </label>
@@ -107,11 +106,11 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Identificacion peronal </label><br>
-					  <label align="letf">Credencial  de elector: </label>
+					  <label>Credencial  de elector: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
-					  <label align="letf">Cartilla Militar: </label>
+					  <label>Cartilla Militar: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
-					  <label align="letf">Licencia de conducir: </label>
+					  <label>Licencia de conducir: </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
 					</div>
 				  </div>
@@ -119,7 +118,7 @@
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="clave" value="<?php echo $clave; ?>" disabled="true" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $clave; ?>" disabled="true" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>
 					</div>
 				  </div>

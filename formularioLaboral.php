@@ -3,18 +3,17 @@
 	$conexion=conectar();
 
 	$clave=$_POST['clave'];
-	$puesto=$_POST['puesto'];
-	$nombre=$_POST['nombre'];
-	$direccion=$_POST['direccion'];
-	$fecha=$_POST['fecha'];
-	$edad=$_POST['edad'];
-	$estadocivil=$_POST['estadocivil'];
-	$telefono=$_POST['telefono'];
-	$email=$_POST['email'];
-	$nivelacademico=$_POST['nivelacademico'];
+	$nacimiento=$_POST['nacimiento'];
+	$matrimonio=$_POST['matrimonio'];
+	$documento=$_POST['documento'];
+	$folio=$_POST['folio'];
+	$vigencia=$_POST['vigencia'];
+	$imms=$_POST['imms'];
+	$rfc=$_POST['rfc'];
+	$curp=$_POST['curp'];
 
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+	$sql="insert identificacion(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
+	values('$clave','$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$rfc','$curp')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
