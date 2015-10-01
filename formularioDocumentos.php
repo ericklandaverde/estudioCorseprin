@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
     <!-- include a theme -->
     <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
-    <script type="text/javascript"> alertify.alert('Iniciando FormularioDocumentos');</script>
+    <script type="text/javascript">alert('Iniciando FormularioDocumentos');</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
