@@ -27,20 +27,12 @@
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{
-		echo"
-		<script language='javascript'>
-		alertify.alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioIdentificacion.php'
-		</script>";
+		echo"<script language='javascript'>alert('ERROR AL GUARDAR DATOS')window.location='formularioIdentificacion.php'</script>";
 		exit();
 		}
 		else
 		{
-		echo"
-		<script language='javascript'>
-		alertify.alert('DATOS ENVIADOS CORRECTAMENTE')
-		window.location='formularioDocumentos.php'
-		</script>";
+		echo"<script language='javascript'>alert('DATOS ENVIADOS CORRECTAMENTE')window.location='formularioDocumentos.php'</script>";
 	}
 ?>
 <!DOCTYPE html>
@@ -54,25 +46,9 @@
 	    <link href="css/style.css" rel="stylesheet" media="screen">
 		<link href="color/default.css" rel="stylesheet" media="screen">
 		<script src="js/modernizr.custom.js"></script>
-		<!-- Librerias de alertify -->
-		<!-- include the script -->
-		<script src="alertifyjs/alertify.min.js"></script>
-		<!-- include the style -->
-		<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
-		<!-- include a theme -->
-		<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
    </head>
 
   <body>
-  	<script type="text/javascript">
-  	if (!<?php echo $registro; ?>) 
-  	{
-  		alertify.alert('ERROR AL GUARDAR DATOS');
-  	    else{
-  	    alertify.alert('DATOS ENVIADOS CORRECTAMENTE');
-  	};
-  };
-  	</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
@@ -135,7 +111,7 @@
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="clave" value="<?php echo $clave; ?>" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="clave" value="<?php echo $clave; ?>" disabled="true" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>
 					</div>
 				  </div>
