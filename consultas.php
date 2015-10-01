@@ -51,10 +51,10 @@
         <div class="row">
         <div class="col-md-offset-1 col-md-10">
         
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-8">
+        <div>
+            <div>
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-              <table width="900" border="1">
+              <table>
                 <tr align="center">
                     <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                     <td  bgcolor="#CCCCCC">PUESTO</td>
