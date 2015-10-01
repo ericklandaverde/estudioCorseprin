@@ -68,8 +68,8 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>HISTORIAL LABORAL</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.php">Adelante </a></p>
+<!-- 					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Atras </a></p>
+						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.php">Adelante </a></p> -->
 					</div>
 				  </div>
 			  </div>
@@ -80,7 +80,7 @@
 				<form action="formularioReferencias.php" method="post" class="form-horizontal" role="form">
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Clave" name="clave" required>	
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">	
 					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimo" required>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
 					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
@@ -89,13 +89,15 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
+					  <label>Fecha de Ingreso:</label>
 					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
+					  <label>Fecha de baja:</label>
 					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad" name="puesto" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad (x numero de años)" name="puesto" required>
 					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="fechaIngreso" required>
 					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="fechaBaja" required>
 					</div>
