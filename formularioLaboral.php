@@ -91,6 +91,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
+					  <label>Puesto desempeñado:</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
 					  <label>Fecha de Ingreso:</label>
 					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
