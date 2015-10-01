@@ -1,13 +1,10 @@
-<!-- Librerias de alertify -->
-<!-- include the script -->
-<!-- <script src="alertifyjs/alertify.min.js"></script> -->
-<!-- include the style -->
-<!-- <link rel="stylesheet" href="alertifyjs/css/alertify.min.css" /> -->
-<!-- include a theme -->
-<!-- <link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" /> -->
-<!--<script type="text/javascript">alertify.alert('hola fuera de body');</script> -->
     <?php
 	include('conexion.php');
+	require_once("alertifyjs/alertify.min.js");
+	require_once("alertifyjs/css/alertify.min.css");
+	require_once("alertifyjs/css/themes/default.min.css");
+
+     echo "<script type='text/javascript'>alertify.alert('hola fuera de body');</script>";
 	$conexion=conectar();
     
 
