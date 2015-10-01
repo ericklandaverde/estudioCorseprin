@@ -1,3 +1,11 @@
+<!-- Librerias de alertify -->
+<!-- include the script -->
+<script src="alertifyjs/alertify.min.js"></script>
+<!-- include the style -->
+<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
+<!-- include a theme -->
+<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
+<script type="text/javascript">alertify.alert('hola');</script>
     <?php
 	include('conexion.php');
 	$conexion=conectar();
@@ -45,26 +53,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Estudio SocioEconomico</title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-	<link href="color/default.css" rel="stylesheet" media="screen">
-	<script src="js/modernizr.custom.js"></script>
-	<!-- Librerias de alertify -->
-	<!-- include the script -->
-	<script src="alertifyjs/alertify.min.js"></script>
-	<!-- include the style -->
-	<link rel="stylesheet" href="alertifyjs/css/alertify.min.css" />
-	<!-- include a theme -->
-	<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css" />
-
+	    <title>Estudio SocioEconomico</title>
+	    <meta charset="utf-8" />
+	    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	    <!-- css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link href="css/style.css" rel="stylesheet" media="screen">
+		<link href="color/default.css" rel="stylesheet" media="screen">
+		<script src="js/modernizr.custom.js"></script>
    </head>
 
   <body>
-  	<script type="text/javascript">alertify.alert('hola');</script>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
