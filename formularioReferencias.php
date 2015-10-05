@@ -58,7 +58,7 @@
 							<li>
 								<a href="index.html">Principal</a>
 							</li>
-							<li><a href="formularioIdentificacion.html">Comenzar...</a></li>
+							<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
 						</ul>
 					</div><!-- /dl-menuwrapper -->
 	</div>	

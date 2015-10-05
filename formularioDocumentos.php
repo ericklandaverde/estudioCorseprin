@@ -13,6 +13,7 @@
 	$telefono=$_POST['telefono'];
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
+	
 
 	// $images= addslashes($_FILES['images']['tmp_name']);
 	// $archivo=$_FILES['images']['tmp_name']);
