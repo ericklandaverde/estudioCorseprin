@@ -178,8 +178,15 @@ class PDF extends FPDF
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->MultiCell(100,8,'Elemento',1,'C');
+        $pdf->MultiCell(100,8,$fila['nombre'],1,'C');
+        $pdf->MultiCell(100,8,'GERENCIA DE CAPITAL HUMANO',1,'C');
+        $pdf->MultiCell(100,8,'SERVICIO',1,'C');
         $pdf->Ln(2);
         $pdf->Image($fila['rutaImagen']);
+        $pdf->Ln(2);
+        $pdf->Cell(0,0,'1.- DATOS DE IDENTIFICACIÓN',1,0,'C');
+        $pdf->Ln(2);
+        $pdf->MultiCell(100,8,'Puesto a cubrir: ',1,'C'); $pdf->MultiCell(100,8,$fila['puesto'],1,'C');
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
