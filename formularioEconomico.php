@@ -104,7 +104,7 @@
                             	</tr>
                             	<tr>
                             	 <td></td>
-                            	 <td></td>
+                            	 <td><input type="button" class="form-control" value="Calcular" onclick=""></td>
                             	 <td><input type="number" class="form-control" id="inputClave" placeholder="Total" name="total" required></td>
                             	</tr>
                             </table>
