@@ -14,7 +14,7 @@
     $filaD = mysqli_fetch_array($candidatoD);
 
     $numL= $_POST['clave'];
-    $strConsultaL = "SELECT * FROM documentos where id_rfc = '$numL'";
+    $strConsultaL = "SELECT * FROM laboral where id_rfc = '$numL'";
     $candidatoL = mysqli_query($conexion,$strConsultaL);
     $filaL = mysqli_fetch_array($candidatoL);
 
