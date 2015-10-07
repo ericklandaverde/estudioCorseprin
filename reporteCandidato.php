@@ -139,7 +139,7 @@ class PDF extends FPDF
         //(Imagen,x,y,Ancho,Alto,Type,Link)
         $this->Image('imagenes/logo.png',10,10,23);
         // Arial bold 15
-        $this->SetFont('Arial','B',10);
+        $this->SetFont('Courier','B',10);
         // Título
         //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
         //Bordes(0: sin borde 1: marco)
@@ -190,7 +190,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,$filaI['nombre'],1,0,'C'); $pdf->Cell(70, 8, 'GERENCIA DE CAPITAL HUMANO',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,"",1,0,'C'); $pdf->Cell(70, 8, 'SERVICIO',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,'R.F.C '.$filaI['id_rfc'].'',1,0,'C'); $pdf->Cell(70, 8, 'SERVICIO',1,0,'C');
         $pdf->Ln(9);
         $pdf->Cell(70,0,"",0,0,'L'); $pdf->Image($filaI['rutaImagen'],null,null,60,70);
         $pdf->Ln(5);
@@ -248,15 +248,15 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['domicilio'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Giro:',1,0,'C'); $pdf->Cell(80,8,'Teléfono',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Giro:',1,0,'C'); $pdf->Cell(80,8,utf8_decode('Teléfono'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['giro'],1,0,'C'); $pdf->Cell(80, 8,$filaL['telefono'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Puesto Desempeñado:',1,0,'C'); $pdf->Cell(60,8,'Fecha de Ingreso',1,0,'C'); $pdf->Cell(50,8,'Fecha de Baja',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Puesto Desempeñado:'),1,0,'C'); $pdf->Cell(60,8,'Fecha de Ingreso',1,0,'C'); $pdf->Cell(50,8,'Fecha de Baja',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['puesto'],1,0,'C'); $pdf->Cell(60,8,$filaL['fechaIngreso'],1,0,'C'); $pdf->Cell(50, 8,$filaL['fechaBaja'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Antigüedad:',1,0,'C'); $pdf->Cell(60,8,'Sueldo Inicial',1,0,'C'); $pdf->Cell(50,8,'Sueldo Final',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Antigüedad:'),1,0,'C'); $pdf->Cell(60,8,'Sueldo Inicial',1,0,'C'); $pdf->Cell(50,8,'Sueldo Final',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['antiguedad'],1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['suledoFinal'],1,0,'C');
         $pdf->Ln(8);
