@@ -264,6 +264,18 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['antiguedad'],1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInicial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['sueldoFinal'],1,0,'C');
         $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Jefe Inmediato:',1,0,'C'); $pdf->Cell(80,8,'Puesto',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['jefe'],1,0,'C'); $pdf->Cell(80, 8,$filaL['puesto'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Motivo de separación: ',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaI['motivo'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Comportamiento durante su estancia: ',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaI['motivo'],1,0,'C');
+
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
