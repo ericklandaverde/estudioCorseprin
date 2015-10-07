@@ -177,12 +177,14 @@ class PDF extends FPDF
         $pdf->Cell(0,0,'',1,0,'C');
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
-        $pdf->MultiCell(100,8,'Elemento',1,'C');
-        $pdf->MultiCell(100,8,$fila['nombre'],1,'C');
-        $pdf->MultiCell(100,8,'GERENCIA DE CAPITAL HUMANO',1,'C');
-        $pdf->MultiCell(100,8,'SERVICIO',1,'C');
+        $pdf->Cell(30, 8, 'ELEMENTO', 1);$pdf->Cell(30, 8, 'Fecha'.date('d/m/Y').'', 1);
+        $pdf->Ln(8);
+        $pdf->Cell(30, 8,$fila['nombre'], 1); $pdf->Cell(160, 8,$fila['nombre'], 1);
+        $pdf->Cell(30, 8, 'GERENCIA DE CAPITAL HUMANO', 1); $pdf->Cell(160, 8,$fila['nombre'], 1);
+        $pdf->Ln(8);
+        $pdf->Cell(30, 8, 'SERVICIO', 1); $pdf->Cell(160, 8,$fila['direccion'], 1);
         $pdf->Ln(2);
-        $pdf->Cell(50,0,"",0,0,'L');$pdf->Image($fila['rutaImagen'],null,null,30,30);
+        $pdf->Cell(60,0,"",0,0,'L');$pdf->Image($fila['rutaImagen'],null,null,40,40);
         $pdf->Ln(5);
         $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'L');
         $pdf->Ln(2);
