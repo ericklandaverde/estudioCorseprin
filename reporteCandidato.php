@@ -244,21 +244,25 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
         $pdf->Ln(8);
+        $pdf->SetFillColor(0,102,225);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Domicilio',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['domicilio'],1,0,'C');
         $pdf->Ln(8);
+        $pdf->SetFillColor(0,102,225);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Giro:',1,0,'C'); $pdf->Cell(80,8,utf8_decode('Teléfono'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['giro'],1,0,'C'); $pdf->Cell(80, 8,$filaL['telefono'],1,0,'C');
         $pdf->Ln(8);
+        $pdf->SetFillColor(0,102,225);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Puesto Desempeñado:'),1,0,'C'); $pdf->Cell(60,8,'Fecha de Ingreso',1,0,'C'); $pdf->Cell(50,8,'Fecha de Baja',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['puesto'],1,0,'C'); $pdf->Cell(60,8,$filaL['fechaIngreso'],1,0,'C'); $pdf->Cell(50, 8,$filaL['fechaBaja'],1,0,'C');
         $pdf->Ln(8);
+        $pdf->SetFillColor(0,102,225);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Antigüedad:'),1,0,'C'); $pdf->Cell(60,8,'Sueldo Inicial',1,0,'C'); $pdf->Cell(50,8,'Sueldo Final',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['antiguedad'],1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['suledoFinal'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['antiguedad'],1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInicial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['sueldoFinal'],1,0,'C');
         $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
