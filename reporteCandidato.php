@@ -177,11 +177,11 @@ class PDF extends FPDF
         $pdf->Cell(0,0,'',1,0,'C');
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
-        $pdf->Cell(80, 8, 'ELEMENTO', 1);$pdf->Cell(40, 8, 'Fecha'.date('d/m/Y').'', 1);
+        $pdf->Cell(100, 8, 'ELEMENTO', 1); $pdf->Cell(60, 8, 'Fecha: '.date('d/m/Y').'',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(80, 8,$fila['nombre'], 1);$pdf->Cell(40, 8, 'GERENCIA DE CAPITAL HUMANO', 1);
+        $pdf->Cell(100, 8,$fila['nombre'],1,0,'C'); $pdf->Cell(60, 8, 'GERENCIA DE CAPITAL HUMANO',1,'C');
         $pdf->Ln(8);
-        $pdf->Cell(30, 8, 'SERVICIO', 1); $pdf->Cell(30, 8,$fila['direccion'], 1);
+        $pdf->Cell(100, 8,"",1,0,'C'); $pdf->Cell(30, 8, 'SERVICIO',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(60,0,"",0,0,'L');$pdf->Image($fila['rutaImagen'],null,null,40,50);
         $pdf->Ln(5);
