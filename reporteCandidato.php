@@ -4,12 +4,12 @@
     $conexion=conectar();
 
     $numI= $_POST['clave'];
-    $strConsultaI = "SELECT * FROM identificacion where id_rfc = '$num'";
+    $strConsultaI = "SELECT * FROM identificacion where id_rfc = '$numI'";
     $candidatoI = mysqli_query($conexion,$strConsultaI);
     $filaI = mysqli_fetch_array($candidatoI);
 
     $numD= $_POST['clave'];
-    $strConsultaD = "SELECT * FROM documentos where id_rfc = '$num'";
+    $strConsultaD = "SELECT * FROM documentos where id_rfc = '$numD'";
     $candidatoD = mysqli_query($conexion,$strConsultaD);
     $filaD = mysqli_fetch_array($candidatoD);
 
