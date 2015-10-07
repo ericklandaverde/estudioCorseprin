@@ -187,7 +187,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,"",1,0,'C'); $pdf->Cell(70, 8, 'SERVICIO',1,0,'C');
         $pdf->Ln(9);
-        $pdf->Cell(70,0,"",0,0,'L'); $pdf->Image($fila['rutaImagen'],null,null,60,70,'JPG');
+        // $pdf->Cell(70,0,"",0,0,'L'); $pdf->Image($fila['rutaImagen'],null,null,60,70,'JPEG');
         $pdf->Ln(5);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'L');
         $pdf->Ln(2);
