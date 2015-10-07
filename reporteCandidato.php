@@ -134,7 +134,7 @@ class PDF extends FPDF
         //(Imagen,x,y,Ancho,Alto,Type,Link)
         $this->Image('imagenes/logo.png',10,10,23);
         // Arial bold 15
-        $this->SetFont('Arial','B',9);
+        $this->SetFont('Arial','B',10);
         // Título
         //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
         //Bordes(0: sin borde 1: marco)
@@ -152,7 +152,7 @@ class PDF extends FPDF
         $this->SetFont('Arial','B',11);
         $this->Cell(0,0,'ESTUDIO SOCIOECONOMICO',0,0,'C');
         $this->Ln(3);
-        $this->SetFont('Arial','B',9);
+        $this->SetFont('Arial','B',10);
         $this->Cell(0,0,'Fecha:'.date('d/m/Y').'',0,0,'R');
         $this->Ln(3);
         $this->Cell(0,0,'Pagina '.$this->PageNo().'/{nb}',0,0,'R');
