@@ -13,6 +13,11 @@
     $candidatoD = mysqli_query($conexion,$strConsultaD);
     $filaD = mysqli_fetch_array($candidatoD);
 
+    $numL= $_POST['clave'];
+    $strConsultaL = "SELECT * FROM documentos where id_rfc = '$numL'";
+    $candidatoL = mysqli_query($conexion,$strConsultaL);
+    $filaL = mysqli_fetch_array($candidatoL);
+
 class PDF extends FPDF
 {
      var $widths;
@@ -235,6 +240,18 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,15,'',1,0,'C');
+        $pdf->Ln(15);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Domicilio ',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaD['nacimiento'],1,0,'C'); $pdf->Cell(80, 8,$filaD['matrimonio'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Giro:',1,0,'C'); $pdf->Cell(80,8,'Teléfono',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaD['nacimiento'],1,0,'C'); $pdf->Cell(80, 8,$filaD['matrimonio'],1,0,'C');
+        $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
