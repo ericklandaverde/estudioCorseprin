@@ -195,11 +195,11 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Fecha:',1,0,'C'); $pdf->Cell(60,8,'Edad',1,0,'C'); $pdf->Cell(50,8,'Estado civil',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$fila['fecha'],1,0,'C'); $pdf->Cell(560,8,$fila['edad'],1,0,'C'); $pdf->Cell(50, 8,$fila['estadocivil'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$fila['fecha'],1,0,'C'); $pdf->Cell(60,8,$fila['edad'],1,0,'C'); $pdf->Cell(60, 8,$fila['estadocivil'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,'Telefono:',1,0,'C'); $pdf->Cell(80,8,'Nivel Academico',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,$fila['telefono'],1,0,'C'); $pdf->Cell(80, 8,$fila['nivelacademico'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$fila['telefono'],1,0,'C'); $pdf->Cell(80, 8,$fila['nivelacademico'],1,0,'C');
  
         //Conteo de paginas
         $pdf->AliasNbPages();
