@@ -13,18 +13,47 @@
 	$telefono=$_POST['telefono'];
 	$email=$_POST['email'];
 	$nivelacademico=$_POST['nivelacademico'];
+    
+    //Comprobamos si ha ocurrido un error.
+	if ($_FILES["imagen"]["error"] > 0){
+		echo "<script language='javascript'>alert('Ha ocurrido un error con la imagen.'</script>";
+	} else {
+		//Ahora vamos a verificar si el tipo de archivo es un tipo de imagen permitido.
+		//Y que el tamano del archivo no exceda los 100kb
+		$permitidos = array("image/jpg", "image/jpeg", "image/png");
+		$limite_kb = 100;
+
+		if (in_array($_FILES['imagen']['type'], $permitidos) && $_FILES['imagen']['size'] <= $limite_kb * 1024){
+			//Esta es la ruta donde copiaremos la imagen
+			//Recuerden que deben crear un directorio con este mismo nombre
+			//En el mismo lugar donde se encuentra el archivo subir.php
+			$rutaImagen = "imagenes/candidatos/" . $_FILES['imagen']['name'];
+			//Comprovamos si este archivo existe para no volverlo a copiar.
+			//Pero si quieren pueden obviar esto si no es necesario.
+			//Oh pueden darle otro nombre para que no sobreescriba el actual.
+			if (!file_exists($rutaImagen)){
+				//Aqui movemos el archivo desde la ruta temporal a nuestra ruta
+				//Usamos la variable $resultado para almacenar el resultado del proceso de mover el archivo
+				//Almacenara true o false
+				$resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $rutaImagen);
+				if ($resultado){
+					echo "<script language='javascript'>Imagen subida satisfactorimente</script>";
+				} else {
+					echo "<script language='javascript'>Ocurrio un error al subir la imagen.</script>";
+				}
+			} else {
+				echo $_FILES['imagen']['name'] . ", Este archivo existe";
+			}
+		} else {
+			echo "<script language='javascript'>
+			Archivo no permitido, es tipo de archivo prohibido o excede el tamano de $limite_kb Kilobytes
+			</script>";
+		}
+	}
 	
 
-	// $images= addslashes($_FILES['images']['tmp_name']);
-	// $archivo=$_FILES['images']['tmp_name']);
-	// $destino="imagenes/candidatos/".$_FILES['images']['name'];
-    // move_uploaded_file($archivo, $destino);
-    // $name= addslashes($_FILES['images']['name']);
-    // $images= file_get_contents($images);
-    // $images= base64_encode($images);
-
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, name, images) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$email','$nivelacademico','$name','$images')";
+	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico, rutaImagen) 
+	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','$email','$nivelacademico','$rutaImagen')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{

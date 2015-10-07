@@ -17,6 +17,19 @@
 		   document.getElementById("formulario").value=x.toUpperCase()
 		}
     </script>
+    <script type="text/javascript">
+        $(function(){
+            $("#fecha").datepicker({
+                dateFormat:'yy-mm-dd',
+                changeMonth:true,
+                changeYear:true,
+                showOn: "button",
+                buttonImage: "css/images/ico.png",
+                buttonImageOnly: true,
+                showButtonPanel: true,
+            });
+        })
+    </script>
     </head>
 
     <body>
@@ -104,7 +117,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de nacimiento" name="fecha" required>
+						  <input type="date" class="form-control" id="" placeholder="Fecha de nacimiento" name="fecha" required>
 						</div>
 					</div>
 				  <div class="form-group">
@@ -145,11 +158,12 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Fotografia: </label>
-						<p>La fotografía debe ser un archivo de foto formato tipo: nombre.jpg|nombre.png 
+						<label>La fotografía debe ser un archivo de foto formato tipo: nombre.jpg|nombre.png</label>
+						<label>El tamano maximo de la fotografia debe de ser de 1MB</label> 
 						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
 						sin lentes, si usa bigote debe estar recortado y con el cabello corto.</p>
 
-					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="images" required>
+					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="imagen" required>
 					</div>
 				  </div>
 
