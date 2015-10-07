@@ -182,7 +182,7 @@ class PDF extends FPDF
         $pdf->MultiCell(100,8,'GERENCIA DE CAPITAL HUMANO',1,'C');
         $pdf->MultiCell(100,8,'SERVICIO',1,'C');
         $pdf->Ln(2);
-        $pdf->Image($fila['rutaImagen']);
+        $pdf->Cell(50,0,"",0,0,'L');$pdf->Image($fila['rutaImagen'],null,null,30,30);
         $pdf->Ln(5);
         $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'L');
         $pdf->Ln(2);
