@@ -178,10 +178,8 @@ class PDF extends FPDF
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->MultiCell(100,8,'Elemento',1,'C');
+        $pdf->Ln(2);
         $pdf->Image($fila['rutaImagen']);
-
-        $pdf->Ln(8);
-
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
