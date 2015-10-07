@@ -16,7 +16,7 @@
     
     //Comprobamos si ha ocurrido un error.
 	if ($_FILES["imagen"]["error"] > 0){
-		echo "<script language='javascript'>alert('Ha ocurrido un error con la imagen.'</script>";
+		echo "<script language='javascript'>alert('Ha ocurrido un error con la imagen.')</script>";
 	} else {
 		//Ahora vamos a verificar si el tipo de archivo es un tipo de imagen permitido.
 		//Y que el tamano del archivo no exceda los 100kb
@@ -37,16 +37,16 @@
 				//Almacenara true o false
 				$resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $rutaImagen);
 				if ($resultado){
-					echo "<script language='javascript'>Imagen subida satisfactorimente</script>";
+					echo "<script language='javascript'>alert('Imagen subida satisfactorimente.')</script>";
 				} else {
-					echo "<script language='javascript'>Ocurrio un error al subir la imagen.</script>";
+					echo "<script language='javascript'>alert('Ocurrio un error al subir la imagen.')</script>";
 				}
 			} else {
 				echo $_FILES['imagen']['name'] . ", Este archivo existe";
 			}
 		} else {
 			echo "<script language='javascript'>
-			Archivo no permitido, es tipo de archivo prohibido o excede el tamano de $limite_kb Kilobytes
+			alert('Archivo no permitido, es tipo de archivo prohibido o excede el tamano de $limite_kb Kilobytes')
 			</script>";
 		}
 	}
