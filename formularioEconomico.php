@@ -120,42 +120,42 @@
 								</tr>
 								<tr id="1">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaUnoE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Alimentacion" name="alimentacion" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Alimentacion" name="alimentacion" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoUnoE" required></td>
                             	</tr>
                             	<tr id="2">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaDosE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Ropa y calzado" name="ropaCalzado" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Ropa y calzado" name="ropaCalzado" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoDosE" required></td>
                             	</tr>
                             	<tr id="3">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaTresE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Transporte" name="transporte" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Transporte" name="transporte" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoTresE" required></td>
                             	</tr>
                             	<tr id="4">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaCuatroE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Servicos" name="servicos" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Servicos" name="servicos" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoCuatroE" required></td>
                             	</tr>
                             	<tr id="5">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaCincoE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Gastos Escolares" name="gastosEscolares" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Gastos Escolares" name="gastosEscolares" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoCincoE" required></td>
                             	</tr>
                             	<tr id="6">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSeisE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Actividades deportivas" name="act_Deportivas" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Actividades deportivas" name="act_Deportivas" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSeisE" required></td>
                             	</tr>
                             	<tr id="7">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSieteE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Actividades creativas" name="act_Creativas" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Actividades creativas" name="act_Creativas" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSieteE" required></td>
                             	</tr>
                             	<tr id="8">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaOchoE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Otros" name="otros" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Otros" name="otros" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoOchoE" required></td>
                             	</tr>
                             	<tr id="total">							
