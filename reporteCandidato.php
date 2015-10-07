@@ -220,7 +220,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Fecha:',1,0,'C'); $pdf->Cell(60,8,'Edad',1,0,'C'); $pdf->Cell(50,8,'Estado civil',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Identificación Personal',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Identificación Personal'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Documento:',1,0,'C'); $pdf->Cell(60,8,'Folio',1,0,'C'); $pdf->Cell(50,8,'Vigencia',1,0,'C');
         $pdf->Ln(8);
@@ -228,13 +228,14 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Seguridad Social',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'IMMS:',1,0,'C'); $pdf->Cell(140,8,$filaD['imss'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'IMMS:',1,0,'C'); $pdf->Cell(140,8,$filaD['imms'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'RFC:',1,0,'C'); $pdf->Cell(140,8,$filaD['rfc'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'CURP:',1,0,'C'); $pdf->Cell(140,8,$filaD['curp'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Seguridad Social',1,0,'C');
+        $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,10,'',1,0,'C');
         //Conteo de paginas
         $pdf->AliasNbPages();
