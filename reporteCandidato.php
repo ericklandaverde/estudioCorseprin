@@ -177,7 +177,7 @@ class PDF extends FPDF
         $pdf = new PDF();
         //Agregada nueva pagina.
         $pdf->AddPage();
-        $pdf->SetFont('Times','',10);
+        $pdf->SetFont('Courier','I',10);
         $pdf->Cell(0,0,'',1,0,'C');
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
