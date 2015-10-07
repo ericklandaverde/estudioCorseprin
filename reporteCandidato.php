@@ -3,15 +3,15 @@
     require('conexion.php');
     $conexion=conectar();
 
-    $num= $_POST['clave'];
-    $strConsulta = "SELECT * FROM identificacion where id_rfc = '$num'";
-    $candidato = mysqli_query($conexion,$strConsulta);
-    $fila = mysqli_fetch_array($candidato);
+    $numI= $_POST['clave'];
+    $strConsultaI = "SELECT * FROM identificacion where id_rfc = '$num'";
+    $candidatoI = mysqli_query($conexion,$strConsultaI);
+    $filaI = mysqli_fetch_array($candidatoI);
 
-    $num= $_POST['clave'];
-    $strConsulta = "SELECT * FROM documentos where id_rfc = '$num'";
-    $candidato = mysqli_query($conexion,$strConsulta);
-    $fila = mysqli_fetch_array($candidato);
+    $numD= $_POST['clave'];
+    $strConsultaD = "SELECT * FROM documentos where id_rfc = '$num'";
+    $candidatoD = mysqli_query($conexion,$strConsultaD);
+    $filaD = mysqli_fetch_array($candidatoD);
 
 class PDF extends FPDF
 {
@@ -183,7 +183,7 @@ class PDF extends FPDF
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8, 'ELEMENTO',1,0,'C'); $pdf->Cell(70, 8, 'Fecha: '.date('d/m/Y').'',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,$fila['nombre'],1,0,'C'); $pdf->Cell(70, 8, 'GERENCIA DE CAPITAL HUMANO',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,$filaI['nombre'],1,0,'C'); $pdf->Cell(70, 8, 'GERENCIA DE CAPITAL HUMANO',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8,"",1,0,'C'); $pdf->Cell(70, 8, 'SERVICIO',1,0,'C');
         $pdf->Ln(9);
@@ -191,23 +191,23 @@ class PDF extends FPDF
         $pdf->Ln(5);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'L');
         $pdf->Ln(2);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Puesto:',1,0,'C'); $pdf->Cell(140,8,$fila['puesto'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Puesto:',1,0,'C'); $pdf->Cell(140,8,$filaI['puesto'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Nombre:',1,0,'C'); $pdf->Cell(140,8,$fila['nombre'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Nombre:',1,0,'C'); $pdf->Cell(140,8,$filaI['nombre'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Direccion:',1,0,'C'); $pdf->Cell(140,8,utf8_decode($fila['direccion']),1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Direccion:',1,0,'C'); $pdf->Cell(140,8,utf8_decode($filaI['direccion']),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Fecha:',1,0,'C'); $pdf->Cell(60,8,'Edad',1,0,'C'); $pdf->Cell(50,8,'Estado civil',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$fila['fecha'],1,0,'C'); $pdf->Cell(60,8,$fila['edad'],1,0,'C'); $pdf->Cell(50, 8,$fila['estadocivil'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaI['fecha'],1,0,'C'); $pdf->Cell(60,8,$filaI['edad'],1,0,'C'); $pdf->Cell(50, 8,$fila['estadocivil'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Telefono:',1,0,'C'); $pdf->Cell(80,8,'Nivel Academico',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$fila['telefono'],1,0,'C'); $pdf->Cell(80, 8,$fila['nivelacademico'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaI['telefono'],1,0,'C'); $pdf->Cell(80, 8,$filaI['nivelacademico'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Correo electronico: ',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$fila['email'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaI['email'],1,0,'C');
         $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('2.- REVISIÓN DE DOCUMENTOS'),0,0,'L');
@@ -216,7 +216,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Nacimiento:',1,0,'C'); $pdf->Cell(80,8,'Matrimonio',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$fila['nacimiento'],1,0,'C'); $pdf->Cell(80, 8,$fila['matrimonio'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaD['nacimiento'],1,0,'C'); $pdf->Cell(80, 8,$filaD['matrimonio'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Fecha:',1,0,'C'); $pdf->Cell(60,8,'Edad',1,0,'C'); $pdf->Cell(50,8,'Estado civil',1,0,'C');
 
