@@ -70,8 +70,6 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>INFORMACION ECONOMICA</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-                         <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioReferencias.html">Atras </a></p>
-                         <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioInvSocialFamiliar.html">Adelante </a></p>
 					</div>
 				  </div>
 			  </div>
@@ -122,7 +120,7 @@
 								</tr>
 								<tr id="1">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaUnoE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Alimentacion" name="Alimentacio" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Alimentacion" name="alimentacion" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoUnoE" required></td>
                             	</tr>
                             	<tr id="2">							
@@ -132,7 +130,7 @@
                             	</tr>
                             	<tr id="3">							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaTresE" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Transporte" name="Transporte" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Transporte" name="transporte" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoTresE" required></td>
                             	</tr>
                             	<tr id="4">							
