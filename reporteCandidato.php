@@ -173,7 +173,7 @@ class PDF extends FPDF
         $pdf = new PDF();
         //Agregada nueva pagina.
         $pdf->AddPage();
-        $pdf->SetFont('Times','',12);
+        $pdf->SetFont('Times','',10);
         $pdf->Cell(0,0,'',1,0,'C');
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
@@ -183,10 +183,10 @@ class PDF extends FPDF
         $pdf->MultiCell(100,8,'SERVICIO',1,'C');
         $pdf->Ln(2);
         $pdf->Image($fila['rutaImagen']);
+        $pdf->Ln(5);
+        $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'C');
         $pdf->Ln(2);
-        $pdf->Cell(0,0,'1.- DATOS DE IDENTIFICACIÓN',1,0,'C');
-        $pdf->Ln(2);
-        $pdf->MultiCell(100,8,'Puesto a cubrir: ',1,'C'); $pdf->MultiCell(100,8,$fila['puesto'],1,'C');
+        $pdf->MultiCell(50,8,'Puesto a cubrir: ',1,'C'); $pdf->MultiCell(50,8,$fila['puesto'],1,'C');
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
