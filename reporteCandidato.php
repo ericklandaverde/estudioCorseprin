@@ -186,7 +186,7 @@ class PDF extends FPDF
         $pdf->Ln(5);
         $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'C');
         $pdf->Ln(2);
-        $pdf->MultiCell(50,8,'Puesto a cubrir: ',1,'C'); $pdf->MultiCell(50,8,$fila['puesto'],1,'C');
+        $pdf->Cell(30, 8, 'Puesto', 1);$pdf->Cell(160, 8,$fila['puesto'], 1);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
