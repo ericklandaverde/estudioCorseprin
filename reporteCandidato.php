@@ -8,6 +8,10 @@
     $candidato = mysqli_query($conexion,$strConsulta);
     $fila = mysqli_fetch_array($candidato);
 
+    $num= $_POST['clave'];
+    $strConsulta = "SELECT * FROM identificacion where id_rfc = '$num'";
+    $candidato = mysqli_query($conexion,$strConsulta);
+    $fila = mysqli_fetch_array($candidato);
 
 class PDF extends FPDF
 {
