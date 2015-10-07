@@ -88,19 +88,19 @@
                             		<td><label>Monto Mensual.</label></td>
                             	</tr>
                             	<tr>							
-                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="persona" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Trabajo" name="fuente" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="monto" required></td>
+                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Trabajo" name="trabajo" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoUno" required></td>
                             	</tr>
                             	<tr>							
-                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="persona" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Pension" name="fuente" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="monto" required></td>
+                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Pension" name="pension" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoDos" required></td>
                             	</tr>
                             	<tr>							
-                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="persona" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Beca" name="fuente" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="monto" required></td>
+                            	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" placeholder="Beca" name="beca" required></td>
+							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montotres" required></td>
                             	</tr>
                             	<tr>
                             	 <td></td>
