@@ -122,15 +122,15 @@
 					  <label>Actas de registro civil: </label>
 					  <label>Nacimiento: </label>
 					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
-					    <input type="radio" name="nacimiento" value="Si" placeholder="Selecciona una opcion" checked required>Si
-					    <input type="radio" name="nacimiento" value="No" placeholder="Selecciona una opcion" required>No
+					    <input type="radio" name="nacimiento" value="SI Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" checked required>Si
+					    <input type="radio" name="nacimiento" value="NO Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" required>No
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Matrimonio: </label>
-					    <input type="radio" name="matrimonio" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                        <input type="radio" name="matrimonio" value="No" placeholder="Selecciona una opcion" required>No
+					    <input type="radio" name="matrimonio" value="SI Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
+                        <input type="radio" name="matrimonio" value="No Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" required>No
 					</div>
 				  </div>
 				  <div class="form-group">
