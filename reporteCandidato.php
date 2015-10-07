@@ -178,11 +178,6 @@ class PDF extends FPDF
         $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->MultiCell(100,8,'Elemento',1,'C');
-        $pdf->MultiCell(100,10,'',1,'C');
-        $pdf->Cell(30, 8, 'Puesto', 1);
-        $pdf->Cell(160, 8,$fila['puesto'], 1);
-        $pdf->Ln(8);
-        $pdf->Cell(30, 8, 'Imagen', 1);
         $pdf->Image($fila['rutaImagen']);
 
         $pdf->Ln(8);
