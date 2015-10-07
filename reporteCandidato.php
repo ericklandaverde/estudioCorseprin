@@ -191,7 +191,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Nombre:',1); $pdf->Cell(140,8,$fila['nombre'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Direccion:',1); $pdf->Cell(140,8,utf8_decode($fila['direccion']),);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Direccion:',1); $pdf->Cell(140,8,utf8_decode($fila['direccion']),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(50, 8,'Fecha:',1); $pdf->Cell(50,8,'Edad', 1); $pdf->Cell(50,8,'Estado civil',1,0,'C');
         $pdf->Ln(8);
