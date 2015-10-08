@@ -1,22 +1,41 @@
 <?php
     require('fpdf/fpdf.php');
     require('conexion.php');
+    //Archvio de connexion a la base de datos.
     $conexion=conectar();
-
+    //Consulta formulario Identificacion
     $numI= $_POST['clave'];
     $strConsultaI = "SELECT * FROM identificacion where id_rfc = '$numI'";
     $candidatoI = mysqli_query($conexion,$strConsultaI);
     $filaI = mysqli_fetch_array($candidatoI);
-
+    //Consulta formulario Documentos
     $numD= $_POST['clave'];
     $strConsultaD = "SELECT * FROM documentos where id_rfc = '$numD'";
     $candidatoD = mysqli_query($conexion,$strConsultaD);
     $filaD = mysqli_fetch_array($candidatoD);
-
+    //Consulta formulario Laboral
     $numL= $_POST['clave'];
     $strConsultaL = "SELECT * FROM laboral where id_rfc = '$numL'";
     $candidatoL = mysqli_query($conexion,$strConsultaL);
     $filaL = mysqli_fetch_array($candidatoL);
+    //Consulta formulario Referencia
+    $numR= $_POST['clave'];
+    $strConsultaR = "SELECT * FROM referencia where id_rfc = '$numR'";
+    $candidatoR = mysqli_query($conexion,$strConsultaR);
+    $filaR = mysqli_fetch_array($candidatoR);
+    //Consulta formulario Econnomico
+    $numE= $_POST['clave'];
+    $strConsultaE = "SELECT * FROM economico where id_rfc = '$num'";
+    $candidatoR = mysqli_query($conexion,$strConsultaR);
+    $filaR = mysqli_fetch_array($candidatoR);
+    //Consulta formulario Familiar 
+    $numF= $_POST['clave'];
+    $strConsultaF = "SELECT * FROM familiar where id_rfc = '$numF'";
+    $candidatoF = mysqli_query($conexion,$strConsultaF);
+    $filaF = mysqli_fetch_array($candidatoF);
+
+
+
 
 class PDF extends FPDF
 {
@@ -139,7 +158,7 @@ class PDF extends FPDF
         //(Imagen,x,y,Ancho,Alto,Type,Link)
         $this->Image('imagenes/logo.png',10,10,23);
         // Arial bold 15
-        $this->SetFont('Courier','B',10);
+        $this->SetFont('Arial','B',10);
         // Título
         //Cell(Ancho(x),Alto(y),Cadena,Bordes,Posicion,Align,fill,link)
         //Bordes(0: sin borde 1: marco)
@@ -170,7 +189,7 @@ class PDF extends FPDF
         // Posición: a 1,5 cm del final
         $this->SetY(-15);
         // Arial italic 8
-        $this->SetFont('Arial','B',8);
+        $this->SetFont('Arial','B',9);
         // Número de página
         $this->Cell(0,0,'Pagina '.$this->PageNo().'/{nb}',0,0,'C');
         $this->SetY(-10);
@@ -287,6 +306,39 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Jefe Inmediato:',1,0,'C'); $pdf->Cell(80,8,'Puesto',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
+        $pdf->Ln(20);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('5.REFERENCIAS PERSONALES'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Referencia Uno: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Nombre:',1,0,'C'); $pdf->Cell(80,8,'Ocupación',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['nombre'],1,0,'C'); $pdf->Cell(80, 8,$filaR['ocupacion'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,utf8_decode('Tipo de relación'),1,0,'C'); $pdf->Cell(40, 8,$filaR['tipo'],1,0,'C'); $pdf->Cell(50, 8,'Tiempo',1,0,'C'); $pdf->Cell(40, 8,utf8_decode($filaR['tiempo']),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Direccion:',1,0,'C'); $pdf->Cell(80,8,'Telefono',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['direccion'],1,0,'C'); $pdf->Cell(80, 8,$filaR['telefono'],1,0,'C');
+        $pdf->Ln(20);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Referencia Dos: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Nombre:',1,0,'C'); $pdf->Cell(80,8,'Ocupación',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['nombreDos'],1,0,'C'); $pdf->Cell(80, 8,$filaR['ocupacionDos'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,utf8_decode('Tipo de relación'),1,0,'C'); $pdf->Cell(40, 8,$filaR['tipoDos'],1,0,'C'); $pdf->Cell(50, 8,'Tiempo',1,0,'C'); $pdf->Cell(40, 8,utf8_decode($filaR['tiempoDos']),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Direccion:',1,0,'C'); $pdf->Cell(80,8,'Telefono',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['direccionDos'],1,0,'C'); $pdf->Cell(80, 8,$filaR['telefonoDos'],1,0,'C');
+        $pdf->Ln(20);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('6.INVESTIGACIÓN ACADÉMICA'),0,0,'L');
+        $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
