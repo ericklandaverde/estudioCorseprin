@@ -270,7 +270,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Comportamiento durante su estancia: ',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Con Superiores',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Con compañeros',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Con Superiores',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,utf8_decode('Con compañeros'),1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Evaluación del Desempeño: '),1,0,'C');
         $pdf->Ln(8);
@@ -278,7 +278,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Honradez',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Iniciativa',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Responsabilidad',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Espíritu de Servicio',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Responsabilidad',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,utf8_decode('Espíritu de Servicio'),1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Confiabilidad',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Eficiencia',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
         $pdf->Ln(8);
