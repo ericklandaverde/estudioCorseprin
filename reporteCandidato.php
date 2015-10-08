@@ -351,7 +351,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Concepto',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Alimentación',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Alimentacion',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Ropa y Calzado',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(8);
@@ -369,6 +369,43 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'R'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('RESUMEN: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Personas que viven con el investigado:',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Personas que dependen económicamente de él:'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Ingresos:',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Egresos:',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('CRÉDITOS: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Concepto',1,0,'C'); $pdf->Cell(40,8,'Mensualidad',1,0,'C');  $pdf->Cell(40,8,'Plazo',1,0,'C');  $pdf->Cell(40,8,'Saldo',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('SEGUROS: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De vida',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De gastos medicos mayores',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De automóvil',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Contra accidentes',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('PROPIEDADES: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Tipo: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Casa ( )  Terreno ( ) Departamento ( )'),1,0,'C');
+        $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
