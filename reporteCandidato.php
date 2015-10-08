@@ -385,19 +385,19 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Concepto',1,0,'C'); $pdf->Cell(40,8,'Mensualidad',1,0,'C');  $pdf->Cell(45,8,'Plazo',1,0,'C');  $pdf->Cell(40,8,'Saldo',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(45,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');
         $pdf->Ln(10);
 
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('SEGUROS: '),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De vida',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(50, 8,'De vida',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De gastos medicos mayores',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(50, 8,'De gastos medicos mayores',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'De automóvil',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(50, 8,'De automovil',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Contra accidentes',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(50, 8,'Contra accidentes',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$',1,0,'C');
         $pdf->Ln(10);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('PROPIEDADES: '),1,0,'C');
