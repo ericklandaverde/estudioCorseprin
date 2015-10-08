@@ -244,7 +244,6 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
         $pdf->Ln(8);
-        $pdf->SetFillColor(150,50,0);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Domicilio',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['domicilio'],1,0,'C');
@@ -271,6 +270,23 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Comportamiento durante su estancia: ',1,0,'C');
         $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Con Superiores',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Con compañeros',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Evaluación del Desempeño: '),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Escala:',1,0,'C'); $pdf->Cell(80,8,'1 Deficiente a 10 Excelente',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Honradez',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Iniciativa',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Responsabilidad',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Espíritu de Servicio',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Confiabilidad',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(40, 8,'Eficiencia',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,'Trabajo en Equipo',1,0,'C'); $pdf->Cell(40, 8,'',1,0,'C'); $pdf->Cell(20, 8,'Sumatoria',1,0,'C'); $pdf->Cell(20, 8,'',1,0,'C'); $pdf->Cell(20, 8,'Promedio',1,0,'C'); $pdf->Cell(20, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Jefe Inmediato:',1,0,'C'); $pdf->Cell(80,8,'Puesto',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
