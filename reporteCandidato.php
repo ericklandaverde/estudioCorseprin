@@ -28,14 +28,6 @@
     $strConsultaE = "SELECT * FROM economico where id_rfc = '$num'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
-    //Consulta formulario Familiar 
-    $numF= $_POST['clave'];
-    $strConsultaF = "SELECT * FROM familiar where id_rfc = '$numF'";
-    $candidatoF = mysqli_query($conexion,$strConsultaF);
-    $filaF = mysqli_fetch_array($candidatoF);
-
-
-
 
 class PDF extends FPDF
 {
