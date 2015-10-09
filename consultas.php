@@ -13,13 +13,6 @@
     <script src="alertifyjs/alertify.js"></script>
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
-    <script type="text/javascript">
-      $("#simple_confirm").click(function()){
-        alertify.confirm("Estas a punto de eliminar al candidato",function(e){
-
-        });
-      }
-    </script>
     <!-- Alertif -->
     <!-- Alertif -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -43,6 +36,7 @@
                 <a href="index.html">Principal</a>
               </li>
               <li><a href="formularioIdentificacion.php">Formulario</a></li>
+              <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
             </ul>
           </div><!-- /dl-menuwrapper -->
@@ -97,19 +91,8 @@
                     <td><?php echo $puesto ?></td>
                     <td><?php echo $nombre ?></td>
                     <td><?php echo $telefono ?></td>
-                    <td><?php echo $email ?></td>               
-                    <!-- <td align="center">    
-                    <form action="transaccion2.php" method="post" name="editar">
-                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                            <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
-                            <input name="email" type="hidden" value="<?php echo $email ?>" />
-                            <input name="empresa" type="hidden" value="<?php echo $empresa ?>" />
-                            <input name="ciudad" type="hidden" value="<?php echo $ciudad ?>" />
-                            <input name="salario" type="hidden" value="<?php echo $salario ?>" />
-                        <input type="submit" value="Aplicar" class="asdasda" alt="cambio" title="Aplicar Descuento"/>
-                        </form>
-                      </td> -->
-
+                    <td><?php echo $email ?></td>              
+                    
                     <td align="center">
                       <form action="reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
@@ -119,7 +102,7 @@
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-danger" id="simple_confirm" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
