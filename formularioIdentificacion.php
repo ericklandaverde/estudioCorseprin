@@ -82,24 +82,23 @@
 
 				    <div class="form-group">
 					  <div id="locationField" class="col-md-offset-2 col-md-8">
-					  	<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required></input>
+					  <input type="text"  class="form-control" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required>
 					  </div>
 				    </div>
 				  
 					<div class="form-group">
-						<div>
-								<label>Dirección</label><br>
-								<input type="text">
-						        <input id="street_number" disabled="true"><br>
-						        <input id="route" disabled="true"><br>
-						      	<label>Cuidad</label><br>
-						        <input class="field" id="locality" disabled="true"><br>
+						<div>   
+							    <label>Codigo postal</label><br>
+						        <input id="postal_code" disabled="true"><br>
+							    <label>Pais</label><br>
+						      	<input id="country" disabled="true"><br>
 						      	<label>Estado</label><br>
 						        <input id="administrative_area_level_1" disabled="true"><br>
-						        <label>Codigo postal</label><br>
-						        <input id="postal_code" disabled="true"><br>
-						      	<label>Pais</label><br>
-						      	<input id="country" disabled="true"><br>
+						        <label>Cuidad</label><br>
+						        <input class="field" id="locality" disabled="true"><br>
+								<label>Dirección</label><br>
+						        <input id="street_number" disabled="true"><br>
+						        <input id="route" disabled="true"><br>
 						</div>
 					</div>
 					<div class="form-group">
