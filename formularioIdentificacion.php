@@ -100,7 +100,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" class="form-control" id="fecha" placeholder="Fecha de nacimiento" name="fecha" required>
+						  <input type="date" class="form-control" id="fecha" placeholder="Fecha de nacimiento" name="fecha" max="1960-12-31" max="2015-12-31" required>
 						</div>
 					</div>
 				  <div class="form-group">
