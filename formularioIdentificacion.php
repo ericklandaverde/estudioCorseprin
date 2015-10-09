@@ -90,14 +90,14 @@
 						<div>
 								<label>Dirección</label><br>
 						        <input id="street_number" disabled="true"><br>
-						        <input id="route" disabled="true">
+						        <input id="route" disabled="true"><br>
 						      	<label>Cuidad</label><br>
-						        <input ><input class="field" id="locality" disabled="true">
-						      	<label>Estado</label>
+						        <input ><input class="field" id="locality" disabled="true"><br>
+						      	<label>Estado</label><br>
 						        <input id="administrative_area_level_1" disabled="true"><br>
-						        <label>Codigo postal</label>
+						        <label>Codigo postal</label><br>
 						        <input id="postal_code" disabled="true"><br>
-						      	<label>Pais</label>
+						      	<label>Pais</label><br>
 						      	<input id="country" disabled="true"><br>
 						</div>
 					</div>
