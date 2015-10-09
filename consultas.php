@@ -22,7 +22,7 @@
   </head>
 
   <body>
-  <script type="text/javascript">alertify.alert('Bienvenido adminitrador');</script>
+  <script type="text/javascript">alertify.alert("CONSULTAS",'Bienvenido adminitrador');</script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
