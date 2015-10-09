@@ -81,6 +81,19 @@
 				    </div>
 
 				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="email">Email:</label>
+				      <div class="col-sm-10">
+				        <input type="email" class="form-control" id="email" placeholder="Enter email">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="pwd">Password:</label>
+				      <div class="col-sm-10">          
+				        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+				      </div>
+				    </div>
+
+				    <div class="form-group">
 					  <div id="locationField" class="col-md-offset-2 col-md-8">
 					  	  <label>Escribe tu direccion:</label>
 						  <input type="text"  class="form-control" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required>
@@ -97,12 +110,6 @@
 				          <input class="form-control" id="route" disabled="true">
 					  </div>
 				    </div>
-				  
-					<div class="form-group">
-						<div>   
-							    
-						</div>
-					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <input type="date" class="form-control" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
