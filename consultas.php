@@ -73,6 +73,7 @@
                     <td  bgcolor="#CCCCCC">TELEFONO</td>
                     <td  bgcolor="#CCCCCC">EMAIL</td>
                     <td  bgcolor="#CCCCCC">REPORTE</td>
+                    <td  bgcolor="#CCCCCC">ENVIAR</td>
                     <td  bgcolor="#CCCCCC">ELIMINAR</td>
                 </tr>
                 <?php
@@ -102,7 +103,7 @@
                     <td align="center">
                       <form action="correoCandidato.php" method="post" name="correo">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-success" value="Enviar correo" alt="cambio" title="Correo"/>
+                        <input type="submit" class="btn btn-success" value="Enviar" alt="cambio" title="Correo"/>
                       </form>
                     </td>
                     <td align="center">
@@ -124,10 +125,9 @@
             <div class="col-md-offset-2 col-md-8">
                <script type="text/javascript">
                         function confirmar(){
-                            alertify.confirm("Ventana de alerta","Seguro deseas salir:", function (e) {
+                            alertify.confirm("Segur@ deseas salir:", function (e) {
                               if (e) {
-                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
-                                <?php  ?>
+                                alertify.success("Has pulsado '" + alertify.labels.ok + "'")window.location='index.html';
                               }else{ 
                                 alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
                               }
