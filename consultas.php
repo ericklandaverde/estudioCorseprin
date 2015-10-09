@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <!-- Alertif -->
+    <!-- Alertif -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -102,13 +106,13 @@
                     <td align="center">
                       <form action="reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" value="Generar" alt="cambio" title="Generar"/>
+                        <input type="submit" class="btn btn-success" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="btn btn-warning" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
