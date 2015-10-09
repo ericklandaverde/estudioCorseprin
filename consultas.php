@@ -64,7 +64,7 @@
             <div>
             <!-- <div class="col-md-offset-2 col-md-8"> -->
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-              <table width="900" border="1">
+              <table class="table table-bordered">
                 <tr align="center">
                     <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                     <td  bgcolor="#CCCCCC">PUESTO</td>
