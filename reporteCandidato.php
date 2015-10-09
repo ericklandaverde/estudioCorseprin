@@ -27,7 +27,7 @@
     $numE= $_POST['clave'];
     $strConsultaE = "SELECT * FROM economico where id_rfc = '$num'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
-    $filaR = mysqli_fetch_array($candidatoR);
+    $filaE = mysqli_fetch_array($candidatoE);
 
 class PDF extends FPDF
 {
