@@ -3,6 +3,7 @@
     $conexion=conectar();
 
     $clave= $_POST['clave'];
+
     $nombre= $_POST['nombre'];
     $ocupacion= $_POST['ocupacion'];
     $tipo=$_POST['tipo'];
@@ -10,6 +11,7 @@
     $direccion=$_POST['direccion'];
     $telefono=$_POST['telefono'];
     $comentario=$_POST['comentario'];
+
     $nombreDos=$_POST['nombreDos'];
     $ocupacionDos=$_POST['ocupacionDos'];
     $tipoDos=$_POST['tipoDos'];
@@ -19,7 +21,7 @@
     $comentarioDos=$_POST['comentarioDos'];
 
     $sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, comentarioDos, nombreDos, ocupacionDos, tipoDos, tiempoDos, direccionDos, telefonoDos, comentarioDos) 
-    values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentario','$nombreDos','$ocupacionDos','$tipoDos','$','$tiempoDos','$direccionDos','$telefonoDos','$comentarioDos')";
+    values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentario','$nombreDos','$ocupacionDos','$tipoDos','$tiempoDos','$direccionDos','$telefonoDos','$comentarioDos')";
     $registro=mysqli_query($conexion,$sql);
     if(!$registro)
     {
