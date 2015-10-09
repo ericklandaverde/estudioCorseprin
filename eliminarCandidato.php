@@ -4,7 +4,7 @@ $conexion=Conectar();
 
 $clave=$_POST['clave'];
 
-$sql="DELETE * FROM identificacion WHERE id_rfc='$clave'";
+$sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
 $registros = mysqli_query($conexion,$sql);
  
 if(!$registros)
