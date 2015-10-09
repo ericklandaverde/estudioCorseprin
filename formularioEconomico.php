@@ -86,6 +86,7 @@
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
 							<label>Ingresos: </label>
+                            <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
                             <table>
                             	<tr>
                             		<td><label>Persona.</label></td>
@@ -94,18 +95,18 @@
                             	</tr>
                             	<tr>							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Fuente" name="trabajo" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoUno" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Trabajo" required></td>
+							     <td><input type="number" class="form-control" id="montoUno" placeholder="Monto Mensual" name="montoUno" required></td>
                             	</tr>
                             	<tr>							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Fuente" name="pension" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoDos" required></td>
+							     <td><input type="text" class="form-control" id="inputClave" value="Pension" required></td>
+							     <td><input type="number" class="form-control" id="montoDos" placeholder="Monto Mensual" name="montoDos" required></td>
                             	</tr>
                             	<tr>							
                             	 <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
-							     <td><input type="text" class="form-control" id="inputClave" placeholder="Fuente" name="beca" required></td>
-							     <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montotres" required></td>
+							     <td><input type="text" class="form-control" id="inputClave"  value="Beca" required></td>
+							     <td><input type="number" class="form-control" id="montoTres" placeholder="Monto Mensual" name="montotres" required></td>
                             	</tr>
                             	<tr>
                             	 <td></td>
