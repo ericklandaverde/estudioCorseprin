@@ -26,7 +26,7 @@
         echo"
         <script language='javascript'>
         alert('ERROR AL GUARDAR DATOS')
-        window.location='formularioDocumentos.php'
+        window.location='formularioReferencias.php'
         </script>";
         exit();
         }

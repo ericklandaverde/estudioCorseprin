@@ -84,6 +84,8 @@
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
 							<input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+						  <fieldset>
+						  	<legend>Referencia 1:</legend>
 							<label>Nombre:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
 							<label>Ocupacion:</label>
@@ -104,11 +106,14 @@
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 							<label>Comentarios</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarios" required>
+						  </fieldset>
 						</div>
 					  </div>
 
 					<div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
+						   <fieldset>
+						  	<legend>Referencia 2:</legend>
 							<label>Nombre:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreDos" required>
 							<label>Ocupacion:</label>
@@ -129,6 +134,7 @@
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefonoDos" required>
 							<label>Comentarios</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarioDos" required>
+						   </fieldset>
 						</div>
 					  </div>
 
