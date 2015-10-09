@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
@@ -226,8 +228,6 @@
 	</footer>
 	 
 	 <!-- js -->
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
