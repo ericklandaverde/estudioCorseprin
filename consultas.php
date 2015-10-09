@@ -26,7 +26,14 @@
   </head>
 
   <body>
-  <script type="text/javascript">alertify.alert("CONSULTAS",'Bienvenido adminitrador');</script>
+  <script type="text/javascript">
+  alertify.alert("CONSULTAS",'Bienvenido adminitrador');
+  $("#simple_confirm").click(function()){
+    alertify.confirm("Estas a punto de eliminar al candidato",function(e){
+
+    });
+  }
+  </script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
@@ -64,7 +71,7 @@
             <div>
             <!-- <div class="col-md-offset-2 col-md-8"> -->
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-              <table class="table table-condensed">
+              <table class="table table-bordered">
                 <tr align="center">
                     <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                     <td  bgcolor="#CCCCCC">PUESTO</td>
@@ -112,7 +119,7 @@
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="btn btn-danger" id="simple_confirm" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
