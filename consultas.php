@@ -13,6 +13,13 @@
     <script src="alertifyjs/alertify.js"></script>
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
+    <script type="text/javascript">
+      $("#simple_confirm").click(function()){
+        alertify.confirm("Estas a punto de eliminar al candidato",function(e){
+
+        });
+      }
+    </script>
     <!-- Alertif -->
     <!-- Alertif -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -24,15 +31,9 @@
     <link href="color/default.css" rel="stylesheet" media="screen">
     <script src="js/modernizr.custom.js"></script>
   </head>
-
   <body>
   <script type="text/javascript">
   alertify.alert("CONSULTAS",'Bienvenido adminitrador');
-  $("#simple_confirm").click(function()){
-    alertify.confirm("Estas a punto de eliminar al candidato",function(e){
-
-    });
-  }
   </script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
