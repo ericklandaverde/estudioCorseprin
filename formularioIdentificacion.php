@@ -226,6 +226,7 @@
 	 
 	 <!-- js -->
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
