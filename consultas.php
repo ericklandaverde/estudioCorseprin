@@ -64,7 +64,7 @@
             <div>
             <!-- <div class="col-md-offset-2 col-md-8"> -->
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-              <table class="table table-bordered">
+              <table class="table table-condensed">
                 <tr align="center">
                     <td  bgcolor="#CCCCCC">CLAVE CURP</td>
                     <td  bgcolor="#CCCCCC">PUESTO</td>
@@ -112,7 +112,7 @@
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="table table-condensed" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
