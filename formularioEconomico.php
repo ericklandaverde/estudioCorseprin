@@ -42,7 +42,6 @@
 ?>
 
 <!DOCTYPE html>
-<SCRIPT TYPE="text/javascript">alert("Colocar una el campo no utilizado")</SCRIPT>
 <html>
   <head>
     <title>Estudio SocioEconomico</title>

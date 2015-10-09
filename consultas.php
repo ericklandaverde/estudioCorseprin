@@ -99,6 +99,12 @@
                         <input type="submit" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
+                    <td align="center">
+                      <form action="eliminarCandidato.php" method="post" name="elimnar">
+                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                        <input type="submit" value="Eliminar" alt="cambio" title="Eliminar"/>
+                      </form>
+                    </td>
                 </tr>
              <p>
               <?php }?>

@@ -4,8 +4,8 @@ $conexion=Conectar();
 
 $clave=$_POST[clave];
 
-$SQL="delete from empleados where clave_emp='$clave'";
-$registros = mysql_query($SQL, $conexion);
+$sql="DELETE * FROM identificacion WHERE id_rfc='$clave'";
+$registros = mysql_query($sql, $conexion);
 if(!$registros)
 {
 echo "ERROR AL ELIMINAR";
@@ -13,8 +13,8 @@ exit();
 }
 echo "
 <script language='JavaScript' type='text/JavaScript'>
-alert('REGISTRO ELIMINADO')
-window.location='bajas.html' 
+alert('CANDIDATO ELIMINADO')
+window.location='consultas.php' 
 </script>
 ";
 ?>
