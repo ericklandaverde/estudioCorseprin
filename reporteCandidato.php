@@ -20,12 +20,12 @@
     $filaL = mysqli_fetch_array($candidatoL);
     //Consulta formulario Referencia
     $numR= $_POST['clave'];
-    $strConsultaR = "SELECT * FROM referencia where id_rfc = '$numR'";
+    $strConsultaR = "SELECT * FROM referencias where id_rfc = '$numR'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
     //Consulta formulario Econnomico
     $numE= $_POST['clave'];
-    $strConsultaE = "SELECT * FROM economico where id_rfc = '$num'";
+    $strConsultaE = "SELECT * FROM economico where id_rfc = '$numE'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaE = mysqli_fetch_array($candidatoE);
 
