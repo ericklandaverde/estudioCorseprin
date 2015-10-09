@@ -26,7 +26,7 @@
     //Consulta formulario Econnomico
     $numE= $_POST['clave'];
     $strConsultaE = "SELECT * FROM economico where id_rfc = '$numE'";
-    $candidatoR = mysqli_query($conexion,$strConsultaR);
+    $candidatoE = mysqli_query($conexion,$strConsultaE);
     $filaE = mysqli_fetch_array($candidatoE);
 
 class PDF extends FPDF
