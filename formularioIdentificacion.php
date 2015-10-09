@@ -4,11 +4,7 @@
     <title>Estudio SocioEconomico</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    
+    <!-- css -->  
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
@@ -21,23 +17,9 @@
 		   document.getElementById("formulario").value=x.toUpperCase()
 		}
     </script>
-    <script type="text/javascript">
-        $(function(){
-            $("#fecha").datepicker({
-                dateFormat:'yy-mm-dd',
-                changeMonth:true,
-                changeYear:true,
-                showOn: "button",
-                buttonImage: "css/images/ico.png",
-                buttonImageOnly: true,
-                showButtonPanel: true,
-            });
-        })
-    </script>
+    
     </head>
-
     <body>
-	
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
 						<button class="dl-trigger">Open Menu</button>
@@ -118,7 +100,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" id="fecha" placeholder="Fecha de nacimiento" name="fecha" required>
+						  <input type="date" class="form-control" id="fecha" placeholder="Fecha de nacimiento" name="fecha" required>
 						</div>
 					</div>
 				  <div class="form-group">
