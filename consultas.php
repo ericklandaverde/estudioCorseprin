@@ -23,6 +23,18 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="color/default.css" rel="stylesheet" media="screen">
     <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+    function confirmar(){
+        //un confirm
+        alertify.confirm("<p>Aquí confirmamos algo.<br><br><b>ENTER</b> y <b>ESC</b> corresponden a <b>Aceptar</b> o <b>Cancelar</b></p>", function (e) {
+          if (e) {
+            alertify.success("Has pulsado '" + alertify.labels.ok + "'");
+          } else { alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
+          }
+        }); 
+        return false
+      }
+  </script>
   </head>
   <body>
   <script type="text/javascript">
@@ -96,7 +108,7 @@
                     <td align="center">
                       <form action="reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-success" value="Generar" alt="cambio" title="Generar"/>
+                        <input type="submit" class="btn btn-success" onClick="confirmar()" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
                     <td align="center">
