@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <script type="text/javascript">
-      $("#simple_confirm").click(function()){
+    $(document).ready(function(){
+      $("#simple_confirm").click(function(){
         alertify.confirm("Estas a punto de eliminar al candidato",function(e){
 
         });
-      }
+      )};
+    });
     </script>
     <!-- Alertif -->
     <!-- Alertif -->
@@ -32,9 +34,7 @@
     <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
-  <script type="text/javascript">
-  alertify.alert("CONSULTAS",'Bienvenido adminitrador');
-  </script>
+  <script type="text/javascript">alertify.alert("CONSULTAS",'Bienvenido adminitrador');</script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
@@ -43,7 +43,6 @@
                 <a href="index.html">Principal</a>
               </li>
               <li><a href="formularioIdentificacion.php">Formulario</a></li>
-              <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
             </ul>
           </div><!-- /dl-menuwrapper -->
@@ -73,14 +72,14 @@
             <!-- <div class="col-md-offset-2 col-md-8"> -->
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
               <table class="table table-bordered">
-                <tr align="center">
-                    <td  bgcolor="#CCCCCC">CLAVE CURP</td>
-                    <td  bgcolor="#CCCCCC">PUESTO</td>
-                    <td  bgcolor="#CCCCCC">NOMBRE</td>
-                    <td  bgcolor="#CCCCCC">TELEFONO</td>
-                    <td  bgcolor="#CCCCCC">EMAIL</td>
-                    <td  bgcolor="#CCCCCC">REPORTE</td>
-                    <td  bgcolor="#CCCCCC">ELIMINAR</td>
+                <tr>
+                    <td>CLAVE CURP</td>
+                    <td>PUESTO</td>
+                    <td>NOMBRE</td>
+                    <td>TELEFONO</td>
+                    <td>EMAIL</td>
+                    <td>REPORTE</td>
+                    <td>ELIMINAR</td>
                 </tr>
                 <?php
                   $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
@@ -111,16 +110,16 @@
                         </form>
                       </td> -->
 
-                    <td align="center">
+                    <td>
                       <form action="reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-success" value="Generar" alt="cambio" title="Generar"/>
+                        <input type="submit" class="btn btn-success" id="simple_confirm" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
-                    <td align="center">
+                    <td>
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-danger" id="simple_confirm" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
