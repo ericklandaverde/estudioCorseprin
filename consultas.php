@@ -94,25 +94,18 @@
                     <td><?php echo $email ?></td>              
                     
                     <td align="center">
-                      <form action="reporteCandidato.php" method="post" onClick="confirmar()" name="reporte">
+                      <form action="reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-success" value="Generar" alt="cambio" title="Generar"/>
+                        <input type="submit" class="btn btn-primary" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
                     <td align="center">
-                    <script type="text/javascript">
-                        function confirmar(){
-                            alertify.confirm("Seguro elimaras a este candidatos", function (e) {
-                              if (e) {
-                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
-                                <?php  ?>
-                              }else{ 
-                                alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
-                              }
-                            }); 
-                            return false
-                          }
-                      </script>
+                      <form action="correoCandidato.php" method="post" name="correo">
+                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                        <input type="submit" class="btn btn-success" value="Enviar correo" alt="cambio" title="Correo"/>
+                      </form>
+                    </td>
+                    <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                         <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
@@ -128,8 +121,22 @@
         </div>
 
          <div class="form-group">
-            <div class="col-md-offset-2 col-md-8"> 
-              <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>
+            <div class="col-md-offset-2 col-md-8">
+               <script type="text/javascript">
+                        function confirmar(){
+                            alertify.confirm("Ventana de alerta","Seguro deseas salir:", function (e) {
+                              if (e) {
+                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
+                                <?php  ?>
+                              }else{ 
+                                alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
+                              }
+                            }); 
+                            return false
+                          }
+                </script>
+              <!-- <button type="button" onClick="confirmar()" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Salir</button> -->
+              <button type="button" onClick="confirmar()" class="btn btn-theme btn-lg btn-block">Salir</button>
             </div>
         </div>
 
