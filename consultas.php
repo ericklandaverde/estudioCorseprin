@@ -23,18 +23,6 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="color/default.css" rel="stylesheet" media="screen">
     <script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript">
-    function confirmar(){
-        //un confirm
-        alertify.confirm("<p>Aquí confirmamos algo.<br><br><b>ENTER</b> y <b>ESC</b> corresponden a <b>Aceptar</b> o <b>Cancelar</b></p>", function (e) {
-          if (e) {
-            alertify.success("Has pulsado '" + alertify.labels.ok + "'");
-          } else { alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
-          }
-        }); 
-        return false
-      }
-  </script>
   </head>
   <body>
   <script type="text/javascript">
@@ -112,6 +100,19 @@
                       </form>
                     </td>
                     <td align="center">
+                      <script type="text/javascript">
+                        function confirmar(){
+                            alertify.confirm("Seguro elimaras a este candidatos", function (e) {
+                              if (e) {
+                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
+                                <?php  ?>
+                              }else{ 
+                                alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
+                              }
+                            }); 
+                            return false
+                          }
+                      </script>
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                         <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
