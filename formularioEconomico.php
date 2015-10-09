@@ -2,9 +2,9 @@
     include('conexion.php');
     $conexion=conectar();
 
-    $clave=$_POST['clave'];
-    $puesto=$_POST['puesto'];
-    $nombre=$_POST['nombre'];
+    $clave= $_POST['clave'];
+    $puesto= $_POST['puesto'];
+    $nombre= $_POST['nombre']." ".$_POST['apellidoPaterno']." ".$_POST['apellidoMaterno'];
     $direccion=$_POST['direccion'];
     $fecha=$_POST['fecha'];
     $edad=$_POST['edad'];
