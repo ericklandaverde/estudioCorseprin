@@ -91,7 +91,7 @@
 							<label>Ocupacion:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
 							<label>Tipo de relacion</label>
-							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="relacion" required>
+							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="tipo" required>
 							  	<option selected value="">Seleccione relacion.</option>
 							  	<option value="Amigo">Amigo</option>
 							  	<option value="Familiar">Familiar</option>
@@ -99,7 +99,7 @@
 							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
 		                    </select>
 		                    <label>Tiempo de conocerlo</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tipo" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempo" required>
 							<label>Direccion</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
 							<label>Telefono</label>
