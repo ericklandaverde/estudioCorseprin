@@ -101,7 +101,7 @@
                       </form>
                     </td>
                     <td align="center">
-                      <form action="correoCandidato.php" method="post" name="correo">
+                      <form action="" method="post" name="correo">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                         <input type="submit" class="btn btn-success" value="Enviar" alt="cambio" title="Correo"/>
                       </form>
