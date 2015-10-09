@@ -10,11 +10,11 @@ $registros = mysqli_query($conexion,$sql);
 $sqlD="DELETE FROM documentos WHERE id_rfc='$clave'";
 $registrosD = mysqli_query($conexion,$sqlD);
 
+$sqlL="DELETE FROM laboral WHERE id_rfc='$clave'";
+$registrosL = mysqli_query($conexion,$sqlL);
+
 $sqlR="DELETE FROM referencias WHERE id_rfc='$clave'";
 $registrosR = mysqli_query($conexion,$sqlR);
-
-// $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
-// $registros = mysqli_query($conexion,$sql);
 
 // $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
 // $registros = mysqli_query($conexion,$sql);
