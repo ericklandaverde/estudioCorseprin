@@ -9,6 +9,10 @@
     <title>Estudio SocioEconomico</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="alertifyjs/css/alertify.rtl.css">
+    <link rel="stylesheet" href="alertifyjs/css/themes/default.rtl.css">
+    <!-- include alertify script -->
+    <script src="alertifyjs/alertify.js"></script>
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -17,6 +21,7 @@
   </head>
 
   <body>
+  <script type="text/javascript">alert.alertify("Bienvenido adminitrador");</script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
@@ -25,7 +30,6 @@
                 <a href="index.html">Principal</a>
               </li>
               <li><a href="formularioIdentificacion.php">Formulario</a></li>
-              <li><a href="bajas.html">Eliminar</a></li>
               <li><a href="cambios.html">Cambios</a></li>
               <li><a href="consultas.php">Consultar </a></li>
             </ul>
