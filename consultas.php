@@ -21,7 +21,7 @@
   </head>
 
   <body>
-  <script type="text/javascript">alert.alertify("Bienvenido adminitrador");</script>
+  <script type="text/javascript">alert("Bienvenido adminitrador");</script>
   <div class="menu-area">
       <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
