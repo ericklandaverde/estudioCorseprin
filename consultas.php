@@ -94,13 +94,13 @@
                     <td><?php echo $email ?></td>              
                     
                     <td align="center">
-                      <form action="reporteCandidato.php" method="post" name="reporte">
+                      <form action="reporteCandidato.php" method="post" onClick="confirmar()" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-success" onClick="confirmar()" value="Generar" alt="cambio" title="Generar"/>
+                        <input type="submit" class="btn btn-success" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
                     <td align="center">
-                      <script type="text/javascript">
+                    <script type="text/javascript">
                         function confirmar(){
                             alertify.confirm("Seguro elimaras a este candidatos", function (e) {
                               if (e) {
