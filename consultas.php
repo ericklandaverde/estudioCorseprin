@@ -9,10 +9,11 @@
     <title>Estudio SocioEconomico</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="alertifyjs/css/alertify.rtl.css">
-    <link rel="stylesheet" href="alertifyjs/css/themes/default.rtl.css">
-    <!-- include alertify script -->
+     <!-- Alertify -->
     <script src="alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
+    <!-- Alertif -->
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
