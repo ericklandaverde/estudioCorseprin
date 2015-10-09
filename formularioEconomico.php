@@ -3,18 +3,21 @@
     $conexion=conectar();
 
     $clave= $_POST['clave'];
-    $puesto= $_POST['puesto'];
-    $nombre= $_POST['nombre']." ".$_POST['apellidoPaterno']." ".$_POST['apellidoMaterno'];
+    $nombre= $_POST['nombre'];
+    $ocupacion= $_POST['ocupacion'];
+    $tipo=$_POST['tipo'];
+    $tiempo=$_POST['tiempo'];
     $direccion=$_POST['direccion'];
-    $fecha=$_POST['fecha'];
-    $edad=$_POST['edad'];
-    $estadocivil=$_POST['estadocivil'];
     $telefono=$_POST['telefono'];
-    $email=$_POST['email'];
-    $nivelacademico=$_POST['nivelacademico'];
+    $nombreDos=$_POST['nombreDos'];
+    $ocupacionDos=$_POST['ocupacionDos'];
+    $tipoDos=$_POST['tipoDos'];
+    $tiempoDos=$_POST['tiempoDos'];
+    $direccionDos=$_POST['direccionDos'];
+    $telefonoDos=$_POST['telefonoDos'];
 
-    $sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
-    values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+    $sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, nombreDos, ocupacionDos, tipoDos, tiempoDos, direccionDos, telefonoDos) 
+    values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$nombreDos','$ocupacionDos','$tipoDos','$','$tiempoDos','$direccionDos','telefonoDos')";
     $registro=mysqli_query($conexion,$sql);
     if(!$registro)
     {

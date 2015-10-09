@@ -83,6 +83,7 @@
 					<form action="formularioEconomico.php" method="post" class="form-horizontal" role="form">
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
+							<input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 							<label>Nombre:</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
 							<label>Ocupacion:</label>
@@ -96,15 +97,41 @@
 							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
 		                    </select>
 		                    <label>Tiempo de conocerlo</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempo" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tipo" required>
 							<label>Direccion</label>
 							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
 							<label>Telefono</label>
 							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
 							<label>Comentarios</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="Comentario" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarios" required>
 						</div>
 					  </div>
+
+					<div class="form-group">
+						<div id="capa" class="col-md-offset-2 col-md-8">
+							<label>Nombre:</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreDos" required>
+							<label>Ocupacion:</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacionDos" required>
+							<label>Tipo de relacion</label>
+							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="tipoDos" required>
+							  	<option selected value="">Seleccione relacion.</option>
+							  	<option value="Amigo">Amigo</option>
+							  	<option value="Familiar">Familiar</option>
+							  	<option value="Antiguo Jefe">Antiguo Jefe</option>
+							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
+		                    </select>
+		                    <label>Tiempo de conocerlo</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempoDos" required>
+							<label>Direccion</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccionDos" required>
+							<label>Telefono</label>
+							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefonoDos" required>
+							<label>Comentarios</label>
+							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarioDos" required>
+						</div>
+					  </div>
+
 
 					  <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">

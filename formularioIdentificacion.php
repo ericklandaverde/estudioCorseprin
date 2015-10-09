@@ -14,7 +14,7 @@
 	<script type="text/javascript">
 		function upperCase() {
 		   var x=document.getElementById("formulario").value
-		   document.getElementById("formulario").value=x.toUpperCase()
+		   document.getElementById("formulario").value = x.toUpperCase()
 		}
     </script>
     
