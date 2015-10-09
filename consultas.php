@@ -112,7 +112,7 @@
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
-                        <input type="submit" class="btn btn-danger" value="Eliminar" alt="cambio" title="Eliminar"/>
+                        <input type="submit" class="table table-condensed" value="Eliminar" alt="cambio" title="Eliminar"/>
                       </form>
                     </td>
                 </tr>
