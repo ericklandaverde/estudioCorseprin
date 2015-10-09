@@ -81,7 +81,7 @@
 				    </div>
 				  
 					<div class="form-group">
-						<div id="locationField" class="col-md-offset-2 col-md-8">
+						<div id="locationField">
 								<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required></input>
 								<label>Dirección</label>
 						        <input id="street_number" disabled="true"></input>
