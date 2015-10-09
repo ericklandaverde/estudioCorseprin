@@ -88,17 +88,17 @@
 				  
 					<div class="form-group">
 						<div>
-								<label>Dirección</label>
-						        <input id="street_number" disabled="true"></input>
-						        <input id="route" disabled="true"></input><br>
-						      	<label>Cuidad</label>
-						        <input ><input class="field" id="locality" disabled="true"></input>
+								<label>Dirección</label><br>
+						        <input id="street_number" disabled="true"><br>
+						        <input id="route" disabled="true">
+						      	<label>Cuidad</label><br>
+						        <input ><input class="field" id="locality" disabled="true">
 						      	<label>Estado</label>
-						        <input id="administrative_area_level_1" disabled="true"></input>
+						        <input id="administrative_area_level_1" disabled="true"><br>
 						        <label>Codigo postal</label>
-						        <input id="postal_code" disabled="true"></input>
+						        <input id="postal_code" disabled="true"><br>
 						      	<label>Pais</label>
-						      	<input id="country" disabled="true"></input>
+						      	<input id="country" disabled="true"><br>
 						</div>
 					</div>
 					<div class="form-group">
