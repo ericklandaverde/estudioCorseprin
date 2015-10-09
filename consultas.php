@@ -63,6 +63,7 @@
                     <td  bgcolor="#CCCCCC">TELEFONO</td>
                     <td  bgcolor="#CCCCCC">EMAIL</td>
                     <td  bgcolor="#CCCCCC">REPORTE</td>
+                    <td  bgcolor="#CCCCCC">ELIMINAR</td>
                 </tr>
                 <?php
                   $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");

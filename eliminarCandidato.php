@@ -2,9 +2,9 @@
 include ("conexion.php");
 $conexion=Conectar();
 
-$clave=$_POST[clave];
+$clave=$_POST['clave'];
 
-$sql="DELETE * FROM identificacion WHERE id_rfc='$clave'";
+$sql="DELETE * FROM identificacion WHERE id_rfc ='$clave'";
 $registros = mysql_query($sql, $conexion);
 if(!$registros)
 {
