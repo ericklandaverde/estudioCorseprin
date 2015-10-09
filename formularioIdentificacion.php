@@ -6,8 +6,9 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
-    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
@@ -59,10 +60,7 @@
 					 <p><label>DATOS DE IDENTIFICACION</label></p>
                 <!-- <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Adelante</a></p> -->
 				     <p>ESTAS REALIZANDO EL ESTUDIO EL DIA: </p>
-	                 <script>  
-	                  var f = new Date();
-	                  document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-	                 </script>
+	                 <script> var f = new Date(); document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); </script>
 					</div>
 				  </div>
 			  </div>
@@ -120,7 +118,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" class="form-control" id="" placeholder="Fecha de nacimiento" name="fecha" required>
+						  <input type="date" id="fecha" placeholder="Fecha de nacimiento" name="fecha" required>
 						</div>
 					</div>
 				  <div class="form-group">
@@ -228,6 +226,7 @@
 	</footer>
 	 
 	 <!-- js -->
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
