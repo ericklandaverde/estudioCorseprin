@@ -60,8 +60,8 @@
 				    </div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <label>Puesto a cubrir: </label>
-						  <select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="puesto" onkeyUp="this.value.toUpperCase()"required>
+						  <label for="puesto">Puesto a cubrir: </label>
+						  <select type="text" class="form-control" id="puesto" placeholder="Puesto a cubrir" name="puesto" onkeyUp="this.value.toUpperCase()"required>
 						  	<option selected value="">Seleccionar puesto</option>
 						  	<option value="Administrativo">Administrativo</option>
 						  	<option value="Escolta">Escolta</option>
@@ -82,23 +82,24 @@
 
 				    <div class="form-group">
 					  <div id="locationField" class="col-md-offset-2 col-md-8">
-					  <input type="text"  class="form-control" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required>
+						  <input type="text"  class="form-control" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required>
+			              <label>Codigo postal</label><br>
+				          <input class="form-control" id="postal_code" disabled="true"><br>
+					      <label>Pais</label><br>
+				      	  <input class="form-control" id="country" disabled="true"><br>
+				      	  <label>Estado</label><br>
+				          <input class="form-control" id="administrative_area_level_1" disabled="true"><br>
+				          <label>Cuidad</label><br>
+				          <input class="form-control" class="field" id="locality" disabled="true"><br>
+						  <label>Dirección</label><br>
+				          <input class="form-control" id="street_number" disabled="true"><br>
+				          <input class="form-control" id="route" disabled="true"><br>
 					  </div>
 				    </div>
 				  
 					<div class="form-group">
 						<div>   
-							    <label>Codigo postal</label><br>
-						        <input id="postal_code" disabled="true"><br>
-							    <label>Pais</label><br>
-						      	<input id="country" disabled="true"><br>
-						      	<label>Estado</label><br>
-						        <input id="administrative_area_level_1" disabled="true"><br>
-						        <label>Cuidad</label><br>
-						        <input class="field" id="locality" disabled="true"><br>
-								<label>Dirección</label><br>
-						        <input id="street_number" disabled="true"><br>
-						        <input id="route" disabled="true"><br>
+							    
 						</div>
 					</div>
 					<div class="form-group">
