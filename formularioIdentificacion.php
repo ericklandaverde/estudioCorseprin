@@ -89,10 +89,11 @@
 					<div class="form-group">
 						<div>
 								<label>Dirección</label><br>
+								<input type="text">
 						        <input id="street_number" disabled="true"><br>
 						        <input id="route" disabled="true"><br>
 						      	<label>Cuidad</label><br>
-						        <input ><input class="field" id="locality" disabled="true"><br>
+						        <input class="field" id="locality" disabled="true"><br>
 						      	<label>Estado</label><br>
 						        <input id="administrative_area_level_1" disabled="true"><br>
 						        <label>Codigo postal</label><br>
