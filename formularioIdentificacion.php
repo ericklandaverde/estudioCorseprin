@@ -79,10 +79,15 @@
 					  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
 					  </div>
 				    </div>
+
+				    <div class="form-group">
+					  <div id="locationField" class="col-md-offset-2 col-md-8">
+					  	<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required></input>
+					  </div>
+				    </div>
 				  
 					<div class="form-group">
-						<div id="locationField">
-								<input type="text" id="autocomplete" placeholder="Escribe tu direccion" onFocus="geolocate()" name="direccion" required></input>
+						<div>
 								<label>Dirección</label>
 						        <input id="street_number" disabled="true"></input>
 						        <input id="route" disabled="true"></input><br>
