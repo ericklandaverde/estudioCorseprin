@@ -125,9 +125,9 @@
             <div class="col-md-offset-2 col-md-8">
                <script type="text/javascript">
                         function confirmar(){
-                            alertify.confirm("Segur@ deseas salir:", function (e) {
+                            alertify.confirm("Segura deseas salir:", function (e) {
                               if (e) {
-                                alertify.success("Has pulsado '" + alertify.labels.ok + "'")window.location='index.html';
+                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
                               }else{ 
                                 alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
                               }
