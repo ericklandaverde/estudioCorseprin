@@ -454,6 +454,64 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(20); 
 
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b) Actividades Sociale'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('¿Que religion prefesa'),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode(''),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
+        $pdf->Ln(10);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'1. Eventos sociales (familiares o amigos)',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'2. Eventos comunitarios',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('c) Actividades Culturales'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
+        $pdf->Ln(10);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Teatro',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Festivales Culturales',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Zonas Arqueologicas',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('d) Actividades Deportivas'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Deporte',1,0,'C'); $pdf->Cell(60,8,'Lugar',1,0,'C'); $pdf->Cell(50,8,'Frecuencia anual',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('e) Actividades Recreativas'),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Vacaciones',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Plazas públicas',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques naturales',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques de diversion',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Cine',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('f) Pasatiempos '),0,0,'L');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(10);
+
+
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
