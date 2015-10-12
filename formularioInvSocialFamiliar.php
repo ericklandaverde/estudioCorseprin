@@ -76,7 +76,7 @@
 	$montoCuatroS=$_POST['montoCuatroS'];
 
 	$sqlS="insert economicoSeguro(id_rfc, vida, montoS, medicos, montoDosS, automovil, montoTresS, accidentes, montoCuatroS) 
-	values('$clave','$vida','$montosS','$medicos','$montoDosS','$automovil','$montoTres','$accidentes','$montoCuatroS')";
+	values('$clave','$vida','$montoS','$medicos','$montoDosS','$automovil','$montoTres','$accidentes','$montoCuatroS')";
 	$registroS=mysqli_query($conexion,$sqlS);
    
 	//economicoActivos

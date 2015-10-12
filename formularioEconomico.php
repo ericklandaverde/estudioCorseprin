@@ -288,7 +288,7 @@ else
               </tr>
               <tr>
                   <td><input type="text" class="form-control" id="inputClave" placeholder="Ubicacion" name="ubicacion" required></td>
-                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimado" required></td>
+                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimadoA" required></td>
               </tr>
               <tr>
                   <td><label>Tipo</label></td>
@@ -297,8 +297,8 @@ else
               </tr>
               <tr>
                   <td><input type="text" class="form-control" id="inputClave" placeholder="Tipo" name="tipo" required></td>
-                  <td><input type="text" class="form-control" id="inputClave" placeholder="Modelo" name="ubicacion" required></td>
-                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimado" required></td>
+                  <td><input type="text" class="form-control" id="inputClave" placeholder="Modelo" name="modelo" required></td>
+                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimadoT" required></td>
               </tr>
           </table>
       </fieldset>
