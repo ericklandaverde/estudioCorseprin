@@ -16,8 +16,18 @@ $registrosL = mysqli_query($conexion,$sqlL);
 $sqlR="DELETE FROM referencias WHERE id_rfc='$clave'";
 $registrosR = mysqli_query($conexion,$sqlR);
 
-// $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
-// $registros = mysqli_query($conexion,$sql);
+$sqlIng="DELETE FROM economicoIngresos WHERE id_rfc='$clave'";
+$registrosIng = mysqli_query($conexion,$sqlIng);
+$sqlEgr="DELETE FROM economicoEgresos WHERE id_rfc='$clave'";
+$registrosEgr = mysqli_query($conexion,$sqlEgr);
+$sqlRes="DELETE FROM economicoResumen WHERE id_rfc='$clave'";
+$registrosRes = mysqli_query($conexion,$sqlRes);
+$sqlCre="DELETE FROM economicoCreditos WHERE id_rfc='$clave'";
+$registrosCre = mysqli_query($conexion,$sqlCre);
+$sqlSeg="DELETE FROM economicoSeguro WHERE id_rfc='$clave'";
+$registrosSeg = mysqli_query($conexion,$sqlSeg);
+$sqlAct="DELETE FROM economicoActivos WHERE id_rfc='$clave'";
+$registrosAct = mysqli_query($conexion,$sqlAct);
 
 // $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
 // $registros = mysqli_query($conexion,$sql);
