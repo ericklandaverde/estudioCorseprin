@@ -227,7 +227,10 @@
                             	</tr>
                             </table>
                             </fieldset>
-                            
+                          </div>
+                        </div>
+                        <div class="form-group">
+                           <div id="capa" class="col-md-offset-2 col-md-8">
                             <fieldset>
                             <legend>Seguro:</legend>
                             <table>
@@ -261,7 +264,10 @@
                             	</tr>
                             </table>
                             </fieldset>
-
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="capa" class="col-md-offset-2 col-md-8"> 
                             <fieldset>
                             <legend>Activos:</legend>
                             <table>
@@ -272,9 +278,9 @@
                             		<td><label>Tipo: </label></td>
                             	</tr>
                             	<tr>
-                            		<td><input type="checkbox" name="tipoPropiedad" value=" Casa"> Casa</td>
-                            		<td><input type="checkbox" name="tipoPropiedad" value=" Terreno"> Terreno</td>
-                            		<td><input type="checkbox" name="tipoPropiedad" value=" Departamento"> Departamento</td>
+                            		<td><input type="checkbox" name="tipoPropiedad" value=" Tiene Casa"> Casa</td>
+                            		<td><input type="checkbox" name="tipoPropiedad" value=" Tiene Terreno"> Terreno</td>
+                            		<td><input type="checkbox" name="tipoPropiedad" value=" Tiene Departamento"> Departamento</td>
                             	</tr>
                             	<tr>
                             		<td><label>Ubicacion: </label></td>
