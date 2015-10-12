@@ -184,11 +184,11 @@ else
         <table>
            <tr>
               <td><label>Personas que viven con el investigado:</label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Numero de personas" name="numPerViven" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Numero de personas" name="totalViven" required></td>
           </tr>
           <tr>
               <td><label>Personas que dependen economicamente de el:</label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Num de personas dependientes" name="numPerDepen" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Num de personas dependientes" name="totalDependen" required></td>
           </tr>
           <tr>
               <td><label>Total de ingresos:</label></td>
