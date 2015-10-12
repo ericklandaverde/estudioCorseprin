@@ -2,7 +2,7 @@
 	include('conexion.php');
 	$conexion=conectar();
     
-    //Ingresos:
+    //economicoIngresos
 	$clave=$_POST['clave'];
 	$personaUno=$_POST['personaUno'];
 	$montoUno=$_POST['montoUno'];
@@ -12,7 +12,11 @@
 	$montoTres=$_POST['montoTres'];
 	$totalIngresos=$_POST['totalIngresos'];
 
-    //Egresos (Gastos)
+	$sqlI="insert economicoIngresos(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
+	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
+	$registroI=mysqli_query($conexion,$sqlI);
+
+    //economicoEgresos
     $clave=$_POST['clave'];
 	$personaUnoE=$_POST['personaUnoE'];
 	$montoUnoE=$_POST['montoUnoE'];
@@ -32,12 +36,22 @@
 	$montoOchoE=$_POST['montoOchoE'];
 	$totalEgresos=$_POST['totalEgresos'];
 
-	//Resumen
+	$sql="insert economicoEgresos(id_rfc, personaUnoE, montoUnoE, personaDosE, montoDosE, personaTresE, montoTresE, personaCuatroE, montoCuatroE, personaCincoE,
+		montoCincoE, personaSeisE, montoSeisE, montoSieteE, personaOchoE, montoOchoE, totalIngresos) 
+	values('$clave','$personaUnoE','$montoUnoE','$personaDosE','$montoDosE','$personaTresE','$montoTresE','$personaCuatroE','$montoCuatroE','$personaCincoE',
+		'$montoCincoE','$personaSeisE','$montoSeisE','$personaSieteE','$montoSieteE','$personaOchoE','$montoOchoE','$totalEgresos')";
+	$registro=mysqli_query($conexion,$sql);
+
+	//economicoResumen
 	$clave=$_POST['clave'];
 	$totalViven=$_POST['totalViven'];
 	$totalDependen=$_POST['totalDependen'];
 
-	//Creditos
+	$sql="insert economicoResumen(id_rfc, totalViven, totalDependen) 
+	values('$clave','$totalViven','$totalDependen')";
+	$registro=mysqli_query($conexion,$sql);
+
+	//economicoCreditos
 	$clave=$_POST['clave'];
 	$concepto=$_POST['concepto'];
 	$mensualidad=$_POST['mensualidad'];
@@ -48,29 +62,37 @@
     $plazoDos=$_POST['plazoDos'];
 	$saldoDos=$_POST['saldoDos'];
 
-    //Seguro
+	$sqlS="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, conceptoDos, mensualidadDos, plazoDos, saldoDos) 
+	values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
+	$registroS=mysqli_query($conexion,$sqlS);
+
+    //economicoSeguro
     $clave=$_POST['clave'];
 	$vida=$_POST['vida'];
 	$montoS=$_POST['montoS'];
     $medicos=$_POST['medicos'];
-	$saldo=$_POST['saldo'];
+    $montoDosS=$_POST['montoDosS'];
 	$automovil=$_POST['automovil'];
 	$montoTresS=$_POST['montoTresS'];
     $accidentes=$_POST['accidentes'];
 	$montoCuatroS=$_POST['montoCuatroS'];
 
-	//Activos
+	$sql="insert economicoSeguro(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
+	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
+	$registro=mysqli_query($conexion,$sql);
+
+	//economicoActivos
 	$clave=$_POST['clave'];
 	$tipoPropiedad=$_POST['tipoPropiedad'];
 	$tipo=$_POST['tipo'];
 	$ubicacion=$_POST['ubicacion'];
     $valorestimado=$_POST['valorestimado'];
-
-	$sql="insert economico(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
-	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
+	
+	$sql="insert economicoActivos(id_rfc, tipoPropiedad, tipo, ubicacion, valorestimado) 
+	values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
 	$registro=mysqli_query($conexion,$sql);
 	
-	if(!$registro)
+	if(!$registroI && !$registroE)
 	{
 		echo"
 		<script language='javascript'>
@@ -87,7 +109,7 @@
 		</script>";
 	}
 ?>
-
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <!DOCTYPE html>
 <html>
   <head>
