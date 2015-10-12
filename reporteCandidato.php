@@ -541,6 +541,12 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(10);
 
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('9. VISITA DOMICILIARIA'),0,0,'L');
+        $pdf->Ln(8); 
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Estructura de la vivienda'),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Una planta (   )',1,0,'C'); $pdf->Cell(40,8,'PB y un Piso (   )',1,0,'C');  $pdf->Cell(45,8,'2 Pisos (   )',1,0,'C');  $pdf->Cell(40,8,'Más de 2 (   )',1,0,'C');
+        $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf

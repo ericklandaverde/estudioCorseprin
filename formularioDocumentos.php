@@ -148,7 +148,7 @@
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" required>
-					  <input type="text" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $clave; ?>" disabled="true">
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $clave; ?>">
 					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>
 					</div>
 				  </div>
@@ -156,7 +156,6 @@
 					<div class="col-md-offset-2 col-md-8">
 					<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-                    <button type="button" onClick="window.location='formularioIdentificacion.php'" class="btn btn-theme btn-lg btn-block">Regresar</button>
 					</div>
 				  </div>
 				</form>
