@@ -24,10 +24,12 @@
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
     //Consulta formulario Econnomico
-    $numE= $_POST['clave'];
-    $strConsultaE = "SELECT * FROM economico where id_rfc = '$numE'";
-    $candidatoE = mysqli_query($conexion,$strConsultaE);
-    $filaE = mysqli_fetch_array($candidatoE);
+    $numIng= $_POST['clave'];
+    $strConsultaIng = "SELECT * FROM economicoIngresos where id_rfc = '$numIng'";
+    $candidatoIng = mysqli_query($conexion,$strConsultaIng);
+    $filaIng = mysqli_fetch_array($candidatoIng);
+     
+
 
 class PDF extends FPDF
 {
@@ -338,13 +340,13 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Fuente',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Trabajo',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaUno'],1,0,'C'); $pdf->Cell(60,8,'Trabajo',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoUno'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Pension',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaDos'],1,0,'C'); $pdf->Cell(60,8,'Pension',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoDos'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Beca',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaTres'],1,0,'C'); $pdf->Cell(60,8,'Beca',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoTres'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'TotaL: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'TotaL: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['totalIngresos']."",1,0,'C');
         $pdf->Ln(10);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b)  Egresos'),0,0,'L');
