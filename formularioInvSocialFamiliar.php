@@ -37,7 +37,7 @@
 	$totalEgresos=$_POST['totalEgresos'];
 
 	$sqlE="insert economicoEgresos(id_rfc, personaUnoE, montoUnoE, personaDosE, montoDosE, personaTresE, montoTresE, personaCuatroE, montoCuatroE, personaCincoE, montoCincoE, personaSeisE, montoSeisE, personaSieteE, montoSieteE, personaOchoE, montoOchoE, totalEgresos) 
-	values('$clave','$personaUnoE','$montoUnoE','$personaDosE','$montoDosE','$personaTresE','$montoTresE','$clave','$clave','$clave','$clave','$clave','$clave','$clave','$clave','$clave','$clave','$clave')";
+	values('$clave','$personaUnoE','$montoUnoE','$personaDosE','$montoDosE','$personaTresE','$montoTresE','$personaCuatroE','$montoCuatroE','$personaCincoE','$montoCincoE','$personaSeisE','$montoSeisE','$personaSieteE','$montoSieteE','$personaOchoE','$montoOchoE','$totalEgresos')";
 	$registroE=mysqli_query($conexion,$sqlE);
 
 	//economicoResumen
