@@ -52,16 +52,6 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript">
-    function totalIngresos(){
-        var n1 = document.getElementById("montoUno").value;
-        var n2 = document.getElementById("montoDos").value;
-        var n3 = document.getElementById("montoTres").value;
-        var resultado = (parseInt(n1) + parseInt(n2) + parseInt(n3));
-        total.value=resultado;
-    }
-
-    </script>
    </head>
 
   <body>
@@ -372,6 +362,16 @@
 	</footer>
 	 
 	 <!-- js -->
+    <script type="text/javascript">
+    function totalIngresos(){
+        var n1 = document.getElementById("montoUno").value;
+        var n2 = document.getElementById("montoDos").value;
+        var n3 = document.getElementById("montoTres").value;
+        var resultado = (parseInt(n1) + parseInt(n2) + parseInt(n3));
+        total.value=resultado; 
+        alert(resultado);
+    }
+    </script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
