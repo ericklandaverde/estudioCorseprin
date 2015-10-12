@@ -82,13 +82,16 @@
 	//economicoActivos
 	$clave=$_POST['clave'];
 	$tipoPropiedad=$_POST['tipoPropiedad'];
-	$tipo=$_POST['tipo'];
 	$ubicacion=$_POST['ubicacion'];
-    $valorestimado=$_POST['valorestimado'];
+    $valorEstimadoT=$_POST['valorEstimadoT'];
+    $tipo=$_POST['tipo'];
+    $modelo=$_POST['modelo'];
+    $valorestimadoA=$_POST['valorestimadoA'];
 	
-	$sqlA="insert economicoActivos(id_rfc, tipoPropiedad, tipo, ubicacion, valorestimado) 
-	values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
+	$sqlA="insert economicoActivos(id_rfc, tipoPropiedad, ubicacion, valorEstimadoT, tipo, modelo, valorestimadoA) 
+	values('$clave','$tipoPropiedad','$ubicacion','$valorEstimadoT','$tipo','$modelo','$valorestimadoA')";
 	$registroA=mysqli_query($conexion,$sqlA);
+	
 	//$registroI $registroE $registroR $registroC $registroS $registroA
 	if(!$registroI && !$registroE && !$registroR && !$registroC && !$registroS && !$registroA )
 	{

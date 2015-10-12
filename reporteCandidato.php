@@ -433,17 +433,17 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Tipo: '),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Casa ( )  Terreno ( ) Departamento ( )'),1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaAct['tipoPropiedad'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Ubicación'),1,0,'C'); $pdf->Cell(80,8,'Valor Estimado',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaAct['ubicacion'],1,0,'C'); $pdf->Cell(80,8,$filaAct['valorEstimadoT'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Automovil: ',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Modelo',1,0,'C'); $pdf->Cell(80,8,'Valor Estimado',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Tipo',1,0,'C'); $pdf->Cell(60,8,'Modelo',1,0,'R'); $pdf->Cell(50, 8,'Valor Estimado',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaAct['tipo'],1,0,'C'); $pdf->Cell(60,8,$filaAct['modelo'],1,0,'R'); $pdf->Cell(50, 8,'$'.$filaAct['valorEstimadoA']."",1,0,'C');
         $pdf->Ln(20);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('8. INVESTIGACIÓN SOCIAL Y FAMILIAR'),0,0,'L');
