@@ -238,28 +238,28 @@
                             		<td><label>De vida: </label></td>
                             		<td><input type="radio" name="seguroVida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
                             		<td><input type="radio" name="seguroVida" value="No" placeholder="Selecciona una opcion" checked required>No</td>
-                            		<td><label>Monto Mensual: </label></td>
+                            		<td><label> Monto Mensual: </label></td>
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
                             	</tr>
                             	<tr>
                             		<td><label>De gastos medicos mayores: </label></td>
                             		<td><input type="radio" name="seguroVidaMedicos" value="Si" placeholder="Selecciona una opcion"  required>Si</td>
                             		<td><input type="radio" name="seguroVidaMedicos" value="No" placeholder="Selecciona una opcion" checked required>No</td>
-                            		<td><label>Monto Mensual: </label></td>
+                            		<td><label> Monto Mensual: </label></td>
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
                             	</tr>
                             	<tr>
                             		<td><label>De automovil: </label></td>
                             		<td><input type="radio" name="seguroAutomovil" value="Si" placeholder="Selecciona una opcion" required>Si</td>
                             		<td><input type="radio" name="seguroAutomovil" value="No" placeholder="Selecciona una opcion" checked required>No</td>
-                            		<td><label>Monto Mensual: </label></td>
+                            		<td><label> Monto Mensual: </label></td>
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
                             	</tr>
                             	<tr>
                             		<td><label>Contra accidentes: </label></td>
                             		<td><input type="radio" name="seguroAccidentes" value="Si" placeholder="Selecciona una opcion" required>Si</td>
                             		<td><input type="radio" name="seguroAccidentes" value="No" placeholder="Selecciona una opcion" checked required>No</td>
-                            		<td><label>Monto Mensual: </label></td>
+                            		<td><label> Monto Mensual: </label></td>
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
                             	</tr>
                             </table>
