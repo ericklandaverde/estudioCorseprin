@@ -107,7 +107,7 @@ else
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
                       <td><input type="text" class="form-control" id="inputClave"  value="Beca" disabled="true" required></td>
-                      <td><input type="number" class="form-control" id="montoTres" placeholder="Monto Mensual" name="montotres" required></td>
+                      <td><input type="number" class="form-control" id="montoTres" placeholder="Monto Mensual" name="montoTres" required></td>
                   </tr>
                   <tr>
                       <td></td>
