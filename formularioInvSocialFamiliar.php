@@ -92,7 +92,7 @@
 	// values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
 	// $registro=mysqli_query($conexion,$sql);
 	
-	if(!$registroI && !$registroI)
+	if(!$registroR)
 	{
 		echo"
 		<script language='javascript'>
