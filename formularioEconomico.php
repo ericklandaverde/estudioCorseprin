@@ -111,7 +111,7 @@
                             	</tr>
                             	<tr>
                             	 <td></td>
-                            	 <td><input type="button" value="Calcular" onclick="totalIngresos()"></td>
+                            	 <td><button onclick="totalIngresos()">Calcular</button> </td>
                             	 <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
                             	</tr>
                             </table>
