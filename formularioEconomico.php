@@ -85,8 +85,9 @@
 					<form action="formularioInvSocialFamuliar.php" method="post" class="form-horizontal" role="form">
 					  <div class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
-							<label>Ingresos: </label>
                             <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+                            <fieldset>
+                            <legend>Ingresos:</legend>
                             <table>
                             	<tr>
                             		<td><label>Persona.</label></td>
@@ -114,6 +115,7 @@
                             	 <td><input type="number" class="form-control" id="inputClave" placeholder="Total" name="totalIngresos" required></td>
                             	</tr>
                             </table>
+                            </fieldset>
 						</div>
 					  </div>
 					  <div class="form-group">
@@ -202,10 +204,9 @@
 					  </div>
 					  <div id="Credito"class="form-group">
 						<div id="capa" class="col-md-offset-2 col-md-8">
+                            <fieldset>
+                            <legend>Creditos:</legend>
                             <table>
-                            	<tr>
-                            		<td><label>CREDITOS</label></td>
-                            	</tr>
                             	<tr>							
                             	 <td><label>Concepto</label></td>
 							     <td><label>Mensualidad</label></td>
@@ -224,9 +225,12 @@
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazoDosC" required></td>
 							     <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldoDosC" required></td>
                             	</tr>
-                            	<tr>
-                            		<td><label>SEGURO</label></td>
-                            	</tr>
+                            </table>
+                            </fieldset>
+                            
+                            <fieldset>
+                            <legend>Seguro:</legend>
+                            <table>
                             	<tr>
                             		<td><label>De vida: </label></td>
                             		<td><input type="radio" name="seguroVida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
@@ -256,8 +260,10 @@
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
                             	</tr>
                             </table>
+                            </fieldset>
 
-                            <label>Activos:</label><br>
+                            <fieldset>
+                            <legend>Activos:</legend>
                             <table>
                             	<tr>
                             		<td><label>PROPIEDADES: </label></td>
@@ -288,8 +294,8 @@
                             		<td><input type="text" class="form-control" id="inputClave" placeholder="Modelo" name="ubicacion" required></td>
                             		<td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimado" required></td>
                             	</tr>
-
                             </table>
+                            </fieldset>
 						</div>
 					  </div>
 					  <div class="form-group">
