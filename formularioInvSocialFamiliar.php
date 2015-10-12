@@ -49,20 +49,20 @@
 	values('$clave','$totalViven','$totalDependen')";
 	$registroR=mysqli_query($conexion,$sqlR);
 
-	// //economicoCreditos
-	// $clave=$_POST['clave'];
-	// $concepto=$_POST['concepto'];
-	// $mensualidad=$_POST['mensualidad'];
- //    $plazo=$_POST['plazo'];
-	// $saldo=$_POST['saldo'];
-	// $conceptoDos=$_POST['conceptoDos'];
-	// $mensualidadDos=$_POST['mensualidadDos'];
- //    $plazoDos=$_POST['plazoDos'];
-	// $saldoDos=$_POST['saldoDos'];
+	//economicoCreditos
+	$clave=$_POST['clave'];
+	$concepto=$_POST['concepto'];
+	$mensualidad=$_POST['mensualidad'];
+    $plazo=$_POST['plazo'];
+	$saldo=$_POST['saldo'];
+	$conceptoDos=$_POST['conceptoDos'];
+	$mensualidadDos=$_POST['mensualidadDos'];
+    $plazoDos=$_POST['plazoDos'];
+	$saldoDos=$_POST['saldoDos'];
 
-	// $sqlS="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, conceptoDos, mensualidadDos, plazoDos, saldoDos) 
-	// values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
-	// $registroS=mysqli_query($conexion,$sqlS);
+	$sqlC="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, conceptoDos, mensualidadDos, plazoDos, saldoDos) 
+	values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
+	$registroC=mysqli_query($conexion,$sqlC);
 
  //    //economicoSeguro
  //    $clave=$_POST['clave'];
@@ -90,7 +90,7 @@
 	// values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
 	// $registro=mysqli_query($conexion,$sql);
 	
-	if(!$registroE)
+	if(!$registroC)
 	{
 		echo"
 		<script language='javascript'>

@@ -214,16 +214,16 @@ else
               <td><label>Saldo</label></td>
           </tr>
           <tr>							
-              <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="conceptoUnoC" required></td>
-              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mesualidadUno" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazoUno" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldoUno" required></td>
+              <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="concepto" required></td>
+              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mesualidad" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazo" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldo" required></td>
           </tr>
           <tr>							
-              <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="personaDosC" required></td>
-              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mensualidadDosC" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazoDosC" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldoDosC" required></td>
+              <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="conceptoDos" required></td>
+              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mensualidadDos" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazoDos" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldoDos" required></td>
           </tr>
       </table>
   </fieldset>
