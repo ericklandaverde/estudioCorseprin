@@ -42,14 +42,14 @@
 	// 	'$montoCincoE','$personaSeisE','$montoSeisE','$personaSieteE','$montoSieteE','$personaOchoE','$montoOchoE','$totalEgresos')";
 	// $registro=mysqli_query($conexion,$sql);
 
-	// //economicoResumen
-	// $clave=$_POST['clave'];
-	// $totalViven=$_POST['totalViven'];
-	// $totalDependen=$_POST['totalDependen'];
+	//economicoResumen
+	$clave=$_POST['clave'];
+	$totalViven=$_POST['totalViven'];
+	$totalDependen=$_POST['totalDependen'];
 
-	// $sql="insert economicoResumen(id_rfc, totalViven, totalDependen) 
-	// values('$clave','$totalViven','$totalDependen')";
-	// $registro=mysqli_query($conexion,$sql);
+	$sqlR="insert economicoResumen(id_rfc, totalViven, totalDependen) 
+	values('$clave','$totalViven','$totalDependen')";
+	$registroR=mysqli_query($conexion,$sqlR);
 
 	// //economicoCreditos
 	// $clave=$_POST['clave'];
@@ -92,7 +92,7 @@
 	// values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
 	// $registro=mysqli_query($conexion,$sql);
 	
-	if(!$registroI)
+	if(!$registroI && !$registroI)
 	{
 		echo"
 		<script language='javascript'>
