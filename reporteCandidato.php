@@ -23,6 +23,7 @@
     $strConsultaR = "SELECT * FROM referencias where id_rfc = '$numR'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
+    
     //Consulta formulario Economico
             $numIng= $_POST['clave'];
             $strConsultaIng = "SELECT * FROM economicoIngresos where id_rfc = '$numIng'";
@@ -325,7 +326,10 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,15,'',1,0,'C');
         $pdf->Ln(20);
+
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('5.REFERENCIAS PERSONALES'),0,0,'L');
         $pdf->Ln(8);
