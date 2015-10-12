@@ -23,13 +23,36 @@
     $strConsultaR = "SELECT * FROM referencias where id_rfc = '$numR'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
-    //Consulta formulario Econnomico
-    $numIng= $_POST['clave'];
-    $strConsultaIng = "SELECT * FROM economicoIngresos where id_rfc = '$numIng'";
-    $candidatoIng = mysqli_query($conexion,$strConsultaIng);
-    $filaIng = mysqli_fetch_array($candidatoIng);
-     
+    //Consulta formulario Economico
+            $numIng= $_POST['clave'];
+            $strConsultaIng = "SELECT * FROM economicoIngresos where id_rfc = '$numIng'";
+            $candidatoIng = mysqli_query($conexion,$strConsultaIng);
+            $filaIng = mysqli_fetch_array($candidatoIng);
 
+            $numEgr= $_POST['clave'];
+            $strConsultaEgr = "SELECT * FROM economicoEgresos where id_rfc = '$numEgr'";
+            $candidatoEgr = mysqli_query($conexion,$strConsultaEgr);
+            $filaEgr = mysqli_fetch_array($candidatoEgr);
+
+            $numRes= $_POST['clave'];
+            $strConsultaRes = "SELECT * FROM economicoResumen where id_rfc = '$numRes'";
+            $candidatoRes = mysqli_query($conexion,$strConsultaRes);
+            $filaRes = mysqli_fetch_array($candidatoRes);
+
+            $numCre= $_POST['clave'];
+            $strConsultaCre = "SELECT * FROM economicoCreditos where id_rfc = '$numCre'";
+            $candidatoCre = mysqli_query($conexion,$strConsultaCre);
+            $filaCre = mysqli_fetch_array($candidatoCre);
+
+            $numSeg= $_POST['clave'];
+            $strConsultaSeg = "SELECT * FROM economicoSeguro where id_rfc = '$numSeg'";
+            $candidatoSeg = mysqli_query($conexion,$strConsultaSeg);
+            $filaSeg = mysqli_fetch_array($candidatoSeg);
+
+            $numAct= $_POST['clave'];
+            $strConsultaAct = "SELECT * FROM economicoActivos where id_rfc = '$numAct'";
+            $candidatoAct = mysqli_query($conexion,$strConsultaAct);
+            $filaAct = mysqli_fetch_array($candidatoAct);
 
 class PDF extends FPDF
 {
@@ -340,36 +363,36 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Fuente',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaUno'],1,0,'C'); $pdf->Cell(60,8,'Trabajo',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoUno'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaUno'],1,0,'C'); $pdf->Cell(60,8,'Trabajo',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['montoUno']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaDos'],1,0,'C'); $pdf->Cell(60,8,'Pension',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoDos'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaDos'],1,0,'C'); $pdf->Cell(60,8,'Pension',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['montoDos']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaTres'],1,0,'C'); $pdf->Cell(60,8,'Beca',1,0,'C'); $pdf->Cell(50, 8,$filaIng['montoTres'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaTres'],1,0,'C'); $pdf->Cell(60,8,'Beca',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['montoTres']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'TotaL: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['totalIngresos']."",1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['totalIngresos']."",1,0,'C');
         $pdf->Ln(10);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b)  Egresos'),0,0,'L');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Concepto',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Alimentacion',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaUnoE'],1,0,'C'); $pdf->Cell(60,8,'Alimentacion',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoUnoE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Ropa y Calzado',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaDosE'],1,0,'C'); $pdf->Cell(60,8,'Ropa y Calzado',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoDosE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Transporte',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaTresE'],1,0,'C'); $pdf->Cell(60,8,'Transporte',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoTresE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Servicios: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaCuatroE'],1,0,'C'); $pdf->Cell(60,8,'Servicios: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoCuatroE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Gastos Escolares: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaCincoE'],1,0,'C'); $pdf->Cell(60,8,'Gastos Escolares: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoCincoE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Actividades deportivas: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personasSeisE'],1,0,'C'); $pdf->Cell(60,8,'Actividades deportivas: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoSeisE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Actividades recreativas: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaSieteE'],1,0,'C'); $pdf->Cell(60,8,'Actividades recreativas: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoSieteE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Otros: ',1,0,'C'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaOchoE'],1,0,'C'); $pdf->Cell(60,8,'Otros: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoOchoE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'R'); $pdf->Cell(50, 8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'R'); $pdf->Cell(50, 8,'$'.$filaEgr['totalEgresos']."",1,0,'C');
         $pdf->Ln(10);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('RESUMEN: '),1,0,'C');

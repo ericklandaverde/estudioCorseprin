@@ -143,7 +143,6 @@
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>INVESTIGACION SOCIAL Y FAMILIAR</label></p>
 					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
-					    <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioEconomico.html">Atras </a></p>
 					</div>
 				  </div>
 			  </div>
