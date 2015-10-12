@@ -36,10 +36,8 @@
 	$montoOchoE=$_POST['montoOchoE'];
 	$totalEgresos=$_POST['totalEgresos'];
 
-	$sqlE="insert economicoEgresos(id_rfc, personaUnoE, montoUnoE, personaDosE, montoDosE, personaTresE, montoTresE, personaCuatroE, montoCuatroE, personaCincoE,
-		montoCincoE, personaSeisE, montoSeisE, personaSieteE montoSieteE, personaOchoE, montoOchoE, totalEgresos) 
-	values('$clave','$personaUnoE','$montoUnoE','$personaDosE','$montoDosE','$personaTresE','$montoTresE','$personaCuatroE','$montoCuatroE','$personaCincoE',
-		'$montoCincoE','$personaSeisE','$montoSeisE','$personaSieteE','$montoSieteE','$personaOchoE','$montoOchoE','$totalEgresos')";
+	$sqlE="insert economicoEgresos(id_rfc, personaUnoE, montoUnoE, personaDosE, montoDosE, personaTresE, montoTresE, personaCuatroE, montoCuatroE, personaCincoE, montoCincoE, personaSeisE, montoSeisE, personaSieteE montoSieteE, personaOchoE, montoOchoE, totalEgresos) 
+	values('$clave','$personaUnoE','$montoUnoE','$personaDosE','$montoDosE','$personaTresE','$montoTresE','$personaCuatroE','$montoCuatroE','$personaCincoE','$montoCincoE','$personaSeisE','$montoSeisE','$personaSieteE','$montoSieteE','$personaOchoE','$montoOchoE','$totalEgresos')";
 	$registroE=mysqli_query($conexion,$sqlE);
 
 	//economicoResumen
