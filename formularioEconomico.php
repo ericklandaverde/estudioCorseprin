@@ -52,6 +52,17 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+    function totalIngresos(){
+        numero1=parseInt(document.getElementById('montoUno').value);
+        numero2=parseInt(document.getElementById('montoDos').value);
+        numero3=parseInt(document.getElementById('montoTres').value);
+        
+        resultado=numero1+numero2+numero3;
+        document.getElementById('totalIngresos').value=resultado;
+        }    
+    }
+   </script>
    </head>
 
   <body>
@@ -112,7 +123,7 @@
                             	<tr>
                             	 <td></td>
                             	 <td><input type="button" value="Calcular" onclick=""></td>
-                            	 <td><input type="number" class="form-control" id="inputClave" placeholder="Total" name="totalIngresos" required></td>
+                            	 <td><input type="number" class="form-control" id="totalIngress" name="totalIngresos" onClick="totalIngresos()" required></td>
                             	</tr>
                             </table>
                             </fieldset>
