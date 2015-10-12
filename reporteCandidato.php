@@ -250,7 +250,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Correo electronico: ',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaI['email'],1,0,'C');
-        $pdf->Ln(15);
+        $pdf->Ln(20);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('2.- REVISIÓN DE DOCUMENTOS'),0,0,'L');
         $pdf->Ln(8);
@@ -374,7 +374,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaTres'],1,0,'C'); $pdf->Cell(60,8,'Beca',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['montoTres']."",1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['totalIngresos']."",1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b)  Egresos'),0,0,'L');
         $pdf->Ln(8);
@@ -397,7 +397,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaOchoE'],1,0,'C'); $pdf->Cell(60,8,'Otros: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoOchoE']."",1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'R'); $pdf->Cell(50, 8,'$'.$filaEgr['totalEgresos']."",1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('RESUMEN: '),1,0,'C');
         $pdf->Ln(8);
@@ -408,7 +408,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Ingresos:',1,0,'C'); $pdf->Cell(80,8,'$'.$filaIng['totalIngresos']."",1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Egresos:',1,0,'C'); $pdf->Cell(80,8,'$'.$filaEgr['totalEgresos']."",1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('CRÉDITOS: '),1,0,'C');
         $pdf->Ln(8);
@@ -417,7 +417,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,$filaCre['concepto'],1,0,'C'); $pdf->Cell(40,8,$filaCre['mensualidad'],1,0,'C');  $pdf->Cell(45,8,$filaCre['plazo'],1,0,'C');  $pdf->Cell(40,8,$filaCre['saldo'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,$filaCre['conceptoDos'],1,0,'C'); $pdf->Cell(40,8,$filaCre['mensualidadDos'],1,0,'C');  $pdf->Cell(45,8,$filaCre['plazoDos'],1,0,'C');  $pdf->Cell(40,8,$filaCre['saldoDos'],1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('SEGUROS: '),1,0,'C');
         $pdf->Ln(8);
@@ -428,7 +428,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'De automovil',1,0,'C'); $pdf->Cell(30,8,$filaSeg['automovil'],1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$'.$filaSeg['montoTresS']."",1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Contra accidentes',1,0,'C'); $pdf->Cell(30,8,$filaSeg['accidentes'],1,0,'C');  $pdf->Cell(40,8,'Monto mensual',1,0,'C');  $pdf->Cell(40,8,'$'.$filaSeg['montoCuatroS']."",1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('PROPIEDADES: '),1,0,'C');
         $pdf->Ln(8);
@@ -482,7 +482,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
-        $pdf->Ln(20); 
+        $pdf->Ln(15); 
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b) Actividades Sociale'),0,0,'L');
         $pdf->Ln(8);
@@ -495,7 +495,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'1. Eventos sociales (familiares o amigos)',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'2. Eventos comunitarios',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('c) Actividades Culturales'),0,0,'L');
         $pdf->Ln(8);
@@ -506,7 +506,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Festivales Culturales',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Zonas Arqueologicas',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('d) Actividades Deportivas'),0,0,'L');
         $pdf->Ln(8);
@@ -515,7 +515,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('e) Actividades Recreativas'),0,0,'L');
         $pdf->Ln(8);
@@ -530,7 +530,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques de diversion',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Cine',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
-        $pdf->Ln(10);
+        $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('f) Pasatiempos '),0,0,'L');
         $pdf->Ln(8);
