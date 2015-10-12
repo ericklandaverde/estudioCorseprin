@@ -37,7 +37,7 @@
 	$totalViven=$_POST['totalViven'];
 	$totalDependen=$_POST['totalDependen'];
 
-	//CREDITOS
+	//Creditos
 	$clave=$_POST['clave'];
 	$concepto=$_POST['concepto'];
 	$mensualidad=$_POST['mensualidad'];
@@ -48,6 +48,23 @@
     $plazoDos=$_POST['plazoDos'];
 	$saldoDos=$_POST['saldoDos'];
 
+    //Seguro
+    $clave=$_POST['clave'];
+	$vida=$_POST['vida'];
+	$montoS=$_POST['montoS'];
+    $medicos=$_POST['medicos'];
+	$saldo=$_POST['saldo'];
+	$automovil=$_POST['automovil'];
+	$montoTresS=$_POST['montoTresS'];
+    $accidentes=$_POST['accidentes'];
+	$montoCuatroS=$_POST['montoCuatroS'];
+
+	//Activos
+	$clave=$_POST['clave'];
+	$tipoPropiedad=$_POST['tipoPropiedad'];
+	$tipo=$_POST['tipo'];
+	$ubicacion=$_POST['ubicacion'];
+    $valorestimado=$_POST['valorestimado'];
 
 	$sql="insert economico(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
 	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
@@ -256,7 +273,7 @@
 						     <div class="col-md-offset-2 col-md-8">
 						      <input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
 	                          <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-	                          <button type="button" onClick="window.location='formularioEconomico.html'" class="btn btn-theme btn-lg btn-block">Regresar</button>	
+	                         <!--  <button type="button" onClick="window.location='formularioEconomico.html'" class="btn btn-theme btn-lg btn-block">Regresar</button> -->	
 						    </div>
 					   </div>
 				</form>
