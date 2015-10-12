@@ -1,21 +1,58 @@
 <?php
 	include('conexion.php');
 	$conexion=conectar();
-
+    
+    //Ingresos:
 	$clave=$_POST['clave'];
-	$puesto=$_POST['puesto'];
-	$nombre=$_POST['nombre'];
-	$direccion=$_POST['direccion'];
-	$fecha=$_POST['fecha'];
-	$edad=$_POST['edad'];
-	$estadocivil=$_POST['estadocivil'];
-	$telefono=$_POST['telefono'];
-	$email=$_POST['email'];
-	$nivelacademico=$_POST['nivelacademico'];
+	$personaUno=$_POST['personaUno'];
+	$montoUno=$_POST['montoUno'];
+	$personaDos=$_POST['personaDos'];
+	$montoDos=$_POST['montoDos'];
+	$personaTres=$_POST['personaTres'];
+	$montoTres=$_POST['montoTres'];
+	$totalIngresos=$_POST['totalIngresos'];
 
-	$sql="insert identificacion(id_rfc, puesto, nombre, direccion, fecha, edad, estadocivil, telefono, email, nivelacademico) 
-	values('$clave','$puesto','$nombre','$direccion','$fecha','$edad','$estadocivil','$telefono','email','$nivelacademico')";
+    //Egresos (Gastos)
+    $clave=$_POST['clave'];
+	$personaUnoE=$_POST['personaUnoE'];
+	$montoUnoE=$_POST['montoUnoE'];
+	$personaDosE=$_POST['personaDosE'];
+	$montoDosE=$_POST['montoDosE'];
+	$personaTresE=$_POST['personaTresE'];
+	$montoTresE=$_POST['montoTresE'];
+	$personaCuatroE=$_POST['personaCuatroE'];
+	$montoCuatroE=$_POST['montoCuatroE'];
+	$personaCincoE=$_POST['personaCincoE'];
+	$montoCincoE=$_POST['montoCincoE'];
+	$personaSeisE=$_POST['personaSeisE'];
+	$montoSeisE=$_POST['montoSeisE'];
+	$personaSieteE=$_POST['personaSieteE'];
+	$montoSieteE=$_POST['montoSieteE'];
+	$personaOchoE=$_POST['personaOchoE'];
+	$montoOchoE=$_POST['montoOchoE'];
+	$totalEgresos=$_POST['totalEgresos'];
+
+	//Resumen
+	$clave=$_POST['clave'];
+	$totalViven=$_POST['totalViven'];
+	$totalDependen=$_POST['totalDependen'];
+
+	//CREDITOS
+	$clave=$_POST['clave'];
+	$concepto=$_POST['concepto'];
+	$mensualidad=$_POST['mensualidad'];
+    $plazo=$_POST['plazo'];
+	$saldo=$_POST['saldo'];
+	$conceptoDos=$_POST['conceptoDos'];
+	$mensualidadDos=$_POST['mensualidadDos'];
+    $plazoDos=$_POST['plazoDos'];
+	$saldoDos=$_POST['saldoDos'];
+
+
+	$sql="insert economico(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
+	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
 	$registro=mysqli_query($conexion,$sql);
+	
 	if(!$registro)
 	{
 		echo"
