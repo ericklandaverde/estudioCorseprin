@@ -236,31 +236,31 @@ else
         <table>
            <tr>
               <td><label>De vida: </label></td>
-              <td><input type="radio" name="seguroVida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
-              <td><input type="radio" name="seguroVida" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+              <td><input type="radio" name="vida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+              <td><input type="radio" name="vida" value="No" placeholder="Selecciona una opcion" checked required>No</td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoS" required></td>
           </tr>
           <tr>
               <td><label>De gastos medicos mayores: </label></td>
-              <td><input type="radio" name="seguroVidaMedicos" value="Si" placeholder="Selecciona una opcion"  required>Si</td>
-              <td><input type="radio" name="seguroVidaMedicos" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+              <td><input type="radio" name="medicos" value="Si" placeholder="Selecciona una opcion"  required>Si</td>
+              <td><input type="radio" name="medicos" value="No" placeholder="Selecciona una opcion" checked required>No</td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoDosS" required></td>
           </tr>
           <tr>
               <td><label>De automovil: </label></td>
-              <td><input type="radio" name="seguroAutomovil" value="Si" placeholder="Selecciona una opcion" required>Si</td>
-              <td><input type="radio" name="seguroAutomovil" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+              <td><input type="radio" name="automovil" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+              <td><input type="radio" name="automovil" value="No" placeholder="Selecciona una opcion" checked required>No</td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoTresS" required></td>
           </tr>
           <tr>
               <td><label>Contra accidentes: </label></td>
-              <td><input type="radio" name="seguroAccidentes" value="Si" placeholder="Selecciona una opcion" required>Si</td>
-              <td><input type="radio" name="seguroAccidentes" value="No" placeholder="Selecciona una opcion" checked required>No</td>
+              <td><input type="radio" name="accidentes" value="Si" placeholder="Selecciona una opcion" required>Si</td>
+              <td><input type="radio" name="accidentes" value="No" placeholder="Selecciona una opcion" checked required>No</td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="monto" required></td>
+              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoCuatroS" required></td>
           </tr>
       </table>
   </fieldset>
