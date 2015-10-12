@@ -413,9 +413,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Concepto',1,0,'C'); $pdf->Cell(40,8,'Mensualidad',1,0,'C');  $pdf->Cell(45,8,'Plazo',1,0,'C');  $pdf->Cell(40,8,'Saldo',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'',1,0,'C'); $pdf->Cell(40,8,'',1,0,'C');  $pdf->Cell(45,8,'',1,0,'C');  $pdf->Cell(40,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,$filaCre['concepto'],1,0,'C'); $pdf->Cell(40,8,$filaCre['mensualidad'],1,0,'C');  $pdf->Cell(45,8,$filaCre['plazo'],1,0,'C');  $pdf->Cell(40,8,$filaCre['saldo'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,$filaCre['conceptoDos'],1,0,'C'); $pdf->Cell(40,8,$filaCre['mensualidadDos'],1,0,'C');  $pdf->Cell(45,8,$filaCre['plazoDos'],1,0,'C');  $pdf->Cell(40,8,$filaCre['saldoDos'],1,0,'C');
         $pdf->Ln(10);
-
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('SEGUROS: '),1,0,'C');
         $pdf->Ln(8);
@@ -538,7 +539,6 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(10);
-
 
         //Conteo de paginas
         $pdf->AliasNbPages();
