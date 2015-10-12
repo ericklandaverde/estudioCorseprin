@@ -400,13 +400,13 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('RESUMEN: '),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Personas que viven con el investigado:',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Personas que viven con el investigado:',1,0,'C'); $pdf->Cell(80,8,$filaRes['totalViven'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Personas que dependen económicamente de él:'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Personas que dependen económicamente de él:'),1,0,'C'); $pdf->Cell(80,8,$filaRes['totalDependen'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Ingresos:',1,0,'C'); $pdf->Cell(80,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Ingresos:',1,0,'C'); $pdf->Cell(80,8,'$'.$filaIng['totalIngresos']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Egresos:',1,0,'C'); $pdf->Cell(80,8,'$',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Total de Egresos:',1,0,'C'); $pdf->Cell(80,8,'$'.$filaEgr['totalEgresos']."",1,0,'C');
         $pdf->Ln(10);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('CRÉDITOS: '),1,0,'C');
