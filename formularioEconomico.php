@@ -57,8 +57,8 @@
         var n1 = document.getElementById("montoUno").value;
         var n2 = document.getElementById("montoDos").value;
         var n3 = document.getElementById("montoTres").value;
-        var total = (parseInt(n1) + parseInt(n2) + parseInt(n3));
-        totalIngresos.value= total;
+        var resultado = (parseInt(n1) + parseInt(n2) + parseInt(n3));
+        total.value=resultado;
     }
 
     </script>
@@ -122,7 +122,7 @@
                             	<tr>
                             	 <td></td>
                             	 <td><input type="button" value="Calcular" onclick="totalIngresos()"></td>
-                            	 <td><input type="number" class="form-control" id="totalIngresos" name="totalIngresos" required></td>
+                            	 <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
                             	</tr>
                             </table>
                             </fieldset>
