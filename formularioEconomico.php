@@ -113,16 +113,6 @@ else
                       <td></td>
                       <td><input type="button" value="Calcular" onclick="totalIngresos()"></td>
                       <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
-                      <script type="text/javascript">
-                      function totalIngresos(){
-                        var n1 = document.getElementById("montoUno").value;
-                        var n2 = document.getElementById("montoDos").value;
-                        var n3 = document.getElementById("montoTres").value;
-                        var resultado = (parseInt(n1) + parseInt(n2) + parseInt(n3));
-                        total.value=resultado; 
-                        alert(resultado);
-                    }
-                    </script>
                 </tr>
             </table>
         </fieldset>
@@ -165,12 +155,12 @@ else
           </tr>
           <tr id="6">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSeisE" required></td>
-              <td><input type="text" class="form-control" id="inputClave" value="Actividades deportivas" disable="true" required></td>
+              <td><input type="text" class="form-control" id="inputClave" value="Actividades deportivas" disabled="true" required></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSeisE" required></td>
           </tr>
           <tr id="7">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSieteE" required></td>
-              <td><input type="text" class="form-control" id="inputClave" value="Actividades creativas" disable="true" required></td>
+              <td><input type="text" class="form-control" id="inputClave" value="Actividades creativas" disabled="true" required></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSieteE" required></td>
           </tr>
           <tr id="8">							
