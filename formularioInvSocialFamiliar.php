@@ -51,53 +51,53 @@
 	values('$clave','$totalViven','$totalDependen')";
 	$registro=mysqli_query($conexion,$sql);
 
-	//economicoCreditos
-	$clave=$_POST['clave'];
-	$concepto=$_POST['concepto'];
-	$mensualidad=$_POST['mensualidad'];
-    $plazo=$_POST['plazo'];
-	$saldo=$_POST['saldo'];
-	$conceptoDos=$_POST['conceptoDos'];
-	$mensualidadDos=$_POST['mensualidadDos'];
-    $plazoDos=$_POST['plazoDos'];
-	$saldoDos=$_POST['saldoDos'];
+	// //economicoCreditos
+	// $clave=$_POST['clave'];
+	// $concepto=$_POST['concepto'];
+	// $mensualidad=$_POST['mensualidad'];
+ //    $plazo=$_POST['plazo'];
+	// $saldo=$_POST['saldo'];
+	// $conceptoDos=$_POST['conceptoDos'];
+	// $mensualidadDos=$_POST['mensualidadDos'];
+ //    $plazoDos=$_POST['plazoDos'];
+	// $saldoDos=$_POST['saldoDos'];
 
-	$sqlS="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, conceptoDos, mensualidadDos, plazoDos, saldoDos) 
-	values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
-	$registroS=mysqli_query($conexion,$sqlS);
+	// $sqlS="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, conceptoDos, mensualidadDos, plazoDos, saldoDos) 
+	// values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
+	// $registroS=mysqli_query($conexion,$sqlS);
 
-    //economicoSeguro
-    $clave=$_POST['clave'];
-	$vida=$_POST['vida'];
-	$montoS=$_POST['montoS'];
-    $medicos=$_POST['medicos'];
-    $montoDosS=$_POST['montoDosS'];
-	$automovil=$_POST['automovil'];
-	$montoTresS=$_POST['montoTresS'];
-    $accidentes=$_POST['accidentes'];
-	$montoCuatroS=$_POST['montoCuatroS'];
+ //    //economicoSeguro
+ //    $clave=$_POST['clave'];
+	// $vida=$_POST['vida'];
+	// $montoS=$_POST['montoS'];
+ //    $medicos=$_POST['medicos'];
+ //    $montoDosS=$_POST['montoDosS'];
+	// $automovil=$_POST['automovil'];
+	// $montoTresS=$_POST['montoTresS'];
+ //    $accidentes=$_POST['accidentes'];
+	// $montoCuatroS=$_POST['montoCuatroS'];
 
-	$sql="insert economicoSeguro(id_rfc, vida, montoS, medicos, montoDosS, automovil, montoTresS, accidentes, montoCuatroS) 
-	values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
-	$registro=mysqli_query($conexion,$sql);
+	// $sql="insert economicoSeguro(id_rfc, vida, montoS, medicos, montoDosS, automovil, montoTresS, accidentes, montoCuatroS) 
+	// values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
+	// $registro=mysqli_query($conexion,$sql);
 
-	//economicoActivos
-	$clave=$_POST['clave'];
-	$tipoPropiedad=$_POST['tipoPropiedad'];
-	$tipo=$_POST['tipo'];
-	$ubicacion=$_POST['ubicacion'];
-    $valorestimado=$_POST['valorestimado'];
+	// //economicoActivos
+	// $clave=$_POST['clave'];
+	// $tipoPropiedad=$_POST['tipoPropiedad'];
+	// $tipo=$_POST['tipo'];
+	// $ubicacion=$_POST['ubicacion'];
+ //    $valorestimado=$_POST['valorestimado'];
 	
-	$sql="insert economicoActivos(id_rfc, tipoPropiedad, tipo, ubicacion, valorestimado) 
-	values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
-	$registro=mysqli_query($conexion,$sql);
+	// $sql="insert economicoActivos(id_rfc, tipoPropiedad, tipo, ubicacion, valorestimado) 
+	// values('$clave','$tipoPropiedad','$tipo','$ubicacion','$valorestimado')";
+	// $registro=mysqli_query($conexion,$sql);
 	
 	if(!$registroI && !$registroE)
 	{
 		echo"
 		<script language='javascript'>
 		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioDocumentos.php'
+		window.location='formularioEconomico.php'
 		</script>";
 		exit();
 		}
