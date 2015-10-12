@@ -374,7 +374,9 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b)  Egresos'),0,0,'L');
         $pdf->Ln(8);
-        $pdf->SetFillColor('150','125','255'); 
+        $pdf->SetFillColor(150,50,0);
+        $pdf->SetDrawColor(0,0,255);
+        $pdf->SetTextColor(0,255,0);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Concepto',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaUnoE'],1,0,'C'); $pdf->Cell(60,8,'Alimentacion',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoUnoE']."",1,0,'C');
