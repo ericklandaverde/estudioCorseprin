@@ -386,7 +386,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaCincoE'],1,0,'C'); $pdf->Cell(60,8,'Gastos Escolares: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoCincoE']."",1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personasSeisE'],1,0,'C'); $pdf->Cell(60,8,'Actividades deportivas: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoSeisE']."",1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaSeisE'],1,0,'C'); $pdf->Cell(60,8,'Actividades deportivas: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoSeisE']."",1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaSieteE'],1,0,'C'); $pdf->Cell(60,8,'Actividades recreativas: ',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoSieteE']."",1,0,'C');
         $pdf->Ln(8);
