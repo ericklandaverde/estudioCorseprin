@@ -215,7 +215,7 @@ else
           </tr>
           <tr>							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Concepto" name="concepto" required></td>
-              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mesualidad" required></td>
+              <td><input type="text" class="form-control" id="inputClave" placeholder="Mensualidad" name="mensualidad" required></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Plazo" name="plazo" required></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="saldo" required></td>
           </tr>
