@@ -399,6 +399,38 @@ else
 
 						<div class="form-group">
 							<div class="col-md-offset-2 col-md-8">
+								<label> f)	Pasatiempos : </label>
+								<table>
+									<tr>
+										<td><label>Actividad<label></td>
+										<td><label>Frecuencia anual</label></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadA" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaA" required></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadB" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaB" required></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadC" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaC" required></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadD" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaD" required></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadF" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaF" required></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-offset-2 col-md-8">
 								<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
 								<input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
 								<!--  <button type="button" onClick="window.location='formularioEconomico.html'" class="btn btn-theme btn-lg btn-block">Regresar</button> -->	

@@ -464,9 +464,7 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('PROPIEDADES: '),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Tipo: '),1,0,'C');
-        $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaAct['tipoPropiedad'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Tipo'),1,0,'C'); $pdf->Cell(80,8,$filaAct['tipoPropiedad'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Ubicación'),1,0,'C'); $pdf->Cell(80,8,'Valor Estimado',1,0,'C');
         $pdf->Ln(8);
