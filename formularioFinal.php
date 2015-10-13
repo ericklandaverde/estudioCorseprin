@@ -66,7 +66,8 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('ESTUDIO FINALIZADO')window.location='index.php'
+		alert('ESTUDIO FINALIZADO')
+		window.location='index.html'
 		</script>";
 	}
 ?>
