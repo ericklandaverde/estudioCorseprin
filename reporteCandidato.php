@@ -483,31 +483,31 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edad'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacion'],1,0,'C'); $pdf->Cell(50, 8,$filaDatos['depende'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edad'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacion'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['depende'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parentesco',1,0,'C'); $pdf->Cell(80,8,'Nombre',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaDatos['parentescoDos'],1,0,'C'); $pdf->Cell(80,8,$filaDatos['nombreDos'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edadDos'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacionDos'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['dependenDos'],1,0,'C');
         $pdf->Ln(8); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parentesco',1,0,'C'); $pdf->Cell(80,8,'Nombre',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaDatos['parentescoTres'],1,0,'C'); $pdf->Cell(80,8,$filaDatos['nombreTres'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edadTres'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacionTres'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['dependeTres'],1,0,'C');
         $pdf->Ln(8); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parentesco',1,0,'C'); $pdf->Cell(80,8,'Nombre',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaDatos['parentescoCuatro'],1,0,'C'); $pdf->Cell(80,8,$filaDatos['nombreCuatro'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edadCuatro'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacionCuatro'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['dependeCuatro'],1,0,'C');
         $pdf->Ln(15); 
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b) Actividades Sociale'),0,0,'L');
@@ -573,7 +573,7 @@ class PDF extends FPDF
         $pdf->Ln(8); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Estructura de la vivienda'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Una planta (   )',1,0,'C'); $pdf->Cell(40,8,'PB y un Piso (   )',1,0,'C');  $pdf->Cell(45,8,'2 Pisos (   )',1,0,'C');  $pdf->Cell(40,8,'Más de 2 (   )',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Una planta (   )',1,0,'C'); $pdf->Cell(40,8,'PB y un Piso (   )',1,0,'C');  $pdf->Cell(45,8,'2 Pisos (   )',1,0,'C');  $pdf->Cell(40,8,utf8_decode('Más de 2 (   )'),1,0,'C');
         $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
