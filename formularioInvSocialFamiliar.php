@@ -156,6 +156,8 @@ else
 						<div class="form-group">
 							<div class="col-md-offset-2 col-md-8">
 								<label> a) Datos Familiares (Personas con las que vive) </label>
+								<fieldset>
+                                <legend>Familiar Uno</legend>
 								<table>
 									<tr>
 										<td><label>Parentesco</label></td>
@@ -187,7 +189,10 @@ else
 										</td>
 									</tr>
 								</table>
-																<table>
+								</fieldset>
+								<fieldset>
+                                <legend>Familiar Dos</legend>
+								<table>
 									<tr>
 										<td><label>Parentesco</label></td>
 										<td><label>Nombre:</label></td>
@@ -218,7 +223,10 @@ else
 										</td>
 									</tr>
 								</table>
-																<table>
+								</fieldset>
+								<fieldset>
+                                <legend>Familiar Tres</legend>
+								<table>
 									<tr>
 										<td><label>Parentesco</label></td>
 										<td><label>Nombre:</label></td>
@@ -249,7 +257,10 @@ else
 										</td>
 									</tr>
 								</table>
-																<table>
+								</fieldset>
+								<fieldset>
+                                <legend>Familiar Cuatro</legend>
+							    <table>
 									<tr>
 										<td><label>Parentesco</label></td>
 										<td><label>Nombre:</label></td>
@@ -279,6 +290,7 @@ else
 											<input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
 										</td>
 									</tr>
+									</fieldset>
 								</table>
 							</div>
 						</div>
