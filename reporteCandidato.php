@@ -243,7 +243,10 @@ class PDF extends FPDF
         $pdf->Ln(9);
         $pdf->Cell(70,0,"",0,0,'L'); $pdf->Image($filaI['rutaImagen'],null,null,60,70);
         $pdf->Ln(5);
+
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('1.- DATOS DE IDENTIFICACIÓN'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(2);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Puesto:',1,0,'C'); $pdf->Cell(140,8,$filaI['puesto'],1,0,'C');
         $pdf->Ln(8);
@@ -263,8 +266,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,$filaI['email'],1,0,'C');
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('2.- REVISIÓN DE DOCUMENTOS'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Actas del Registro Civil',1,0,'C');
         $pdf->Ln(8);
@@ -290,8 +295,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,15,'',1,0,'C');
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Domicilio',1,0,'C');
         $pdf->Ln(8);
@@ -342,8 +349,9 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,15,'',1,0,'C');
         $pdf->Ln(20);
 
-
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('5.REFERENCIAS PERSONALES'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Referencia Uno: '),1,0,'C');
         $pdf->Ln(8);
@@ -369,11 +377,15 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['direccionDos'],1,0,'C'); $pdf->Cell(80, 8,$filaR['telefonoDos'],1,0,'C');
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('6.INVESTIGACIÓN ACADÉMICA'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('7. INFORMACIÓN ECONÓMICA'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('a) Ingresos'),0,0,'L');
         $pdf->Ln(8);
@@ -458,8 +470,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaAct['tipo'],1,0,'C'); $pdf->Cell(60,8,$filaAct['modelo'],1,0,'R'); $pdf->Cell(50, 8,'$'.$filaAct['valorEstimadoA']."",1,0,'C');
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('8. INVESTIGACIÓN SOCIAL Y FAMILIAR'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);  
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('a) Datos Familiares (Personas que viven con el investigado)'),0,0,'L');
         $pdf->Ln(8);
@@ -539,7 +553,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques naturales',1,0,'C'); $pdf->Cell(80,8,$filaActi['naturales'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques de diversion',1,0,'C'); $pdf->Cell(80,8,$filaActi['diversion'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parques de diversiones',1,0,'C'); $pdf->Cell(80,8,$filaActi['diversiones'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Cine',1,0,'C'); $pdf->Cell(80,8,$filaActi['cine'],1,0,'C');
         $pdf->Ln(15);
@@ -552,8 +566,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'',1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
         $pdf->Ln(20);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('9. VISITA DOMICILIARIA'),0,0,'L');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Estructura de la vivienda'),1,0,'C');
         $pdf->Ln(8);
