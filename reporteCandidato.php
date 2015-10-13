@@ -271,7 +271,9 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('2.- REVISIÓN DE DOCUMENTOS'),0,0,'L');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Actas del Registro Civil',1,0,'C');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Nacimiento:',1,0,'C'); $pdf->Cell(80,8,'Matrimonio',1,0,'C');
         $pdf->Ln(8);
@@ -389,7 +391,9 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('a) Ingresos'),0,0,'L');
         $pdf->Ln(8);
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Fuente',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaIng['personaUno'],1,0,'C'); $pdf->Cell(60,8,'Trabajo',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaIng['montoUno']."",1,0,'C');
         $pdf->Ln(8);
@@ -402,7 +406,9 @@ class PDF extends FPDF
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b)  Egresos'),0,0,'L');
         $pdf->Ln(8);
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Persona'),1,0,'C'); $pdf->Cell(60,8,'Concepto',1,0,'C'); $pdf->Cell(50,8,'Monto Mensual',1,0,'C');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEgr['personaUnoE'],1,0,'C'); $pdf->Cell(60,8,'Alimentacion',1,0,'C'); $pdf->Cell(50, 8,'$'.$filaEgr['montoUnoE']."",1,0,'C');
         $pdf->Ln(8);
@@ -422,8 +428,10 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'Total: ',1,0,'R'); $pdf->Cell(50, 8,'$'.$filaEgr['totalEgresos']."",1,0,'C');
         $pdf->Ln(15);
-
+        
+        $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('RESUMEN: '),1,0,'C');
+        $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Personas que viven con el investigado:',1,0,'C'); $pdf->Cell(80,8,$filaRes['totalViven'],1,0,'C');
         $pdf->Ln(8);
@@ -491,7 +499,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edadDos'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacionDos'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['dependenDos'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edadDos'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacionDos'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['dependeDos'],1,0,'C');
         $pdf->Ln(8); 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parentesco',1,0,'C'); $pdf->Cell(80,8,'Nombre',1,0,'C');
         $pdf->Ln(8);
