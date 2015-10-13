@@ -156,6 +156,7 @@ else
 						<div class="form-group">
 							<div class="col-md-offset-2 col-md-8">
 								<label> a) Datos Familiares (Personas con las que vive) </label>
+								 <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 								<fieldset>
                                 <legend>Familiar Uno</legend>
 								<table>
