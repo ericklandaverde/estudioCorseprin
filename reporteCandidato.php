@@ -55,6 +55,18 @@
             $candidatoAct = mysqli_query($conexion,$strConsultaAct);
             $filaAct = mysqli_fetch_array($candidatoAct);
 
+    $numDatos= $_POST['clave'];
+    $strConsultaDatos = "SELECT * FROM familiarDatos where id_rfc = '$numDatos'";
+    $candidatoDatos = mysqli_query($conexion,$strConsultaDatos);
+    $filaDatos = mysqli_fetch_array($candidatoDatos);
+
+    $numActi= $_POST['clave'];
+    $strConsultaActi = "SELECT * FROM familiarActividades where id_rfc = '$numActi'";
+    $candidatoActi = mysqli_query($conexion,$strConsultaActi);
+    $filaActi = mysqli_fetch_array($candidatoActi);
+
+
+
 class PDF extends FPDF
 {
      var $widths;
