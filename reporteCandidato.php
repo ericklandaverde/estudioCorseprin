@@ -211,6 +211,8 @@ class PDF extends FPDF
         $this->Ln(3);
         $this->Cell(0,0,'Pagina '.$this->PageNo().'/{nb}',0,0,'R');
         $this->Ln(3);
+        $this->Cell(0,0,'',1,0,'C');
+        $this->Ln(3);
     }
 
     // Pie de página
@@ -232,8 +234,6 @@ class PDF extends FPDF
         //Agregada nueva pagina.
         $pdf->AddPage();
         $pdf->SetFont('Courier','',10);
-        $pdf->Cell(0,0,'',1,0,'C');
-        $pdf->Ln(3);
         //MultiCell(Ancho de celdas, Alto de las celdas, Cadena para imprimir, Bordes, align, fill)
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(100, 8, 'ELEMENTO',1,0,'C'); $pdf->Cell(70, 8, 'Fecha: '.date('d/m/Y').'',1,0,'C');
         $pdf->Ln(8);
@@ -385,7 +385,7 @@ class PDF extends FPDF
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->SetFont('Courier','B',10);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('ESTUDIOS'),1,0,'C'); $pdf->Cell(60,8,'AÑO QUE CURSO',1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('ESTUDIOS'),1,0,'C'); $pdf->Cell(60,8,utf8_decode('AÑO QUE CURSO'),1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
