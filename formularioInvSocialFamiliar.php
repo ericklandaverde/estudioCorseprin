@@ -199,7 +199,7 @@ else
 									</tr>
 									<tr>
 										<td>
-											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentesco" required>
+											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentescoDos" required>
 												<option selected value="">Seleccione un parentesco</option>
 												<option value="Hijo(a)">Hijo(a)</option>
 												<option value="Esposo(a)">Esposa(a)</option>
@@ -207,7 +207,7 @@ else
 												<option value="Hermanos">Padres</option>
 											</select>
 										</td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreDos" required></td>
 									</tr>
 									<tr>
 										<td><label>Edad: </label></td>
@@ -215,11 +215,11 @@ else
 										<td><label>Depende economicamente: </label></td>
 									</tr>
 									<tr>
-										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required></td>
+										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edadDos" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacionDos" required></td>
 										<td>
-											<input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-											<input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+											<input type="radio" name="dependeDos" value="Si" placeholder="Selecciona una opcion" checked required>Si
+											<input type="radio" name="dependeDos" value="No" placeholder="Selecciona una opcion" required>No
 										</td>
 									</tr>
 								</table>
@@ -233,7 +233,7 @@ else
 									</tr>
 									<tr>
 										<td>
-											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentesco" required>
+											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentescoTres" required>
 												<option selected value="">Seleccione un parentesco</option>
 												<option value="Hijo(a)">Hijo(a)</option>
 												<option value="Esposo(a)">Esposa(a)</option>
@@ -241,7 +241,7 @@ else
 												<option value="Hermanos">Padres</option>
 											</select>
 										</td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreTres" required></td>
 									</tr>
 									<tr>
 										<td><label>Edad: </label></td>
@@ -249,11 +249,11 @@ else
 										<td><label>Depende economicamente: </label></td>
 									</tr>
 									<tr>
-										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required></td>
+										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edadTres" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacionTres" required></td>
 										<td>
-											<input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-											<input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+											<input type="radio" name="dependeTres" value="Si" placeholder="Selecciona una opcion" checked required>Si
+											<input type="radio" name="dependeTres" value="No" placeholder="Selecciona una opcion" required>No
 										</td>
 									</tr>
 								</table>
@@ -267,7 +267,7 @@ else
 									</tr>
 									<tr>
 										<td>
-											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentesco" required>
+											<select type="text" class="form-control" id="inputClave" placeholder="Parentesco" name="parentescoCuatro" required>
 												<option selected value="">Seleccione un parentesco</option>
 												<option value="Hijo(a)">Hijo(a)</option>
 												<option value="Esposo(a)">Esposa(a)</option>
@@ -275,7 +275,7 @@ else
 												<option value="Hermanos">Padres</option>
 											</select>
 										</td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreCuatro" required></td>
 									</tr>
 									<tr>
 										<td><label>Edad: </label></td>
@@ -283,11 +283,11 @@ else
 										<td><label>Depende economicamente: </label></td>
 									</tr>
 									<tr>
-										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required></td>
+										<td><input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edadCuatro" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacionCuatro" required></td>
 										<td>
-											<input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-											<input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+											<input type="radio" name="dependeCuatro" value="Si" placeholder="Selecciona una opcion" checked required>Si
+											<input type="radio" name="dependeCuatro" value="No" placeholder="Selecciona una opcion" required>No
 										</td>
 									</tr>
 									</fieldset>
