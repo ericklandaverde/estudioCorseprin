@@ -383,8 +383,7 @@ class PDF extends FPDF
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('6.INVESTIGACIÓN ACADÉMICA'),0,0,'L');
         $pdf->SetFont('Courier','',10);
-        $pdf->Ln(20);
-
+        $pdf->Ln(8);
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('ESTUDIOS'),1,0,'C'); $pdf->Cell(60,8,'AÑO QUE CURSO',1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
         $pdf->SetFont('Courier','',10);
@@ -405,7 +404,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
-        $pdf->Ln(15);
+        $pdf->Ln(20);
         
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('7. INFORMACIÓN ECONÓMICA'),0,0,'L');
