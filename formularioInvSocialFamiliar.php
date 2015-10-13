@@ -306,11 +306,11 @@ else
 									</tr>
 									<tr>
 										<td><label>Eventos sociales (Familiares o amigos)<label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="ocupacion" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="sociales" required></td>
 									</tr>
 									<tr>
 										<td><label>Eventos sociales (Familiares o amigos)<label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="ocupacion" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="comunitarios" required></td>
 									</tr>
 								</table><br>
 							</div>
@@ -325,19 +325,19 @@ else
 									</tr>
 									<tr>
 										<td><label>Museos: <label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museos" required></td>
 									</tr>
 									<tr>
 										<td><label>Teatro: <label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="teatro" required></td>
 									</tr>
 									<tr>
 										<td><label>Festivales Culturales: <label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="culturales" required></td>
 									</tr>
 									<tr>
 										<td><label>Zonas arqueologicas: <label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="arqueologicas" required></td>
 									</tr>
 								</table>
 							</div>
@@ -353,13 +353,13 @@ else
 									</tr>
 									<tr>
 										<td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporte" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="museo" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugar" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuencia" required></td>
 									</tr>
 									<tr>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporte" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="museo" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporteDos" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugarDos" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuenciaDos" required></td>
 									</tr>
 								</table><br>
 							</div>
@@ -374,23 +374,23 @@ else
 									</tr>
 									<tr>
 										<td><label>Vacaciones</label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="vacaciones" required></td>
 									</tr>
 									<tr>
 										<td><label>Plazas publicas</label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="publicas" required></td>
 									</tr>
 									<tr>
 										<td><label>Parques naturales</label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="naturales" required></td>
 									</tr>
 									<tr>
 										<td><label>Parques de diversiones</label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="diversiones" required></td>
 									</tr>
 									<tr>
 										<td><label>Cine</label></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museo" required></td>
+										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="cine" required></td>
 									</tr>
 								</table>
 							</div>
