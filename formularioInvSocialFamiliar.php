@@ -417,14 +417,6 @@ else
 										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadC" required></td>
 										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaC" required></td>
 									</tr>
-									<tr>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadD" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaD" required></td>
-									</tr>
-									<tr>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadF" required></td>
-										<td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaF" required></td>
-									</tr>
 								</table>
 							</div>
 						</div>

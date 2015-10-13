@@ -48,9 +48,15 @@
 	$naturales=$_POST['naturales'];
 	$diversiones=$_POST['diversiones'];
 	$cine=$_POST['cine'];
+	$actividadA=$_POST['actividadA'];
+    $frecuenciaA=$_POST['frecuenciaA'];
+	$actividadB=$_POST['actividadB'];
+    $frecuenciaB=$_POST['frecuenciaB'];
+	$actividadC=$_POST['actividadC'];
+	$frecuenciaC=$_POST['frecuenciaC'];
    
-    $sqlActividades="insert familiarActividades(id_rfc, religion, sociales, comunitarios, museos, teatro, culturales, arqueologicas, deporte, lugar, frecuencia, deporteDos, lugarDos, frecuenciaDos, vacaciones, publicas, naturales, diversiones, cine) 
-	values('$clave','$religion','$sociales','$comunitarios','$museos','$teatro','$culturales','$arqueologicas','$deporte','$lugar','$frecuencia','$deporteDos','$lugarDos','$frecuenciaDos','$vacaciones','$publicas','$naturales','$diversiones','$cine')";
+    $sqlActividades="insert familiarActividades(id_rfc, religion, sociales, comunitarios, museos, teatro, culturales, arqueologicas, deporte, lugar, frecuencia, deporteDos, lugarDos, frecuenciaDos, vacaciones, publicas, naturales, diversiones, cine, actividadA, frecuenciaA, actividadB, frecuenciaB, actividadC, frecuenciaC) 
+	values('$clave','$religion','$sociales','$comunitarios','$museos','$teatro','$culturales','$arqueologicas','$deporte','$lugar','$frecuencia','$deporteDos','$lugarDos','$frecuenciaDos','$vacaciones','$publicas','$naturales','$diversiones','$cine','$actividadA','$frecuenciaA','$actividadB','$frecuenciaB','$actividadC','$frecuenciaC')";
 	$registroActividades=mysqli_query($conexion,$sqlActividades);
 
 	if(!$registroDatos && !$registroActividades)
