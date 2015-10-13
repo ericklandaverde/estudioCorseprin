@@ -49,7 +49,7 @@
 	$diversiones=$_POST['diversiones'];
 	$cine=$_POST['cine'];
    
-    $sqlActividades="insert economicoEgresos(id_rfc, religion, sociales, comunitarios, museos, teatro, culturales, arqueologicas, deporte, lugar, frecuencia, deporteDos, lugarDos, frecuenciaDos, vacaciones, publicas, naturales, diversiones, cine) 
+    $sqlActividades="insert familiarActividades(id_rfc, religion, sociales, comunitarios, museos, teatro, culturales, arqueologicas, deporte, lugar, frecuencia, deporteDos, lugarDos, frecuenciaDos, vacaciones, publicas, naturales, diversiones, cine) 
 	values('$clave','$religion','$sociales','$comunitarios','$museos','$teatro','$culturales','$arqueologicas','$deporte','$lugar','$frecuencia','$deporteDos','$lugarDos','$frecuenciaDos','$vacaciones','$publicas','$naturales','$diversiones','$cine')";
 	$registroActividades=mysqli_query($conexion,$sqlActividades);
 
