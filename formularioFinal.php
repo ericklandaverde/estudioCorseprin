@@ -25,10 +25,36 @@
 	$ocupacion=$_POST['ocupacionCuatro'];
 	$depende=$_POST['dependeCuatro'];
 	
-	$sqlDatos="insert economicoEgresos(id_rfc, parentesco, nombre, edad, ocupacion, depende, parentescoDos, nombreDos, edadDos, ocupacionDos, dependeDos, parentescoTres, nombreTres, edadTres, ocupacionTres, dependeTres, parentescoCuatro, nombreCuatro, edadCuatro, ocupacionCuatro, dependeCuatro) 
+	$sqlDatos="insert familiarDatos(id_rfc, parentesco, nombre, edad, ocupacion, depende, parentescoDos, nombreDos, edadDos, ocupacionDos, dependeDos, parentescoTres, nombreTres, edadTres, ocupacionTres, dependeTres, parentescoCuatro, nombreCuatro, edadCuatro, ocupacionCuatro, dependeCuatro) 
 	values('$clave','$parentesco','$nombre','$edad','$ocupacion','$depende','$parentescoDos','$nombreDos','$edadDos','$ocupacionDos','$dependeDos','$parentescoTres','$nombreTres','$edadTres','$ocupacionTres','$dependeTres','$parentescoCuatro','$nombreCuatro','$edadCuatro','$ocupacionCuatro','$dependeCuatro')";
 	$registroDatos=mysqli_query($conexion,$sqlDatos);
+
+	$clave=$_POST['clave'];
+	$parentesco=$_POST['parentesco'];
+	$nombre=$_POST['nombre'];
+	$edad=$_POST['edad'];
+	$ocupacion=$_POST['ocupacion'];
+	$depende=$_POST['depende'];
+	$parentesco=$_POST['parentescoDos'];
+	$nombre=$_POST['nombreDos'];
+	$edad=$_POST['edadDos'];
+	$ocupacion=$_POST['ocupacionDos'];
+	$depende=$_POST['dependeDos'];
+	$parentesco=$_POST['parentescoTres'];
+	$nombre=$_POST['nombreTres'];
+	$edad=$_POST['edadTres'];
+	$ocupacion=$_POST['ocupacionTres'];
+	$depende=$_POST['dependeTres'];
+	$parentesco=$_POST['parentescoCuatro'];
+	$nombre=$_POST['nombreCuatro'];
+	$edad=$_POST['edadCuatro'];
+	$ocupacion=$_POST['ocupacionCuatro'];
+	$depende=$_POST['dependeCuatro'];
    
+    $sqlActividades="insert economicoEgresos(id_rfc, parentesco, nombre, edad, ocupacion, depende, parentescoDos, nombreDos, edadDos, ocupacionDos, dependeDos, parentescoTres, nombreTres, edadTres, ocupacionTres, dependeTres, parentescoCuatro, nombreCuatro, edadCuatro, ocupacionCuatro, dependeCuatro) 
+	values('$clave','$parentesco','$nombre','$edad','$ocupacion','$depende','$parentescoDos','$nombreDos','$edadDos','$ocupacionDos','$dependeDos','$parentescoTres','$nombreTres','$edadTres','$ocupacionTres','$dependeTres','$parentescoCuatro','$nombreCuatro','$edadCuatro','$ocupacionCuatro','$dependeCuatro')";
+	$registroActividades=mysqli_query($conexion,$sqlActividades);
+
 	
 	//$registroI $registroE $registroR $registroC $registroS $registroA
 	if(!$registroDatos && !$registroE)
