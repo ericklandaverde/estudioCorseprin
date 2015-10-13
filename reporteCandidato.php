@@ -568,11 +568,11 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadA'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaA]',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadA'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaA'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadB'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaB]',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadB'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaB'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadC'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaC]',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaActi['actividadC'],1,0,'C'); $pdf->Cell(80,8,$filaActi['frecuenciaC'],1,0,'C');
         $pdf->Ln(20);
         
         $pdf->SetFont('Courier','B',10);
