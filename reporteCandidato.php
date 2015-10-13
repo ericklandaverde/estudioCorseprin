@@ -543,7 +543,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode($filaActi['religion']),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencua anual',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencia anual',1,0,'C');
         $pdf->Ln(10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'1. Eventos sociales (familiares o amigos)',1,0,'C'); $pdf->Cell(80,8,$filaActi['sociales'],1,0,'C');
         $pdf->Ln(8);
