@@ -661,6 +661,12 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(30, 8,'Metro (   )',1,0,'C'); $pdf->Cell(55,8,utf8_decode('Transporte público(   )'),1,0,'C');  $pdf->Cell(45,8,'Taxi(   )',1,0,'C');  $pdf->Cell(40,8,utf8_decode('Otro(   )'),1,0,'C');
         $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(70, 8,utf8_decode('Zona'),1,0,'C'); $pdf->Cell(100,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Popular (      )'),1,0,'C'); $pdf->Cell(80,8,'Residencial  (  )',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Cuenta con todos los servicios (   )'),1,0,'C'); $pdf->Cell(80,8,'Residencial  (  )',1,0,'C');
+        $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
