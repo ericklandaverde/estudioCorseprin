@@ -604,6 +604,35 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(45, 8,'Una planta (   )',1,0,'C'); $pdf->Cell(40,8,'PB y un Piso (   )',1,0,'C');  $pdf->Cell(45,8,'2 Pisos (   )',1,0,'C');  $pdf->Cell(40,8,utf8_decode('Más de 2 (   )'),1,0,'C');
         $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('N° de Recamaras'),1,0,'C'); $pdf->Cell(80,8,'N° De Baños',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode(''),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Condiciones generales de la vivienda'),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode(''),1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Servicios'),1,0,'C'); $pdf->Cell(80,8,'Cantidad ',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Luz (No. focos)'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Línea telefónica'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Agua'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Drenaje'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Gas'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Recolección de basura'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Gas estacionario'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('TV de paga'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Internet'),1,0,'C'); $pdf->Cell(80,8,'',1,0,'C');
+        $pdf->Ln(8);
+
         //Conteo de paginas
         $pdf->AliasNbPages();
          //Final de pdf
