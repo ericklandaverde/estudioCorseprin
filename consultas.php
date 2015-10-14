@@ -57,11 +57,13 @@
           </div>
           </div>
         </div>
-        
-            <!-- <div class="col-md-offset-2 col-md-8"> -->
-            <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
-          <div class="form-group">
+
+        <!-- <div class="row">
+        <div class="col-md-offset-1 col-md-10"> -->
+        <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="form-group">
             <div>
+            <!-- <div class="col-md-offset-2 col-md-8"> -->
               <table class="table table-bordered">
                 <tr align="center">
                     <td  bgcolor="#CCCCCC">CLAVE CURP</td>
@@ -115,6 +117,8 @@
               </table>
             </p>
             <!-- Contenido //////////////////////////////////////////////////////////////////////////////////////////////// -->    
+            <!-- </div>
+        </div> -->
 
          <div class="form-group">
             <div class="col-md-offset-2 col-md-8">
