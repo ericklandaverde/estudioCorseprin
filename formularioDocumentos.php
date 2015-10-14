@@ -147,7 +147,7 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="IMMS" name="imms" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="IMSS" name="imms" required>
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $clave; ?>">
 					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>
 					</div>
