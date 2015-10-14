@@ -300,7 +300,17 @@ else
 								<label> b) Actividades Sociales: </label>
 								<table>
 									<tr><label>¿Que religion profesa?</label></tr>
-									<tr><input type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required></tr>
+									<tr>
+										<select type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required>
+												<option selected value="">Seleccione una opcion</option>
+												<option value="Creyente">Creyente</option>
+												<option value="Ateo">Ateo</option>
+												<option value="Catolico">Catolico</option>
+												<option value="Cristiano">Cristiano</option>
+												<option value="Testigo de Jehová">Testigo de Jehová</option>
+												<option value="Otra Religion">Otra Religion</option>
+										</select>
+									</tr>
 									<tr>
 										<td><label>Actividades<label></td>
 										<td><label>Frecuencia Anual</label></td>

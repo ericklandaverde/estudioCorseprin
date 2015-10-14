@@ -149,7 +149,7 @@
 						<label>Seguridad social </label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="IMSS" name="imss" maxlength="11" required>
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $clave; ?>">
-					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" maxlength="18" required>
 					</div>
 				  </div>
 				  <div class="form-group">
