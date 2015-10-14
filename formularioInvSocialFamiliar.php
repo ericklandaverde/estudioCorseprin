@@ -490,7 +490,7 @@ $(document).ready(function() {
    </fieldset>
    <fieldset>
       <label>Need more fields?</label>
-      <inputtype="button" id="btnAdd" value="+" />
+      <input type="button" id="btnAdd" value="+" />
       <input type="button" id="btnDel" value="-" />
    </fieldset>
 </form> 
