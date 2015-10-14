@@ -232,18 +232,8 @@ else
 										</td>
 									</tr>
 								</table>
-								</fieldset>
-<form id="myForm">
-    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-        Name: <input type="text" name="name1" id="name1" />
-    </div>
- 
-    <div>
-        <input type="button" id="btnAdd" value="add another name" />
-        <input type="button" id="btnDel" value="remove name" />
-    </div>
-</form>                               
-                            <fieldset>
+								</fieldset>                            
+                                <fieldset>
                                 <legend>Familiar Dos</legend>
 								<table>
 									<tr>
@@ -493,6 +483,16 @@ else
 					</form>
 				</div>
 			</div>
+<form id="myForm">
+    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
+        Name: <input type="text" name="name1" id="name1" />
+    </div>
+ 
+    <div>
+        <input type="button" id="btnAdd" value="add another name" />
+        <input type="button" id="btnDel" value="remove name" />
+    </div>
+</form>   
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
