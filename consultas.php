@@ -73,7 +73,7 @@
                     <td  bgcolor="#CCCCCC">TELEFONO</td>
                     <td  bgcolor="#CCCCCC">EMAIL</td>
                     <td  bgcolor="#CCCCCC">REPORTE</td>
-                    <!-- <td  bgcolor="#CCCCCC">ENVIAR</td> -->
+                    <td  bgcolor="#CCCCCC">ENVIAR</td>
                     <td  bgcolor="#CCCCCC">ELIMINAR</td>
                 </tr>
                 <?php
@@ -100,12 +100,12 @@
                         <input type="submit" class="btn btn-primary" value="Generar" alt="cambio" title="Generar"/>
                       </form>
                     </td>
-                    <!-- <td align="center">
-                      <form action="" method="post" name="correo">
-                        <input name="clave" type="hidden" value="<?php echo $clave ?>" />
+                    <td align="center">
+                      <form action="enviarCorreo.php" method="post" name="correo">
+                        <input name="correo" type="hidden" value="<?php echo $email ?>" />
                         <input type="submit" class="btn btn-success" value="Enviar" alt="cambio" title="Correo"/>
                       </form>
-                    </td> -->
+                    </td>
                     <td align="center">
                       <form action="eliminarCandidato.php" method="post" name="elimnar">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
