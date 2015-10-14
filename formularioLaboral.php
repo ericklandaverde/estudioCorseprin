@@ -94,9 +94,9 @@
 					  <label>Puesto desempeñado:</label>
 					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
 					  <label>Fecha de Ingreso:</label>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
+					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" min="1960-12-31" max="2015-12-31" required>
 					  <label>Fecha de baja:</label>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
+					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" min="1960-12-31" max="2015-12-31" required>
 					</div>
 				  </div>
 				  <div class="form-group">
@@ -135,28 +135,22 @@
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
 					<ul class="social-network">
-						<li><a href="#">
+						<li><a href="https://www.facebook.com/CorseprinSeguridadRH">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
-						<li><a href="#">
+						<li><a href="http://corseprin.com.mx/">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
-						<li><a href="#">
+						<li><a href="https://twitter.com/corseprin">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="#">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
 					</ul>

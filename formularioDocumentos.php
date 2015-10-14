@@ -167,28 +167,22 @@
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
 					<ul class="social-network">
-						<li><a href="#">
+						<li><a href="https://www.facebook.com/CorseprinSeguridadRH">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
-						<li><a href="#">
+						<li><a href="http://corseprin.com.mx/">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
-						<li><a href="#">
+						<li><a href="https://twitter.com/corseprin">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="#">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
 						</span></a>
 						</li>
 					</ul>
