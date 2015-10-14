@@ -117,9 +117,9 @@
 	  		<div class="row">
                <div class="col-md-offset-1 col-md-10">
 				<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
+				  <label>Actas de registro civil: </label>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Actas de registro civil: </label>
 					  <label>Nacimiento: </label>
 					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 					    <input type="radio" name="nacimiento" value="SI Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" checked required>Si
