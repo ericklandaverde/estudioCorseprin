@@ -225,16 +225,16 @@ else
 								</table>
 								</fieldset>
 								<fieldset>
-	                            <form id="myForm">
-								    <div id="input1" class="clonedInput">
-								        Nombre: <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
-								    </div>
-								 
-								    <div>
-								        <input type="button" id="btnAdd" value="Agregar otro familiar" />
-								        <input type="button" id="btnDel" value="Eliminar" />
-								    </div>
-								</form>
+                              <form id="myForm">
+							    <div id="input1" class="clonedInput">
+							        Nombre: <input type="text" name="name1" id="name1" />
+							    </div>
+							 
+							    <div>
+							        <input type="button" id="btnAdd" value="add another name" />
+							        <input type="button" id="btnDel" value="remove name" />
+							    </div>
+							  </form>
                                 <legend>Familiar Dos</legend>
 								<table>
 									<tr>
