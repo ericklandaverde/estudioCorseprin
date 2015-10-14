@@ -112,7 +112,7 @@
 						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Adelante </a></p> -->
 					</div>
 				  </div>
-			  </div>
+			</div>
 
 	  		<div class="row">
                <div class="col-md-offset-1 col-md-10">
