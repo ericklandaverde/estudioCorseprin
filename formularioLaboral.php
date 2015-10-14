@@ -8,12 +8,12 @@
 	$documento=$_POST['documento'];
 	$folio=$_POST['folio'];
 	$vigencia=$_POST['vigencia'];
-	$imms=$_POST['imms'];
+	$imss=$_POST['imss'];
 	$rfc=$_POST['rfc'];
 	$curp=$_POST['curp'];
 
-	$sql="insert documentos(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imms, rfc, curp) 
-	values('$clave','$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imms','$rfc','$curp')";
+	$sql="insert documentos(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imss, rfc, curp) 
+	values('$clave','$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imss','$rfc','$curp')";
 	$registro=mysqli_query($conexion,$sql);
 	if(!$registro)
 	{

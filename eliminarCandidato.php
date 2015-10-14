@@ -32,7 +32,7 @@ $registrosAct = mysqli_query($conexion,$sqlAct);
 // $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
 // $registros = mysqli_query($conexion,$sql);
  
-if(!$registros)
+if(!$registros && $registrosD && $registrosL && $sqlR)
 {
 echo "<script language='JavaScript' type='text/JavaScript'>
 alert('ERROR AL ELIMINAR CANDIDATO')
