@@ -75,6 +75,6 @@
 		alert('ESTUDIO FINALIZADO')
 		window.location='index.html'
 		</script>";
-	}
+	}	
 ?>
 

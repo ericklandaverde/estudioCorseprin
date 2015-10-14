@@ -1,10 +1,10 @@
 <?php
 $correo= $_POST['correo'];
 $to = $correo;
-$subject = "CONFIRMACION ESTUDIO RESIVIDO";
-$txt = "Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agenadar tu visita domiciliaria";
+$subject = "CONFIRMACION ESTUDIO RECIVIDO";
+$txt = "Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria";
 $headers = "From: socioeconomicos@corseprin.com.mx " . "\r\n" .
-"CC: somebodyelse@example.com";
+"CC: harry_erick92@outlook.com";
 
 $enviar = mail($to,$subject,$txt,$headers);
 
