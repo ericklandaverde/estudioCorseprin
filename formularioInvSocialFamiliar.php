@@ -184,7 +184,7 @@ else
 				</div>
 			</div>
 
-			<div class="row">
+<!-- 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
 					<form action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 						<div class="form-group">
@@ -470,11 +470,11 @@ else
 								<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
 								<input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
 								<!--  <button type="button" onClick="window.location='formularioEconomico.html'" class="btn btn-theme btn-lg btn-block">Regresar</button> -->	
-							</div>
+<!-- 							</div>
 						</div>
 					</form>
 				</div>
-			</div>
+			</div> --> -->
 <form id="myForm">
     <div id="input1" class="clonedInput">
         Name: <input type="text" name="name1" id="name1" />
