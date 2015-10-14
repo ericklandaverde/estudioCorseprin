@@ -129,7 +129,7 @@ else
     <script type="text/javascript">
         $(document).ready(function() {
             $('#btnAdd').click(function() {
-                var num = $('.clonedInput').length;
+                var num     = $('.clonedInput').length;
                 var newNum  = new Number(num + 1);
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
@@ -138,7 +138,7 @@ else
                 $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
-                if (newNum == 10)
+                if (newNum == 5)
                     $('#btnAdd').attr('disabled','disabled');
             });
  
@@ -225,16 +225,16 @@ else
 								</table>
 								</fieldset>
 								<fieldset>
-                              <form id="myForm">
-							    <div id="input1" class="clonedInput">
-							        Nombre: <input type="text" name="name1" id="name1" />
-							    </div>
-							 
-							    <div>
-							        <input type="button" id="btnAdd" value="add another name" />
-							        <input type="button" id="btnDel" value="remove name" />
-							    </div>
-							  </form>
+	                             <form id="myForm">
+								    <div id="input1" class="clonedInput">
+								        Nombre: <input type="text" name="name1" id="name1" />
+								    </div>
+								 
+								    <div>
+								        <input type="button" id="btnAdd" value="add another name" />
+								        <input type="button" id="btnDel" value="remove name" />
+								    </div>
+								 </form>
                                 <legend>Familiar Dos</legend>
 								<table>
 									<tr>
