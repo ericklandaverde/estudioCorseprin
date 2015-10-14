@@ -477,7 +477,7 @@ else
 			   </fieldset>
 			   <fieldset>
 			      <label>Agregar otro familiar?</label>
-			      <inputtype="button" id="btnAdd" value="+" />
+			      <input type="button" id="btnAdd" value="+" />
 			      <input type="button" id="btnDel" value="-" />
 			   </fieldset>
 			</form>
