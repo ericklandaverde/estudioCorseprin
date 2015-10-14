@@ -72,7 +72,7 @@
                     <td  bgcolor="#CCCCCC">TELEFONO</td>
                     <td  bgcolor="#CCCCCC">EMAIL</td>
                     <td  bgcolor="#CCCCCC">REPORTE</td>
-                    <td  bgcolor="#CCCCCC">ENVIAR</td>
+                    <td  bgcolor="#CCCCCC">CONFIRMAR</td>
                     <td  bgcolor="#CCCCCC">ELIMINAR</td>
                 </tr>
                 <?php
