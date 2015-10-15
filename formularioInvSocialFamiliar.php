@@ -79,9 +79,41 @@
 				    </div>
 				 
 				    <div>
-				        <input type="button" id="btnAdd" value="Agregar otro familiar" />
-				        <input type="button" id="btnDel" value="Remover" />
+				        <input type="button" class="btn btn-success" id="btnAdd" value="Agregar otro familiar" />
+				        <input type="button" class="btn btn-danger" id="btnDel" value="Remover" />
 				    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-8">
+                            <label> b) Actividades Sociales: </label>
+                            <table>
+                                <tr><label>¿Que religion profesa?</label></tr>
+                                <tr>
+                                    <select type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required>
+                                            <option selected value="">Seleccione una opcion</option>
+                                            <option value="Creyente">Creyente</option>
+                                            <option value="Ateo">Ateo</option>
+                                            <option value="Catolico">Catolico</option>
+                                            <option value="Cristiano">Cristiano</option>
+                                            <option value="Testigo de Jehová">Testigo de Jehová</option>
+                                            <option value="Otra Religion">Otra Religion</option>
+                                    </select>
+                                </tr>
+                                <tr>
+                                    <td><label>Actividades<label></td>
+                                    <td><label>Frecuencia Anual</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Eventos sociales (Familiares o amigos)<label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="sociales" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Eventos sociales (Familiares o amigos)<label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="comunitarios" required></td>
+                                </tr>
+                            </table><br>
+                        </div>
+                    </div>
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
