@@ -74,12 +74,8 @@
 
 <form id="myForm">
     <div id="input1" class="clonedInput">
-    	<table>
-	    	<tr>
-	           <td><input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required></td>
-	           <td><input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required></td>
-	        <tr>
-        <table>
+	           <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
+	           <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
     </div>
  
     <div>
