@@ -70,9 +70,10 @@
 					</div>
 				</div>
 			</div>
+
 <form id="myForm">
     <div id="input1" class="clonedInput">
-        Name: <input type="text" name="name1" id="name1" />
+        <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
     </div>
  
     <div>
