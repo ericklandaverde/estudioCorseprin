@@ -229,13 +229,13 @@ else
                     <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label>
-                            <select type="text" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco">
-                                                <option selected value="">Seleccione un parentesco</option>
+                            <input type="text" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco">
+                    <!--                             <option selected value="">Seleccione un parentesco</option>
                                                 <option value="Hijo(a)">Hijo(a)</option>
                                                 <option value="Esposo(a)">Esposa(a)</option>
                                                 <option value="Padres">Padres</option>
                                                 <option value="Hermanos">Padres</option>
-                            </select>
+                            </select> -->
                             <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" />
                             <input  type="text" id="edad"name="edad" placeholder="Edad" title="Campo edad" />
                             <input  type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" />
