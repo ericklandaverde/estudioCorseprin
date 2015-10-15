@@ -245,7 +245,7 @@ else
                             <input  type="text" class="form-control" id="edad"name="edad" placeholder="Edad" title="Campo edad" required/>
                             <input  type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" required/>
                             <input type="radio" class="form-control" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                            <input type="radio" class="form-control" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+                            <input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                           </div>
                     </div>
                             <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
