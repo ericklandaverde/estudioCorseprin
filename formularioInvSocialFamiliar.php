@@ -22,8 +22,8 @@
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
                 
                 // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
-                newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
-                newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
+                newElem.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
@@ -122,7 +122,7 @@
         				</div>
         			</div> -->
 				    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-                        Name: <input type="text" name="name1" id="name1" />
+                        Name: <input type="text" class="form-control" name="name1" id="name1" required/>
                         Edad: <input type="text" name="edad1" id="edad1" />
                     </div>
 
