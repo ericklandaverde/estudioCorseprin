@@ -21,11 +21,11 @@
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
                 
-                newElem.children(':first').attr('id', 'parentesco' + newNum).attr('name', 'parentesco' + newNum);
-                newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
-                newElem.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
-                newElem.children(':first').attr('id', 'ocupacion' + newNum).attr('name', 'ocupacion' + newNum);
-                newElem.children(':first').attr('id', 'depende' + newNum).attr('name', 'depende' + newNum);
+                newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
+                newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
+                newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
+                newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
@@ -93,7 +93,7 @@
                                     </tr>
                                     <tr>
                                         <td>                           
-                                        <select type="text" class="form-control" id="parentesco1" placeholder="Parentesco" name="parentesco" required>
+                                        <select type="text" class="form-control" id="parentesco1" placeholder="Parentesco" name="parentesco1" required>
                                            <option selected value="">Seleccione un parentesco</option>
                                            <option value="Hijo(a)">Hijo(a)</option>
                                            <option value="Esposo(a)">Esposa(a)</option>
