@@ -134,7 +134,7 @@ else
                  var cosponsorDivId = 'cosponsors_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
-                 var deleteLink = $("<input type='button' class='btn btn-primary' value='Elimiar' />");
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
                  deleteLink.appendTo(copy);
                  deleteLink.click(function(){
                      copy.remove();
@@ -229,9 +229,9 @@ else
         				    </div>
         				</div>
         			</div> -->
-                    <div id="container">
+                    <div class="form-group" id="container">
                         <h3>Familiares</h3>
-                    <div id="myForm">
+                    <div class="col-md-offset-2 col-md-8" id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label>
                             <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
