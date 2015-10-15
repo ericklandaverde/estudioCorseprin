@@ -20,7 +20,8 @@
                 var newNum  = new Number(num + 1);
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
-     
+                
+                newElem.children(':first').attr('id', 'parentesco' + newNum).attr('name', 'parentesco' + newNum);
                 newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
                 newElem.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 newElem.children(':first').attr('id', 'ocupacion' + newNum).attr('name', 'ocupacion' + newNum);
@@ -76,6 +77,13 @@
 
 			<form id="myForm">
 				    <div id="input1" class="clonedInput">
+				    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
+	                               <option selected value="">Seleccione un parentesco</option>
+	                               <option value="Hijo(a)">Hijo(a)</option>
+	                               <option value="Esposo(a)">Esposa(a)</option>
+	                               <option value="Padres">Padres</option>
+	                               <option value="Hermanos">Padres</option>
+                               </select>
 				               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
 				               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
 				               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
