@@ -125,7 +125,7 @@
                           </div>
                          </form>
                         
-                        <input type="button" class="addRow" value="Add Sponsor" />
+                        <input type="button" class="addRow" value="Agregar familiar" />
                     </div>
                     
                     <div class="form-group">
