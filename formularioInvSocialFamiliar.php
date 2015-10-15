@@ -110,10 +110,10 @@
                                     </tr>
                                     <tr>
                                         <td><input type="text" class="form-control" id="edad1" placeholder="Edad" name="edad1" required></td>
-                                        <td><input type="text" class="form-control" id="ocupacion1" placeholder="Ocupacion" name="ocupacion" required></td>
+                                        <td><input type="text" class="form-control" id="ocupacion1" placeholder="Ocupacion" name="ocupacion1" required></td>
                                         <td>
-                                            <input type="radio" id="depende1" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                                            <input type="radio" id="depende1" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+                                            <input type="radio" id="depende1" name="depende1" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                                            <input type="radio" id="depende1" name="depende1" value="No" placeholder="Selecciona una opcion" required>No
                                         </td>
                                     </tr>
                                    </table>
