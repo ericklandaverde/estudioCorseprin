@@ -22,6 +22,7 @@
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
      
                 newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
+                newElem.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
@@ -73,7 +74,12 @@
 
 <form id="myForm">
     <div id="input1" class="clonedInput">
-        <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
+    	<table>
+	    	<tr>
+	           <td><input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required></td>
+	           <td><input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required></td>
+	        <tr>
+        <table>
     </div>
  
     <div>
