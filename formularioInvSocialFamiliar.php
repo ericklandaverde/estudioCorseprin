@@ -22,12 +22,11 @@
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
                 var newElem2 = $('#input' + num).clone().attr('id', 'input' + newNum);
                 // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
-                newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
-                newElem2.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
+                newElem2.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
-                $('#input' + num).after(newElem2);
                 $('#btnDel').attr('disabled','');
  
                 if (newNum == 10)
@@ -123,8 +122,8 @@
         				</div>
         			</div> -->
 				    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-                        Name: <input type="text" name="name1" id="name1" />
-                        Edad: <input type="text" name="edad1" id="edad1" />
+                        Name: <input type="text" name="name" id="name" />
+                        Edad: <input type="text" name="edad" id="edad" />
                     </div>
 
 				    <div class="form-group">
