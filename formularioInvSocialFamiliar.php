@@ -236,7 +236,7 @@ else
                             <input  type="text" id="depende" name="depende" placeholder="Depende" title="Co-sponsor phone" />
                           </div>
                     </form>
-                            <input type="button" class="btn btn-info" class="addRow" value="Agregar familiar" />
+                            <input type="button" class="addRow" value="Agregar familiar" />
                     </div>
                     
                     <div class="form-group">
