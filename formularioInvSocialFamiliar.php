@@ -157,17 +157,18 @@ else
 </head>
 
 <body>
-	<div class="menu-area">
-		<div id="dl-menu" class="dl-menuwrapper">
-			<button class="dl-trigger">Open Menu</button>
-			<ul class="dl-menu">
-				<li>
-					<a href="index.html">Principal</a>
-				</li>
-				<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
-			</ul>
-		</div>
-	</div>	
+
+    <div class="menu-area">
+            <div id="dl-menu" class="dl-menuwrapper">
+                    <button class="dl-trigger">Open Menu</button>
+                    <ul class="dl-menu">
+                        <li>
+                            <a href="index.html">Principal</a>
+                        </li>
+                        <li><a href="formularioIdentificacion.html">Comenzar...</a></li>
+                    </ul>
+            </div><!-- /dl-menuwrapper -->
+    </div>  
 
 	<!-- Altas -->
 	<section id="contact" class="home-section bg-white">
