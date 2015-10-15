@@ -85,6 +85,34 @@
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
+                            <label> c) Actividades Culturales: </label>
+                            <table>
+                                <tr>
+                                    <td><label>Actividades<label></td>
+                                    <td><label>Frecuencia Anual</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Museos: <label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="museos" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Teatro: <label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="teatro" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Festivales Culturales: <label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="culturales" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Zonas arqueologicas: <label></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="arqueologicas" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-8">
                             <label> e) Actividades Recreativas: </label>
                             <table>
                                 <tr>
