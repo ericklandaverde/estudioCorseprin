@@ -247,7 +247,7 @@ else
                             <input  type="text" id="depende" name="depende" placeholder="Depende" title="Campo depende" required/>
                           </div>
                     </form>
-                            <input type="button" class="addRow" value="Agregar familiar" />
+                            <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                     </div>
                     
                     <div class="form-group">
