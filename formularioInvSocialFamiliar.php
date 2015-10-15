@@ -228,8 +228,14 @@ else
                         <h3>Familiares</h3>
                     <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
-                            <label>Familiar:</label> 
-                            <input  type="text" id="parentesco" name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
+                            <label>Familiar:</label>
+                            <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Co-sponsor phone" required>
+                                                <option selected value="">Seleccione un parentesco</option>
+                                                <option value="Hijo(a)">Hijo(a)</option>
+                                                <option value="Esposo(a)">Esposa(a)</option>
+                                                <option value="Padres">Padres</option>
+                                                <option value="Hermanos">Padres</option>
+                            </select>
                             <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Co-sponsor contact" />
                             <input  type="text" id="edad"name="edad" placeholder="Edad" title="Co-sponsor email" />
                             <input  type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
