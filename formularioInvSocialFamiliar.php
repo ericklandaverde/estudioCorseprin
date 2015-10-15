@@ -76,7 +76,7 @@
 			</div>
 
 			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
-				    
+				    <label> a) Datos Familiares (Personas con las que vive) </label>
 				    <div id="input1" class="clonedInput">
 				    	<fieldset>
                            <legend>Familiar</legend>   
@@ -97,9 +97,11 @@
                          </fieldset>
 				    </div>
 				 
-				    <div>
+				    <div class="form-group">
+				    	<div class="col-md-offset-2 col-md-8">
 				        <input type="button" class="btn btn-success" id="btnAdd" value="Agregar otro familiar" />
 				        <input type="button" class="btn btn-danger" id="btnDel" value="Remover" />
+				        </div>
 				    </div>
                     
                     <div class="form-group">
