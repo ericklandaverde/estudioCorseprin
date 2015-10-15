@@ -17,7 +17,21 @@
 		   document.getElementById("formulario").value = x.toUpperCase()
 		}
     </script>
-    
+    <script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('#insertar').click(function() {
+	        if ($('#telefono').val().length != 9 || isNaN($('#telefono').val())) {
+	            $('#telefono').css('border-color','#FF0000');
+	            alert('El número de teléfono debe tener al menos 9 números.');
+	            return false;
+	        }
+	        else {
+	            alert('OK');
+	        }
+	    });
+	});
+	</script>
     </head>
     <body>
 	<div class="menu-area">

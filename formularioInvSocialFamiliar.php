@@ -336,9 +336,9 @@ else
                             <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
                         </div>
                     </div>
-            </form>
-        <div>
-      <div>
+                    </form>
+                <div>
+            <div>
 			
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
