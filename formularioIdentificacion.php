@@ -133,7 +133,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
+					  <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
 					</div>
 				  </div>
 				  <div class="form-group">
