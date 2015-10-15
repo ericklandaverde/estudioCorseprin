@@ -14,39 +14,31 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#btnAdd').click(function() {
-                var num = $('.clonedInput').length;
-                var newNum  = new Number(num + 1);
-                var newNum2  = new Number(num + 1);
- 
-                var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
-                var newElem2 = $('#input' + num).clone().attr('id', 'input' + newNum2);
-                // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
-                newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
-                newElem2.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
-                // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
-                // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
-                $('#input' + num).after(newElem);
-                $('#input' + num).after(newElem2);
-                $('#btnDel').attr('disabled','');
- 
-                if (newNum == 10)
-                    $('#btnAdd').attr('disabled','disabled');
-            });
- 
-            $('#btnDel').click(function() {
-                var num = $('.clonedInput').length;
- 
-                $('#input' + num).remove();
-                $('#btnAdd').attr('disabled','');
- 
-                if (num-1 == 1)
-                    $('#btnDel').attr('disabled','disabled');
-            });
- 
-            $('#btnDel').attr('disabled','disabled');
-        });
+var regex = /^(.*)(\d)+$/i;
+var cloneIndex = $(".clonedInput").length;
+
+function clone(){
+    $(this).parents(".clonedInput").clone()
+        .appendTo("body")
+        .attr("id", "clonedInput" +  cloneIndex)
+        .find("*")
+        .each(function() {
+            var id = this.id || "";
+            var match = id.match(regex) || [];
+            if (match.length == 3) {
+                this.id = match[1] + (cloneIndex);
+            }
+        })
+        .on('click', 'button.clone', clone)
+        .on('click', 'button.remove', remove);
+    cloneIndex++;
+}
+function remove(){
+    $(this).parents(".clonedInput").remove();
+}
+$("button.clone").on("click", clone);
+
+$("button.remove").on("click", remove);
     </script>
 </head>
 
@@ -123,17 +115,30 @@
         				    </div>
         				</div>
         			</div> -->
-				    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-                        Name: <input type="text" name="name" id="name" />
-                        Edad: <input type="text" name="edad" id="edad" />
+				    <div id="clonedInput1" class="clonedInput">
+                        <div>
+                            <label for="txtCategory" class="">Learning category <span class="requiredField">*</span></label>
+                            <select class="" name="txtCategory[]" id="category1">
+                                <option value="">Please select</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="txtSubCategory" class="">Sub-category <span class="requiredField">*</span></label>
+                            <select class="" name="txtSubCategory[]" id="subcategory1">
+                                <option value="">Please select category</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="txtSubSubCategory">Sub-sub-category <span class="requiredField">*</span></label>
+                            <select name="txtSubSubCategory[]" id="subsubcategory1">
+                                <option value="">Please select sub-category</option>
+                            </select>
+                        </div>
+                        <div class="actions">
+                            <button class="clone">Clone</button> 
+                            <button class="remove">Remove</button>
+                        </div>
                     </div>
-
-				    <div class="form-group">
-				    	<div class="col-md-offset-2 col-md-8">
-				        <input type="button" class="btn btn-success" id="btnAdd" value="Agregar otro familiar" />
-				        <input type="button" class="btn btn-danger" id="btnDel" value="Remover" />
-				        </div>
-				    </div>
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
