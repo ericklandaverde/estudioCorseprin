@@ -74,9 +74,13 @@
 					</div>
 				</div>
 			</div>
+           
+   <div class="row">
+        <div class="col-md-offset-1 col-md-10">
 
 			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 				    <label> a) Datos Familiares (Personas con las que vive) </label>
+				    
 				    <div id="input1" class="clonedInput">
 				    	<fieldset>
                            <legend>Familiar</legend>   
@@ -227,6 +231,8 @@
                         </div>
                     </div>
             </form>
+        <div>
+      <div>
 			
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
