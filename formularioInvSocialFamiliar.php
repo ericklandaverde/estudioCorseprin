@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- css -->
-	<!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<!-- js -->
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-	<div class="menu-area">
+<!-- 	<div class="menu-area">
 		<div id="dl-menu" class="dl-menuwrapper">
 			<button class="dl-trigger">Open Menu</button>
 			<ul class="dl-menu">
@@ -55,7 +55,7 @@
 				<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
 			</ul>
 		</div>
-	</div>	
+	</div>	 -->
 
 	<!-- Altas -->
 	<section id="contact" class="home-section bg-white">
@@ -80,7 +80,7 @@
         <input type="button" id="btnDel" value="remove name" />
     </div>
 </form>
-			<div class="row mar-top30 ">
+<!-- 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
 					<ul class="social-network">
@@ -110,12 +110,12 @@
 						</li>
 					</ul>
 				</div>				
-			</div>
+			</div> -->
 		
 		</div> <!-- container -->
 	</section>  
 
-	<footer>
+<!-- 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -124,7 +124,7 @@
 				</div>
 			</div>		
 		</div>	
-	</footer>
+	</footer> -->
 
 	<!-- js -->
 	<script src="js/jquery.js"></script>
