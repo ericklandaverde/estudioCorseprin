@@ -30,8 +30,7 @@
                  
                  $('#myForm div:last').find('input').each(function(){
                     $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId); 
-                     
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
                  });
                 
                  uniqueId++;  
@@ -115,18 +114,18 @@
         			</div> -->
                     <div id="container">
                         <h3>Familiares</h3>
-                        <form action="" id="myForm">
+                    <form action="" id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label> 
-                            <input  type="text" id="cosponsorcontact" name="cosponsorcontact"  placeholder="Nombre" title="Co-sponsor contact" />
-                            <input  type="text" id="cosponsoremail"  name="cosponsoremail" placeholder="Correo" title="Co-sponsor email" />
-                            <input  type="text" id="cosponsorphone"  name="cosponsorphone" placeholder="Telefono" title="Co-sponsor phone" />
+                            <input  type="text" id="parentesco"  name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
+                            <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Co-sponsor contact" />
+                            <input  type="text" id="edad"   name="edad" placeholder="Edad" title="Co-sponsor email" />
+                            <input  type="text" id="ocupacion"  name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
+                            <input  type="text" id="depende"  name="depende" placeholder="Depende" title="Co-sponsor phone" />
                           </div>
                          </form>
-
                         
                         <input type="button" class="addRow" value="Add Sponsor" />
-                        
                     </div>
                     
                     <div class="form-group">
