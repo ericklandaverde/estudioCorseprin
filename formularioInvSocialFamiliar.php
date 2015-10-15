@@ -20,10 +20,10 @@
                 var newNum  = new Number(num + 1);
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
-                
+                var newElem2 = $('#input' + num).clone().attr('id', 'input' + newNum);
                 // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
                 newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
-                newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                newElem2.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
