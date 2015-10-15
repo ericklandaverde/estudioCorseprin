@@ -114,7 +114,7 @@
         				</div>
         			</div> -->
                     <div id="container">
-                        <h3>Sponsors</h3>
+                        <h3>Familiares</h3>
                         <form action="" id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label> 
