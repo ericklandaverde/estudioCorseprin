@@ -79,8 +79,8 @@
     </div>
  
     <div>
-        <input type="button" id="btnAdd" value="add another name" />
-        <input type="button" id="btnDel" value="remove name" />
+        <input type="button" id="btnAdd" value="Agregar otro familiar" />
+        <input type="button" id="btnDel" value="Remover" />
     </div>
 </form>
 			<div class="row mar-top30 ">
