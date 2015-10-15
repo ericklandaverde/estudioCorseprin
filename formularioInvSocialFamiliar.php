@@ -229,14 +229,14 @@ else
                     <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label> 
-                            <input  type="text" id="parentesco"  name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
+                            <input  type="text" id="parentesco" name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
                             <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Co-sponsor contact" />
-                            <input  type="text" id="edad"   name="edad" placeholder="Edad" title="Co-sponsor email" />
-                            <input  type="text" id="ocupacion"  name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
-                            <input  type="text" id="depende"  name="depende" placeholder="Depende" title="Co-sponsor phone" />
+                            <input  type="text" id="edad"name="edad" placeholder="Edad" title="Co-sponsor email" />
+                            <input  type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
+                            <input  type="text" id="depende" name="depende" placeholder="Depende" title="Co-sponsor phone" />
                           </div>
                     </form>
-                            <input type="button" class="addRow" value="Agregar familiar" />
+                            <input type="button" class="btn btn-info" class="addRow" value="Agregar familiar" />
                     </div>
                     
                     <div class="form-group">
