@@ -76,19 +76,23 @@
 			</div>
 
 			<form id="myForm">
+				    
 				    <div id="input1" class="clonedInput">
-				    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
-	                               <option selected value="">Seleccione un parentesco</option>
-	                               <option value="Hijo(a)">Hijo(a)</option>
-	                               <option value="Esposo(a)">Esposa(a)</option>
-	                               <option value="Padres">Padres</option>
-	                               <option value="Hermanos">Padres</option>
-                               </select>
-				               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
-				               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
-				               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
-				               <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                               <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+				    	<fieldset>
+                           <legend>Familiar</legend>   
+			    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
+                               <option selected value="">Seleccione un parentesco</option>
+                               <option value="Hijo(a)">Hijo(a)</option>
+                               <option value="Esposo(a)">Esposa(a)</option>
+                               <option value="Padres">Padres</option>
+                               <option value="Hermanos">Padres</option>
+                           </select>
+			               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
+			               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
+			               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
+			               <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                           <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+                         </fieldset>
 				    </div>
 				 
 				    <div>
