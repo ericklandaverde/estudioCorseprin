@@ -26,7 +26,7 @@
                 newElem2.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
-                $('#input' + num).after(newElem2);
+                $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
                 if (newNum == 10)
