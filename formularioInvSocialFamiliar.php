@@ -89,6 +89,7 @@
                                 <td><label>Parentesco</label></td>
                                 <td><label>Nombre:</label></td>
                             </tr>
+                           </table>
 			    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
                                <option selected value="">Seleccione un parentesco</option>
                                <option value="Hijo(a)">Hijo(a)</option>
@@ -101,7 +102,6 @@
 			               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
 			               <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
                            <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
-			    	       </table>
                          </fieldset>
 				    </div>
 				 
