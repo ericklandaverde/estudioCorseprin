@@ -117,9 +117,10 @@
                         <h3>Sponsors</h3>
                         <form action="" id="myForm">
                           <div id="cosponsors" style="padding:12px;">
-                            <label>Sponsor Info:</label> <input  type="text" id="cosponsorcontact" name="cosponsorcontact"  placeholder="Name" title="Co-sponsor contact" />
-                            <input  type="text" id="cosponsoremail"  name="cosponsoremail"     placeholder="Email" title="Co-sponsor email" />
-                            <input  type="text" id="cosponsorphone"  name="cosponsorphone"     placeholder="Phone" title="Co-sponsor phone" />
+                            <label>Familiar:</label> 
+                            <input  type="text" id="cosponsorcontact" name="cosponsorcontact"  placeholder="Nombre" title="Co-sponsor contact" />
+                            <input  type="text" id="cosponsoremail"  name="cosponsoremail" placeholder="Correo" title="Co-sponsor email" />
+                            <input  type="text" id="cosponsorphone"  name="cosponsorphone" placeholder="Telefono" title="Co-sponsor phone" />
                           </div>
                          </form>
 
