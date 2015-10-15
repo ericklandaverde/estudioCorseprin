@@ -81,18 +81,18 @@
 			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 				    <label> a) Datos Familiares (Personas con las que vive) </label>
 				    
-        		    <div class="form-group">
+<!--         		    <div class="form-group">
         		    	<div class="col-md-offset-2 col-md-8">
         				    <div id="input1" class="clonedInput">
         				    	<fieldset>
                                    <legend>Familiar</legend>   
         			    	       <table>
         			    	       	<tr>
-<!--                                         <td><label>Parentesco</label></td> -->
+                                        <td><label>Parentesco</label></td>
                                         <td><label>Nombre:</label></td>
                                     </tr>
                                     <tr>
-<!--                                         <td>                           
+                                    <td>                           
                                         <select type="text" class="form-control" id="parentesco1" placeholder="Parentesco" name="parentesco1" required>
                                            <option selected value="">Seleccione un parentesco</option>
                                            <option value="Hijo(a)">Hijo(a)</option>
@@ -100,28 +100,31 @@
                                            <option value="Padres">Padres</option>
                                            <option value="Hermanos">Padres</option>
                                        </select>
-                                        </td> -->
+                                    </td>
                                     	<td><input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required></td>
                                     </tr>
-<!--                                     <tr>
+                                    <tr>
                                         <td><label>Edad</label></td>
                                         <td><label>Ocupacion:</label></td>
                                         <td><label>Depende economicamente:</label></td>
-                                    </tr> -->
-<!--                                     <tr>
+                                    </tr>
+                                    <tr>
                                         <td><input type="text" class="form-control" id="edad1" placeholder="Edad" name="edad1" required></td>
                                         <td><input type="text" class="form-control" id="ocupacion1" placeholder="Ocupacion" name="ocupacion1" required></td>
                                         <td>
                                             <input type="radio" id="depende1" name="depende1" value="Si" placeholder="Selecciona una opcion" checked required>Si
                                             <input type="radio" id="depende1" name="depende1" value="No" placeholder="Selecciona una opcion" required>No
                                         </td>
-                                    </tr> -->
+                                    </tr>
                                    </table>
                                  </fieldset>
         				    </div>
         				</div>
-        			</div>
-				 
+        			</div> -->
+				    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
+                        Name: <input type="text" name="name1" id="name1" />
+                    </div>
+
 				    <div class="form-group">
 				    	<div class="col-md-offset-2 col-md-8">
 				        <input type="button" class="btn btn-success" id="btnAdd" value="Agregar otro familiar" />
