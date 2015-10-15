@@ -246,7 +246,7 @@ else
                             <input  type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" required/>
                             <input  type="text" class="form-control" id="depende" name="depende" placeholder="Depende" title="Campo depende" required/>
                           </div>
-                    </form>
+                    </div>
                             <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                     </div>
                     
