@@ -23,7 +23,7 @@
                 
                 // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
                 newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
-                newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                // newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
