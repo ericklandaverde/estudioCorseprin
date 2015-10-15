@@ -123,7 +123,7 @@ else
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<!-- js -->
 	<!-- jQuery -->
-<!-- 	// <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
     <script type="text/javascript">
