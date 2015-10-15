@@ -45,7 +45,7 @@
 </head>
 
 <body>
-<!-- 	<div class="menu-area">
+	<div class="menu-area">
 		<div id="dl-menu" class="dl-menuwrapper">
 			<button class="dl-trigger">Open Menu</button>
 			<ul class="dl-menu">
@@ -55,7 +55,7 @@
 				<li><a href="formularioIdentificacion.php">Comenzar...</a></li>
 			</ul>
 		</div>
-	</div>	 -->
+	</div>	
 
 	<!-- Altas -->
 	<section id="contact" class="home-section bg-white">
