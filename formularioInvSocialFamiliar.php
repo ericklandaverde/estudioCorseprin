@@ -85,6 +85,10 @@
 				    	<fieldset>
                            <legend>Familiar</legend>   
 			    	       <table>
+			    	       	<tr>
+                                <td><label>Parentesco</label></td>
+                                <td><label>Nombre:</label></td>
+                            </tr>
 			    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
                                <option selected value="">Seleccione un parentesco</option>
                                <option value="Hijo(a)">Hijo(a)</option>
