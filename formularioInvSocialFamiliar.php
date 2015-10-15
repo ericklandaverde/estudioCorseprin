@@ -134,13 +134,14 @@
                             <option value="">Please select sub-category</option>
                         </select>
                     </div>
+                    <div>
+                        <input type="button" class="clone" id="btnAdd" value="Agregar otro familiar" />
+                        <input type="button" class="remove" id="btnDel" value="Remover" />
+                    </div>
                     </div>
 
 				    <div class="form-group">
-				    	<div class="col-md-offset-2 col-md-8">
-				        <input type="button" class="clone" id="btnAdd" value="Agregar otro familiar" />
-				        <input type="button" class="remove" id="btnDel" value="Remover" />
-				        </div>
+				    	
 				    </div>
                     
                     <div class="form-group">
