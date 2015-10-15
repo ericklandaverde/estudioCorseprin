@@ -14,31 +14,29 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
     <script type="text/javascript">
-var regex = /^(.*)(\d)+$/i;
-var cloneIndex = $(".clonedInput").length;
+        var uniqueId = 1;
+        $(function() {
+             $('.addRow').click(function() {
+             
+                 var copy = $("#cosponsors").clone(true).appendTo("#myForm");
+                 var cosponsorDivId = 'cosponsors_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
 
-function clone(){
-    $(this).parents(".clonedInput").clone()
-        .appendTo("body")
-        .attr("id", "clonedInput" +  cloneIndex)
-        .find("*")
-        .each(function() {
-            var id = this.id || "";
-            var match = id.match(regex) || [];
-            if (match.length == 3) {
-                this.id = match[1] + (cloneIndex);
-            }
-        })
-        .on('click', 'button.clone', clone)
-        .on('click', 'button.remove', remove);
-    cloneIndex++;
-}
-function remove(){
-    $(this).parents(".clonedInput").remove();
-}
-$("button.clone").on("click", clone);
-
-$("button.remove").on("click", remove);
+                 var deleteLink = $("<a>delete</a>");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#myForm div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId); 
+                     
+                 });
+                
+                 uniqueId++;  
+             });
+        });
     </script>
 </head>
 
@@ -115,29 +113,19 @@ $("button.remove").on("click", remove);
         				    </div>
         				</div>
         			</div> -->
-				    <div id="clonedInput1" class="clonedInput">
-                        <div>
-                            <label for="txtCategory" class="">Learning category <span class="requiredField">*</span></label>
-                            <select class="" name="txtCategory[]" id="category1">
-                                <option value="">Please select</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="txtSubCategory" class="">Sub-category <span class="requiredField">*</span></label>
-                            <select class="" name="txtSubCategory[]" id="subcategory1">
-                                <option value="">Please select category</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="txtSubSubCategory">Sub-sub-category <span class="requiredField">*</span></label>
-                            <select name="txtSubSubCategory[]" id="subsubcategory1">
-                                <option value="">Please select sub-category</option>
-                            </select>
-                        </div>
-                        <div class="actions">
-                            <button class="clone">Clone</button> 
-                            <button class="remove">Remove</button>
-                        </div>
+                    <div id="container">
+                        <h3>Sponsors</h3>
+                        <form action="" id="myForm">
+                          <div id="cosponsors" style="padding:12px;">
+                            <label>Sponsor Info:</label> <input  type="text" id="cosponsorcontact" name="cosponsorcontact"  placeholder="Name" title="Co-sponsor contact" />
+                            <input  type="text" id="cosponsoremail"  name="cosponsoremail"     placeholder="Email" title="Co-sponsor email" />
+                            <input  type="text" id="cosponsorphone"  name="cosponsorphone"     placeholder="Phone" title="Co-sponsor phone" />
+                          </div>
+                         </form>
+
+                        
+                        <input type="button" class="addRow" value="Add Sponsor" />
+                        
                     </div>
                     
                     <div class="form-group">
