@@ -93,7 +93,20 @@
                             </tr>
                             <tr>
                             	<td><input type="text" id="name1" name="name1"></td>
-                            	<td><input type="text" id="edad1" name="edad1"></td>
+                            	
+                            </tr>
+                            <tr>
+                                <td><label>Edad</label></td>
+                                <td><label>Ocupacion:</label></td>
+                                <td><label>Depende economicamente:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="edad1" name="edad1"></td>
+                                <td><input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required></td>
+                                <td>
+                                    <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                                    <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+                                </td>
                             </tr>
                            </table>
 			    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
@@ -103,11 +116,6 @@
                                <option value="Padres">Padres</option>
                                <option value="Hermanos">Padres</option>
                            </select>
-<!-- 			               Nombre: <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
-			               Edad: <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required> -->
-			               Ocupacion<input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
-			               Depende: <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                           <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                          </fieldset>
 				    </div>
 				</div>
