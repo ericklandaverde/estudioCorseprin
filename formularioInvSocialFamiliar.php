@@ -23,6 +23,8 @@
      
                 newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
                 newElem.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
+                newElem.children(':first').attr('id', 'ocupacion' + newNum).attr('name', 'ocupacion' + newNum);
+                newElem.children(':first').attr('id', 'depende' + newNum).attr('name', 'depende' + newNum);
                 $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
@@ -76,6 +78,9 @@
 				    <div id="input1" class="clonedInput">
 				               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
 				               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
+				               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
+				               <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                               <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
 				    </div>
 				 
 				    <div>
