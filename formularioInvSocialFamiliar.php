@@ -134,7 +134,7 @@ else
                  var cosponsorDivId = 'cosponsors_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
-                 var deleteLink = $("<a>Eliminar</a>");
+                 var deleteLink = $("<input type='button' class='btn btn-primary' value='Elimiar' />");
                  deleteLink.appendTo(copy);
                  deleteLink.click(function(){
                      copy.remove();
