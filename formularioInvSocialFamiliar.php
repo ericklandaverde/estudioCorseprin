@@ -181,7 +181,7 @@ else
    <div class="row">
         <div class="col-md-offset-1 col-md-10">
 
-			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
+			<form id="formulario" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 				    <label> a) Datos Familiares (Personas con las que vive) </label>
 				    
 <!--         		    <div class="form-group">
@@ -226,7 +226,7 @@ else
         			</div> -->
                     <div id="container">
                         <h3>Familiares</h3>
-                    <form action="" id="myForm">
+                    <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label> 
                             <input  type="text" id="parentesco"  name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
