@@ -72,24 +72,48 @@
 				</div>
 			</div>
 
-				<form id="myForm">
-					    <div id="input1" class="clonedInput">
-					               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
-					               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
-					    </div>
-					 
-					    <div>
-					        <input type="button" id="btnAdd" value="Agregar otro familiar" />
-					        <input type="button" id="btnDel" value="Remover" />
-					    </div>
-                        
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-8">
-                                <input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
-                                <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-                            </div>
+			<form id="myForm">
+				    <div id="input1" class="clonedInput">
+				               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
+				               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
+				    </div>
+				 
+				    <div>
+				        <input type="button" id="btnAdd" value="Agregar otro familiar" />
+				        <input type="button" id="btnDel" value="Remover" />
+				    </div>
+                    
+                    <div class="form-group">
+		                <div class="col-md-offset-2 col-md-8">
+			                    <label> f)  Pasatiempos : </label>
+			                    <table>
+			                        <tr>
+			                            <td><label>Actividad<label></td>
+			                            <td><label>Frecuencia anual</label></td>
+			                        </tr>
+			                        <tr>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadA" required></td>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaA" required></td>
+			                        </tr>
+			                        <tr>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadB" required></td>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaB" required></td>
+			                        </tr>
+			                        <tr>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadC" required></td>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaC" required></td>
+			                        </tr>
+			                    </table>
+			             </div>
+		            </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-8">
+                            <input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
+                            <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
                         </div>
-                </form>
+                    </div>
+            </form>
 			
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
