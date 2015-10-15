@@ -75,7 +75,7 @@
 				</div>
 			</div>
 
-			<form id="myForm">
+			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 				    
 				    <div id="input1" class="clonedInput">
 				    	<fieldset>
@@ -90,8 +90,8 @@
 			               <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
 			               <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
 			               <input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
-			               <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                           <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+			               <input type="radio" class="form-control" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                           <input type="radio" class="form-control" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                          </fieldset>
 				    </div>
 				 
