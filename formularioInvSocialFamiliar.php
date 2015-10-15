@@ -72,17 +72,6 @@
 				</div>
 			</div>
 
-<form id="myForm">
-    <div id="input1" class="clonedInput">
-	           <input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required>
-	           <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
-    </div>
- 
-    <div>
-        <input type="button" id="btnAdd" value="Agregar otro familiar" />
-        <input type="button" id="btnDel" value="Remover" />
-    </div>
-</form>
 			<div class="row mar-top30 ">
 				<div class="col-md-offset-2 col-md-8">
 					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
@@ -114,7 +103,6 @@
 					</ul>
 				</div>				
 			</div>
-		
 		</div> <!-- container -->
 	</section>  
 
