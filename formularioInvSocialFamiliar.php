@@ -229,17 +229,17 @@ else
                     <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label>
-                            <select type="text" id="parentesco" placeholder="Parentesco" name="parentesco" title="Co-sponsor phone" required>
+                            <select type="text" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco">
                                                 <option selected value="">Seleccione un parentesco</option>
                                                 <option value="Hijo(a)">Hijo(a)</option>
                                                 <option value="Esposo(a)">Esposa(a)</option>
                                                 <option value="Padres">Padres</option>
                                                 <option value="Hermanos">Padres</option>
                             </select>
-                            <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Co-sponsor contact" />
-                            <input  type="text" id="edad"name="edad" placeholder="Edad" title="Co-sponsor email" />
-                            <input  type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
-                            <input  type="text" id="depende" name="depende" placeholder="Depende" title="Co-sponsor phone" />
+                            <input  type="text" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" />
+                            <input  type="text" id="edad"name="edad" placeholder="Edad" title="Campo edad" />
+                            <input  type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" />
+                            <input  type="text" id="depende" name="depende" placeholder="Depende" title="Campo depende" />
                           </div>
                     </form>
                             <input type="button" class="addRow" value="Agregar familiar" />
