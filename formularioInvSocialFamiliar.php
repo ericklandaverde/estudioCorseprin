@@ -122,7 +122,7 @@
         				</div>
         			</div> -->
 				    <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-                        Name: <input type="text" class="form-control" name="nombre1" id="nombre1" required/>
+                        Name: <input type="text" name="nombre1" id="nombre1" required/>
                         Edad: <input type="text" name="edad1" id="edad1" />
                     </div>
 
