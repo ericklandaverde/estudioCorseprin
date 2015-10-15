@@ -109,7 +109,7 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <select required type="text" class="form-control" id="inputClave" placeholder="Estado civil" name="estadocivil">
+					  <select type="text" class="form-control" id="inputClave" placeholder="Estado civil" name="estadocivil" required>
                         <option selected value="">Seleccionar estado civil</option>
                         <option value="Soltero">Soltero</option>
                         <option value="Casado">Casado</option>
