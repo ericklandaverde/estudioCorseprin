@@ -21,11 +21,11 @@
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
                 
-                newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
+                // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
                 newElem.children(':first').attr('id', 'name1' + newNum).attr('name', 'name1' + newNum);
-                newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
-                newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
-                newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
+                // newElem.children(':first').attr('id', 'edad1' + newNum).attr('name', 'edad1' + newNum);
+                // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
+                // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
                 $('#btnDel').attr('disabled','');
  
@@ -88,11 +88,11 @@
                                    <legend>Familiar</legend>   
         			    	       <table>
         			    	       	<tr>
-                                        <td><label>Parentesco</label></td>
+<!--                                         <td><label>Parentesco</label></td> -->
                                         <td><label>Nombre:</label></td>
                                     </tr>
                                     <tr>
-                                        <td>                           
+<!--                                         <td>                           
                                         <select type="text" class="form-control" id="parentesco1" placeholder="Parentesco" name="parentesco1" required>
                                            <option selected value="">Seleccione un parentesco</option>
                                            <option value="Hijo(a)">Hijo(a)</option>
@@ -100,22 +100,22 @@
                                            <option value="Padres">Padres</option>
                                            <option value="Hermanos">Padres</option>
                                        </select>
-                                        </td>
+                                        </td> -->
                                     	<td><input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required></td>
                                     </tr>
-                                    <tr>
+<!--                                     <tr>
                                         <td><label>Edad</label></td>
                                         <td><label>Ocupacion:</label></td>
                                         <td><label>Depende economicamente:</label></td>
-                                    </tr>
-                                    <tr>
+                                    </tr> -->
+<!--                                     <tr>
                                         <td><input type="text" class="form-control" id="edad1" placeholder="Edad" name="edad1" required></td>
                                         <td><input type="text" class="form-control" id="ocupacion1" placeholder="Ocupacion" name="ocupacion1" required></td>
                                         <td>
                                             <input type="radio" id="depende1" name="depende1" value="Si" placeholder="Selecciona una opcion" checked required>Si
                                             <input type="radio" id="depende1" name="depende1" value="No" placeholder="Selecciona una opcion" required>No
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                    </table>
                                  </fieldset>
         				    </div>
