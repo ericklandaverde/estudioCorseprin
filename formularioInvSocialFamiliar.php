@@ -81,6 +81,8 @@
 			<form id="myForm" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
 				    <label> a) Datos Familiares (Personas con las que vive) </label>
 				    
+		    <div class="form-group">
+		    	<div class="col-md-offset-2 col-md-8">
 				    <div id="input1" class="clonedInput">
 				    	<fieldset>
                            <legend>Familiar</legend>   
@@ -104,6 +106,8 @@
                            <input type="radio" id="depende" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                          </fieldset>
 				    </div>
+				</div>
+			</div>
 				 
 				    <div class="form-group">
 				    	<div class="col-md-offset-2 col-md-8">
