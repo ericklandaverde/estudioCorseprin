@@ -226,7 +226,6 @@ else
         			</div> -->
                     <div id="container">
                         <h3>Familiares</h3>
-                    <div id="myForm">
                           <div id="cosponsors" style="padding:12px;">
                             <label>Familiar:</label> 
                             <input  type="text" id="parentesco"  name="parentesco" placeholder="Parentesco" title="Co-sponsor phone" />
@@ -235,7 +234,6 @@ else
                             <input  type="text" id="ocupacion"  name="ocupacion" placeholder="Ocupacion" title="Co-sponsor phone" />
                             <input  type="text" id="depende"  name="depende" placeholder="Depende" title="Co-sponsor phone" />
                           </div>
-                    </div>
                         
                         <input type="button" class="addRow" value="Agregar familiar" />
                     </div>
