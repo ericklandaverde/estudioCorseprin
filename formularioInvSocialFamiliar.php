@@ -61,7 +61,7 @@
 	<section id="contact" class="home-section bg-white">
 		<div class="container">
 			
-<!-- 			<div class="row">
+			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
 						<h2>ESTUDIO SOCIOECONOMICO</h2>
@@ -69,7 +69,7 @@
 						<p>CANDIDATO: <label><?php echo $clave; ?></label></p>
 					</div>
 				</div>
-			</div> -->
+			</div>
 <form id="myForm">
     <div id="input1" class="clonedInput">
         Name: <input type="text" name="name1" id="name1" />
