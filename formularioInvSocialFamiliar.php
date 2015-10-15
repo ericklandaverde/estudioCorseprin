@@ -18,15 +18,17 @@
             $('#btnAdd').click(function() {
                 var num = $('.clonedInput').length;
                 var newNum  = new Number(num + 1);
+                var newNum2  = new Number(num + 1);
  
                 var newElem = $('#input' + num).clone().attr('id', 'input' + newNum);
-                var newElem2 = $('#input' + num).clone().attr('id', 'input' + newNum);
+                var newElem2 = $('#input' + num).clone().attr('id', 'input' + newNum2);
                 // newElem.children(':first').attr('id', 'parentesco1' + newNum).attr('name', 'parentesco1' + newNum);
                 newElem.children(':first').attr('id', 'name' + newNum).attr('name', 'name' + newNum);
                 newElem2.children(':first').attr('id', 'edad' + newNum).attr('name', 'edad' + newNum);
                 // newElem.children(':first').attr('id', 'ocupacion1' + newNum).attr('name', 'ocupacion1' + newNum);
                 // newElem.children(':first').attr('id', 'depende1' + newNum).attr('name', 'depende1' + newNum);
                 $('#input' + num).after(newElem);
+                $('#input' + num).after(newElem2);
                 $('#btnDel').attr('disabled','');
  
                 if (newNum == 10)
