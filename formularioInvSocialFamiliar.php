@@ -92,8 +92,16 @@
                                 <td><label>Nombre:</label></td>
                             </tr>
                             <tr>
-                            	<td><input type="text" id="name1" name="name1"></td>
-                            	
+                                <td>                           
+                                <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
+                                   <option selected value="">Seleccione un parentesco</option>
+                                   <option value="Hijo(a)">Hijo(a)</option>
+                                   <option value="Esposo(a)">Esposa(a)</option>
+                                   <option value="Padres">Padres</option>
+                                   <option value="Hermanos">Padres</option>
+                               </select>
+                                </td>
+                            	<td><input type="text" class="form-control" id="name1" placeholder="Nombre" name="name1" required></td>
                             </tr>
                             <tr>
                                 <td><label>Edad</label></td>
@@ -101,7 +109,7 @@
                                 <td><label>Depende economicamente:</label></td>
                             </tr>
                             <tr>
-                                <td><input type="text" id="edad1" name="edad1"></td>
+                                <td><input type="text" class="form-control" id="edad1" placeholder="Edad" name="edad1" required></td>
                                 <td><input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required></td>
                                 <td>
                                     <input type="radio" id="depende" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
@@ -109,13 +117,6 @@
                                 </td>
                             </tr>
                            </table>
-			    	       <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" required>
-                               <option selected value="">Seleccione un parentesco</option>
-                               <option value="Hijo(a)">Hijo(a)</option>
-                               <option value="Esposo(a)">Esposa(a)</option>
-                               <option value="Padres">Padres</option>
-                               <option value="Hermanos">Padres</option>
-                           </select>
                          </fieldset>
 				    </div>
 				</div>
