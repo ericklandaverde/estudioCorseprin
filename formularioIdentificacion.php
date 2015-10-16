@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- css -->  
+    <link href='progression.js/src/progression.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="progression.js/src/progression.js"></script>
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
@@ -32,6 +36,13 @@
 	    });
 	});
 	</script>
+	<script type="text/javascript">
+	$(document).ready(function ($) {
+		    $("#myform").progression();
+		});
+    });		
+	</script>
+
     </head>
     <body>
 	<div class="menu-area">
@@ -65,11 +76,12 @@
 
 	  			<div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioDocumentos.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+				<form id="myform" action="formularioDocumentos.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <label>Clave RFC: </label>
-						  <input type="text" class="form-control" id="formulario" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
+						  <input type="text" data-progression="" data-helper="Help users through forms by prividing helpful hinters"
+						  class="form-control" id="formulario" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
 						</div>
 				    </div>
 					<div class="form-group">
