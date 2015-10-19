@@ -76,7 +76,7 @@
 
 	  			<div class="col-md-offset-1 col-md-10">
 
-				<form id="myform" action="formularioDocumentos.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+				<form id="myform" action="models/formularioDocumentos.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						  <label>Clave RFC: </label>
