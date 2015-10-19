@@ -296,25 +296,29 @@ else
                         </div>
                     </div>
 
+
                     <div class="form-group" id="contenedorDeportes">
+                        <label> d) Actividades Deportivas: </label>
                         <div class="col-md-offset-2 col-md-8" id="Deportes">
-                            <label> d) Actividades Deportivas: </label>
+                            <div id="cosponsors" style="padding:12px;">
                             <table>
-                                <tr>
-                                    <td><label>Deporte<label></td>
-                                    <td><label>Lugar</label></td>
-                                    <td><label>Frecuencia</label></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" class="form-control" id="deporte" placeholder="Deporte" name="deporte" required></td>
-                                    <td><input type="text" class="form-control" id="lugar" placeholder="Lugar" name="lugar" required></td>
-                                    <td><input type="text" class="form-control" id="frecuencia" placeholder="Frecuencia" name="frecuencia" required></td>
-                                </tr>
+                            <tr>
+                                <td><label>Deporte<label></td>
+                                <td><label>Lugar</label></td>
+                                <td><label>Frecuencia</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" id="deporte" placeholder="Deporte" name="deporte" required></td>
+                                <td><input type="text" class="form-control" id="lugar" placeholder="Lugar" name="lugar" required></td>
+                                <td><input type="text" class="form-control" id="frecuencia" placeholder="Frecuencia" name="frecuencia" required></td>
+                            </tr>
                             </table><br>
                             <input type="button" class="addRowDeportes btn btn-primary" value="Agregar Deporte" />
+                            <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
+                            </div>
                         </div>
-                        
                     </div>
+
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
