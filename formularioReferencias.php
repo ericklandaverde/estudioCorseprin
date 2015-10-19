@@ -48,13 +48,13 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
-	    <script type="text/javascript">
+	<script type="text/javascript">
         var uniqueId = 1;
         $(function() {
-             $('.addRowDeportes').click(function() {
+             $('.addRow').click(function() {
              
-                 var copy = $("#deporte").clone(true).appendTo("#Deportes");
-                 var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
+                 var copy = $("#cosponsors").clone(true).appendTo("#myForm");
+                 var cosponsorDivId = 'cosponsors_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
                  var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
@@ -63,7 +63,12 @@
                      copy.remove();
                  });
                  
-                 $('#Deportes div:last').find('input').each(function(){
+                 $('#myForm div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                 });
+
+                  $('#myForm div:last').find('select').each(function(){
                     $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
                     $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
                  });
@@ -133,7 +138,7 @@
 								<label>Comentarios</label>
 								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentarios" required>
 							    </fieldset>
-                                <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
+                                <br><input type="button" class="addRow btn btn-primary" value="Agregar Referencia" />
                                 </div>
                         </div>
                     </div>
