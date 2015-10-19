@@ -48,6 +48,30 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
+	    <script type="text/javascript">
+        var uniqueId = 1;
+        $(function() {
+             $('.addRowDeportes').click(function() {
+             
+                 var copy = $("#deporte").clone(true).appendTo("#Deportes");
+                 var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
+
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#Deportes div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                 });
+                
+                 uniqueId++;  
+             });
+        });
+    </script>
    </head>
 
   <body>
@@ -81,62 +105,38 @@
 	  		<div class="row">
 	  			<div class="col-md-offset-1 col-md-10">
 					<form action="formularioEconomico.php" method="post" class="form-horizontal" role="form">
-					  <div class="form-group">
-						<div id="capa" class="col-md-offset-2 col-md-8">
-							<input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
-						  <fieldset>
-						  	<legend>Referencia 1:</legend>
-							<label>Nombre:</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombre" required>
-							<label>Ocupacion:</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacion" required>
-							<label>Tipo de relacion</label>
-							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="tipo" required>
-							  	<option selected value="">Seleccione relacion.</option>
-							  	<option value="Amigo">Amigo</option>
-							  	<option value="Familiar">Familiar</option>
-							  	<option value="Antiguo Jefe">Antiguo Jefe</option>
-							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
-		                    </select>
-		                    <label>Tiempo de conocerlo</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempo" required>
-							<label>Direccion</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
-							<label>Telefono</label>
-							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
-							<label>Comentarios</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarios" required>
-						  </fieldset>
-						</div>
-					  </div>
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
 
-					<div class="form-group">
-						<div id="capa" class="col-md-offset-2 col-md-8">
-						   <fieldset>
-						  	<legend>Referencia 2:</legend>
-							<label>Nombre:</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Nombre" name="nombreDos" required>
-							<label>Ocupacion:</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Ocupacion" name="ocupacionDos" required>
-							<label>Tipo de relacion</label>
-							<select type="text" class="form-control" id="inputClave" placeholder="Tipo de relacion" name="tipoDos" required>
-							  	<option selected value="">Seleccione relacion.</option>
-							  	<option value="Amigo">Amigo</option>
-							  	<option value="Familiar">Familiar</option>
-							  	<option value="Antiguo Jefe">Antiguo Jefe</option>
-							  	<option value="Compañero de trabajo">Compañero de trabajo</option>
-		                    </select>
-		                    <label>Tiempo de conocerlo</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Tiempo de conocerlo" name="tiempoDos" required>
-							<label>Direccion</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccionDos" required>
-							<label>Telefono</label>
-							<input type="tel"  class="form-control" id="inputClave" placeholder="Telefono" name="telefonoDos" required>
-							<label>Comentarios</label>
-							<input type="text" class="form-control" id="inputClave" placeholder="Comentarios" name="comentarioDos" required>
-						   </fieldset>
-						</div>
-					  </div>
+					  <div class="form-group" id="container">
+<!--                         <h5>Familiares: </h5> -->
+                        <div class="col-md-offset-2 col-md-8" id="myForm">
+                                <div id="cosponsors" style="padding:12px;">
+	                            <legend>Referencia:</legend>
+								<label>Nombre:</label>
+								<input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
+								<label>Ocupacion:</label>
+								<input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
+								<label>Tipo de relacion</label>
+								<select type="text" class="form-control" id="tipo" placeholder="Tipo de relacion" name="tipo" required>
+								  	<option selected value="">Seleccione relacion.</option>
+								  	<option value="Amigo">Amigo</option>
+								  	<option value="Familiar">Familiar</option>
+								  	<option value="Antiguo Jefe">Antiguo Jefe</option>
+								  	<option value="Compañero de trabajo">Compañero de trabajo</option>
+			                    </select>
+			                    <label>Tiempo de conocerlo</label>
+								<input type="text" class="form-control" id="tiempo" placeholder="Tiempo de conocerlo" name="tiempo" required>
+								<label>Direccion</label>
+								<input type="text" class="form-control" id="direccion" placeholder="Direccion" name="direccion" required>
+								<label>Telefono</label>
+								<input type="tel"  class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+								<label>Comentarios</label>
+								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentarios" required>
+							    </fieldset>
+                                <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
+                                </div>
+                        </div>
+                    </div>
 
 
 					  <div class="form-group">
