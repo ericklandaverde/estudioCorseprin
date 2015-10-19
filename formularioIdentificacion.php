@@ -115,7 +115,7 @@
 					      <label>Pais</label>
 				      	  <input class="form-control" id="country" disabled="true">
 				      	  <label>Estado</label>
-				          <input class="form-control" id="administrative_area_level_1" disabled="true">
+				          Estado<input class="form-control" id="administrative_area_level_1" disabled="true">
 				          <label>Municipio o delegacion</label>
 				          <input class="form-control" class="field" id="locality" disabled="true">
 						  <label>Dirección</label>
