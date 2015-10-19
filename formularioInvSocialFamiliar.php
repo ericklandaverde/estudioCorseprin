@@ -240,6 +240,8 @@ else
                         </div>
                                 <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                     </div>
+                    </div>
+                    </div>
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
