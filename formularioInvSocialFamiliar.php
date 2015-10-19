@@ -159,7 +159,7 @@ else
         $(function() {
              $('.addRow').click(function() {
              
-                 var copy = $("#cosponsors").clone(true).appendTo("#myForm");
+                 var copy = $("#cosponsors").clone(true).appendTo("#Deportes");
                  var cosponsorDivId = 'cosponsors_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
@@ -222,25 +222,23 @@ else
                     <div class="form-group" id="container">
                         <h5>Familiares: </h5>
                         <div class="col-md-offset-2 col-md-8" id="myForm">
-                                  <div id="cosponsors" style="padding:12px;">
-                                    <label>Familiar:</label>
-                                    <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
-                                        <option selected value="">Seleccione un parentesco</option>
-                                        <option value="Hijo(a)">Hijo(a)</option>
-                                        <option value="Esposo(a)">Esposa(a)</option>
-                                        <option value="Padres">Padres</option>
-                                        <option value="Hermanos">Padres</option>
-                                    </select>
-                                    <input  type="text" class="form-control" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" required/>
-                                    <input  type="number" class="form-control" id="edad"name="edad" placeholder="Edad" title="Campo edad" required/>
-                                    <input  type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" required/>
-                                    <input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
-                                    <input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
-                                  </div>
-                            </div>
-                                    <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
-                            </div>
+                                <div id="cosponsors" style="padding:12px;">
+                                <label>Familiar:</label>
+                                <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
+                                    <option selected value="">Seleccione un parentesco</option>
+                                    <option value="Hijo(a)">Hijo(a)</option>
+                                    <option value="Esposo(a)">Esposa(a)</option>
+                                    <option value="Padres">Padres</option>
+                                    <option value="Hermanos">Padres</option>
+                                </select>
+                                <input  type="text" class="form-control" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" required/>
+                                <input  type="number" class="form-control" id="edad"name="edad" placeholder="Edad" title="Campo edad" required/>
+                                <input  type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" required/>
+                                <input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                                <input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
+                                </div>
                         </div>
+                                <input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                     </div>
                     
                     <div class="form-group">
@@ -303,8 +301,8 @@ else
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-8">
+                    <div class="form-group" id="container">
+                        <div class="col-md-offset-2 col-md-8" id="Deportes">
                             <label> d) Actividades Deportivas: </label>
                             <table>
                                 <tr>
@@ -317,13 +315,9 @@ else
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugar" required></td>
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuencia" required></td>
                                 </tr>
-                                <tr>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporteDos" required></td>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugarDos" required></td>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuenciaDos" required></td>
-                                </tr>
                             </table><br>
                         </div>
+                        
                     </div>
                     
                     <div class="form-group">
