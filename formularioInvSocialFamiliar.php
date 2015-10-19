@@ -154,6 +154,35 @@ else
              });
         });
     </script>
+    <script type="text/javascript">
+        var uniqueId = 1;
+        $(function() {
+             $('.addRow').click(function() {
+             
+                 var copy = $("#cosponsors").clone(true).appendTo("#myForm");
+                 var cosponsorDivId = 'cosponsors_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
+
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#myForm div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                 });
+
+                  $('#myForm div:last').find('select').each(function(){
+                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                 });
+                
+                 uniqueId++;  
+             });
+        });
+    </script>
 </head>
 
 <body>
@@ -216,7 +245,7 @@ else
                     
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
-                            <label> b) Actividades Sociales: </label>
+                            <label> b) Actividades Sociales: </label><br>
                             <table>
                                 <tr><label>¿Que religion profesa?</label></tr>
                                 <tr>
@@ -271,6 +300,29 @@ else
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="arqueologicas" required></td>
                                 </tr>
                             </table>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-8">
+                            <label> d) Actividades Deportivas: </label>
+                            <table>
+                                <tr>
+                                    <td><label>Deporte<label></td>
+                                    <td><label>Lugar</label></td>
+                                    <td><label>Frecuencia</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporte" required></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugar" required></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuencia" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporteDos" required></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugarDos" required></td>
+                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuenciaDos" required></td>
+                                </tr>
+                            </table><br>
                         </div>
                     </div>
                     
