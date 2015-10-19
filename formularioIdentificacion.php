@@ -15,7 +15,7 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXvjidayUWJM8AZxrVmewY0lMMvppK4aQ&signed_in=true&libraries=places&callback=initAutocomplete"async defer></script>
-	<script type="text/javascript">
+	<script type="text/javascript">//script Validacion telefono
 		function upperCase() {
 		   var x=document.getElementById("formulario").value
 		   document.getElementById("formulario").value = x.toUpperCase()
@@ -36,7 +36,7 @@
 	    });
 	});
 	</script>
-	<script type="text/javascript">
+	<script type="text/javascript">//script de progreso.
 	$(document).ready(function ($) {
 		    $("#myform").progression();
 		});
