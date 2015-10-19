@@ -157,10 +157,10 @@ else
     <script type="text/javascript">
         var uniqueId = 1;
         $(function() {
-             $('.addRow').click(function() {
+             $('.addRowDeportes').click(function() {
              
-                 var copy = $("#cosponsors").clone(true).appendTo("#Deportes");
-                 var cosponsorDivId = 'cosponsors_' + uniqueId;
+                 var copy = $("#contenedorDeportes").clone(true).appendTo("#Deportes");
+                 var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
                  var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
@@ -169,12 +169,7 @@ else
                      copy.remove();
                  });
                  
-                 $('#myForm div:last').find('input').each(function(){
-                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
-                 });
-
-                  $('#myForm div:last').find('select').each(function(){
+                 $('#Deportes div:last').find('input').each(function(){
                     $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
                     $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
                  });
@@ -303,7 +298,7 @@ else
                         </div>
                     </div>
 
-                    <div class="form-group" id="container">
+                    <div class="form-group" id="contenedorDeportes">
                         <div class="col-md-offset-2 col-md-8" id="Deportes">
                             <label> d) Actividades Deportivas: </label>
                             <table>
@@ -313,9 +308,9 @@ else
                                     <td><label>Frecuencia</label></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Deporte" name="deporte" required></td>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Lugar" name="lugar" required></td>
-                                    <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia" name="frecuencia" required></td>
+                                    <td><input type="text" class="form-control" id="deporte" placeholder="Deporte" name="deporte" required></td>
+                                    <td><input type="text" class="form-control" id="lugar" placeholder="Lugar" name="lugar" required></td>
+                                    <td><input type="text" class="form-control" id="frecuencia" placeholder="Frecuencia" name="frecuencia" required></td>
                                 </tr>
                             </table><br>
                         </div>
