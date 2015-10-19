@@ -313,7 +313,7 @@ else
                                 <td><input type="text" class="form-control" id="frecuencia" placeholder="Frecuencia" name="frecuencia" required></td>
                             </tr>
                             </table><br>
-                            <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
+                            <input type="button" class="addRowDeportes btn btn-primary" value="Agregar Deporte" />
                             </div>
                         </div>
                     </div>
