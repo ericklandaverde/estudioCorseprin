@@ -159,7 +159,7 @@ else
         $(function() {
              $('.addRowDeportes').click(function() {
              
-                 var copy = $("#contenedorDeportes").clone(true).appendTo("#Deportes");
+                 var copy = $("#deporte").clone(true).appendTo("#Deportes");
                  var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
@@ -300,7 +300,7 @@ else
                     <div class="form-group" id="contenedorDeportes">
                         <label> d) Actividades Deportivas: </label>
                         <div class="col-md-offset-2 col-md-8" id="Deportes">
-                            <div id="cosponsors" style="padding:12px;">
+                            <div id="deporte" style="padding:12px;">
                             <table>
                             <tr>
                                 <td><label>Deporte<label></td>
