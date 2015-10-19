@@ -15,27 +15,7 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXvjidayUWJM8AZxrVmewY0lMMvppK4aQ&signed_in=true&libraries=places&callback=initAutocomplete"async defer></script>
-	<script type="text/javascript">//script Validacion telefono
-		function upperCase() {
-		   var x=document.getElementById("formulario").value
-		   document.getElementById("formulario").value = x.toUpperCase()
-		}
-    </script>
-    <script type="text/javascript" src="../jquery.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-	    $('#insertar').click(function() {
-	        if ($('#telefono').val().length != 8 || isNaN($('#telefono').val())) {
-	            $('#telefono').css('border-color','#FF0000');
-	            alert('El número de teléfono solo 8 números.');
-	            return false;
-	        }
-	        else {
-	            alert('OK');
-	        }
-	    });
-	});
-	</script>
+	<script src="js/validacionTelefono.js" type="text/javascript"></script>
 	<script type="text/javascript">//script de progreso.
 	$(document).ready(function ($) {
 		    $("#myform").progression();
