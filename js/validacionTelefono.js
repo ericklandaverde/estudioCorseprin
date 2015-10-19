@@ -1,4 +1,3 @@
-<script type="text/javascript">//script Validacion telefono
     function upperCase() {
        var x=document.getElementById("formulario").value
        document.getElementById("formulario").value = x.toUpperCase()
@@ -18,4 +17,3 @@
           }
       });
   });
-  </script>
