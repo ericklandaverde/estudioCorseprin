@@ -25,9 +25,9 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 	    $('#insertar').click(function() {
-	        if ($('#telefono').val().length != 9 || isNaN($('#telefono').val())) {
+	        if ($('#telefono').val().length != 8 || isNaN($('#telefono').val())) {
 	            $('#telefono').css('border-color','#FF0000');
-	            alert('El número de teléfono debe tener al menos 9 números.');
+	            alert('El número de teléfono debe tener 8 números.');
 	            return false;
 	        }
 	        else {
