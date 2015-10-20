@@ -15,11 +15,6 @@
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <!-- Alertif -->
 
-    <!-- datepicker -->
-     <style href='datepicker/css/bootstrap-datepicker.css' rel='stylesheet' type="text/css"></style>
-    <script src"datepicker/js/bootstrap-datepicker.js"></script>
-    <!-- datepicker -->
-
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">

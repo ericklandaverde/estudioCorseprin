@@ -104,7 +104,7 @@ session_start();
 								<label>Comentarios</label>
 								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentarios" required>
 							    </fieldset>
-                                <br><input type="button" class="addRow btn btn-primary" value="Agregar Referencia" />
+                                <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
                                 </div>
                         </div>
                     </div>
