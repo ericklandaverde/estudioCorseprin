@@ -646,7 +646,8 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Celular'),1,0,'C'); $pdf->Cell(60,8,'Tablet',1,0,'C'); $pdf->Cell(50,8,'PSP/XBOX',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Comedor'),1,0,'C'); $pdf->Cell(60,8,'Sala',1,0,'C'); $pdf->Cell(50,8,'Lavadora',1,0,'C');
-        $pdf->Ln(8);
+        $pdf->Ln(20);
+
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Vías de Acceso'),1,0,'C');
         $pdf->SetFont('Courier','',10);
@@ -665,7 +666,9 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Popular (      )'),1,0,'C'); $pdf->Cell(80,8,'Residencial  (  )',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Cuenta con todos los servicios (   )'),1,0,'C'); $pdf->Cell(80,8,'Residencial  (  )',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,utf8_decode('Cuenta con todos los servicios (   )'),1,0,'C'); $pdf->Cell(80,8,'No cuenta con todos  (  )',1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Urbana  (   )',1,0,'C'); $pdf->Cell(60,8,'Semi urbana  (   )',1,0,'C'); $pdf->Cell(50,8,'Rural  (   )',1,0,'C');
         $pdf->Ln(8);
         //Conteo de paginas
         $pdf->AliasNbPages();
