@@ -35,15 +35,15 @@
 		    else {
 		        var img = new Image();
 		        img.onload = function () {
-		            if (this.width.toFixed(0) != 200 && this.height.toFixed(0) != 200) {
-		                alert('Las medidas deben ser: 200 * 200');
+		            if (this.width.toFixed(0) >= 200 && this.height.toFixed(0) >= 200) {
+		                alertify.alert('Las medidas deben ser mayor a: 200 * 200');
 		            }
 		            else if (uploadFile.size > 20000)
 		            {
-		                alert('El peso de la imagen no puede exceder los 200kb')
+		                alertify.alert('El peso de la imagen no puede exceder los 200kb')
 		            }
 		            else {
-		                alert('Imagen correcta :)')                
+		                alertify.alert('Imagen correcta')                
 		            }
 		        };
 		        img.src = URL.createObjectURL(uploadFile);
