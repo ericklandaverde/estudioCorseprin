@@ -94,7 +94,7 @@
                     <td><?php echo $email ?></td>              
                     
                     <td align="center">
-                      <form action="reporteCandidato.php" method="post" name="reporte">
+                      <form action="models/reporteCandidato.php" method="post" name="reporte">
                         <input name="clave" type="hidden" value="<?php echo $clave ?>" />
                         <input type="submit" class="btn btn-primary" value="Generar" alt="cambio" title="Generar"/>
                       </form>
