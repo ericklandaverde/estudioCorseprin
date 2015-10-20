@@ -22,7 +22,7 @@
 	<script src="js/apigoogle.js"></script>
 	<script type="text/javascript">
             $(function () {
-                $('fecha').datetimepicker({
+                $('datetimepicker1').datetimepicker({
                     locale: 'ru'
                 });
             });
