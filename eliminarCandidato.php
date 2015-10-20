@@ -33,9 +33,6 @@ $sqlDatos="DELETE FROM familiarDatos WHERE id_rfc='$clave'";
 $registrosDatos = mysqli_query($conexion,$sqlDatos);
 $sqlActividades="DELETE FROM familiarActividades WHERE id_rfc='$clave'";
 $registrosActividades = mysqli_query($conexion,$sqlActividades);
-
-// $sql="DELETE FROM identificacion WHERE id_rfc='$clave'";
-// $registros = mysqli_query($conexion,$sql);
  
 if(!$registros && $registrosD && $registrosL && $sqlR)
 {
