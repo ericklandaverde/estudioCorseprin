@@ -38,7 +38,7 @@ else
 {
     echo"
     <script language='javascript'>
-    alert('DATOS GUARDADOS CORRECTAMENTE')
+    alert('DATOS DE REFERENCIAS GUARDADOS CORRECTAMENTE')
     window.location='../formularioEconomico.php'
     </script>";
 }

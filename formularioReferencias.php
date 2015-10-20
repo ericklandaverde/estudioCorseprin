@@ -75,7 +75,7 @@ session_start();
 
 	  		<div class="row">
 	  			<div class="col-md-offset-1 col-md-10">
-					<form action="models/formularioEconomico.php" method="post" class="form-horizontal" role="form">
+					<form action="models/modeloReferencias.php" method="post" class="form-horizontal" role="form">
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 
 					  <div class="form-group" id="container">

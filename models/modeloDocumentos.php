@@ -30,7 +30,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
+		alert('DATOS DE DOCUMENTOS GUARDADOS CORRECTAMENTE')
 		window.location='../formularioLaboral.php'
 		</script>";
 	}

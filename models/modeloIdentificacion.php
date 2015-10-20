@@ -70,7 +70,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
+		alert('DATOS DE IDENTIFIACION GUARDADOS CORRECTAMENTE')
 		window.location='../formularioDocumentos.php'
 		</script>";
 	}

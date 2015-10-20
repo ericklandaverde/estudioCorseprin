@@ -34,7 +34,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
+		alert('DATOS LABORALES GUARDADOS CORRECTAMENTE')
 		window.location='../formularioReferencias.php'
 		</script>";
 	}

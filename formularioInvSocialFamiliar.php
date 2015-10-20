@@ -102,7 +102,7 @@ session_start();
    <div class="row">
         <div class="col-md-offset-1 col-md-10">
 
-			<form id="formulario" action="formularioFinal.php" method="post" class="form-horizontal" role="form">
+			<form id="formulario" action="models/modeloInvSocialFamiliar.php" method="post" class="form-horizontal" role="form">
 				    <label> a) Datos Familiares (Personas con las que vive) </label>
 				    
                     <div class="form-group" id="container">
