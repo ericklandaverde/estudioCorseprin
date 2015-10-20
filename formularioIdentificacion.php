@@ -14,66 +14,59 @@
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
-	<script src="js/validacionTelefono.js">
-      $(document).ready(function(){
-      $('#insertar').click(function() {
-          if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
+	<script type="text/javascript">
+    $(document).ready(function(){
+    	$('#insertar').click(function() {
+    		if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
               $('#telefono').css('border-color','#FF0000');
               alert('El número de teléfono solo 8 números.');
               return false;
-          }
-          else {
+            }
+            else {
               alert('OK');
-          }
-      });
-  });
+            }
+        });
+    });
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXvjidayUWJM8AZxrVmewY0lMMvppK4aQ&signed_in=true&libraries=places&callback=initAutocomplete"async defer></script>
-	<script type="text/javascript">//script Validacion telefono
+	<script type="text/javascript">
     function upperCase() {
        var x=document.getElementById("formulario").value
        document.getElementById("formulario").value = x.toUpperCase()
     }
     </script>
     <script type="text/javascript" src="../jquery.js"></script>
-	<script type="text/javascript">//script de progreso.
-	$(document).ready(function ($) {
-		    $("#myform").progression();
-		});
-    });		
-	</script>
 
     </head>
     <body>
 	<div class="menu-area">
 			<div id="dl-menu" class="dl-menuwrapper">
-						<button class="dl-trigger">Open Menu</button>
-						<ul class="dl-menu">
-							<li>
-								<a href="index.html">Principal</a>
-							</li>
-							<li><a href="formularioIdentificacion.html">Comenzar...</a></li>
-						</ul>
-					</div><!-- /dl-menuwrapper -->
+					<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+						<li>
+							<a href="index.html">Principal</a>
+						</li>
+						<li><a href="formularioIdentificacion.html">Comenzar...</a></li>
+				    </ul>
+			</div><!-- /dl-menuwrapper -->
 	</div>	
-	  
-	 <!-- Altas -->
-	  <section id="contact" class="home-section bg-white">
+
+
+	 <section id="contact" class="home-section bg-white">
 	  	<div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
+			
+			<div class="row"> 
+			     <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>DATOS DE IDENTIFICACION</label></p>
-                <!-- <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Adelante</a></p> -->
 				     <p>ESTAS REALIZANDO EL ESTUDIO EL DIA: </p>
 	                 <script> var f = new Date(); document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); </script>
 					</div>
-				  </div>
-			  </div>
+				</div>
+	        </div>
 
 	  		<div class="row">
-
 	  			<div class="col-md-offset-1 col-md-10">
 
 				<form id="myform" action="models/modeloIdentificacion.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
@@ -214,7 +207,7 @@
 			</div>
 
 	  	</div>
-	  </section>  
+	</section>  
 
 	<footer>
 		<div class="container">
