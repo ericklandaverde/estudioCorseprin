@@ -105,7 +105,7 @@
 				    <div class="form-group">
 					  <div id="locationField" class="col-md-offset-2 col-md-8">
 					  	  <label>Escribe tu direccion:</label>
-						  <input type="text"  class="form-control" id="autocomplete" placeholder="Calle #numero, Municipio o Delegacion, Estado" onFocus="geolocate()" name="direccion" required>
+						  <input type="text"  class="form-control" id="autocomplete" placeholder="Calle #Numero, Municipio o Delegacion, Estado" onFocus="geolocate()" name="direccion" required>
 			              <label>Codigo postal</label>
 				          <input class="form-control" id="postal_code" disabled="true">
 					      <label>Pais</label>
