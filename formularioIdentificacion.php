@@ -128,6 +128,12 @@
 				    </div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
+							<div class='input-group date' id='datetimepicker1'>
+				                <input type='text' class="form-control" />
+				                <span class="input-group-addon">
+				                    <span class="glyphicon glyphicon-calendar"></span>
+				                </span>
+				            </div>
 						  <input type="date" class="form-control" class="glyphicon glyphicon-calendar" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
 						</div>
 					</div>
