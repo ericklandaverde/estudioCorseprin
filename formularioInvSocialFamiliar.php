@@ -32,13 +32,13 @@ session_start();
                  });
                  
                  $('#myForm div:last').find('input').each(function(){
-                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
 
                   $('#myForm div:last').find('select').each(function(){
-                    $(this).attr('id', $(this).attr('id') + '_'+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + '_'+ uniqueId);                      
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
                 
                  uniqueId++;  
