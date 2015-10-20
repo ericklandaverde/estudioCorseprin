@@ -110,7 +110,7 @@ session_start();
                     </div>
 
 
-					  <div class="form-group">
+					 <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
 	                    <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">

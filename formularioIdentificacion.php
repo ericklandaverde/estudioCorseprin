@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <!-- Alertif -->
 
+    <!-- datepicker -->
+     <style href='datepicker/css/bootstrap-datepicker.css' rel='stylesheet' type="text/css"></style>
+    <script src"datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- datepicker -->
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script type="text/javascript">
-            $(function () {
-                $('datetimepicker1').datetimepicker({
-                    locale: 'ru'
-                });
-            });
+    $(function () {
+    	$('#datetimepicker1').datetimepicker();
+    });
     </script>
 	<script type="text/javascript">
     $(document).ready(function(){
@@ -134,14 +137,15 @@
 				                    <span class="glyphicon glyphicon-calendar"></span>
 				                </span>
 				            </div>
-						  <input type="date" class="form-control" class="glyphicon glyphicon-calendar" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
+						  <!-- <input type="date" class="form-control" class="glyphicon glyphicon-calendar" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required> -->
 						</div>
 					</div>
-				  <div class="form-group">
-					<div class="col-md-offset-2 col-md-8">
-					  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
-					</div>
-				  </div>
+
+					 <div class="form-group">
+					    <div class="col-md-offset-2 col-md-8">
+						  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
+						</div>
+					 </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <select type="text" class="form-control" id="inputClave" placeholder="Estado civil" name="estadocivil" required>
