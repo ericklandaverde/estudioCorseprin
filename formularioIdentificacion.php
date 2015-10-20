@@ -21,11 +21,18 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script type="text/javascript">
+            $(function () {
+                $('fecha').datetimepicker({
+                    locale: 'ru'
+                });
+            });
+    </script>
+	<script type="text/javascript">
     $(document).ready(function(){
     	$('#insertar').click(function() {
     		if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
               $('#telefono').css('border-color','#FF0000');
-               alertify.alert('El número de teléfono tiene que tener 10 numeros (55XXXXXXXX).');
+               alertify.alert('Alerta!','El número de teléfono tiene que tener 10 numeros (55XXXXXXXX).');
               return false;
             }
         });
@@ -121,7 +128,7 @@
 				    </div>
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" class="form-control" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
+						  <input type="date" class="form-control" class="glyphicon glyphicon-calendar" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
 						</div>
 					</div>
 				  <div class="form-group">
