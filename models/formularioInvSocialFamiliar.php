@@ -107,6 +107,7 @@ else
     echo"
     <script language='javascript'>
     alert('DATOS GUARDADOS CORRECTAMENTE')
+    window.location='../formularioInvSocialFamiliar.php'
     </script>";
 }
 ?>
