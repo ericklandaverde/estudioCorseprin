@@ -2,7 +2,8 @@
 include('../conexion.php');
 $conexion=conectar();
 
-    //economicoIngresos
+//economicoIngresos
+session_start();
 $clave=$_POST['clave'];
 $personaUno=$_POST['personaUno'];
 $montoUno=$_POST['montoUno'];
