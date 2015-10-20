@@ -35,7 +35,7 @@
 		echo"
 		<script language='javascript'>
 		alert('DATOS GUARDADOS CORRECTAMENTE')
-		window.location='formularioReferencias.php'
+		window.location='../formularioReferencias.php'
 		</script>";
 	}
 ?>
