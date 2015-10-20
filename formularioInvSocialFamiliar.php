@@ -120,7 +120,7 @@ session_start();
                                 <input  type="text" class="form-control" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" required/>
                                 <input  type="number" class="form-control" id="edad"name="edad" placeholder="Edad" title="Campo edad" required/>
                                 <input  type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupacion" title="Campo ocupacion" required/>
-                                <label>Depende economicamente</label><input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
+                                <label>Depende economicamente:  </label><input type="radio" name="depende" value="Si" placeholder="Selecciona una opcion" checked required>Si
                                 <input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                                 <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                                 </div>
