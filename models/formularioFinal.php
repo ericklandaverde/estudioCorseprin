@@ -73,7 +73,7 @@
 		echo"
 		<script language='javascript'>
 		alert('ESTUDIO FINALIZADO')
-		window.location='index.html'
+		window.location='../index.html'
 		</script>";
 	}	
 ?>
