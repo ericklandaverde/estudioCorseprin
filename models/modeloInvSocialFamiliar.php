@@ -3,6 +3,7 @@
 	$conexion=conectar();
     
     //economicoEgresos
+    session_start();
     $clave=$_POST['clave'];
 	$parentesco=$_POST['parentesco'];
 	$nombre=$_POST['nombre'];

@@ -4,7 +4,7 @@
     
     session_start();
 	$clave=$_POST['clave'];
-	
+
 	$nacimiento=$_POST['nacimiento'];
 	$matrimonio=$_POST['matrimonio'];
 	$documento=$_POST['documento'];
