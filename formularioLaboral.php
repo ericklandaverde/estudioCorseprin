@@ -1,38 +1,6 @@
-<?php
-	include('conexion.php');
-	$conexion=conectar();
-
-	$clave=$_POST['clave'];
-	$nacimiento=$_POST['nacimiento'];
-	$matrimonio=$_POST['matrimonio'];
-	$documento=$_POST['documento'];
-	$folio=$_POST['folio'];
-	$vigencia=$_POST['vigencia'];
-	$imss=$_POST['imss'];
-	$rfc=$_POST['rfc'];
-	$curp=$_POST['curp'];
-
-	$sql="insert documentos(id_rfc, nacimiento, matrimonio, documento, folio, vigencia, imss, rfc, curp) 
-	values('$clave','$nacimiento','$matrimonio','$documento','$folio','$vigencia','$imss','$rfc','$curp')";
-	$registro=mysqli_query($conexion,$sql);
-	if(!$registro)
-	{
-		echo"
-		<script language='javascript'>
-		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioDocumentos.php'
-		</script>";
-		exit();
-		}
-		else
-		{
-		echo"
-		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
-		</script>";
-	}
+<?php 
+session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -67,7 +35,7 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>HISTORIAL LABORAL</label></p>
-					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
+					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 <!-- 					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Atras </a></p>
 						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.php">Adelante </a></p> -->
 					</div>
@@ -77,10 +45,10 @@
 	  		<div class="row">
                 <div class="col-md-offset-1 col-md-10">
 
-				<form action="formularioReferencias.php" method="post" class="form-horizontal" role="form">
+				<form action="models/formularioReferencias.php" method="post" class="form-horizontal" role="form">
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 					  <label>Ultimo empleo</label>	
 					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
 					  <label>Giro</label>

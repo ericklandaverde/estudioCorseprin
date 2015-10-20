@@ -1,8 +1,10 @@
 <?php
 	include('conexion.php');
 	$conexion=conectar();
-
+    
+    session_start();
 	$clave=$_POST['clave'];
+
 	$ultimoEmpleo=$_POST['ultimoEmpleo'];
 	$giro=$_POST['giro'];
 	$telefono=$_POST['telefono'];
@@ -33,6 +35,7 @@
 		echo"
 		<script language='javascript'>
 		alert('DATOS GUARDADOS CORRECTAMENTE')
+		window.location='formularioReferencias.php'
 		</script>";
 	}
 ?>

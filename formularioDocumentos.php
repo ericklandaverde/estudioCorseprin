@@ -44,7 +44,7 @@ session_start();
 
 	  		<div class="row">
                <div class="col-md-offset-1 col-md-10">
-				<form action="formularioLaboral.php" method="post" class="form-horizontal" role="form">
+				<form action="models/formularioLaboral.php" method="post" class="form-horizontal" role="form">
 				  <label>Actas de registro civil: </label>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">

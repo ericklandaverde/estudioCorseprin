@@ -1,8 +1,10 @@
 <?php
 	include('conexion.php');
 	$conexion=conectar();
-
+    
+    session_start();
 	$clave=$_POST['clave'];
+	
 	$nacimiento=$_POST['nacimiento'];
 	$matrimonio=$_POST['matrimonio'];
 	$documento=$_POST['documento'];
@@ -29,6 +31,7 @@
 		echo"
 		<script language='javascript'>
 		alert('DATOS GUARDADOS CORRECTAMENTE')
+		window.location='../formularioLaboral.php'
 		</script>";
 	}
 ?>

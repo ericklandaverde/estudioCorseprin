@@ -1,42 +1,6 @@
-<?php
-	include('conexion.php');
-	$conexion=conectar();
-
-	$clave=$_POST['clave'];
-	$ultimoEmpleo=$_POST['ultimoEmpleo'];
-	$giro=$_POST['giro'];
-	$telefono=$_POST['telefono'];
-	$puesto=$_POST['puesto'];
-	$fechaIngreso=$_POST['fechaIngreso'];
-	$fechaBaja=$_POST['fechaBaja'];
-	$antiguedad=$_POST['antiguedad'];
-	$sueldoInicial=$_POST['sueldoInicial'];
-	$sueldoFinal=$_POST['sueldoFinal'];
-	$jefe=$_POST['jefe'];
-	$puestoJefe=$_POST['puestoJefe'];
-	$motivo=$_POST['motivo'];
-
-	$sql="insert laboral(id_rfc, ultimoEmpleo, giro, telefono, puesto, fechaIngreso, fechaBaja, antiguedad, sueldoInicial, sueldoFinal, jefe, puestoJefe, motivo) 
-    values('$clave','$ultimoEmpleo','$giro','$telefono','$puesto','$fechaIngreso','$fechaBaja','$antiguedad','$sueldoInicial','$sueldoFinal','$jefe','$puestoJefe','$motivo')";
-	$registro=mysqli_query($conexion,$sql);
-	if(!$registro)
-	{
-		echo"
-		<script language='javascript'>
-		alert('ERROR AL GUARDAR DATOS')
-		window.location='formularioLaboral.php'
-		</script>";
-		exit();
-		}
-		else
-		{
-		echo"
-		<script language='javascript'>
-		alert('DATOS GUARDADOS CORRECTAMENTE')
-		</script>";
-	}
+<?php 
+session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -102,7 +66,7 @@
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REFERENCIAS PERSONALES</label></p>
-					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
+					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 <!-- 					     <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Atras </a></p>
 						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioEconomico.php">Adelante </a></p> -->
 					</div>
@@ -111,8 +75,8 @@
 
 	  		<div class="row">
 	  			<div class="col-md-offset-1 col-md-10">
-					<form action="formularioEconomico.php" method="post" class="form-horizontal" role="form">
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					<form action="models/formularioEconomico.php" method="post" class="form-horizontal" role="form">
+					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 
 					  <div class="form-group" id="container">
 <!--                         <h5>Familiares: </h5> -->
