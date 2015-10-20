@@ -1,6 +1,6 @@
 <?php
-    require('fpdf/fpdf.php');
-    require('conexion.php');
+    require('../fpdf/fpdf.php');
+    require('../conexion.php');
     //Archvio de connexion a la base de datos.
     $conexion=conectar();
     //Consulta formulario Identificacion
@@ -186,7 +186,7 @@ class PDF extends FPDF
     {
         // Logo
         //(Imagen,x,y,Ancho,Alto,Type,Link)
-        $this->Image('imagenes/logo.png',10,10,23);
+        $this->Image('../imagenes/logo.png',10,10,23);
         // Arial bold 15
         $this->SetFont('Arial','B',10);
         // Título
