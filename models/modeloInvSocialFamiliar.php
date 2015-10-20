@@ -12,23 +12,23 @@
 	$ocupacion=$_POST['ocupacion'];
 	$depende=$_POST['depende'];
 
-	$parentescoDos=$_POST['parentesco2'];
-	$nombreDos=$_POST['nombre2'];
-	$edadDos=$_POST['edad2'];
-	$ocupacionDos=$_POST['ocupacion2'];
-	$dependeDos=$_POST['depende2'];
+	$parentescoDos=$_POST['parentesco1'];
+	$nombreDos=$_POST['nombre1'];
+	$edadDos=$_POST['edad1'];
+	$ocupacionDos=$_POST['ocupacion1'];
+	$dependeDos=$_POST['depende1'];
 
-	$parentescoTres=$_POST['parentesco_2'];
-	$nombreTres=$_POST['nombre_2'];
-	$edadTres=$_POST['edad_2'];
-	$ocupacionTres=$_POST['ocupacion_2'];
+	$parentescoTres=$_POST['parentesco2'];
+	$nombreTres=$_POST['nombre2'];
+	$edadTres=$_POST['edad2'];
+	$ocupacionTres=$_POST['ocupacion2'];
 	$dependeTres=$_POST['depende_2'];
 
-	$parentescoCuatro=$_POST['parentesco_3'];
-	$nombreCuatro=$_POST['nombre_3'];
-	$edadCuatro=$_POST['edad_3'];
-	$ocupacionCuatro=$_POST['ocupacion_3'];
-	$dependeCuatro=$_POST['depende_3'];
+	$parentescoCuatro=$_POST['parentesco3'];
+	$nombreCuatro=$_POST['nombre3'];
+	$edadCuatro=$_POST['edad3'];
+	$ocupacionCuatro=$_POST['ocupacion3'];
+	$dependeCuatro=$_POST['depende3'];
 	
 	$sqlDatos="insert familiarDatos(id_rfc, parentesco, nombre, edad, ocupacion, depende, parentescoDos, nombreDos, edadDos, ocupacionDos, dependeDos, parentescoTres, nombreTres, edadTres, ocupacionTres, dependeTres, parentescoCuatro, nombreCuatro, edadCuatro, ocupacionCuatro, dependeCuatro) 
 	values('$clave','$parentesco','$nombre','$edad','$ocupacion','$depende','$parentescoDos','$nombreDos','$edadDos','$ocupacionDos','$dependeDos','$parentescoTres','$nombreTres','$edadTres','$ocupacionTres','$dependeTres','$parentescoCuatro','$nombreCuatro','$edadCuatro','$ocupacionCuatro','$dependeCuatro')";
