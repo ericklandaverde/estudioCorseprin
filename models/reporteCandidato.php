@@ -295,7 +295,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,15,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,20,'',1,0,'C');
         $pdf->Ln(20);
         
         $pdf->SetFont('Courier','B',10);
@@ -316,7 +316,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('Antigüedad:'),1,0,'C'); $pdf->Cell(60,8,'Sueldo Inicial',1,0,'C'); $pdf->Cell(50,8,'Sueldo Final',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaL['antiguedad'],1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInicial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['sueldoFinal'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaL['antiguedad']),1,0,'C'); $pdf->Cell(60,8,$filaL['sueldoInicial'],1,0,'C'); $pdf->Cell(50, 8,$filaL['sueldoFinal'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Jefe Inmediato:',1,0,'C'); $pdf->Cell(80,8,'Puesto',1,0,'C');
         $pdf->Ln(8);

@@ -75,9 +75,9 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="IMSS" name="imss" maxlength="11" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="IMSS (11 Digitos)" name="imss" maxlength="11" required>
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $_SESSION["clave"]; ?>">
-					  <input type="text" class="form-control" id="inputClave" placeholder="CURP" name="curp" maxlength="18" required>
+					  <input type="text" class="form-control" id="inputClave" placeholder="CURP (18 Digitos)" name="curp" maxlength="18" required>
 					</div>
 				  </div>
 				  <div class="form-group">

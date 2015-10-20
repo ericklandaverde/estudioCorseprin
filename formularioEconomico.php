@@ -248,7 +248,7 @@ session_start();
               </tr>
               <tr>
                   <td><input type="text" class="form-control" id="inputClave" placeholder="Ubicacion" name="ubicacion" required></td>
-                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimadoT" required></td>
+                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorEstimadoT" required></td>
               </tr>
               <tr>
                   <td><label>Tipo</label></td>

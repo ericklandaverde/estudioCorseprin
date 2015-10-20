@@ -65,7 +65,7 @@ $sqlC="insert economicoCreditos(id_rfc, concepto, mensualidad, plazo, saldo, con
 values('$clave','$concepto','$mensualidad','$plazo','$saldo','$conceptoDos','$mensualidadDos','$plazoDos','$saldoDos')";
 $registroC=mysqli_query($conexion,$sqlC);
 
-    //economicoSeguro
+//economicoSeguro
 $clave=$_POST['clave'];
 $vida=$_POST['vida'];
 $montoS=$_POST['montoS'];
@@ -80,17 +80,17 @@ $sqlS="insert economicoSeguro(id_rfc, vida, montoS, medicos, montoDosS, automovi
 values('$clave','$vida','$montoS','$medicos','$montoDosS','$automovil','$montoTres','$accidentes','$montoCuatroS')";
 $registroS=mysqli_query($conexion,$sqlS);
 
-    //economicoActivos
+//economicoActivos
 $clave=$_POST['clave'];
 $tipoPropiedad=$_POST['tipoPropiedad'];
 $ubicacion=$_POST['ubicacion'];
 $valorEstimadoT=$_POST['valorEstimadoT'];
 $tipo=$_POST['tipo'];
 $modelo=$_POST['modelo'];
-$valorestimadoA=$_POST['valorestimadoA'];
+$valorEstimadoA=$_POST['valorEstimadoA'];
 
-$sqlA="insert economicoActivos(id_rfc, tipoPropiedad, ubicacion, valorEstimadoT, tipo, modelo, valorestimadoA) 
-values('$clave','$tipoPropiedad','$ubicacion','$valorEstimadoT','$tipo','$modelo','$valorestimadoA')";
+$sqlA="insert economicoActivos(id_rfc, tipoPropiedad, ubicacion, valorEstimadoT, tipo, modelo, valorEstimadoA) 
+values('$clave','$tipoPropiedad','$ubicacion','$valorEstimadoT','$tipo','$modelo','$valorEstimadoA')";
 $registroA=mysqli_query($conexion,$sqlA);
 
     //$registroI $registroE $registroR $registroC $registroS $registroA

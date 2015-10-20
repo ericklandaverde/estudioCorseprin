@@ -103,8 +103,8 @@ session_start();
         <div class="col-md-offset-1 col-md-10">
 
 			<form id="formulario" action="models/modeloInvSocialFamiliar.php" method="post" class="form-horizontal" role="form">
-				    <label> a) Datos Familiares (Personas con las que vive) </label>
-				    
+				    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
+                    <label> a) Datos Familiares (Personas con las que vive) </label>
                     <div class="form-group" id="container">
                         <h5>Familiares: </h5>
                         <div class="col-md-offset-2 col-md-8" id="myForm">
