@@ -4,6 +4,7 @@
     
     session_start();
 	$clave=$_POST['clave'];
+	$_SESSION["clave"]=$_POST['clave'];
 
 	$puesto=$_POST['puesto'];
 	$nombre="".$_POST['nombre']." ".$_POST['apellidoPaterno']." ".$_POST['apellidoMaterno']."";

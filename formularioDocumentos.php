@@ -1,6 +1,6 @@
 <?php 
 session_start();
- ?>
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,7 +35,7 @@ session_start();
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REVISION DE DOCUMENTOS</label></p>
-					 <p>CANDIDATO: <label><?php echo $clave; ?></label></p>
+					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 						 <!-- <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioIdentificacion.php">Atras </a></p>
 						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Adelante </a></p> -->
 					</div>
@@ -49,7 +49,7 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Nacimiento: </label>
-					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $clave; ?>">
+					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 					    <input type="radio" name="nacimiento" value="SI Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="NO Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" required>No
 					</div>
