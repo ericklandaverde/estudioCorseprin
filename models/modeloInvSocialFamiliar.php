@@ -12,11 +12,11 @@
 	$ocupacion=$_POST['ocupacion'];
 	$depende=$_POST['depende'];
 
-	$parentescoDos=$_POST['parentesco_1'];
-	$nombreDos=$_POST['nombre_1'];
-	$edadDos=$_POST['edad_1'];
-	$ocupacionDos=$_POST['ocupacion_1'];
-	$dependeDos=$_POST['depende_1'];
+	$parentescoDos=$_POST['parentesco2'];
+	$nombreDos=$_POST['nombre2'];
+	$edadDos=$_POST['edad2'];
+	$ocupacionDos=$_POST['ocupacion2'];
+	$dependeDos=$_POST['depende2'];
 
 	$parentescoTres=$_POST['parentesco_2'];
 	$nombreTres=$_POST['nombre_2'];
