@@ -28,7 +28,7 @@
 			//Esta es la ruta donde copiaremos la imagen
 			//Recuerden que deben crear un directorio con este mismo nombre
 			//En el mismo lugar donde se encuentra el archivo subir.php
-			$rutaImagen = "imagenes/candidatos/" . $_FILES['imagen']['name'];
+			$rutaImagen = "../imagenes/candidatos/" . $_FILES['imagen']['name'];
 			//Comprovamos si este archivo existe para no volverlo a copiar.
 			//Pero si quieren pueden obviar esto si no es necesario.
 			//Oh pueden darle otro nombre para que no sobreescriba el actual.
@@ -70,7 +70,7 @@
 		echo"
 		<script language='javascript'>
 		alert('DATOS GUARDADOS CORRECTAMENTE')
-		window.location='../formularioDocumentos.html'
+		window.location='../formularioDocumentos.php'
 		</script>";
 	}
 ?>
