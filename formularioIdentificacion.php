@@ -195,7 +195,7 @@
 					<div class="col-md-offset-2 col-md-8">
 						<label>Fotografia: </label>
 						<label>La fotografía debe ser un archivo de foto formato tipo: TuNombreApellidos.jpg|TuNombreApellidos.jpg.png</label>
-						<label>Ejemplo: JosePerezHernandezHernandez.jpg|JosePerezHernandezHernandez.png</label>
+						                                      Ejemplo: JosePerezHernandezHernandez.jpg|JosePerezHernandezHernandez.png
 						<label>El tamano maximo de la fotografia debe de ser de 1MB</label> 
 						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
 						sin lentes, si usa bigote debe estar recortado y con el cabello corto.</p>
