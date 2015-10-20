@@ -9,6 +9,12 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="progression.js/src/progression.js"></script>
 
+     <!-- Alertify -->
+    <script src="alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
+    <!-- Alertif -->
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
@@ -19,11 +25,8 @@
     	$('#insertar').click(function() {
     		if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
               $('#telefono').css('border-color','#FF0000');
-              alert('El número de teléfono solo 8 números.');
+               alertify.alert('El número de teléfono tiene que tener 10 numeros (55XXXXXXXX).');
               return false;
-            }
-            else {
-              alert('OK');
             }
         });
     });
