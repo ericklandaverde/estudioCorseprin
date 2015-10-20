@@ -44,7 +44,8 @@
 					echo "<script language='javascript'>alert('Ocurrio un error al subir la imagen.')</script>";
 				}
 			} else {
-				echo $_FILES['imagen']['name'] . ", Este archivo existe";
+				// echo $_FILES['imagen']['name'] . ", Este archivo existe";
+				   echo "<script language='javascript'>alert('Esta imagen ya existe.')</script>";
 			}
 		} else {
 			echo "<script language='javascript'>
