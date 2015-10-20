@@ -29,7 +29,7 @@
 		        return;
 		    }
 
-		    if (!(/\.(jpg|png)$/i).test(uploadFile.name)) {
+		    if (!(/\.(jpg|jpeg|png)$/i).test(uploadFile.name)) {
 		        alert('Aviso del administrador','El archivo a adjuntar no es una imagen');
 		    }
 		    else {
@@ -38,9 +38,9 @@
 		            if (this.width.toFixed(0) <= 200 && this.height.toFixed(0) <= 200) {
 		                alertify.alert('Aviso del administrador','Las medidas deben ser mayor a: 200 * 200');
 		            }
-		            else if (uploadFile.size > 20000)
+		            else if (uploadFile.size > 102400) //1MB
 		            {
-		                alertify.alert('Aviso del administrador','El peso de la imagen no puede exceder los 200kb')
+		                alertify.alert('Aviso del administrador','El peso de la imagen no puede exceder 1MB')
 		            }
 		            else {
 		                alertify.alert('Aviso del administrador','Imagen correcta')                
