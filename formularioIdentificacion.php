@@ -25,25 +25,25 @@
 		    var uploadFile = obj.files[0];
 		    
 		    if (!window.FileReader) {
-		        alert('El navegador no soporta la lectura de archivos');
+		        alert('Aviso del administrador','El navegador no soporta la lectura de archivos');
 		        return;
 		    }
 
 		    if (!(/\.(jpg|png)$/i).test(uploadFile.name)) {
-		        alert('El archivo a adjuntar no es una imagen');
+		        alert('Aviso del administrador','El archivo a adjuntar no es una imagen');
 		    }
 		    else {
 		        var img = new Image();
 		        img.onload = function () {
-		            if (this.width.toFixed(0) >= 200 && this.height.toFixed(0) >= 200) {
-		                alertify.alert('Las medidas deben ser mayor a: 200 * 200');
+		            if (this.width.toFixed(0) <= 200 && this.height.toFixed(0) <= 200) {
+		                alertify.alert('Aviso del administrador','Las medidas deben ser mayor a: 200 * 200');
 		            }
 		            else if (uploadFile.size > 20000)
 		            {
-		                alertify.alert('El peso de la imagen no puede exceder los 200kb')
+		                alertify.alert('Aviso del administrador','El peso de la imagen no puede exceder los 200kb')
 		            }
 		            else {
-		                alertify.alert('Imagen correcta')                
+		                alertify.alert('Aviso del administrador','Imagen correcta')                
 		            }
 		        };
 		        img.src = URL.createObjectURL(uploadFile);
