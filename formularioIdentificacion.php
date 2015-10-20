@@ -21,6 +21,36 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script type="text/javascript">
+		function ValidarImagen(obj){
+		    var uploadFile = obj.files[0];
+		    
+		    if (!window.FileReader) {
+		        alert('El navegador no soporta la lectura de archivos');
+		        return;
+		    }
+
+		    if (!(/\.(jpg|png|gif)$/i).test(uploadFile.name)) {
+		        alert('El archivo a adjuntar no es una imagen');
+		    }
+		    else {
+		        var img = new Image();
+		        img.onload = function () {
+		            if (this.width.toFixed(0) != 200 && this.height.toFixed(0) != 200) {
+		                alert('Las medidas deben ser: 200 * 200');
+		            }
+		            else if (uploadFile.size > 20000)
+		            {
+		                alert('El peso de la imagen no puede exceder los 200kb')
+		            }
+		            else {
+		                alert('Imagen correcta :)')                
+		            }
+		        };
+		        img.src = URL.createObjectURL(uploadFile);
+		    }                 
+		}
+    </script>
+	<script type="text/javascript">
     $(document).ready(function(){
     	$('#insertar').click(function() {
     		if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
@@ -169,7 +199,7 @@
 						<p>De frente, con la frente descubierta, sin barba, sin patilla, sin adornos de ninguna especie, 
 						sin lentes, si usa bigote debe estar recortado y con el cabello corto.</p>
 
-					  	<input type="file" accept="image/*" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="imagen" required>
+					  	<input type="file" accept="image/*" onchange="ValidarImagen(this);" class="form-control" id="inputClave" placeholder="Selecciona una fotografia" name="imagen" required>
 					</div>
 				  </div>
 
