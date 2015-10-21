@@ -99,7 +99,7 @@
 	$frecuenciaC=$_POST['frecuenciaC'];
    
     $sqlActividades="insert familiarActividades(id_rfc, religion, sociales, comunitarios, museos, teatro, culturales, arqueologicas, deporte, lugar, frecuencia, deporteDos, lugarDos, frecuenciaDos, vacaciones, publicas, naturales, diversiones, cine, actividadA, frecuenciaA, actividadB, frecuenciaB, actividadC, frecuenciaC) 
-	values('$clave','$religion','$sociales','$comunitarios','$museos','$teatro','$culturales','$arqueologicas','$deporte','$lugar','$frecuencia','$deporteDos','$lugarDos','$frecuenciaDos','$vacaciones','$publicas','$naturales','$diversiones','$cine','$actividadA','$frecuenciaA','$actividadB','$frecuenciaB','$actividadC','$frecuenciaC')";
+	values('$clave','$religion','$sociales','$comunitarios','$museos','$teatro','$culturales','$arqueologicas','$deporte','$lugar','$frecuencia','$deporte1','$lugar1','$frecuencia1','$vacaciones','$publicas','$naturales','$diversiones','$cine','$actividadA','$frecuenciaA','$actividadB','$frecuenciaB','$actividadC','$frecuenciaC')";
 	$registroActividades=mysqli_query($conexion,$sqlActividades);
 
 	if(!$registroDatos && !$registroActividades)

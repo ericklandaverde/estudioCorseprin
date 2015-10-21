@@ -296,7 +296,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,20,'',1,0,'C');
-        $pdf->Ln(20);
+        $pdf->Ln(30);
         
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
@@ -350,7 +350,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,'Observaciones y Comentarios',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,20,'',1,0,'C');
-        $pdf->Ln(20);
+        $pdf->Ln(30);
 
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('5.REFERENCIAS PERSONALES'),0,0,'L');
