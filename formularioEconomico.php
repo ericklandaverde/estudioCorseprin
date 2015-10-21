@@ -72,7 +72,7 @@ session_start();
                   <tr>
                       <td></td>
                       <td><input type="button" value="Calcular" onclick="totalIngresos()"></td>
-                      <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
+                      <td><input type="hidden" class="form-control" id="total" name="totalIngresos" required></td>
                 </tr>
             </table>
         </fieldset>
@@ -130,7 +130,7 @@ session_start();
           </tr>
           <tr id="total">							
               <td></td>
-              <td><input type="button" value="Calcular" onclick=""></td>
+              <td><input type="hidden" value="Calcular" onclick=""></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Total" name="totalEgresos" required></td>
           </tr>
       </table>
