@@ -102,7 +102,7 @@ session_start();
 								<label>Telefono</label>
 								<input type="tel"  class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
 								<label>Comentarios</label>
-								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentarios" required>
+								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentario" required>
 							    </fieldset>
                                 <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
                                 </div>
