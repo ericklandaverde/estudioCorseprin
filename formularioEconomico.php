@@ -251,14 +251,14 @@ session_start();
                   <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorEstimadoT" required></td>
               </tr>
               <tr>
-                  <td><label>Tipo</label></td>
+                  <td><label>Tipo de auto</label></td>
                   <td><label>Modelo</label></td>
                   <td><label>Valor estimado</label></td>
               </tr>
               <tr>
                   <td><input type="text" class="form-control" id="inputClave" placeholder="Tipo" name="tipo" required></td>
                   <td><input type="text" class="form-control" id="inputClave" placeholder="Modelo" name="modelo" required></td>
-                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorestimadoA" required></td>
+                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorEstimadoA" required></td>
               </tr>
           </table>
       </fieldset>
