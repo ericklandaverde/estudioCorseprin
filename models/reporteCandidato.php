@@ -571,15 +571,15 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edad5'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacion5'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['depende5'],1,0,'C');
         $pdf->Ln(15); 
 
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b) Actividades Sociale'),0,0,'L');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('b) Actividades Sociales'),0,0,'L');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode('Religion'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(170,8,utf8_decode($filaActi['religion']),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Actividad',1,0,'C'); $pdf->Cell(80,8,'Frecuencia anual',1,0,'C');
-        $pdf->Ln(10);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'1. Eventos sociales (familiares o amigos)',1,0,'C'); $pdf->Cell(80,8,utf8_decode($filaActi['sociales']),9,1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'1. Eventos sociales (familiares o amigos)',1,0,'C'); $pdf->Cell(80,8,utf8_decode($filaActi['sociales']),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'2. Eventos comunitarios',1,0,'C'); $pdf->Cell(80,8,utf8_decode($filaActi['comunitarios']),1,0,'C');
         $pdf->Ln(15);
@@ -601,7 +601,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaActi['deporte'],1,0,'C'); $pdf->Cell(60,8,$filaActi['lugar'],1,0,'C'); $pdf->Cell(50, 8,utf8_decode($filaActi['frecuencia']),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaActi['deporteDos'],1,0,'C'); $pdf->Cell(60,8,$filaActi['lugarDos'],1,0,'C'); $pdf->Cell(50, 8,utf8_decode($filaActi['frecuenciaDos']),1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaActi['deporte1'],1,0,'C'); $pdf->Cell(60,8,$filaActi['lugar1'],1,0,'C'); $pdf->Cell(50, 8,utf8_decode($filaActi['frecuencia1']),1,0,'C');
         $pdf->Ln(15);
 
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('e) Actividades Recreativas'),0,0,'L');
