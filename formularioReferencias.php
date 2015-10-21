@@ -207,7 +207,7 @@ session_start();
 	                            	</tr>
 	                            </table>
                                 </div>
-                                <br><input type="button" class="addRowCurso btn btn-info" value="Agregar Cursos " />
+                                <br><input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
                         </div>
                     </div>
 
