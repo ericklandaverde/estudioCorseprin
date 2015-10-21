@@ -99,10 +99,10 @@ session_start();
                                 <label>Familiar:</label>
                                 <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
                                     <option selected value="">Seleccione un parentesco</option>
-                                    <option value="Hijo(a)">Hijo(a)</option>
-                                    <option value="Esposo(a)">Esposa(a)</option>
                                     <option value="Padres">Padres</option>
-                                    <option value="Hermanos">Padres</option>
+                                    <option value="Hijo(a)">Hijo(a)</option>
+                                    <option value="Hermanos">Hermanos</option>
+                                    <option value="Esposo(a)">Esposo(a)</option>
                                 </select>
                                 <input  type="text" class="form-control" id="nombre" name="nombre"  placeholder="Nombre" title="Campo nombre" required/>
                                 <input  type="number" class="form-control" id="edad"name="edad" placeholder="Edad" title="Campo edad" required/>
