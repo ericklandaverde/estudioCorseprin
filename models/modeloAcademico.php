@@ -52,7 +52,7 @@ else
     echo"
     <script language='javascript'>
     alert('DATOS DE REFERENCIAS GUARDADOS CORRECTAMENTE')
-    window.location='../formularioAcademico.php'
+    window.location='../formularioEconomico.php'
     </script>";
 }
 ?>
