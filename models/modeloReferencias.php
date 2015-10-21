@@ -31,18 +31,19 @@ $telefono3=$_POST['telefono2'];
 $comentario3=$_POST['comentario2'];
 
 $sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, comentario, 
-                                 nombre1, ocupacion1, tipo2, tiempo1, direccion1, telefono1, comentario1,
-                                 nombre2, ocupacion2, tipo3, tiempo2, direccion2, telefono2, comentario2) 
-               values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentarios',
-                               '$nombre1','$ocupacion1','$tipo2','$tiempo1','$direccion1','$telefono1','$comentario1',
-                               '$nombre2','$ocupacion2','$tipo3','$tiempo2','$direccion2','$telefono2','$comentario2')";
+    nombre1, ocupacion1, tipo2, tiempo1, direccion1, telefono1, comentario1, 
+    nombre2, ocupacion2, tipo3, tiempo2, direccion2, telefono2, comentario2) 
+values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentario',
+    '$nombre1','$ocupacion1','$tipo2','$tiempo1','$direccion1','$telefono1','$comentario1',
+    '$nombre2','$ocupacion2','$tipo3','$tiempo2','$direccion2','$telefono2','$comentario2')";
+
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
     echo"
     <script language='javascript'>
     alert('ERROR AL GUARDAR DATOS')
-    window.location='formularioReferencias.php'
+    window.location='../formularioReferencias.php'
     </script>";
     exit();
 }

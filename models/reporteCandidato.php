@@ -372,13 +372,13 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Nombre:',1,0,'C'); $pdf->Cell(80,8,utf8_decode('Ocupación'),1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['nombreDos'],1,0,'C'); $pdf->Cell(80, 8,$filaR['ocupacionDos'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['nombre1'],1,0,'C'); $pdf->Cell(80, 8,$filaR['ocupacion1'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,utf8_decode('Tipo de relación'),1,0,'C'); $pdf->Cell(50, 8,utf8_decode($filaR['tipoDos']),1,0,'C'); $pdf->Cell(40, 8,'Tiempo',1,0,'C'); $pdf->Cell(40, 8,utf8_decode($filaR['tiempoDos']),1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(40, 8,utf8_decode('Tipo de relación'),1,0,'C'); $pdf->Cell(50, 8,utf8_decode($filaR['tipo1']),1,0,'C'); $pdf->Cell(40, 8,'Tiempo',1,0,'C'); $pdf->Cell(40, 8,utf8_decode($filaR['tiempo1']),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Direccion:',1,0,'C'); $pdf->Cell(80,8,'Telefono',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['direccionDos'],1,0,'C'); $pdf->Cell(80, 8,$filaR['telefonoDos'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaR['direccion1'],1,0,'C'); $pdf->Cell(80, 8,$filaR['telefono1'],1,0,'C');
         $pdf->Ln(20);
         
         $pdf->SetFont('Courier','B',10);
