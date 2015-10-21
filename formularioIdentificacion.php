@@ -55,7 +55,7 @@
     	$('#insertar').click(function() {
     		if ($('#telefono').val().length != 10 || isNaN($('#telefono').val())) {
               $('#telefono').css('border-color','#FF0000');
-               alertify.alert('Alerta!','El número de teléfono tiene que tener 10 numeros (55NNNNNNNNNN).');
+               alertify.alert('Campo incorrecto!','El número de teléfono tiene que tener 10 numeros.');
               return false;
             }
         });
@@ -126,9 +126,21 @@
 					</div>
 				    <div class="form-group">
 					  <div class="col-md-offset-2 col-md-8">
-					  <input type="text" class="form-control" id="formulario" placeholder="Nombre" name="nombre" onblur="upperCase()" required>
-					  <input type="text" class="form-control" id="formulario" placeholder="Apellido paterno" name="apellidoPaterno" onblur="upperCase()" required>
-					  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
+					  	<div class="input-group">
+						  <span class="input-group-addon">Nombre</span>
+						  <input type="text" class="form-control" id="formulario" placeholder="Nombre" name="nombre" onblur="upperCase()" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon">Apellido Paterno</span>
+						   <input type="text" class="form-control" id="formulario" placeholder="Apellido paterno" name="apellidoPaterno" onblur="upperCase()" required>						</div>
+						<div class="input-group">
+						  <span class="input-group-addon">Apellido Materno</span>
+						  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
+						</div>
+
+					  
+					 
+					  
 					  </div>
 				    </div>
 
@@ -177,9 +189,13 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="email" class="form-control" id="inputClave" placeholder="Correo electronico" name="email" required>
+						<div class="input-group">
+						  <span class="input-group-addon">@</span>
+						  <input type="email" class="form-control" placeholder="Correo electronico" name="email" required>
+					  </div>
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <select type="text" class="form-control" id="inputClave" placeholder="Nivel academico" name="nivelacademico" required>

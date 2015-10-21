@@ -52,7 +52,7 @@ session_start();
                  var cosponsorDivId = 'idEstudios_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
-                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar'/>");
                  deleteLink.appendTo(copy);
                  deleteLink.click(function(){
                      copy.remove();
@@ -158,37 +158,35 @@ session_start();
                                 </div>
                         </div>
                     </div>
-                    
-                     <div class="form-group" id="container">
-                        <div class="col-md-offset-2 col-md-8" id="estudios">
-                        	<p><label>INVESTIGACION ACADEMICA</label></p>
-                        </div>
-                    </div>
-
+                     
                     <div class="form-group" id="container">
-                        <div class="col-md-offset-2 col-md-8" id="estudios">
-                                <div id="idEstudios">
-	                            <table>
-	                            	<tr>
-	                            		<td>ESTUDIOS</td>
-	                            		<td>AÑO QUE CURSO</td>
-	                            		<td>DOCUMENTO RESIBIDO</td>
-	                            	</tr>
-	                            	<tr>
-	                            		<td><select type="text" class="form-control" id="nivel" placeholder="Tipo de relacion" name="nivel" required>
-											  	<option selected value="">Seleccione un nivel de estudios</option>
-											  	<option value="Primaria">Primaria</option>
-											  	<option value="Secundaria">Secundaria</option>
-											  	<option value="Preparatoria">Preparatoria</option>
-											  	<option value="Licenciatura">Licenciatura</option>
-						                    </select></td>
-	                            		<td><input type="text" class="form-control" id="ano" placeholder="Año" name="ano" required></td>
-	                            		<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
-	                            	</tr>
-	                            </table>
-                                </div>
-                                <br><input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" />
-                        </div>
+                    	<div class="col-md-offset-2 col-md-8" id="estudios">
+                    		<p><label>INVESTIGACION ACADEMICA</label></p>
+	                        	<span class="help-block">
+	                        		Agrega tu historial academico y cursos
+	                        	</span>
+                    		<div id="idEstudios">
+            					<table>
+            						<tr>
+            							<td>ESTUDIOS</td>
+            							<td>AÑO QUE CURSO</td>
+            							<td>DOCUMENTO RESIBIDO</td>
+            						</tr>
+            						<tr>
+            							<td><select type="text" class="form-control" id="nivel" placeholder="Tipo de relacion" name="nivel" required>
+            								<option selected value="">Seleccione un nivel de estudios</option>
+            								<option value="Primaria">Primaria</option>
+            								<option value="Secundaria">Secundaria</option>
+            								<option value="Preparatoria">Preparatoria</option>
+            								<option value="Licenciatura">Licenciatura</option>
+            							</select></td>
+            							<td><input type="text" class="form-control" id="ano" placeholder="Año" name="ano" required></td>
+            							<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
+            						</tr>
+            					</table>
+                    		</div>
+                    		<input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" /><br>
+                    	</div>
                     </div>
 
                     <div class="form-group" id="container">
@@ -207,14 +205,14 @@ session_start();
 	                            	</tr>
 	                            </table>
                                 </div>
-                                <br><input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
+                                <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
                         </div>
                     </div>
 
 
 					 <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
+						<br><input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
 	                    <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
 						</div>
 					  </div>
