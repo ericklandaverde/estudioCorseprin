@@ -95,7 +95,7 @@ session_start();
                     <div class="form-group" id="container">
                         <h5>Familiares: </h5>
                         <div class="col-md-offset-2 col-md-8" id="myForm">
-                                <div id="cosponsors" style="padding:12px;">
+                                <div id="cosponsors">
                                 <label>Familiar:</label>
                                 <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
                                     <option selected value="">Seleccione un parentesco</option>
