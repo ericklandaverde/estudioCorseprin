@@ -14,7 +14,7 @@ session_start();
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
-	<script type="text/javascript">
+	<script type="text/javascript">//REFERENCIAS
         var uniqueId = 1;
         $(function() {
              $('.addRow').click(function() {
@@ -35,6 +35,59 @@ session_start();
                  });
 
                   $('#myForm div:last').find('select').each(function(){
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                 });
+                
+                 uniqueId++;  
+             });
+        });
+    </script>
+    <script type="text/javascript">//ESTUDIOS
+        var uniqueId = 1;
+        $(function() {
+             $('.addRowEstudio').click(function() {
+             
+                 var copy = $("#idEstudios").clone(true).appendTo("#estudios");
+                 var cosponsorDivId = 'idEstudios_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
+
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#estudios div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                 });
+
+                  $('#estudios div:last').find('select').each(function(){
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                 });
+                
+                 uniqueId++;  
+             });
+        });
+    </script>
+    <script type="text/javascript">//CURSOS
+        var uniqueId = 1;
+        $(function() {
+             $('.addRowCurso').click(function() {
+             
+                 var copy = $("#idCurso").clone(true).appendTo("#cursos");
+                 var cosponsorDivId = 'idCurso_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
+
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#cursos div:last').find('input').each(function(){
                     $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
                     $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
@@ -79,7 +132,6 @@ session_start();
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 
 					  <div class="form-group" id="container">
-<!--                         <h5>Familiares: </h5> -->
                         <div class="col-md-offset-2 col-md-8" id="myForm">
                                 <div id="cosponsors">
 	                            <legend>Referencia:</legend>
@@ -106,6 +158,52 @@ session_start();
 							    </fieldset>
                                 <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="container">
+                        <div class="col-md-offset-2 col-md-8" id="estudios">
+                                <div id="idEstudios">
+	                            <table>
+	                            	<tr>
+	                            		<td>ESTUDIOS</td>
+	                            		<td>AÑO QUE CURSO</td>
+	                            		<td>DOCUMENTO RESIBIDO</td>
+	                            	</tr>
+	                            	<tr>
+	                            		<td><select type="text" class="form-control" id="nivel" placeholder="Tipo de relacion" name="nivel" required>
+											  	<option selected value="">Seleccione un nivel de estudios</option>
+											  	<option value="Primaria">Primaria</option>
+											  	<option value="Secundaria">Secundaria</option>
+											  	<option value="Preparatoria">Preparatoria</option>
+											  	<option value="Licenciatura">Licenciatura</option>
+						                    </select></td>
+	                            		<td><input type="text" class="form-control" id="ano" placeholder="Año" name="ano" required></td>
+	                            		<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
+	                            	</tr>
+	                            </table>
+                                </div>
+                                <br><input type="button" class="addRowEstudio btn btn-success" value="Agregar Nivel de estudio" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="container">
+                        <div class="col-md-offset-2 col-md-8" id="cursos">
+                                <div id="idCurso">
+	                            <table>
+	                            	<tr>
+	                            		<td>CURSOS</td>
+	                            		<td>DURACION</td>
+	                            		<td>DOCUMENTOS RESIBIDO</td>
+	                            	</tr>
+	                            	<tr>
+	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso" required></td>
+	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion" required></td>
+	                            		<td><input type="text" class="form-control" id="documentoC" placeholder="" name="documentoC" required></td>
+	                            	</tr>
+	                            </table>
+                                </div>
+                                <br><input type="button" class="addRowCurso btn btn-success" value="Agregar Curso" />
                         </div>
                     </div>
 
