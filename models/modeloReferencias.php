@@ -33,9 +33,9 @@ $comentario3=$_POST['comentario3'];
 $sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, comentario, 
                                  nombre2, ocupacion2, tipo2, tiempo2, direccion2, telefono2, comentario2,
                                  nombre3, ocupacion3, tipo3, tiempo3, direccion3, telefono3, comentario3) 
-values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentarios',
-                '$nombre2','$ocupacion2','$tipo2','$tiempo2','$direccion2','$telefono2','$comentario2',
-                '$nombre3','$ocupacion3','$tipo3','$tiempo3','$direccion3','$telefono3','$comentario3')";
+               values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentarios',
+                               '$nombre2','$ocupacion2','$tipo2','$tiempo2','$direccion2','$telefono2','$comentario2',
+                               '$nombre3','$ocupacion3','$tipo3','$tiempo3','$direccion3','$telefono3','$comentario3')";
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)
 {
