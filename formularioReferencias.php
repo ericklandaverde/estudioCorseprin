@@ -120,8 +120,6 @@ session_start();
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>REFERENCIAS PERSONALES</label></p>
 					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
-<!-- 					     <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioLaboral.php">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioEconomico.php">Adelante </a></p> -->
 					</div>
 				  </div>
 			</div>
@@ -158,6 +156,12 @@ session_start();
 							    </fieldset>
                                 <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
                                 </div>
+                        </div>
+                    </div>
+                    
+                     <div class="form-group" id="container">
+                        <div class="col-md-offset-2 col-md-8" id="estudios">
+                        	<p><label>INVESTIGACION ACADEMICA</label></p>
                         </div>
                     </div>
 
