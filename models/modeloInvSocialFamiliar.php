@@ -101,9 +101,9 @@
 	$deporte=$_POST['deporte'];
 	$lugar=$_POST['lugar'];
 	$frecuencia=$_POST['frecuencia'];
-	$deporteDos=$_POST['deporteDos'];
-	$lugarDos=$_POST['lugarDos'];
-	$frecuenciaDos=$_POST['frecuenciaDos'];
+	$deporteDos=$_POST['deporte1'];
+	$lugarDos=$_POST['lugar1'];
+	$frecuenciaDos=$_POST['frecuencia1'];
 	$vacaciones=$_POST['vacaciones'];
 	$publicas=$_POST['publicas'];
 	$naturales=$_POST['naturales'];
