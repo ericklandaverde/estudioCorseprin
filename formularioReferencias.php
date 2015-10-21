@@ -187,7 +187,7 @@ session_start();
 	                            	</tr>
 	                            </table>
                                 </div>
-                                <br><input type="button" class="addRowEstudio btn btn-success" value="Agregar Nivel de estudio" />
+                                <br><input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" />
                         </div>
                     </div>
 
@@ -207,7 +207,7 @@ session_start();
 	                            	</tr>
 	                            </table>
                                 </div>
-                                <br><input type="button" class="addRowCurso btn btn-success" value="Agregar Curso" />
+                                <br><input type="button" class="addRowCurso btn btn-info" value="Agregar Cursos " />
                         </div>
                     </div>
 
