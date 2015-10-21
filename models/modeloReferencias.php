@@ -12,7 +12,7 @@ $tipo=$_POST['tipo'];
 $tiempo=$_POST['tiempo'];
 $direccion=$_POST['direccion'];
 $telefono=$_POST['telefono'];
-$comentarios=$_POST['comentario'];
+$comentario=$_POST['comentario'];
 
 $nombre2=$_POST['nombre1'];
 $ocupacion2=$_POST['ocupacion1'];
