@@ -11,12 +11,24 @@ $título = 'CONFIRMACION ESTUDIO RECIBIDO (PRUEBA)';
 // mensaje
 $mensaje = '
 <html>
-<head>
-  <title>GERENCIA DE CAPITAL HUMANO</title>
-</head>
-<body>
-<p>Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria</p>
-</body>
+	<head>
+	<title>GERENCIA DE CAPITAL HUMANO</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+		<body>
+		<div class="jumbotron">
+		    <div class="container">
+		         <p>Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria</p>
+			</div>
+		</div>
+		</body>
 </html>
 ';
 
