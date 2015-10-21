@@ -561,7 +561,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'Edad',1,0,'C'); $pdf->Cell(60,8,utf8_decode('Ocupación'),1,0,'C'); $pdf->Cell(50,8,utf8_decode('Depende económicamente'),1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaDatos['edad4'],1,0,'C'); $pdf->Cell(60,8,$filaDatos['ocupacion4'],1,0,'C'); $pdf->Cell(50,8,$filaDatos['depende4'],1,0,'C');
-        $pdf->Ln(8); $pdf->Ln(8); 
+        $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Parentesco',1,0,'C'); $pdf->Cell(80,8,'Nombre',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaDatos['parentesco5'],1,0,'C'); $pdf->Cell(80,8,$filaDatos['nombre5'],1,0,'C');
