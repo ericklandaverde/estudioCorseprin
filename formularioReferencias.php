@@ -81,7 +81,7 @@ session_start();
 					  <div class="form-group" id="container">
 <!--                         <h5>Familiares: </h5> -->
                         <div class="col-md-offset-2 col-md-8" id="myForm">
-                                <div id="cosponsors" style="padding:12px;">
+                                <div id="cosponsors">
 	                            <legend>Referencia:</legend>
 								<label>Nombre:</label>
 								<input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
