@@ -62,7 +62,7 @@
 	{
 		echo"
 		<script language='javascript'>
-		alert('ALERTA','ERROR AL GUARDAR DATOS')
+		alert('ERROR AL GUARDAR DATOS')
 		window.location='../formularioIdentificacion.html'
 		</script>";
 		exit();
@@ -71,7 +71,7 @@
 		{
 		echo"
 		<script language='javascript'>
-		alert('ALERTA','DATOS DE IDENTIFIACION GUARDADOS CORRECTAMENTE')
+		alert('DATOS DE IDENTIFIACION GUARDADOS CORRECTAMENTE')
 		window.location='../formularioDocumentos.php'
 		</script>";
 	}
