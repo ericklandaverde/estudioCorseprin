@@ -67,26 +67,12 @@
 	$depende9=$_POST['depende9'];
 
 		
-	$sqlDatos="insert familiarDatos(id_rfc, parentesco, nombre, edad, ocupacion, depende, 
-		                                    parentesco1, nombre1, edad1, ocupacion1, depende1, 
-		                                    parentesco2, nombre2, edad2, ocupacion2, depende2, 
-		                                    parentesco3, nombre3, edad3, ocupacion3, depende3,
-		                                    parentesco4, nombre4, edad4, ocupacion4, depende4,
-		                                    parentesco5, nombre5, edad5, ocupacion5, depende5,
-		                                    parentesco6, nombre6, edad6, ocupacion6, depende6,
-		                                    parentesco7, nombre7, edad7, ocupacion7, depende7,
-		                                    parentesco8, nombre8, edad8, ocupacion8, depende8,
-		                                    parentesco9, nombre9, edad9, ocupacion9, depende9) 
-	values('$clave','$parentesco','$nombre','$edad','$ocupacion','$depende',
-		            '$parentesco1','$nombre1','$edad1','$ocupacion1','$depende1',
-		            '$parentesco2','$nombre2','$edad2','$ocupacion2','$depende2',
-		            '$parentesco3','$nombre3','$edad3','$ocupacion3','$depende3',
-		            '$parentesco4','$nombre4','$edad4','$ocupacion4','$depende4',
-		            '$parentesco5','$nombre5','$edad5','$ocupacion5','$depende5',
-		            '$parentesco6','$nombre6','$edad6','$ocupacion6','$depende6',
-		            '$parentesco7','$nombre7','$edad7','$ocupacion7','$depende7',
-		            '$parentesco8','$nombre8','$edad8','$ocupacion8','$depende8',
-		            '$parentesco9','$nombre9','$edad9','$ocupacion9','$depende9')";
+	$sqlDatos="insert familiarDatos(id_rfc, parentesco, nombre, edad, ocupacion, depende, parentesco1, nombre1, edad1, ocupacion1, depende1, parentesco2, nombre2, edad2, ocupacion2, depende2, parentesco3, nombre3, edad3, ocupacion3, depende3, 
+		parentesco4, nombre4, edad4, ocupacion4, depende4, parentesco5, nombre5, edad5, ocupacion5, depende5, parentesco6, nombre6, edad6, ocupacion6, depende6, parentesco7, nombre7, edad7, ocupacion7, depende7, 
+		parentesco8, nombre8, edad8, ocupacion8, depende8, parentesco9, nombre9, edad9, ocupacion9, depende9) 
+values('$clave','$parentesco','$nombre','$edad','$ocupacion','$depende','$parentesco1','$nombre1','$edad1','$ocupacion1','$depende1','$parentesco2','$nombre2','$edad2','$ocupacion2','$depende2','$parentesco3','$nombre3','$edad3','$ocupacion3','$depende3',
+	'$parentesco4','$nombre4','$edad4','$ocupacion4','$depende4','$parentesco5','$nombre5','$edad5','$ocupacion5','$depende5','$parentesco6','$nombre6','$edad6','$ocupacion6','$depende6','$parentesco7','$nombre7','$edad7','$ocupacion7','$depende7',
+	'$parentesco8','$nombre8','$edad8','$ocupacion8','$depende8','$parentesco9','$nombre9','$edad9','$ocupacion9','$depende9')";
 	
 	$registroDatos=mysqli_query($conexion,$sqlDatos);
 
