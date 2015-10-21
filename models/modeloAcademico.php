@@ -6,39 +6,50 @@ $conexion=conectar();
 session_start();
 $clave= $_POST['clave'];
 
-$nombre= $_POST['nombre'];
-$ocupacion= $_POST['ocupacion'];
-$tipo=$_POST['tipo'];
-$tiempo=$_POST['tiempo'];
-$direccion=$_POST['direccion'];
-$telefono=$_POST['telefono'];
-$comentario=$_POST['comentario'];
+$nivel= $_POST['nivel'];
+$ano= $_POST['ano'];
+$documento=$_POST['documento'];
 
-$nombre1=$_POST['nombre1'];
-$ocupacion1=$_POST['ocupacion1'];
-$tipo1=$_POST['tipo1'];
-$tiempo1=$_POST['tiempo1'];
-$direccion1=$_POST['direccion1'];
-$telefono1=$_POST['telefono1'];
-$comentario1=$_POST['comentario1'];
+$nivel1= $_POST['nivel1'];
+$ano1= $_POST['ano1'];
+$documento1=$_POST['documento1'];
 
-$nombre2=$_POST['nombre2'];
-$ocupacion2=$_POST['ocupacion2'];
-$tipo2=$_POST['tipo2'];
-$tiempo2=$_POST['tiempo2'];
-$direccion2=$_POST['direccion2'];
-$telefono2=$_POST['telefono2'];
-$comentario2=$_POST['comentario2'];
+$nivel2= $_POST['nivel2'];
+$ano2= $_POST['ano2'];
+$documento2=$_POST['documento2'];
 
-$sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, comentario, 
-    nombre1, ocupacion1, tipo1, tiempo1, direccion1, telefono1, comentario1, 
-    nombre2, ocupacion2, tipo2, tiempo2, direccion2, telefono2, comentario2) 
-values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentario',
-    '$nombre1','$ocupacion1','$tipo1','$tiempo1','$direccion1','$telefono1','$comentario1',
-    '$nombre2','$ocupacion2','$tipo2','$tiempo2','$direccion2','$telefono2','$comentario2')";
+$nivel3= $_POST['nivel3'];
+$ano3= $_POST['ano3'];
+$documento3=$_POST['documento3'];
+
+
+$sql="insert academicaEstudios(id_rfc, nivel, ano, documento, nivel1, ano1, documento1, nivel2, ano2, documento2, nivel3, ano3, documento3) 
+values('$clave','$nivel','$ano','$documento','$nivel1','$ano1','$documento1','$nivel2','$ano2','$documento2','$nivel3','$ano3','$documento3')";
 
 $registro=mysqli_query($conexion,$sql);
-if(!$registro)
+
+$curso= $_POST['curso'];
+$duracion=$_POST['duracion'];
+$document=$_POST['document'];
+
+$curso1= $_POST['curso1'];
+$duracion1=$_POST['duracion1'];
+$document1=$_POST['document1'];
+
+$curso2= $_POST['curso2'];
+$duracion2=$_POST['duracion2'];
+$document2=$_POST['document2'];
+
+$curso3= $_POST['curso3'];
+$duracion3=$_POST['duracion3'];
+$document3=$_POST['document3'];
+
+$sqlC="insert academicaCursos(id_rfc, curso, duracion, document, curso1, duracion1, document1, curso2, duracion2, document2, curso3, duracion3, document3) 
+values('$clave','$curso','$duracion','$document','$curso1','$duracion1','$document1','$curso2','$duracion2','$document2','$curso3','$duracion3','$document3')";
+
+$registroC=mysqli_query($conexion,$sqlC);
+
+if(!$registro && !$registroC)
 {
     echo"
     <script language='javascript'>

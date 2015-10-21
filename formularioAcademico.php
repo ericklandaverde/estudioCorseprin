@@ -89,7 +89,10 @@ session_start();
 				  <div class="col-md-offset-2 col-md-8">
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
-					 <p><label>REFERENCIAS PERSONALES</label></p>
+					 <p><label>INVESTIGACION ACADEMICA</label></p>
+					 <span class="help-block">
+	                     Agrega tu historial academico y cursos
+	                 </span>
 					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 					</div>
 				  </div>
@@ -102,10 +105,6 @@ session_start();
                      
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
-                    		<p><label>INVESTIGACION ACADEMICA</label></p>
-	                        	<span class="help-block">
-	                        		Agrega tu historial academico y cursos
-	                        	</span>
                     		<div id="idEstudios">
             					<table>
             						<tr>
@@ -142,7 +141,7 @@ session_start();
 	                            	<tr>
 	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso" required></td>
 	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion" required></td>
-	                            		<td><input type="text" class="form-control" id="documentoC" placeholder="" name="documentoC" required></td>
+	                            		<td><input type="text" class="form-control" id="documentoC" placeholder="" name="document" required></td>
 	                            	</tr>
 	                            </table>
                                 </div>
