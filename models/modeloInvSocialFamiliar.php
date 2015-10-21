@@ -87,6 +87,7 @@
 		            '$parentesco7','$nombre7','$edad7','$ocupacion7','$depende7',
 		            '$parentesco8','$nombre8','$edad8','$ocupacion8','$depende8',
 		            '$parentesco9','$nombre9','$edad9','$ocupacion9','$depende9')";
+	
 	$registroDatos=mysqli_query($conexion,$sqlDatos);
 
 	$clave=$_POST['clave'];

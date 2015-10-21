@@ -35,9 +35,8 @@
               <li>
                 <a href="index.html">Principal</a>
               </li>
-              <li><a href="formularioIdentificacion.php">Formulario</a></li>
-              <li><a href="cambios.html">Cambios</a></li>
-              <li><a href="consultas.php">Consultar </a></li>
+              <li><a href="formularioIdentificacion.php">Comenzar...</a></li>
+              <li><a href="consultas.php">Consultar</a></li>
             </ul>
           </div><!-- /dl-menuwrapper -->
   </div>  
