@@ -23,6 +23,18 @@
     $strConsultaR = "SELECT * FROM referencias where id_rfc = '$numR'";
     $candidatoR = mysqli_query($conexion,$strConsultaR);
     $filaR = mysqli_fetch_array($candidatoR);
+
+    //Consulta formulario Estudios
+    $numEstudios= $_POST['clave'];
+    $strConsultaEstudios = "SELECT * FROM academicaEstudios where id_rfc = '$numEstudios'";
+    $candidatoEstudios = mysqli_query($conexion,$strConsultaEstudios);
+    $filaEstudios = mysqli_fetch_array($candidatoEstudios);
+
+    //Consulta formulario Cursos
+    $numCursos= $_POST['clave'];
+    $strConsultaCursos = "SELECT * FROM academicaCursos where id_rfc = '$numCursos'";
+    $candidatoCursos = mysqli_query($conexion,$strConsultaCursos);
+    $filaCursos = mysqli_fetch_array($candidatoCursos);
     
     //Consulta formulario Economico
             $numIng= $_POST['clave'];
@@ -389,22 +401,27 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('ESTUDIOS'),1,0,'C'); $pdf->Cell(60,8,utf8_decode('AÑO QUE CURSO'),1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEstudios['nivel'],1,0,'C'); $pdf->Cell(60,8,$filaEstudios['ano'],1,0,'C'); $pdf->Cell(50, 8,$filaEstudios['documento'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEstudios['nivel1'],1,0,'C'); $pdf->Cell(60,8,$filaEstudios['ano1'],1,0,'C'); $pdf->Cell(50, 8,$filaEstudios['documento1'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEstudios['nivel2'],1,0,'C'); $pdf->Cell(60,8,$filaEstudios['ano2'],1,0,'C'); $pdf->Cell(50, 8,$filaEstudios['documento2'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaEstudios['nivel3'],1,0,'C'); $pdf->Cell(60,8,$filaEstudios['ano3'],1,0,'C'); $pdf->Cell(50, 8,$filaEstudios['documento3'],1,0,'C');
         $pdf->Ln(15);
 
         $pdf->SetFont('Courier','B',10);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('CURSOS'),1,0,'C'); $pdf->Cell(60,8,'DURACION',1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaCursos['curso'],1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaCursos['curso1'],1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion1'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document1'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,'',1,0,'C'); $pdf->Cell(60,8,'',1,0,'C'); $pdf->Cell(50, 8,'',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaCursos['curso2'],1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion2'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document2'],1,0,'C');
+        $pdf->Ln(8);
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,$filaCursos['curso3'],1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion3'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document3'],1,0,'C');
+        $pdf->Ln(8);
         $pdf->Ln(20);
         
         $pdf->SetFont('Courier','B',10);
