@@ -198,7 +198,7 @@ session_start();
 
                     
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-8">
+                        <!-- <div class="col-md-offset-2 col-md-8"> -->
                             <label> e) Actividades Recreativas: </label>
                             <table class="table table-striped">
                                 <tr>
@@ -226,7 +226,7 @@ session_start();
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="cine" required></td>
                                 </tr>
                             </table>
-                        </div>
+                       <!--  </div> -->
                     </div>
 
                     <div class="form-group">
