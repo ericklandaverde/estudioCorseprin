@@ -137,10 +137,6 @@
 						  <span class="input-group-addon">Apellido Materno</span>
 						  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
 						</div>
-
-					  
-					 
-					  
 					  </div>
 				    </div>
 
@@ -169,7 +165,10 @@
 
 					 <div class="form-group">
 					    <div class="col-md-offset-2 col-md-8">
-						  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
+					    	<div class="input-group">
+							  <span class="input-group-addon">Edad</span>
+							  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
+						    </div>
 						</div>
 					 </div>
 				  <div class="form-group">
@@ -184,7 +183,10 @@
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+						<div class="input-group">
+						  <span class="input-group-addon">Telefono</span>
+						  <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+					    </div>
 					</div>
 				  </div>
 				  <div class="form-group">
@@ -192,7 +194,7 @@
 						<div class="input-group">
 						  <span class="input-group-addon">@</span>
 						  <input type="email" class="form-control" placeholder="Correo electronico" name="email" required>
-					  </div>
+					    </div>
 					</div>
 				  </div>
 				  

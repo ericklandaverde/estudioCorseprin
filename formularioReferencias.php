@@ -9,6 +9,11 @@ session_start();
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <!-- Alertify -->
+    <script src="alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
+    <!-- Alertif -->
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -34,7 +39,7 @@ session_start();
                  var cosponsorDivId = 'cosponsors_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
-                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' /><br>");
                  deleteLink.appendTo(copy);
                  deleteLink.click(function(){
                      copy.remove();
@@ -87,33 +92,45 @@ session_start();
 					<form action="models/modeloReferencias.php" method="post" class="form-horizontal" role="form">
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 
-					  <div class="form-group" id="container">
+					 <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="myForm">
-                                <div id="cosponsors">
-	                            <br><legend>Referencia:</legend>
-								<label>Nombre:</label>
-								<input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
-								<label>Ocupacion:</label>
-								<input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required>
-								<label>Tipo de relacion</label>
-								<select type="text" class="form-control" id="tipo" placeholder="Tipo de relacion" name="tipo" required>
-								  	<option selected value="">Seleccione relacion.</option>
-								  	<option value="Amigo">Amigo</option>
-								  	<option value="Familiar">Familiar</option>
-								  	<option value="Antiguo Jefe">Antiguo Jefe</option>
-								  	<option value="Compañero de trabajo">Compañero de trabajo</option>
-			                    </select>
-			                    <label>Tiempo de conocerlo</label>
-								<input type="text" class="form-control" id="tiempo" placeholder="Tiempo de conocerlo" name="tiempo" required>
-								<label>Direccion</label>
-								<input type="text" class="form-control" id="direccion" placeholder="Direccion" name="direccion" required>
-								<label>Telefono</label>
-								<input type="tel"  class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
-								<label>Comentarios</label>
-								<input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentario" required>
-							    </fieldset>
-                                <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
-                                </div>
+                              <div id="cosponsors">
+									<br><table class="table table-bordered">
+										<tr class="active">
+											<td colspan="2"><label>Nombre:</label></td>
+											<td colspan="2"><label>Ocupacion:</label></td>
+										</tr>
+										<tr>
+											<td colspan="2"><input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required></td>
+											<td colspan="2"><input type="text" class="form-control" id="ocupacion" placeholder="Ocupacion" name="ocupacion" required></td>
+										</tr>
+										<tr>
+											<td><label>Tipo de relacion</label></td>
+											<td><select type="text" class="form-control" id="tipo" placeholder="Tipo de relacion" name="tipo" required>
+												  	<option selected value="">Seleccione relacion.</option>
+												  	<option value="Amigo">Amigo</option>
+												  	<option value="Familiar">Familiar</option>
+												  	<option value="Antiguo Jefe">Antiguo Jefe</option>
+												  	<option value="Compañero de trabajo">Compañero de trabajo</option>
+							                    </select></td>
+											<td><label>Tiempo de conocerlo</label></td>
+											<td><input type="text" class="form-control" id="tiempo" placeholder="Tiempo de conocerlo" name="tiempo" required></td>
+										</tr>
+										<tr class="active">
+											<td colspan="2"><label>Direccion</label></td>
+											<td colspan="2"><label>Telefono</label></td>
+										</tr>
+										<tr>
+											<td colspan="2"><input type="text" class="form-control" id="direccion" placeholder="Direccion" name="direccion" required></td>
+											<td colspan="2"><input type="tel"  class="form-control" id="telefono" placeholder="Telefono" name="telefono" required></td>
+										</tr>
+										<tr class="active">
+											<td><label>Comentarios</label></td>
+											<td colspan="3"><input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentario" required></td>
+										</tr>
+									</table>
+	                                <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
+                              </div>
                         </div>
                     </div>
 

@@ -64,20 +64,36 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Identificacion peronal </label><br>
-					  <label>Credencial  de elector: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
-					  <label>Cartilla Militar: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
-					  <label>Licencia de conducir: </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
+					  <div class="input-group">
+							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
+							<input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
+					  </div>
+					  <div class="input-group">
+							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
+							<input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
+					  </div>
+					  <div class="input-group">
+							<span class="input-group-addon"><label>Licencia de conducir: </label></span>
+							<input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
+					  </div>			  			  
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<label>Seguridad social </label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="IMSS (11 Digitos)" name="imss" maxlength="11" required>
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $_SESSION["clave"]; ?>">
-					  <input type="text" class="form-control" id="inputClave" placeholder="CURP (18 Digitos)" name="curp" maxlength="18" required>
+						<div class="input-group">
+							<span class="input-group-addon"><label>IMSS: </label></span>
+							<input type="text" class="form-control" id="inputClave" placeholder="IMSS (11 Digitos)" name="imss" maxlength="11" required>
+					    </div>
+<!-- 					    <div class="input-group">
+							<span class="input-group-addon"><label>RFC: </label></span> -->
+							<input type="hidden" class="form-control" id="inputClave" placeholder="R.F.C" name="rfc" value="<?php echo $_SESSION["clave"]; ?>">
+<!-- 					    </div> -->
+					    <div class="input-group">
+							<span class="input-group-addon"><label>CURP: </label></span>
+							<input type="text" class="form-control" id="inputClave" placeholder="CURP (18 Digitos)" name="curp" maxlength="18" required>
+					    </div>
 					</div>
 				  </div>
 				  <div class="form-group">

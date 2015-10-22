@@ -91,7 +91,7 @@ session_start();
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>INVESTIGACION ACADEMICA</label></p>
 					 <span class="help-block">
-	                     Agrega tu historial academico y cursos
+	                     Agrega tu historial academico y cursos...
 	                 </span>
 					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 					</div>
