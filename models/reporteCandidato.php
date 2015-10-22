@@ -314,7 +314,7 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(0,0,utf8_decode('3.- HISTORIA LABORAL'),0,0,'L');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Dirrecion',1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Direcion',1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['direcion'],1,0,'C');
         $pdf->Ln(8);
