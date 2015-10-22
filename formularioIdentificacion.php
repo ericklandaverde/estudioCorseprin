@@ -122,9 +122,10 @@
 				<form id="myform" action="models/modeloIdentificacion.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
 				    <div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <label>Clave RFC: </label>
-						  <input type="text" data-progression="" data-helper="Help users through forms by prividing helpful hinters"
-						  class="form-control" id="formulario" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
+						    <div class="input-group">
+						      <span class="input-group-addon"> <label>Clave RFC: </label></span>
+						      <input type="text" class="form-control" id="formulario" placeholder="Introduce tu RFC" name="clave" onblur="upperCase()" required>
+						    </div>				 
 						</div>
 				    </div>
 					<div class="form-group">
@@ -144,14 +145,15 @@
 				    <div class="form-group">
 					  <div class="col-md-offset-2 col-md-8">
 					  	<div class="input-group">
-						  <span class="input-group-addon">Nombre</span>
+						  <span class="input-group-addon"><label>Nombre</label></span>
 						  <input type="text" class="form-control" id="formulario" placeholder="Nombre" name="nombre" onblur="upperCase()" required>
 						</div>
 						<div class="input-group">
-						  <span class="input-group-addon">Apellido Paterno</span>
-						   <input type="text" class="form-control" id="formulario" placeholder="Apellido paterno" name="apellidoPaterno" onblur="upperCase()" required>						</div>
+						  <span class="input-group-addon"><label>Apellido Paterno</label></span>
+						   <input type="text" class="form-control" id="formulario" placeholder="Apellido paterno" name="apellidoPaterno" onblur="upperCase()" required>
+						</div>
 						<div class="input-group">
-						  <span class="input-group-addon">Apellido Materno</span>
+						  <span class="input-group-addon"><label>Apellido Materno</label></span>
 						  <input type="text" class="form-control" id="formulario" placeholder="Apellido materno" name="apellidoMaterno" onblur="upperCase()" required>
 						</div>
 					  </div>
@@ -189,7 +191,7 @@
 					 <div class="form-group">
 					    <div class="col-md-offset-2 col-md-8">
 					    	<div class="input-group">
-							  <span class="input-group-addon">Edad</span>
+							  <span class="input-group-addon"><label>Edad</label></span>
 							  <input type="number" class="form-control" id="inputClave" placeholder="Edad" name="edad" required>
 						    </div>
 						</div>
@@ -207,15 +209,16 @@
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="input-group">
-						  <span class="input-group-addon">Telefono</span>
+						  <span class="input-group-addon"><label>Telefono</label></span>
 						  <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
 					    </div>
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="input-group">
-						  <span class="input-group-addon">@</span>
+						  <span class="input-group-addon"><label>@</label></span>
 						  <input type="email" class="form-control" placeholder="Correo electronico" name="email" required>
 					    </div>
 					</div>
