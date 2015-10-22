@@ -15,6 +15,29 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+      function SumarIngresos(){
+        var valor1 = Number(document.getElementById("valor1").value);
+        var valor2 = Number(document.getElementById("valor2").value);
+        var valor3 = Number(document.getElementById("valor3").value);
+        document.getElementById("totalI").value = valor1+valor2+valor3;
+        document.getElementById("totalRI").value = valor1+valor2+valor3;
+      }
+    </script>
+    <script type="text/javascript">
+      function SumarEgresos(){
+        var numero1 = Number(document.getElementById("numero1").value);
+        var numero2 = Number(document.getElementById("numero2").value);
+        var numero3 = Number(document.getElementById("numero3").value);
+        var numero4 = Number(document.getElementById("numero4").value);
+        var numero5 = Number(document.getElementById("numero5").value);
+        var numero6 = Number(document.getElementById("numero6").value);
+        var numero7 = Number(document.getElementById("numero7").value);
+        var numero8 = Number(document.getElementById("numero8").value);
+        document.getElementById("totalE").value = numero1+numero2+numero3+numero4+numero5+numero6+numero7+numero8;
+        document.getElementById("totalRE").value = numero1+numero2+numero3+numero4+numero5+numero6+numero7+numero8;
+      }
+    </script>
 </head>
 
 <body>
@@ -60,22 +83,22 @@ session_start();
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
                       <td><input type="text" class="form-control" id="inputClave" value="Trabajo" disabled="true" required></td>
-                      <td><input type="number" class="form-control" id="montoUno" placeholder="Monto Mensual" name="montoUno" required></td>
+                      <td><input type="number" class="form-control" id="valor1" placeholder="Monto Mensual" name="montoUno" required></td>
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
                       <td><input type="text" class="form-control" id="inputClave" value="Pension" disabled="true" required></td>
-                      <td><input type="number" class="form-control" id="montoDos" placeholder="Monto Mensual" name="montoDos" required></td>
+                      <td><input type="number" class="form-control" id="valor2" placeholder="Monto Mensual" name="montoDos" required></td>
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
                       <td><input type="text" class="form-control" id="inputClave"  value="Beca" disabled="true" required></td>
-                      <td><input type="number" class="form-control" id="montoTres" placeholder="Monto Mensual" name="montoTres" required></td>
+                      <td><input type="number" class="form-control" id="valor3" placeholder="Monto Mensual" name="montoTres" required></td>
                   </tr>
                   <tr>
                       <td></td>
-                      <td><input type="hidden" value="Calcular" onclick="totalIngresos()"></td>
-                      <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
+                      <td><input type="button" class="btn btn-primary" value="Calcular" onclick="SumarIngresos();"></td>
+                      <td><input type="number" class="form-control" id="totalI" placeholder="Total de Ingresos" name="totalIngresos" required></td>
                 </tr>
             </table>
         </fieldset>
@@ -94,47 +117,47 @@ session_start();
            <tr id="1">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaUnoE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Alimentacion" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoUnoE" required></td>
+              <td><input type="number" class="form-control" id="numero1" placeholder="Monto Mensual" name="montoUnoE" required></td>
           </tr>
           <tr id="2">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaDosE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Ropa y calzado" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoDosE" required></td>
+              <td><input type="number" class="form-control" id="numero2" placeholder="Monto Mensual" name="montoDosE" required></td>
           </tr>
           <tr id="3">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaTresE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Transporte" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoTresE" required></td>
+              <td><input type="number" class="form-control" id="numero3" placeholder="Monto Mensual" name="montoTresE" required></td>
           </tr>
           <tr id="4">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaCuatroE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Servicos" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoCuatroE" required></td>
+              <td><input type="number" class="form-control" id="numero4" placeholder="Monto Mensual" name="montoCuatroE" required></td>
           </tr>
           <tr id="5">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaCincoE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Gastos Escolares" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoCincoE" required></td>
+              <td><input type="number" class="form-control" id="numero5" placeholder="Monto Mensual" name="montoCincoE" required></td>
           </tr>
           <tr id="6">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSeisE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Actividades deportivas" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSeisE" required></td>
+              <td><input type="number" class="form-control" id="numero6" placeholder="Monto Mensual" name="montoSeisE" required></td>
           </tr>
           <tr id="7">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaSieteE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Actividades creativas" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoSieteE" required></td>
+              <td><input type="number" class="form-control" id="numero7" placeholder="Monto Mensual" name="montoSieteE" required></td>
           </tr>
           <tr id="8">							
               <td><input type="text" class="form-control" id="inputClave" placeholder="Persona" name="personaOchoE" required></td>
               <td><input type="text" class="form-control" id="inputClave" value="Otros" disabled="true" required></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" name="montoOchoE" required></td>
+              <td><input type="number" class="form-control" id="numero8" placeholder="Monto Mensual" name="montoOchoE" required></td>
           </tr>
           <tr id="total">							
               <td></td>
-              <td><input type="hidden" value="Calcular" onclick=""></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Total" name="totalEgresos" required></td>
+              <td><input type="button" class="btn btn-primary" value="Calcular" onclick="SumarEgresos();"></td>
+              <td><input type="number" class="form-control" id="totalE" placeholder="Total de Egresos" name="totalEgresos" required></td>
           </tr>
       </table>
   </fieldset>
@@ -156,11 +179,11 @@ session_start();
           </tr>
           <tr>
               <td><label>Total de ingresos:</label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" value="" required></td>
+              <td><input type="number" class="form-control" id="totalRI" placeholder="Monto Mensual" value="" required></td>
           </tr>
           <tr>
               <td><label>Total de egresos:</label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" value="" required></td>
+              <td><input type="number" class="form-control" id="totalRE" placeholder="Monto Mensual" value="" required></td>
           </tr>
       </table>
     </fieldset>
@@ -273,7 +296,6 @@ session_start();
   <div class="col-md-offset-2 col-md-8">
       <input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
       <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-      <!--                         <button type="button" onClick="window.location='formularioReferencias.html'" class="btn btn-theme btn-lg btn-block">Regresar</button> -->
   </div>
 </div>
 </form>
