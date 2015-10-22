@@ -32,11 +32,12 @@
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
-	<script>
+    <script>
 		$(function(){
 			$('.datepicker').datepicker({
 				format: 'mm/dd/yyyy',
-                startDate: '-3d'
+                startDate: '-3d',
+			});
 		});
 	</script>
     <script type="text/javascript">
