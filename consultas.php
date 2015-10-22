@@ -123,15 +123,14 @@
             <div class="col-md-offset-2 col-md-8">
                <script type="text/javascript">
                         function confirmar(){
-                            alertify.confirm("Segura deseas salir:", function (e) {
+                            alertify.confirm("Segur@ deseas slir", function (e) {
                               if (e) {
-                                alertify.success("Has pulsado '" + alertify.labels.ok + "'");
-                              }else{ 
-                                alertify.error("Has pulsado '" + alertify.labels.cancel + "'");
-                              }
-                            }); 
-                            return false
-                          }
+                                window.location='index.html'
+                                 // user clicked "ok"
+                            } else {
+                              // user clicked "cancel"
+                            }
+                          });
                 </script>
               <!-- <button type="button" onClick="confirmar()" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Salir</button> -->
               <button type="button" onClick="confirmar()" class="btn btn-theme btn-lg btn-block">Salir</button>
