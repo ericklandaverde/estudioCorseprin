@@ -11,6 +11,9 @@ session_start();
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="color/default.css" rel="stylesheet" media="screen">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   < script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 </head>
 
@@ -48,8 +51,8 @@ session_start();
             <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
             <fieldset>
                 <legend>Ingresos:</legend>
-                <table>
-                   <tr>
+                <table class="table table-hover">
+                   <tr class="success">
                       <td><label>Persona.</label></td>
                       <td><label>Fuente <br>(Trabajo, Pension, Beca)</label><br></td>
                       <td><label>Monto Mensual.</label></td>
@@ -71,8 +74,8 @@ session_start();
                   </tr>
                   <tr>
                       <td></td>
-                      <td><input type="button" value="Calcular" onclick="totalIngresos()"></td>
-                      <td><input type="hidden" class="form-control" id="total" name="totalIngresos" required></td>
+                      <td><input type="hidden" value="Calcular" onclick="totalIngresos()"></td>
+                      <td><input type="number" class="form-control" id="total" name="totalIngresos" required></td>
                 </tr>
             </table>
         </fieldset>
@@ -82,8 +85,8 @@ session_start();
   <div id="capa" class="col-md-offset-2 col-md-8">
       <fieldset>
         <legend>Egresos (Gastos):</legend>
-        <table>
-            <tr>
+        <table class="table table-hover">
+            <tr class="success">
                <td><label>Persona.</label></td>
                <td><label>Concepto</label><br></td>
                <td><label>Monto Mensual.</label></td>
@@ -137,11 +140,12 @@ session_start();
   </fieldset>
 </div>
 </div>
+
 <div class="form-group">
   <div id="capa" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Resumen</legend>
-        <table>
+        <table class="table table-hover">
            <tr>
               <td><label>Personas que viven con el investigado:</label></td>
               <td><input type="number" class="form-control" id="inputClave" placeholder="Numero de personas" name="totalViven" required></td>
@@ -159,15 +163,16 @@ session_start();
               <td><input type="number" class="form-control" id="inputClave" placeholder="Monto Mensual" value="" required></td>
           </tr>
       </table>
-  </fieldset>
+    </fieldset>
+  </div>
 </div>
-</div>
+
 <div id="Credito"class="form-group">
   <div id="capa" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Creditos:</legend>
-        <table>
-           <tr>							
+        <table class="table table-hover">
+           <tr class="success">							
               <td><label>Concepto</label></td>
               <td><label>Mensualidad</label></td>
               <td><label>Plazo</label></td>
@@ -193,7 +198,7 @@ session_start();
  <div id="capa" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Seguro:</legend>
-        <table>
+        <table class="table table-hover">
            <tr>
               <td><label>De vida: </label></td>
               <td><input type="radio" name="vida" value="Si" placeholder="Selecciona una opcion" required>Si</td>
@@ -230,12 +235,12 @@ session_start();
     <div id="capa" class="col-md-offset-2 col-md-8"> 
         <fieldset>
             <legend>Activos:</legend>
-            <table>
-               <tr>
-                  <td><label>PROPIEDADES: </label></td>
+            <table class="table table-hover">
+               <tr class="success">
+                  <td colspan="3"><label>PROPIEDADES: </label></td>
               </tr>
-              <tr>
-                  <td><label>Tipo: </label></td>
+              <tr class="active">
+                  <td colspan="3"><label>Tipo: </label></td>
               </tr>
               <tr>
                   <td><input type="checkbox" name="tipoPropiedad" value=" Tiene Casa"> Casa</td>
@@ -243,11 +248,11 @@ session_start();
                   <td><input type="checkbox" name="tipoPropiedad" value=" Tiene Departamento"> Departamento</td>
               </tr>
               <tr>
-                  <td><label>Ubicacion: </label></td>
+                  <td colspan="2"><label>Ubicacion: </label></td>
                   <td><label>Valor estimado: </label></td>
               </tr>
               <tr>
-                  <td><input type="text" class="form-control" id="inputClave" placeholder="Ubicacion" name="ubicacion" required></td>
+                  <td colspan="2" ><input type="text" class="form-control" id="inputClave" placeholder="Ubicacion" name="ubicacion" required></td>
                   <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorEstimadoT" required></td>
               </tr>
               <tr>

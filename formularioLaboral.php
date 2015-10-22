@@ -17,6 +17,7 @@ session_start();
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
+	
 	<script type="text/javascript">
     $(document).ready(function(){
     	$('#insertar').click(function() {
@@ -52,8 +53,6 @@ session_start();
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>HISTORIAL LABORAL</label></p>
 					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
-<!-- 					 	 <p>Enlace rapido atras <a href="http://estudiocorseprin.pe.hu/formularioDocumentos.php">Atras </a></p>
-						 <p>Enlace rapido adelante <a href="http://estudiocorseprin.pe.hu/formularioReferencias.php">Adelante </a></p> -->
 					</div>
 				  </div>
 			  </div>

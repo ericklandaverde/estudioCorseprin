@@ -118,18 +118,22 @@ session_start();
                     <div class="form-group">
 <!--                         <div class="col-md-offset-2 col-md-8"> -->
                             <label> b) Actividades Sociales: </label><br>
-                            <table class="table table-striped">
-                                <tr><label>¿Que religion profesa?</label></tr>
+                            <br><table class="table table-hover">
+                                <tr class="success">
+                                    <td colspan="2"><label>¿Que religion profesa?</label></td>
+                                </tr>
                                 <tr>
-                                    <select type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required>
-                                            <option selected value="">Seleccione una opcion</option>
-                                            <option value="Creyente">Creyente</option>
-                                            <option value="Ateo">Ateo</option>
-                                            <option value="Catolico">Catolico</option>
-                                            <option value="Cristiano">Cristiano</option>
-                                            <option value="Testigo de Jehová">Testigo de Jehová</option>
-                                            <option value="Otra Religion">Otra Religion</option>
-                                    </select>
+                                    <td colspan="2">
+                                        <select type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required>
+                                                <option selected value="">Seleccione una opcion</option>
+                                                <option value="Creyente">Creyente</option>
+                                                <option value="Ateo">Ateo</option>
+                                                <option value="Catolico">Catolico</option>
+                                                <option value="Cristiano">Cristiano</option>
+                                                <option value="Testigo de Jehová">Testigo de Jehová</option>
+                                                <option value="Otra Religion">Otra Religion</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><label>Actividades<label></td>
@@ -150,8 +154,8 @@ session_start();
                     <div class="form-group">
 <!--                         <div class="col-md-offset-2 col-md-8"> -->
                             <label> c) Actividades Culturales: </label>
-                            <table class="table table-striped">
-                                <tr>
+                            <br><table class="table table-hover">
+                                <tr class="success">
                                     <td><label>Actividades<label></td>
                                     <td><label>Frecuencia Anual</label></td>
                                 </tr>
@@ -178,10 +182,10 @@ session_start();
 
                     <div class="form-group" id="contenedorDeportes">
                         <label> d) Actividades Deportivas: </label>
-                        <div class="col-md-offset-2 col-md-8" id="Deportes">
-                            <div id="deporte" style="padding:12px;">
-                            <table class="table table-striped">
-                            <tr>
+                        <div  id="Deportes">
+                            <div id="deporte">
+                            <br><table class="table table-hover">
+                            <tr class="success">
                                 <td><label>Deporte<label></td>
                                 <td><label>Lugar</label></td>
                                 <td><label>Frecuencia</label></td>
@@ -201,8 +205,8 @@ session_start();
                     <div class="form-group">
                         <!-- <div class="col-md-offset-2 col-md-8"> -->
                             <label> e) Actividades Recreativas: </label>
-                            <table class="table table-striped">
-                                <tr>
+                            <table class="table table-hover">
+                                <tr class="success">
                                     <td><label>Actividad<label></td>
                                     <td><label>Frecuencia anual</label></td>
                                 </tr>
@@ -233,8 +237,8 @@ session_start();
                     <div class="form-group">
 <!-- 		                <div class="col-md-offset-2 col-md-8"> -->
 			                    <label> f)  Pasatiempos : </label>
-			                    <table class="table table-striped">
-			                        <tr>
+			                    <table class="table table-hover">
+			                        <tr class="success">
 			                            <td><label>Actividad<label></td>
 			                            <td><label>Frecuencia anual</label></td>
 			                        </tr>
