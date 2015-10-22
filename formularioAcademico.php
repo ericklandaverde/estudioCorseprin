@@ -105,6 +105,9 @@ session_start();
                      
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
+                    		 <span class="help-block">
+	                              Maximo Cuatro registros
+	                         </span>
                     		<div id="idEstudios">
             					<table class="table">
             						<tr>
@@ -131,6 +134,9 @@ session_start();
 
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
+                        	<span class="help-block">
+	                              Maximo Cuatro registros
+	                         </span>
                                 <div id="idCurso">
 	                            <table class="table">
 	                            	<tr>

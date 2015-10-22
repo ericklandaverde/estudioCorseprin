@@ -13,7 +13,7 @@ session_start();
     <link href="color/default.css" rel="stylesheet" media="screen">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   < script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 </head>
 
