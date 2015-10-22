@@ -12,12 +12,24 @@ session_start();
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <!-- Alertif -->
+    <link rel="stylesheet" href="datepicker/css/bootstrap.css">
+	<link rel="stylesheet" href="datepicker/css/datepicker.css">
+    <script src="datepicker/js/main.js"></script>
+	<script src="datepicker/js/bootstrap.js"></script>
+	<script src="datepicker/js/bootstrap-datepicker.js"></script>
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
-	
+    <script>
+		$(function(){
+			$('.datepicker').datepicker({
+				format: 'mm/dd/yyyy',
+                startDate: '-3d',
+			});
+		});
+	</script>
 	<script type="text/javascript">
     $(document).ready(function(){
     	$('#insertar').click(function() {
@@ -82,22 +94,27 @@ session_start();
 						</div>
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="input-group">
 						  <span class="input-group-addon"><label>Puesto desempeñado:</label></span>
 						  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
 						</div>
-						<div class="input-group">
-						  <span class="input-group-addon"><label>Fecha de Ingreso:</label></span>
-						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" min="1960-12-31" max="2015-12-31" required>
-						</div>
-						<div class="input-group">
-						  <span class="input-group-addon"><label>Fecha de baja:</label></span>
-						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" min="1960-12-31" max="2015-12-31" required>
-						</div>  
+						
+						<div class="input-group input-daterange">
+						    <div class="input-group">
+						         <span class="input-group-addon"><label>Fecha de Ingreso:</label></span>
+						         <input type="date" class="datepicker form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
+						    </div>
+						    <span class="input-group-addon">a</span>
+						    <div class="input-group">
+						         <input type="date" class="datepicker form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
+						    </div> 
+						</div>		
 					</div>
 				  </div>
+				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="input-group">
@@ -182,8 +199,8 @@ session_start();
 	</footer>
 	 
 	 <!-- js -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
 	<script src="js/wow.min.js"></script>

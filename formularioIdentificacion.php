@@ -23,9 +23,9 @@
     <!-- Alertif -->
     <link rel="stylesheet" href="datepicker/css/bootstrap.css">
 	<link rel="stylesheet" href="datepicker/css/datepicker.css">
-		<script src="datepicker/js/main.js"></script>
-		<script src="datepicker/js/bootstrap.js"></script>
-		<script src="datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="datepicker/js/main.js"></script>
+    <script src="datepicker/js/bootstrap.js"></script>
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -33,9 +33,11 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
 	<script>
-			$(function(){
-			 $('.datepicker').datepicker();
-			});
+		$(function(){
+			$('.datepicker').datepicker({
+				format: 'mm/dd/yyyy',
+                startDate: '-3d'
+		});
 	</script>
     <script type="text/javascript">
 		function ValidarImagen(obj){
@@ -180,7 +182,7 @@
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
 						    <div class="input-group date well ">
-                               <input type="text" class="datepicker form-control" placeholder="Fecha de nacimiento"  name="fecha" min="1960-12-31" max="2015-12-31" required>
+                               <input type="text" class="datepicker form-control" placeholder="Fecha de nacimiento"  name="fecha" required>
                                   <span class="input-group-addon">
                                   <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
