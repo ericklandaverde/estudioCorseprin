@@ -121,7 +121,7 @@
 
          <div class="form-group">
             <div class="col-md-offset-2 col-md-8">
-              <button type="button" onClick="confirmar()" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Salir</button>
+              <button type="button" onClick="window.location='index.html'" class="btn btn-theme btn-lg btn-block">Salir</button>
             </div>
         </div>
 
