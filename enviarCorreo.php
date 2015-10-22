@@ -12,7 +12,7 @@ $título = 'CONFIRMACION ESTUDIO RECIBIDO (PRUEBA)';
 $mensaje = '
 <html>
 	<head>
-	<title>GERENCIA DE CAPITAL HUMANO</title>
+	<title>Gerencia de Capital Humano</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -26,15 +26,15 @@ $mensaje = '
 		<div class="page-header">
 		  <h1>GERENCIA DE CAPITAL HUMANO<small>CORSEPRIN</small></h1>
 		</div>
-		<div class="jumbotron">
-		    <div class="container">
+		// <div class="jumbotron">
+		//     <div class="container">
 		        <div class="alert alert-success">
 		             <span class="glyphicon .glyphicon-envelope"></span>
 		             <p>Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria</p>
 		        </div> 
-			</div>
-		</div>
-		<img src="imagenes/firma.png" class="img-responsive">
+		// 	</div>
+		// </div>
+		<img src="/imagenes/firma.png" class="img-responsive">
 		</body>
 </html>
 ';
