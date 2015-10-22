@@ -7,6 +7,11 @@ session_start();
     <title>Estudio SocioEconomico</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Alertify -->
+    <script src="alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
+    <!-- Alertif -->
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -60,49 +65,76 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
-					  <label>Ultimo empleo</label>	
-					  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
-					  <label>Giro</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
-					  <label>Telefono:</label>
-					  <input type="tel" class="form-control" id="inputClave" placeholder="Telefono" name="telefono" required>
+					    <div class="input-group">
+						  <span class="input-group-addon"><label>Ultimo empleo</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Ultimo empleo" name="ultimoEmpleo" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Direccion</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Direccion" name="direccion" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Giro</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Giro" name="giro" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Telefono:</label></span>
+						  <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+						</div>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Puesto desempeñado:</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
-					  <label>Fecha de Ingreso:</label>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" min="1960-12-31" max="2015-12-31" required>
-					  <label>Fecha de baja:</label>
-					  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" min="1960-12-31" max="2015-12-31" required>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Puesto desempeñado:</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Puesto desempeñado" name="puesto" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Fecha de Ingreso:</label></span>
+						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" min="1960-12-31" max="2015-12-31" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Fecha de baja:</label></span>
+						  <input type="date" class="form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" min="1960-12-31" max="2015-12-31" required>
+						</div>  
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Antiguedad</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad" name="antiguedad" required>
-					  <label>Sueldo Inicial</label>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="sueldoInicial" required>
-					  <label>Sueldo Final</label>
-					  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="sueldoFinal" required>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Antiguedad</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Antiguedad" name="antiguedad" required>
+						</div> 
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Sueldo Inicial</label></span>
+						  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Inicial" name="sueldoInicial" required>
+						</div> 
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Sueldo Final</label></span>
+						  <input type="number" class="form-control" id="inputClave" placeholder="Sueldo Final" name="sueldoFinal" required>
+						</div>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Jefe Inmediato</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
-					  <label>Puesto del jefe</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Puesto del jefe" name="puestoJefe" required>
-					  <label>Motivo de separacion</label>
-					  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Jefe Inmediato</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Jefe Inmediato" name="jefe" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Puesto del jefe</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Puesto del jefe" name="puestoJefe" required>
+						</div>
+						<div class="input-group">
+						  <span class="input-group-addon"><label>Motivo de separacion</label></span>
+						  <input type="text" class="form-control" id="inputClave" placeholder="Motivo de separacion" name="motivo" required>
+						</div>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
                     <input type="reset" id="cancelar" value="CANCELAR" name="cancelar" class="btn btn-theme btn-lg btn-block">
-                    <button type="button" onClick="window.location='formularioDocumentos.php'" class="btn btn-theme btn-lg btn-block">Regresar</button>
 					</div>
 				  </div>
 				</form>
