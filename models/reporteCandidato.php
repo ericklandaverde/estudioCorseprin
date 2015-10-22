@@ -316,7 +316,7 @@ class PDF extends FPDF
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Ultimo Empleo:',1,0,'C'); $pdf->Cell(80,8,'Dirrecion',1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['dirrecion'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,$filaL['ultimoEmpleo'],1,0,'C'); $pdf->Cell(80, 8,$filaL['direcion'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(90, 8,'Giro:',1,0,'C'); $pdf->Cell(80,8,utf8_decode('Teléfono'),1,0,'C');
         $pdf->Ln(8);
