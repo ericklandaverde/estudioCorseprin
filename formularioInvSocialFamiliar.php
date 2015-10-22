@@ -94,7 +94,8 @@ session_start();
                     <label> a) Datos Familiares (Personas con las que vive) </label>
                     <div class="form-group" id="container">
                         <h5>Familiares: </h5>
-                        <div class="col-md-offset-2 col-md-8" id="myForm">
+                        <div id="myForm">
+                       <!--  <div class="col-md-offset-2 col-md-8" id="myForm"> -->
                                 <div id="cosponsors">
                                 <label>Familiar:</label>
                                 <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
@@ -115,7 +116,7 @@ session_start();
                     </div>
                     
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-8">
+<!--                         <div class="col-md-offset-2 col-md-8"> -->
                             <label> b) Actividades Sociales: </label><br>
                             <table class="table table-striped">
                                 <tr><label>¿Que religion profesa?</label></tr>
@@ -143,11 +144,11 @@ session_start();
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="comunitarios" required></td>
                                 </tr>
                             </table><br>
-                        </div>
+<!--                         </div> -->
                     </div>
                     
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-8">
+<!--                         <div class="col-md-offset-2 col-md-8"> -->
                             <label> c) Actividades Culturales: </label>
                             <table class="table table-striped">
                                 <tr>
@@ -171,7 +172,7 @@ session_start();
                                     <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="arqueologicas" required></td>
                                 </tr>
                             </table>
-                        </div>
+<!--                         </div> -->
                     </div>
 
 
@@ -230,7 +231,7 @@ session_start();
                     </div>
 
                     <div class="form-group">
-		                <div class="col-md-offset-2 col-md-8">
+<!-- 		                <div class="col-md-offset-2 col-md-8"> -->
 			                    <label> f)  Pasatiempos : </label>
 			                    <table class="table table-striped">
 			                        <tr>
@@ -250,7 +251,7 @@ session_start();
 			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaC" required></td>
 			                        </tr>
 			                    </table>
-			             </div>
+<!-- 			             </div> -->
 		            </div>
 
                     <div class="form-group">
