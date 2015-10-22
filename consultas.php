@@ -64,15 +64,15 @@
             <div>
             <!-- <div class="col-md-offset-2 col-md-8"> -->
               <table class="table table-bordered">
-                <tr align="center">
-                    <td  bgcolor="#CCCCCC">CLAVE CURP</td>
-                    <td  bgcolor="#CCCCCC">PUESTO</td>
-                    <td  bgcolor="#CCCCCC">NOMBRE</td>
-                    <td  bgcolor="#CCCCCC">TELEFONO</td>
-                    <td  bgcolor="#CCCCCC">EMAIL</td>
-                    <td  bgcolor="#CCCCCC">REPORTE</td>
-                    <td  bgcolor="#CCCCCC">CONFIRMAR</td>
-                    <td  bgcolor="#CCCCCC">ELIMINAR</td>
+                <tr class="success">
+                    <td><label>CLAVE CURP</label></td>
+                    <td><label>PUESTO</label></td>
+                    <td><label>NOMBRE</label></td>
+                    <td><label>TELEFONO</label></td>
+                    <td><label>EMAIL</label></td>
+                    <td><label>REPORTE</label></td>
+                    <td><label>CONFIRMAR</label></td>
+                    <td><label>ELIMINAR</label></td>
                 </tr>
                 <?php
                   $consulta= mysqli_query($conexion,"SELECT * FROM identificacion");
