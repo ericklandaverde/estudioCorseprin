@@ -6,21 +6,38 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- css -->  
     <link href='progression.js/src/progression.css' rel='stylesheet' type='text/css'>
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="progression.js/src/progression.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-     <!-- Alertify -->
+    <!-- Alertify -->
     <script src="alertifyjs/alertify.js"></script>
     <link rel="stylesheet" href="alertifyjs/css/alertify.css">
     <link rel="stylesheet" href="alertifyjs/css/themes/bootstrap.css">
     <!-- Alertif -->
+    <link rel="stylesheet" href="datepicker/css/bootstrap.css">
+	<link rel="stylesheet" href="datepicker/css/datepicker.css">
+		<script src="datepicker/js/main.js"></script>
+		<script src="datepicker/js/bootstrap.js"></script>
+		<script src="datepicker/js/bootstrap-datepicker.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/apigoogle.js"></script>
-	<script type="text/javascript">
+	<script>
+			$(function(){
+			 $('.datepicker').datepicker();
+			});
+	</script>
+    <script type="text/javascript">
 		function ValidarImagen(obj){
 		    var uploadFile = obj.files[0];
 		    
@@ -157,9 +174,15 @@
 				          <input class="form-control" id="route" disabled="true">
 					  </div>
 				    </div>
+
 					<div class="form-group">
 						<div class="col-md-offset-2 col-md-8">
-						  <input type="date" class="form-control" class="glyphicon glyphicon-calendar" id="fecha" placeholder="Fecha de nacimiento" name="fecha" min="1960-12-31" max="2015-12-31" required>
+						    <div class="input-group date well ">
+                               <input type="text" class="datepicker form-control" placeholder="Fecha de nacimiento"  name="fecha" min="1960-12-31" max="2015-12-31" required>
+                                  <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                             </div>
 						</div>
 					</div>
 
@@ -274,7 +297,7 @@
 	</footer>
 	 
 	 <!-- js -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
