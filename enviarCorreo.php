@@ -27,38 +27,50 @@ $mensaje = '
 
 	</head>
 		<body>
-	        
-	        <div class="alert alert-success">
-	             <span class="glyphicon .glyphicon-envelope"></span>
-	             <p>Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria</p>
-	        </div> 
-			
-			<div class="row mar-top30 ">
-				<div class="col-md-offset-2 col-md-8">
-					<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
-					<ul class="social-network">
-						<li><a href="https://www.facebook.com/CorseprinSeguridadRH">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="http://corseprin.com.mx/">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						<li><a href="https://twitter.com/corseprin">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-					</ul>
-				</div>				
-			</div>
-		
+	    <section id="contact" class="home-section bg-white">
+		  	<div class="container">
+		        <div class="alert alert-success">
+		             <span class="glyphicon .glyphicon-envelope"></span>
+		             <p>Gracias por completar el estudio socioeconomico, pronto nos pondremos en contacto para agendar tu visita domiciliaria</p>
+		        </div> 
+				
+				<div class="row mar-top30 ">
+					<div class="col-md-offset-2 col-md-8">
+						<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
+						<ul class="social-network">
+							<li><a href="https://www.facebook.com/CorseprinSeguridadRH">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</span></a>
+							</li>
+							<li><a href="http://corseprin.com.mx/">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+							</span></a>
+							</li>
+							<li><a href="https://twitter.com/corseprin">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+							</span></a>
+							</li>
+						</ul>
+					</div>				
+				</div>
+		    </div>
+	    </section>	
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright &copy;2015 <a href="http://corseprin.com.mx/">Corseprin </a></p>
+						<p>Copyright &copy;2015 <a href="Login-ajax/index.php">INGRESAR AL SISTEMA</a></p>
+					</div>
+				</div>		
+			</div>	
+		</footer>
 		</body>
 </html>
 ';
