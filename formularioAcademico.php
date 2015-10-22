@@ -106,7 +106,7 @@ session_start();
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
                     		<div id="idEstudios">
-            					<table>
+            					<table class="table">
             						<tr>
             							<td>ESTUDIOS</td>
             							<td>AÑO QUE CURSO</td>
@@ -132,7 +132,7 @@ session_start();
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
                                 <div id="idCurso">
-	                            <table>
+	                            <table class="table">
 	                            	<tr>
 	                            		<td>CURSOS</td>
 	                            		<td>DURACION</td>

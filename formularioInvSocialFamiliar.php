@@ -117,7 +117,7 @@ session_start();
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
                             <label> b) Actividades Sociales: </label><br>
-                            <table>
+                            <table class="table">
                                 <tr><label>¿Que religion profesa?</label></tr>
                                 <tr>
                                     <select type="text" class="form-control" id="inputClave" placeholder="Religion" name="religion" required>
@@ -149,7 +149,7 @@ session_start();
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
                             <label> c) Actividades Culturales: </label>
-                            <table>
+                            <table class="table">
                                 <tr>
                                     <td><label>Actividades<label></td>
                                     <td><label>Frecuencia Anual</label></td>
@@ -179,7 +179,7 @@ session_start();
                         <label> d) Actividades Deportivas: </label>
                         <div class="col-md-offset-2 col-md-8" id="Deportes">
                             <div id="deporte" style="padding:12px;">
-                            <table>
+                            <table class="table">
                             <tr>
                                 <td><label>Deporte<label></td>
                                 <td><label>Lugar</label></td>
@@ -200,7 +200,7 @@ session_start();
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-8">
                             <label> e) Actividades Recreativas: </label>
-                            <table>
+                            <table class="table">
                                 <tr>
                                     <td><label>Actividad<label></td>
                                     <td><label>Frecuencia anual</label></td>
@@ -232,7 +232,7 @@ session_start();
                     <div class="form-group">
 		                <div class="col-md-offset-2 col-md-8">
 			                    <label> f)  Pasatiempos : </label>
-			                    <table>
+			                    <table class="table">
 			                        <tr>
 			                            <td><label>Actividad<label></td>
 			                            <td><label>Frecuencia anual</label></td>
