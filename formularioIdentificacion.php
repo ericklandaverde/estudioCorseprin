@@ -44,12 +44,12 @@
 		    var uploadFile = obj.files[0];
 		    
 		    if (!window.FileReader) {
-		        alert('Aviso del administrador','El navegador no soporta la lectura de archivos');
+		        alertify.alert('Aviso del administrador','El navegador no soporta la lectura de archivos');
 		        return;
 		    }
 
 		    if (!(/\.(jpg|jpeg|png)$/i).test(uploadFile.name)) {
-		        alert('Aviso del administrador','El archivo a adjuntar no es una imagen');
+		        alertify.alert('Aviso del administrador','El archivo a adjuntar no es una imagen');
 		    }
 		    else {
 		        var img = new Image();
@@ -303,7 +303,7 @@
 	 
 	 <!-- js -->
     <!-- <script src="js/jquery.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
 	<script src="js/wow.min.js"></script>
