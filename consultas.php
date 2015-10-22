@@ -63,7 +63,7 @@
         <div class="form-group">
             <div>
             <!-- <div class="col-md-offset-2 col-md-8"> -->
-              <table class="table table-bordered">
+              <table class="table table-hover">
                 <tr class="success">
                     <td><label>CLAVE CURP</label></td>
                     <td><label>PUESTO</label></td>
