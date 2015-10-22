@@ -125,6 +125,7 @@
                         function confirmar(){
                           alertify.confirm("Message", function (e) {
     if (e) {
+      window.location=index.html
         // user clicked "ok"
     } else {
         // user clicked "cancel"
