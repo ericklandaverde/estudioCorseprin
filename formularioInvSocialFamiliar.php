@@ -47,12 +47,12 @@ session_start();
         });
     </script>
     <script type="text/javascript">
-        var uniqueId = 1;
+        var deporteId = 1;
         $(function() {
              $('.addRowDeportes').click(function() {
              
                  var copy = $("#idDeporte").clone(true).appendTo("#idDeportes");
-                 var cosponsorDivId = 'idDeporte_' + uniqueId;
+                 var cosponsorDivId = 'idDeporte_' + deporteId;
                  copy.attr('id', cosponsorDivId );
 
                  var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
@@ -62,11 +62,11 @@ session_start();
                  });
                  
                  $('#idDeportes div:last').find('input').each(function(){
-                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                    $(this).attr('id', $(this).attr('id') + ''+ deporteId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ deporteId);                      
                  });
                 
-                 uniqueId++;  
+                 deporteId++;  
              });
         });
     </script>
