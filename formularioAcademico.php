@@ -137,7 +137,7 @@ session_start();
                         	<span class="help-block">
 	                              Maximo Cuatro registros
 	                         </span>
-                                <div id="idCurso">
+                            <div id="idCurso">
 	                            <table class="table">
 	                            	<tr>
 	                            		<td>CURSOS</td>
@@ -147,10 +147,10 @@ session_start();
 	                            	<tr>
 	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso" required></td>
 	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion" required></td>
-	                            		<td><input type="text" class="form-control" id="documentoC" placeholder="" name="document" required></td>
+	                            		<td><input type="text" class="form-control" id="resibido" placeholder="Documento Resibido" name="resibido" required></td>
 	                            	</tr>
 	                            </table>
-                                </div>
+                            </div>
                                 <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
                         </div>
                     </div>

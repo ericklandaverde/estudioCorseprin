@@ -28,24 +28,24 @@ values('$clave','$nivel','$ano','$documento','$nivel1','$ano1','$documento1','$n
 
 $registro=mysqli_query($conexion,$sql);
 
-$curso= $_POST['curso'];
+$curso=$_POST['curso'];
 $duracion=$_POST['duracion'];
-$document=$_POST['document'];
+$resibido=$_POST['resibido'];
 
-$curso1= $_POST['curso1'];
+$curso1=$_POST['curso1'];
 $duracion1=$_POST['duracion1'];
-$document1=$_POST['document1'];
+$resibido1=$_POST['resibido1'];
 
-$curso2= $_POST['curso2'];
+$curso2=$_POST['curso2'];
 $duracion2=$_POST['duracion2'];
-$document2=$_POST['document2'];
+$resibido2=$_POST['resibido2'];
 
-$curso3= $_POST['curso3'];
+$curso3=$_POST['curso3'];
 $duracion3=$_POST['duracion3'];
-$document3=$_POST['document3'];
+$resibido3=$_POST['resibido3'];
 
-$sqlC="insert academicaCursos(id_rfc, curso, duracion, document, curso1, duracion1, document1, curso2, duracion2, document2, curso3, duracion3, document3) 
-values('$clave','$curso','$duracion','$document','$curso1','$duracion1','$document1','$curso2','$duracion2','$document2','$curso3','$duracion3','$document3')";
+$sqlC="insert academicaCursos(id_rfc, curso, duracion, resibido, curso1, duracion1, resibido1, curso2, duracion2, resibido2, curso3, duracion3, resibido3) 
+values('$clave','$curso','$duracion','$resibido','$curso1','$duracion1','$resibido1','$curso2','$duracion2','$resibido2','$curso3','$duracion3','$resibido3')";
 
 $registroC=mysqli_query($conexion,$sqlC);
 
