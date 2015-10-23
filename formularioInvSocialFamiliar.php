@@ -187,7 +187,7 @@ session_start();
                     <div class="form-group" id="contenedorDeportes">
                         <label> d) Actividades Deportivas: </label>
                         <span class="help-block">
-                                  Maximo 2 registros
+                            Agregar minimo 1 deporte | Maximo 2
                         </span>
                         <div  id="Deportes">
                             <div id="deporte">
