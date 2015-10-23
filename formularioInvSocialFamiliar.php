@@ -51,7 +51,7 @@ session_start();
         $(function() {
              $('.addRowDeportes').click(function() {
              
-                 var copy = $("#deporte").clone(true).appendTo("#Deportes");
+                 var copy = $("#deportes").clone(true).appendTo("#Deporte");
                  var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
@@ -61,7 +61,7 @@ session_start();
                      copy.remove();
                  });
                  
-                 $('#Deportes div:last').find('input').each(function(){
+                 $('#Deporte div:last').find('input').each(function(){
                     $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
                     $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
@@ -189,8 +189,8 @@ session_start();
                         <span class="help-block">
                             Agregar minimo 1 deporte | Maximo 2
                         </span>
-                        <div  id="Deportes">
-                            <div id="deporte">
+                        <div id="Deporte">
+                            <div id="deportes">
                             <br><table class="table table-hover">
                             <tr class="success">
                                 <td><label>Deporte<label></td>
