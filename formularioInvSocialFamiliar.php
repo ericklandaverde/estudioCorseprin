@@ -101,7 +101,7 @@ session_start();
                         <div id="myForm">
                        <!--  <div class="col-md-offset-2 col-md-8" id="myForm"> -->
                                 <div id="cosponsors">
-                                <label>Familiar:</label>
+                                <br><label>Familiar:</label>
                                 <select type="text" class="form-control" id="parentesco" placeholder="Parentesco" name="parentesco" title="Campo parentesco" required>
                                     <option selected value="">Seleccione un parentesco</option>
                                     <option value="Padres">Padres</option>
