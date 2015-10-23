@@ -106,7 +106,7 @@ session_start();
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
                     		 <span class="help-block">
-	                              Maximo Cuatro registros
+	                              Minimo 1 Nivel de estudios| Maximo 4
 	                         </span>
                     		<div id="idEstudios">
             					<table class="table">
@@ -127,15 +127,15 @@ session_start();
             							<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
             						</tr>
             					</table>
+            					<input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" /><br>
                     		</div>
-                    		<input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" /><br>
                     	</div>
                     </div>
 
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
                         	<span class="help-block">
-	                              Maximo Cuatro registros
+	                             Si no cuenta con cursos colocar un "NO" en los campos de texto | Maximo 4 cursos a registrar
 	                         </span>
                             <div id="idCurso">
 	                            <table class="table">
@@ -150,8 +150,8 @@ session_start();
 	                            		<td><input type="text" class="form-control" id="recibido" placeholder="Documento Recibido" name="recibido" required></td>
 	                            	</tr>
 	                            </table>
+	                            <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
                             </div>
-                                <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
                         </div>
                     </div>
 
