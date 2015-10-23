@@ -138,7 +138,7 @@ session_start();
 	                             Si no cuenta con cursos colocar un "NO" en los campos de texto | Maximo 4 cursos a registrar
 	                         </span>
                             <div id="idCurso">
-	                            <table class="table">
+	                            <br><table class="table">
 	                            	<tr>
 	                            		<td>CURSOS</td>
 	                            		<td>DURACION</td>
