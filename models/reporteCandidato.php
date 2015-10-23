@@ -414,13 +414,13 @@ class PDF extends FPDF
         $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode('CURSOS'),1,0,'C'); $pdf->Cell(60,8,'DURACION',1,0,'C'); $pdf->Cell(50,8,'DOCUMENTO RECIBIDO',1,0,'C');
         $pdf->SetFont('Courier','',10);
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['resivido'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso1']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion1'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document1'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso1']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion1'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['resivido1'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso2']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion2'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document2'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso2']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion2'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['resivido2'],1,0,'C');
         $pdf->Ln(8);
-        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso3']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion3'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['document3'],1,0,'C');
+        $pdf->Cell(10,0,"",0,0,'L'); $pdf->Cell(60, 8,utf8_decode($filaCursos['curso3']),1,0,'C'); $pdf->Cell(60,8,$filaCursos['duracion3'],1,0,'C'); $pdf->Cell(50, 8,$filaCursos['resivido3'],1,0,'C');
         $pdf->Ln(8);
         $pdf->Ln(20);
         
