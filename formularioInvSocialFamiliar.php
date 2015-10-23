@@ -93,11 +93,11 @@ session_start();
 			<form id="formulario" action="models/modeloInvSocialFamiliar.php" method="post" class="form-horizontal" role="form">
 				    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
                     <label> a) Datos Familiares (Personas con las que vive) </label>
-                    <span class="help-block">
-                                  Maximo 10 registros
-                    </span>
                     <div class="form-group" id="container">
                         <h5>Familiares: </h5>
+                        <span class="help-block">
+                            Minimo agregar un familiar | Maximo 10
+                         </span>
                         <div id="myForm">
                        <!--  <div class="col-md-offset-2 col-md-8" id="myForm"> -->
                                 <div id="cosponsors">
