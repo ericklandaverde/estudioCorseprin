@@ -127,7 +127,7 @@ session_start();
             							<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
             						</tr>
             					</table>
-            					<input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" /><br>
+            					<input type="button" class="addRowEstudio btn btn-info" value="Agregar Nivel de estudios" />
                     		</div>
                     	</div>
                     </div>
