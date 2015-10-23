@@ -44,12 +44,12 @@ session_start();
         });
     </script>
     <script type="text/javascript">//CURSOS
-        var uniqueId = 1;
+        var cursoId = 1;
         $(function() {
              $('.addRowCurso').click(function() {
              
                  var copy = $("#idCurso").clone(true).appendTo("#cursos");
-                 var cosponsorDivId = 'idCurso_' + uniqueId;
+                 var cosponsorDivId = 'idCurso_' + cursoId;
                  copy.attr('id', cosponsorDivId );
 
                  var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
@@ -63,7 +63,7 @@ session_start();
                     $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
                 
-                 uniqueId++;  
+                 cursoId++;  
              });
         });
     </script>
