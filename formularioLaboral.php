@@ -105,11 +105,11 @@ session_start();
 						<div class="input-group input-daterange">
 						    <div class="input-group">
 						         <span class="input-group-addon"><label>Fecha de Ingreso:</label></span>
-						         <input type="date" class="datepicker form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
+						         <input type="text" class="datepicker form-control" id="inputClave" placeholder="Fecha de Ingreso" name="fechaIngreso" required>
 						    </div>
 						    <span class="input-group-addon">a</span>
 						    <div class="input-group">
-						         <input type="date" class="datepicker form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
+						         <input type="text" class="datepicker form-control" id="inputClave" placeholder="Fecha de Baja" name="fechaBaja" required>
 						    </div> 
 						</div>		
 					</div>
