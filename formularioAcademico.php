@@ -59,8 +59,8 @@ session_start();
                  });
                  
                  $('#cursos div:last').find('input').each(function(){
-                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
-                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                    $(this).attr('id', $(this).attr('id') + ''+ cursoId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ cursoId);                      
                  });
                 
                  cursoId++;  
