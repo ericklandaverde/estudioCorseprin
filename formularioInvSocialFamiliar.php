@@ -51,8 +51,8 @@ session_start();
         $(function() {
              $('.addRowDeportes').click(function() {
              
-                 var copy = $("#deportes").clone(true).appendTo("#Deporte");
-                 var cosponsorDivId = 'contenedorDeportes_' + uniqueId;
+                 var copy = $("#idDeporte").clone(true).appendTo("#idDeportes");
+                 var cosponsorDivId = 'idDeporte_' + uniqueId;
                  copy.attr('id', cosponsorDivId );
 
                  var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar' />");
@@ -61,7 +61,7 @@ session_start();
                      copy.remove();
                  });
                  
-                 $('#Deporte div:last').find('input').each(function(){
+                 $('#idDeportes div:last').find('input').each(function(){
                     $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
                     $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
                  });
@@ -189,8 +189,8 @@ session_start();
                         <span class="help-block">
                             Agregar minimo 1 deporte | Maximo 2
                         </span>
-                        <div id="Deporte">
-                            <div id="deportes">
+                        <div id="idDeportes">
+                            <div id="idDeporte">
                             <br><table class="table table-hover">
                             <tr class="success">
                                 <td><label>Deporte<label></td>
