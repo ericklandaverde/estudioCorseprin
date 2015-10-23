@@ -38,19 +38,19 @@ $mensaje = '
 					<div class="col-md-offset-2 col-md-8">
 						<h5>Tienes dudas contactanos por nuestras redes sociales.</h5>
 						<ul class="social-network">
-							<li><a href="https://www.facebook.com/CorseprinSeguridadRH">
+							<li><p><a href="https://www.facebook.com/CorseprinSeguridadRH">facebook recursos humanos</a></p>
 							<span class="fa-stack fa-2x">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 							</span></a>
 							</li>
-							<li><a href="http://corseprin.com.mx/">
+							<li><p><a href="http://corseprin.com.mx/">Pagina de Corseprin</a></p>
 							<span class="fa-stack fa-2x">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
 							</span></a>
 							</li>
-							<li><a href="https://twitter.com/corseprin">
+							<li><p><a href="https://twitter.com/corseprin">Twitter</a></p>
 							<span class="fa-stack fa-2x">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -65,8 +65,7 @@ $mensaje = '
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Copyright &copy;2015 <a href="http://corseprin.com.mx/">Corseprin </a></p>
-						<p>Copyright &copy;2015 <a href="Login-ajax/index.php">INGRESAR AL SISTEMA</a></p>
+						<p>Copyright &copy;2015 <a href="http://corseprin.com.mx/">Corseprin </a></p>  
 					</div>
 				</div>		
 			</div>	
