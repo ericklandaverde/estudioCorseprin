@@ -97,7 +97,7 @@ session_start();
                         <h5>Familiares: </h5>
                         <span class="help-block">
                             Minimo agregar un familiar | Maximo 10
-                         </span>
+                        </span>
                         <div id="myForm">
                        <!--  <div class="col-md-offset-2 col-md-8" id="myForm"> -->
                                 <div id="cosponsors">
