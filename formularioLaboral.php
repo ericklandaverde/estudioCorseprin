@@ -25,7 +25,7 @@ session_start();
     <script>
 		$(function(){
 			$('.datepicker').datepicker({
-				format: 'mm/dd/yyyy',
+				format: 'dd/mm/yyyy',
                 startDate: '-3d',
 			});
 		});
