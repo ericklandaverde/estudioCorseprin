@@ -16,6 +16,12 @@ $registrosL = mysqli_query($conexion,$sqlL);
 $sqlR="DELETE FROM referencias WHERE id_rfc='$clave'";
 $registrosR = mysqli_query($conexion,$sqlR);
 
+$sqlEstudios="DELETE FROM academicaEstudios WHERE id_rfc='$clave'";
+$registrosEstudios = mysqli_query($conexion,$sqlEstudios);
+
+$sqlCursos="DELETE FROM academicaCursos WHERE id_rfc='$clave'";
+$registrosCursos = mysqli_query($conexion,$sqlCursos);
+
 	$sqlIng="DELETE FROM economicoIngresos WHERE id_rfc='$clave'";
 	$registrosIng = mysqli_query($conexion,$sqlIng);
 	$sqlEgr="DELETE FROM economicoEgresos WHERE id_rfc='$clave'";
@@ -31,6 +37,7 @@ $registrosR = mysqli_query($conexion,$sqlR);
 
 $sqlDatos="DELETE FROM familiarDatos WHERE id_rfc='$clave'";
 $registrosDatos = mysqli_query($conexion,$sqlDatos);
+
 $sqlActividades="DELETE FROM familiarActividades WHERE id_rfc='$clave'";
 $registrosActividades = mysqli_query($conexion,$sqlActividades);
  
