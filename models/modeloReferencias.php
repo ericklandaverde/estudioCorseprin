@@ -51,7 +51,7 @@ else
 {
     echo"
     <script language='javascript'>
-    alert('DATOS DE REFERENCIAS GUARDADOS CORRECTAMENTE')
+    alert('DATOS DE REFERENCIAS ENVIADOS CORRECTAMENTE')
     window.location='../formularioAcademico.php'
     </script>";
 }

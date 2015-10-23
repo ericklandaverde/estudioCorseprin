@@ -62,7 +62,7 @@ else
 {
     echo"
     <script language='javascript'>
-    alert('DATOS DE REFERENCIAS GUARDADOS CORRECTAMENTE')
+    alert('DATOS ACADEMICOS ENVIADOS CORRECTAMENTE')
     window.location='../formularioEconomico.php'
     </script>";
 }

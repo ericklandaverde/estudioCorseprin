@@ -107,7 +107,7 @@ else
 {
     echo"
     <script language='javascript'>
-    alert('DATOS GUARDADOS CORRECTAMENTE')
+    alert('DATOS ECONOMICOS ENVIADOS CORRECTAMENTE')
     window.location='../formularioInvSocialFamiliar.php'
     </script>";
 }
