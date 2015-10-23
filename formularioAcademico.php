@@ -113,7 +113,7 @@ session_start();
             						<tr>
             							<td>ESTUDIOS</td>
             							<td>AÑO QUE CURSO</td>
-            							<td>DOCUMENTO RESIBIDO</td>
+            							<td>DOCUMENTO RECIBIDO</td>
             						</tr>
             						<tr>
             							<td><select type="text" class="form-control" id="nivel" placeholder="Tipo de relacion" name="nivel" required>
@@ -142,12 +142,12 @@ session_start();
 	                            	<tr>
 	                            		<td>CURSOS</td>
 	                            		<td>DURACION</td>
-	                            		<td>DOCUMENTOS RESIBIDO</td>
+	                            		<td>DOCUMENTOS RECIBIDO</td>
 	                            	</tr>
 	                            	<tr>
 	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso" required></td>
 	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion" required></td>
-	                            		<td><input type="text" class="form-control" id="resibido" placeholder="Documento Resibido" name="resibido" required></td>
+	                            		<td><input type="text" class="form-control" id="recibido" placeholder="Documento Recibido" name="recibido" required></td>
 	                            	</tr>
 	                            </table>
                             </div>

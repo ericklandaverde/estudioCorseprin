@@ -30,22 +30,22 @@ $registro=mysqli_query($conexion,$sql);
 
 $curso=$_POST['curso'];
 $duracion=$_POST['duracion'];
-$resibido=$_POST['resibido'];
+$recibido=$_POST['recibido'];
 
 $curso1=$_POST['curso1'];
 $duracion1=$_POST['duracion1'];
-$resibido1=$_POST['resibido1'];
+$recibido1=$_POST['recibido1'];
 
 $curso2=$_POST['curso2'];
 $duracion2=$_POST['duracion2'];
-$resibido2=$_POST['resibido2'];
+$recibido2=$_POST['recibido2'];
 
 $curso3=$_POST['curso3'];
 $duracion3=$_POST['duracion3'];
-$resibido3=$_POST['resibido3'];
+$recibido3=$_POST['recibido3'];
 
-$sqlC="insert academicaCursos(id_rfc, curso, duracion, resibido, curso1, duracion1, resibido1, curso2, duracion2, resibido2, curso3, duracion3, resibido3) 
-values('$clave','$curso','$duracion','$resibido','$curso1','$duracion1','$resibido1','$curso2','$duracion2','$resibido2','$curso3','$duracion3','$resibido3')";
+$sqlC="insert academicaCursos(id_rfc, curso, duracion, recibido, curso1, duracion1, recibido1, curso2, duracion2, recibido2, curso3, duracion3, recibido3) 
+values('$clave','$curso','$duracion','$recibido','$curso1','$duracion1','$recibido1','$curso2','$duracion2','$recibido2','$curso3','$duracion3','$recibido3')";
 
 $registroC=mysqli_query($conexion,$sqlC);
 
