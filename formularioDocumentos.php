@@ -66,7 +66,9 @@ session_start();
 					  <label>Identificacion peronal </label><br>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
-							<input type="text" class="form-control" id="inputClave" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
+							disable: <input type="radio" name="myRadioButton" onclick="documento.disabled=true"/>
+							enable: <input type="radio" name="myRadioButton" onclick="documento.disabled=false"/>
+							<input type="text" class="form-control" id="documento" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
