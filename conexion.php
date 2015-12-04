@@ -1,7 +1,7 @@
 <?php 
    function conectar()
    {
-    $conexion=mysqli_connect("mysql.hostinger.es","u375487675_socio","ittlacorseprin.","u375487675_capit") or die("No hay conexion");
+    $conexion=mysqli_connect("mysql.hostinger.es","u375487675_socio","ittla6021","u375487675_capit") or die("No hay conexion");
 	if (!$conexion)
 	{
 		echo"ERROR AL CONECTARCE CON EL SERVIDOR";
