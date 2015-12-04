@@ -58,9 +58,9 @@
 		            if (this.width.toFixed(0) <= 200 && this.height.toFixed(0) <= 200) {
 		                alertify.alert('Aviso del administrador','Las medidas deben ser mayor a: 200 * 200');
 		            }
-		            else if (uploadFile.size > 102400) //1MB
+		            else if (uploadFile.size > 512000) //1MB
 		            {
-		                alertify.alert('Aviso del administrador','El peso de la imagen no puede exceder 1MB')
+		                alertify.alert('Aviso del administrador','El peso de la imagen no puede exceder 5MB')
 		            }
 		            else {
 		                alertify.alert('Aviso del administrador','Imagen correcta')                

@@ -40,12 +40,12 @@ session_start();
 				    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
 
                     <div class="form-group">
-<!--                         <div class="col-md-offset-2 col-md-8"> -->
-                            <label> Visita domiciliaria: </label><br>
-                            <br><table class="table table-hover">
-                            
-                            </table><br>
-<!--                         </div> -->
+<!--                     <div class="col-md-offset-2 col-md-8"> -->
+                        <label> Visita domiciliaria: </label><br>
+                        <br><table class="table table-hover">
+                        
+                        </table><br>
+<!--                    </div> -->
                     </div>
                     
                     <div class="form-group">
