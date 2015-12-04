@@ -66,7 +66,7 @@ session_start();
 					  <label>Identificacion peronal </label><br>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
-							<input type="text" class="form-control" id="inputClave" placeholder="Documento" name="documento" required>
+							<input type="text" class="form-control" id="inputClave" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
