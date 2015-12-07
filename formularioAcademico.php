@@ -132,13 +132,23 @@ session_start();
                     	</div>
                     </div>
 
+                    <script type="text/javascript">
+                    function mostrar(){
+                    	document.getElementById('cursos').style.display = 'block';}
+                    </script>
+                    <script type="text/javascript">
+                    function ocultar(){
+                    	document.getElementById('cursos').style.display = 'none';}
+                    </script>
+
+                    <div class="alert alert-warning">
+                        <label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
+					  	Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
+					    No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
+	                </div>
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
-                        	<div class="alert alert-warning">
-                        		<label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
-					  	         Si: <input type="radio" name="myRadioButton" onclick="curso.disabled=false,duracion.disabled=false,recibido.disabled=false,"/>
-							     No: <input type="radio" name="myRadioButton" onclick="curso.disabled=true"/>
-	                         </div>
+                        	
                             <div id="idCurso">
 	                            <br><table class="table">
 	                            	<tr>
