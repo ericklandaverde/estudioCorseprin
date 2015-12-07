@@ -71,7 +71,7 @@ session_start();
 					  <div class="alert alert-info">
 					  	<label>Cuenta con Credencial de elector:</label>
 					  	    Si: <input type="radio" name="myRadioButton" onclick="elector.disabled=false"/>
-							No: <input type="radio" name="myRadioButton" onclick="elector.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="elector.disabled=true" checked/>
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
@@ -80,7 +80,7 @@ session_start();
                       <div class="alert alert-info">
                       	<label>Cuenta con Cartilla Militar</label>
 					  	    Si: <input type="radio" name="myRadioButton" onclick="militar.disabled=false"/>
-							No: <input type="radio" name="myRadioButton" onclick="militar.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="militar.disabled=true" checked/>
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
@@ -89,7 +89,7 @@ session_start();
                       <div class="alert alert-info">
                       	<label>Cuenta con Licencia de conducir</label>
 					  	    Si: <input type="radio" name="myRadioButton" onclick="licencia.disabled=false"/>
-							No: <input type="radio" name="myRadioButton" onclick="licencia.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="licencia.disabled=true" checked/>
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Licencia de conducir: </label></span>
