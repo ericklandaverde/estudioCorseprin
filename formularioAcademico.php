@@ -105,7 +105,7 @@ session_start();
                      
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
-                    		 <div class="alert alert-info">
+                    		 <div class="alert alert-warning">
 	                              Minimo 1 Nivel de estudios| Maximo 4
 	                         </div>
                     		<div id="idEstudios">
@@ -134,10 +134,10 @@ session_start();
 
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
-                        	<div class="alert alert-info">
+                        	<div class="alert alert-warning">
                         		<label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
-					  	         Si: <input type="radio" name="myRadioButton" onclick="elector.disabled=false"/>
-							     No: <input type="radio" name="myRadioButton" onclick="elector.disabled=true"/>
+					  	         Si: <input type="radio" name="myRadioButton" onclick="table.disabled=false"/>
+							     No: <input type="radio" name="myRadioButton" onclick="table.disabled=true"/>
 	                         </div>
                             <div id="idCurso">
 	                            <br><table class="table">
