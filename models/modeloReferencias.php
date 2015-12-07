@@ -30,12 +30,14 @@ $direccion2=$_POST['direccion2'];
 $telefono2=$_POST['telefono2'];
 $comentario2=$_POST['comentario2'];
 
-$sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, comentario, 
-    nombre1, ocupacion1, tipo1, tiempo1, direccion1, telefono1, comentario1, 
-    nombre2, ocupacion2, tipo2, tiempo2, direccion2, telefono2, comentario2) 
-values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono','$comentario',
-    '$nombre1','$ocupacion1','$tipo1','$tiempo1','$direccion1','$telefono1','$comentario1',
-    '$nombre2','$ocupacion2','$tipo2','$tiempo2','$direccion2','$telefono2','$comentario2')";
+$sql="insert referencias(id_rfc, nombre, ocupacion, tipo, tiempo, direccion, telefono, 
+    nombre1, ocupacion1, tipo1, tiempo1, direccion1, telefono1, 
+    nombre2, ocupacion2, tipo2, tiempo2, direccion2, telefono2,
+    nombre3, ocupacion3, tipo3, tiempo3, direccion3, telefono3) 
+values('$clave','$nombre','$ocupacion','$tipo','$tiempo','$direccion','$telefono',
+    '$nombre1','$ocupacion1','$tipo1','$tiempo1','$direccion1','$telefono1',
+    '$nombre2','$ocupacion2','$tipo2','$tiempo2','$direccion2','$telefono2',
+    '$nombre3','$ocupacion3','$tipo3','$tiempo3','$direccion3','$telefono3')";
 
 $registro=mysqli_query($conexion,$sql);
 if(!$registro)

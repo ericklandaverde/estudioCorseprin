@@ -82,7 +82,7 @@ session_start();
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
-                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuenteUno" required>
                             <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
@@ -93,7 +93,7 @@ session_start();
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
-                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuenteDos" required>
                             <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
@@ -104,7 +104,7 @@ session_start();
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
-                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuenteTres" required>
                             <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
@@ -235,7 +235,23 @@ session_start();
   </fieldset>
 </div>
 </div>
-<div class="form-group">
+
+<script type="text/javascript">
+function mostrar(){
+  document.getElementById('seguros').style.display = 'block';}
+</script>
+<script type="text/javascript">
+function ocultar(){
+  document.getElementById('seguros').style.display = 'none';
+</script>
+
+<div class="alert alert-warning">
+  <label> ¿Cuenta con seguros?:</label>
+    Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
+    No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
+</div>
+
+<div id="seguros" class="form-group">
  <div id="capa" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Seguro:</legend>
@@ -270,8 +286,9 @@ session_start();
           </tr>
       </table>
   </fieldset>
+ </div>
 </div>
-</div>
+
 <div class="form-group">
     <div id="capa" class="col-md-offset-2 col-md-8"> 
         <fieldset>

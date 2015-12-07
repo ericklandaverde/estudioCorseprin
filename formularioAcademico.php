@@ -142,7 +142,7 @@ session_start();
                     </script>
 
                     <div class="alert alert-warning">
-                        <label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
+                        <label> Cuenta con cursos:</label>
 					  	Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
 					    No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
 	                </div>
@@ -158,7 +158,7 @@ session_start();
 	                            	</tr>
 	                            	<tr>
 	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso"></td>
-	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion"></td>
+	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion del curso" name="duracion"></td>
 	                            		<td><input type="text" class="form-control" id="recibido" placeholder="Documento Recibido" name="recibido"></td>
 	                            	</tr>
 	                            </table>

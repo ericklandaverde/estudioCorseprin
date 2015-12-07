@@ -13,8 +13,8 @@ $personaTres=$_POST['personaTres'];
 $montoTres=$_POST['montoTres'];
 $totalIngresos=$_POST['totalIngresos'];
 
-$sqlI="insert economicoIngresos(id_rfc, personaUno, montoUno, personaDos, montoDos, personaTres, montoTres, totalIngresos) 
-values('$clave','$personaUno','$montoUno','$personaDos','$montoDos','$personaTres','$montoTres','$totalIngresos')";
+$sqlI="insert economicoIngresos(id_rfc, personaUno, fuenteUno, montoUno, personaDos, fuenteDos, montoDos, personaTres, fuenteTres, montoTres, totalIngresos) 
+values('$clave','$personaUno','$fuenteUno','$montoUno','$personaDos','$fuenteDos','$montoDos','$personaTres',fuenteTres,'$montoTres','$totalIngresos')";
 $registroI=mysqli_query($conexion,$sqlI);
 
     //economicoEgresos
