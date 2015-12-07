@@ -90,9 +90,9 @@ session_start();
 					<div class="section-heading">
 					 <h2>ESTUDIO SOCIOECONOMICO</h2>
 					 <p><label>INVESTIGACION ACADEMICA</label></p>
-					 <span class="help-block">
+					 <div class="alert alert-info">
 	                     Agrega tu historial academico y cursos...
-	                 </span>
+	                 </div>
 					 <p>CANDIDATO: <label><?php echo $_SESSION["clave"]; ?></label></p>
 					</div>
 				  </div>
@@ -105,9 +105,9 @@ session_start();
                      
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
-                    		 <span class="help-block">
+                    		 <div class="alert alert-info">
 	                              Minimo 1 Nivel de estudios| Maximo 4
-	                         </span>
+	                         </div>
                     		<div id="idEstudios">
             					<table class="table">
             						<tr>
@@ -134,9 +134,11 @@ session_start();
 
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
-                        	<span class="help-block">
-	                             Si no cuenta con cursos colocar un "NO" en los campos de texto | Maximo 4 cursos a registrar
-	                         </span>
+                        	<div class="alert alert-info">
+                        		<label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
+					  	         Si: <input type="radio" name="myRadioButton" onclick="elector.disabled=false"/>
+							     No: <input type="radio" name="myRadioButton" onclick="elector.disabled=true"/>
+	                         </div>
                             <div id="idCurso">
 	                            <br><table class="table">
 	                            	<tr>
