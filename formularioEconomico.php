@@ -83,7 +83,7 @@ session_start();
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
                       <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
-                            <option selected value="">Seleccionar puesto</option>
+                            <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
                             <option value="Beca">Beca</option>
@@ -94,7 +94,7 @@ session_start();
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
                       <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
-                            <option selected value="">Seleccionar puesto</option>
+                            <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
                             <option value="Beca">Beca</option>
@@ -105,7 +105,7 @@ session_start();
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
                       <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
-                            <option selected value="">Seleccionar puesto</option>
+                            <option selected value="">Seleccionar fuente</option>
                             <option value="Trabajo">Trabajo</option>
                             <option value="Pensión">Pensión</option>
                             <option value="Beca">Beca</option>
