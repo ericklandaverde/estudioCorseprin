@@ -101,7 +101,7 @@ session_start();
 	  		<div class="row">
 	  			<div class="col-md-offset-1 col-md-10">
 					<form action="models/modeloAcademico.php" method="post" class="form-horizontal" role="form">
-					  <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
+					<input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
                      
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
@@ -157,9 +157,9 @@ session_start();
 	                            		<td>DOCUMENTOS RECIBIDO</td>
 	                            	</tr>
 	                            	<tr>
-	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso" required></td>
-	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion" required></td>
-	                            		<td><input type="text" class="form-control" id="recibido" placeholder="Documento Recibido" name="recibido" required></td>
+	                            		<td><input type="text" class="form-control" id="curso" placeholder="Curso" name="curso"></td>
+	                            		<td><input type="text" class="form-control" id="duracion" placeholder="Duracion" name="duracion"></td>
+	                            		<td><input type="text" class="form-control" id="recibido" placeholder="Documento Recibido" name="recibido"></td>
 	                            	</tr>
 	                            </table>
 	                            <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
