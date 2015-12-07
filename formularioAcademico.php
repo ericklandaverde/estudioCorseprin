@@ -136,7 +136,7 @@ session_start();
                         <div class="col-md-offset-2 col-md-8" id="cursos">
                         	<div class="alert alert-warning">
                         		<label>|| Maximo 4 cursos a registrar ||Cuenta con cursos:</label>
-					  	         Si: <input type="radio" name="myRadioButton" onclick="curso.disabled=false"/>
+					  	         Si: <input type="radio" name="myRadioButton" onclick="curso.disabled=false,duracion.disabled=false,recibido.disabled=false,"/>
 							     No: <input type="radio" name="myRadioButton" onclick="curso.disabled=true"/>
 	                         </div>
                             <div id="idCurso">
