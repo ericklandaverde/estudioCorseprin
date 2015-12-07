@@ -208,8 +208,23 @@ session_start();
   </div>
 </div>
 
-<div id="Credito"class="form-group">
-  <div id="capa" class="col-md-offset-2 col-md-8">
+<script type="text/javascript">
+                    function mostrar(){
+                      document.getElementById('credito').style.display = 'block';}
+</script>
+<script type="text/javascript">
+                    function ocultar(){
+                      document.getElementById('credito').style.display = 'none';}
+</script>
+
+<div class="alert alert-warning">
+  <label> Cuenta con algun credito:</label>
+  Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
+  No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
+</div>
+
+<div class="form-group">
+  <div id="credito" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Creditos:</legend>
         <table class="table table-hover">
@@ -237,7 +252,7 @@ session_start();
 </div>
 
 <div class="form-group">
- <div id="capa" class="col-md-offset-2 col-md-8" id="seguros">
+ <div id="capa" class="col-md-offset-2 col-md-8">
     <fieldset>
         <legend>Seguro:</legend>
         <table class="table table-hover">
