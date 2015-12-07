@@ -148,7 +148,6 @@ session_start();
 	                </div>
                     <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="cursos">
-                        	
                             <div id="idCurso">
 	                            <br><table class="table">
 	                            	<tr>
