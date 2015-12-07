@@ -59,7 +59,7 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="alert alert-info">
-					    <label>Cuenta con documento de Matrimonio: </label>
+					    <label>Cuenta con Acta de Matrimonio: </label>
 					    <input type="radio" name="matrimonio" value="SI Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
                         <input type="radio" name="matrimonio" value="No Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" required>No
 						</div>
@@ -70,8 +70,8 @@ session_start();
 					  <label>Identificacion peronal </label><br>
 					  <div class="alert alert-info">
 					  	<label>Cuenta con Credencial de elector:</label>
-					  	    Si: <input type="radio" name="elector" onclick="elector.disabled=false"/>
-							No: <input type="radio" name="elector" onclick="elector.disabled=true" checked/>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="elector.disabled=false"/>
+							No: <input type="radio" name="myRadioButton" onclick="elector.disabled=true"/>
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
@@ -79,8 +79,8 @@ session_start();
 					  </div><br>
                       <div class="alert alert-info">
                       	<label>Cuenta con Cartilla Militar</label>
-					  	    Si: <input type="radio" name="militar" onclick="militar.disabled=false"/>
-							No: <input type="radio" name="militar" onclick="militar.disabled=true" checked/>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="militar.disabled=false"/>
+							No: <input type="radio" name="myRadioButton" onclick="militar.disabled=true"/>
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
@@ -88,8 +88,8 @@ session_start();
 					  </div><br>
                       <div class="alert alert-info">
                       	<label>Cuenta con Licencia de conducir</label>
-					  	    Si: <input type="radio" name="conducir" onclick="licencia.disabled=false"/>
-							No: <input type="radio" name="conducir" onclick="licencia.disabled=true" checked/>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="licencia.disabled=false"/>
+							No: <input type="radio" name="myRadioButton" onclick="licencia.disabled=true"/>
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Licencia de conducir: </label></span>
