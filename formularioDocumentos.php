@@ -65,18 +65,25 @@ session_start();
 					<div class="col-md-offset-2 col-md-8">
 					  <label>Identificacion peronal </label><br>
 					  <div class="input-group">
+					  	    <label>Cuenta con Credencial de elector:</label>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="elector.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="elector.disabled=false"/>
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
-							disable: <input type="radio" name="myRadioButton" onclick="documento.disabled=true"/>
-							enable: <input type="radio" name="myRadioButton" onclick="documento.disabled=false"/>
-							<input type="text" class="form-control" id="documento" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
+							<input type="text" class="form-control" id="elector" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
 					  </div>
 					  <div class="input-group">
+					  	    <label>Cuenta con Cartilla Militar</label>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="militar.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="militar.disabled=false"/>
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
-							<input type="text" class="form-control" id="inputClave" placeholder="Folio" name="folio" required>
+							<input type="text" class="form-control" id="militar" placeholder="Folio" name="folio" required>
 					  </div>
 					  <div class="input-group">
+					  	    <label>Cuenta con Licencia de conducir</label>
+					  	    Si: <input type="radio" name="myRadioButton" onclick="licencia.disabled=true"/>
+							No: <input type="radio" name="myRadioButton" onclick="licencia.disabled=false"/>
 							<span class="input-group-addon"><label>Licencia de conducir: </label></span>
-							<input type="text" class="form-control" id="inputClave" placeholder="Vigencia" name="vigencia" required>
+							<input type="text" class="form-control" id="licencia" placeholder="Vigencia" name="vigencia" required>
 					  </div>			  			  
 					</div>
 				  </div>
