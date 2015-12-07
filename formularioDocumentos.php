@@ -48,17 +48,21 @@ session_start();
 				  <label>Actas de registro civil: </label>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Nacimiento: </label>
 					    <input type="hidden" class="form-control" id="inputClave" placeholder="Clave" name="clave" required value="<?php echo $_SESSION["clave"]; ?>">
+					    <div class="alert alert-info">
+					    <label>Cuenta con documento de Nacimiento: </label>
 					    <input type="radio" name="nacimiento" value="SI Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" checked required>Si
 					    <input type="radio" name="nacimiento" value="NO Cuenta con documento de nacimiento" placeholder="Selecciona una opcion" required>No
+					    </div>
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
-					  <label>Matrimonio: </label>
+						<div class="alert alert-info">
+					    <label>Cuenta con documento de Matrimonio: </label>
 					    <input type="radio" name="matrimonio" value="SI Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
                         <input type="radio" name="matrimonio" value="No Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" required>No
+						</div>
 					</div>
 				  </div>
 				  <div class="form-group">
