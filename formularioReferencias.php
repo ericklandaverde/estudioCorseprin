@@ -94,9 +94,9 @@ session_start();
 
 					 <div class="form-group" id="container">
                         <div class="col-md-offset-2 col-md-8" id="myForm">
-                        	<span class="help-block">
+                        	<div class="alert alert-info">
                         		Agregar minimo 1 referencia | Maximo 3 referencias
-	                        </span>
+	                        </div>
                               <div id="cosponsors">
 									<br><table class="table table-bordered">
 										<tr class="active">
