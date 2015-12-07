@@ -82,17 +82,35 @@ session_start();
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaUno" name="personaUno" required></td>
-                      <td><input type="text" class="form-control" id="inputClave" value="Trabajo" disabled="true" required></td>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                            <option selected value="">Seleccionar puesto</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Pensión">Pensión</option>
+                            <option value="Beca">Beca</option>
+                            <option value="Otro">Otro</option>
+                        </select></td>
                       <td><input type="number" class="form-control" id="valor1" placeholder="Monto Mensual" name="montoUno" required></td>
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaDos" name="personaDos" required></td>
-                      <td><input type="text" class="form-control" id="inputClave" value="Pension" disabled="true" required></td>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                            <option selected value="">Seleccionar puesto</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Pensión">Pensión</option>
+                            <option value="Beca">Beca</option>
+                            <option value="Otro">Otro</option>
+                      </select></td>
                       <td><input type="number" class="form-control" id="valor2" placeholder="Monto Mensual" name="montoDos" required></td>
                   </tr>
                   <tr>							
                       <td><input type="text" class="form-control" id="inputClave" placeholder="PersonaTres" name="personaTres" required></td>
-                      <td><input type="text" class="form-control" id="inputClave"  value="Beca" disabled="true" required></td>
+                      <td><select type="text" class="form-control" id="inputClave" placeholder="Puesto a cubrir" name="fuente" required>
+                            <option selected value="">Seleccionar puesto</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Pensión">Pensión</option>
+                            <option value="Beca">Beca</option>
+                            <option value="Otro">Otro</option>
+                      </select></td>
                       <td><input type="number" class="form-control" id="valor3" placeholder="Monto Mensual" name="montoTres" required></td>
                   </tr>
                   <tr>

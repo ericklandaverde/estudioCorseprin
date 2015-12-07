@@ -60,7 +60,7 @@ session_start();
 					<div class="col-md-offset-2 col-md-8">
 						<div class="alert alert-info">
 					    <label>Cuenta con documento de Matrimonio: </label>
-					    <input type="radio" name="matrimonio" value="SI Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
+					    <input type="radio" name="matrimonio" value="Si Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
                         <input type="radio" name="matrimonio" value="No Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" required>No
 						</div>
 					</div>
@@ -75,7 +75,7 @@ session_start();
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
-							<input type="text" class="form-control" id="elector" placeholder="Documento (18 Digitos)" name="documento" maxlength="11" required>
+							<input type="text" class="form-control" id="elector" placeholder="Escribe la clave de tu credencial de elector" name="documento" required>
 					  </div><br>
                       <div class="alert alert-info">
                       	<label>Cuenta con Cartilla Militar</label>
@@ -84,7 +84,7 @@ session_start();
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Cartilla Militar: </label></span>
-							<input type="text" class="form-control" id="militar" placeholder="Folio" name="folio" required>
+							<input type="text" class="form-control" id="militar" placeholder="Escribe la matricula de tu cartilla militar" name="folio" required>
 					  </div><br>
                       <div class="alert alert-info">
                       	<label>Cuenta con Licencia de conducir</label>
@@ -93,7 +93,7 @@ session_start();
                       </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Licencia de conducir: </label></span>
-							<input type="text" class="form-control" id="licencia" placeholder="Vigencia" name="vigencia" required>
+							<input type="text" class="form-control" id="licencia" placeholder="Escribe el folio de tu licencia de condicir." name="vigencia" required>
 					  </div>			  			  
 					</div>
 				  </div>

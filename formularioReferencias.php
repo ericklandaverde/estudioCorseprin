@@ -127,10 +127,6 @@ session_start();
 											<td colspan="2"><input type="text" class="form-control" id="direccion" placeholder="Direccion" name="direccion" required></td>
 											<td colspan="2"><input type="tel"  class="form-control" id="telefono" placeholder="Telefono" name="telefono" required></td>
 										</tr>
-										<tr class="active">
-											<td><label>Comentarios</label></td>
-											<td colspan="3"><input type="text" class="form-control" id="comentarios" placeholder="Comentarios" name="comentario" required></td>
-										</tr>
 									</table>
 	                                <br><input type="button" class="addRow btn btn-success" value="Agregar Referencia" />
                               </div>

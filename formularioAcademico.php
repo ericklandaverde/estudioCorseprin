@@ -106,7 +106,7 @@ session_start();
                     <div class="form-group" id="container">
                     	<div class="col-md-offset-2 col-md-8" id="estudios">
                     		 <div class="alert alert-warning">
-	                              Minimo 1 Nivel de estudios| Maximo 4
+	                               Indica los últimos 4 grados de estudio que cursaste". ||Minimo 1 Nivel de estudios||
 	                         </div>
                     		<div id="idEstudios">
             					<table class="table">
@@ -123,7 +123,7 @@ session_start();
             								<option value="Preparatoria">Preparatoria</option>
             								<option value="Licenciatura">Licenciatura</option>
             							</select></td>
-            							<td><input type="text" class="form-control" id="ano" placeholder="Año" name="ano" required></td>
+            							<td><input type="text" class="form-control" id="ano" placeholder="Año en que cursó" name="ano" required></td>
             							<td><input type="text" class="form-control" id="documento" placeholder="Documento" name="documento" required></td>
             						</tr>
             					</table>
