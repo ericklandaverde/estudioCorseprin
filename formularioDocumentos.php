@@ -59,7 +59,7 @@ session_start();
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 						<div class="alert alert-info">
-					    <label>Cuenta con Acta de Matrimonio: </label>
+					    <label>Cuenta con documento de Matrimonio: </label>
 					    <input type="radio" name="matrimonio" value="SI Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" checked required>Si
                         <input type="radio" name="matrimonio" value="No Cuenta con documento de matrimonio" placeholder="Selecciona una opcion" required>No
 						</div>
