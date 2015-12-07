@@ -236,53 +236,37 @@ session_start();
 </div>
 </div>
 
-<script type="text/javascript">
-function mostrar(){
-  document.getElementById('seguros').style.display = 'block';}
-</script>
-<script type="text/javascript">
-function ocultar(){
-  document.getElementById('seguros').style.display = 'none';
-</script>
-
-<div class="alert alert-warning">
-  <label> ¿Cuenta con seguros?:</label>
-    Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
-    No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
-</div>
-
-<div id="seguros" class="form-group">
- <div id="capa" class="col-md-offset-2 col-md-8">
+<div class="form-group">
+ <div id="capa" class="col-md-offset-2 col-md-8" id="seguros">
     <fieldset>
         <legend>Seguro:</legend>
         <table class="table table-hover">
            <tr>
               <td><label>De vida: </label></td>
-              <td><input type="radio" name="vida" value="Si" placeholder="Selecciona una opcion">Si</td>
-              <td><input type="radio" name="vida" value="No" placeholder="Selecciona una opcion" checked>No</td>
+              <td>Si: <input type="radio" name="vida" value="Si" onclick="montoS.disabled=false"/></td>
+              <td>No: <input type="radio" name="vida" value="No" onclick="montoS.disabled=true"/></td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoS"></td>
-      
+              <td><input type="number" class="form-control" id="montoS" placeholder="Saldo" name="montoS" required></td>
           <tr>
               <td><label>De gastos medicos mayores: </label></td>
-              <td><input type="radio" name="medicos" value="Si" placeholder="Selecciona una opcion" >Si</td>
-              <td><input type="radio" name="medicos" value="No" placeholder="Selecciona una opcion" checked>No</td>
+              <td>Si: <input type="radio" name="medicos" value="Si" onclick="montoDosS.disabled=false"/></td>
+              <td>No: <input type="radio" name="medicos" value="No" onclick="montoDosS.disabled=true"/></td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoDosS"></td>
+              <td><input type="number" class="form-control" id="montoDosS" placeholder="Saldo" name="montoDosS" required></td>
           </tr>
           <tr>
               <td><label>De automovil: </label></td>
-              <td><input type="radio" name="automovil" value="Si" placeholder="Selecciona una opcion">Si</td>
-              <td><input type="radio" name="automovil" value="No" placeholder="Selecciona una opcion" checked>No</td>
+              <td>Si: <input type="radio" name="automovil" value="Si" onclick="montoTresS.disabled=false"/></td>
+              <td>No: <input type="radio" name="automovil" value="No" onclick="montoTresS.disabled=true"/></td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoTresS"></td>
+              <td><input type="number" class="form-control" id="montoTresS" placeholder="Saldo" name="montoTresS" required></td>
           </tr>
           <tr>
               <td><label>Contra accidentes: </label></td>
-              <td><input type="radio" name="accidentes" value="Si" placeholder="Selecciona una opcion">Si</td>
-              <td><input type="radio" name="accidentes" value="No" placeholder="Selecciona una opcion" checked>No</td>
+              <td>Si: <input type="radio" name="accidentes" value="Si" onclick="montoCuatroS.disabled=false"/></td>
+              <td>No: <input type="radio" name="accidentes" value="No" onclick="montoCuatroS.disabled=true"/></td>
               <td><label> Monto Mensual: </label></td>
-              <td><input type="number" class="form-control" id="inputClave" placeholder="Saldo" name="montoCuatroS"></td>
+              <td><input type="number" class="form-control" id="montoCuatroS" placeholder="Saldo" name="montoCuatroS" required></td>
           </tr>
       </table>
   </fieldset>
