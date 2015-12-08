@@ -117,7 +117,7 @@ session_start();
                                 <input type="radio" name="depende" value="No" placeholder="Selecciona una opcion" required>No
                                 <br><input type="button" class="addRow btn btn-primary" value="Agregar familiar" />
                                 </div>
-                        </div>s
+                        </div>
                     </div>
                     
                     <div class="form-group">
