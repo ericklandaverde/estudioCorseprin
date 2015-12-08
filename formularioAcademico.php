@@ -14,7 +14,7 @@ session_start();
     <link href="css/style.css" rel="stylesheet" media="screen">
 	<link href="color/default.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript">//ESTUDIOS
+    <script type="text/javascript">
         var uniqueId = 1;
         $(function() {
              $('.addRowEstudio').click(function() {

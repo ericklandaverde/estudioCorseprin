@@ -41,6 +41,35 @@ session_start();
         });
     });
 	</script>
+	<script type="text/javascript">
+        var uniqueId = 1;
+        $(function() {
+             $('.addRowEstudio').click(function() {
+             
+                 var copy = $("#idEstudios").clone(true).appendTo("#estudios");
+                 var cosponsorDivId = 'idEstudios_' + uniqueId;
+                 copy.attr('id', cosponsorDivId );
+
+                 var deleteLink = $("<input type='button' class='btn btn-danger' value='Elimiar'/>");
+                 deleteLink.appendTo(copy);
+                 deleteLink.click(function(){
+                     copy.remove();
+                 });
+                 
+                 $('#estudios div:last').find('input').each(function(){
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                 });
+
+                  $('#estudios div:last').find('select').each(function(){
+                    $(this).attr('id', $(this).attr('id') + ''+ uniqueId); 
+                    $(this).attr('name', $(this).attr('name') + ''+ uniqueId);                      
+                 });
+                
+                 uniqueId++;  
+             });
+        });
+    </script>
    </head>
 
   <body>
@@ -114,6 +143,7 @@ session_start();
 						</div>		
 					</div>
 				  </div>
+				  <input type="button" class="addRowCurso btn btn-warning" value="Agregar Cursos " />
 				  
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
@@ -147,6 +177,7 @@ session_start();
 						</div>
 					</div>
 				  </div>
+
 				  <div class="form-group">
 					<div class="col-md-offset-2 col-md-8">
 					<input type="submit" id="insertar" value="SIGUIENTE..." name="guardar" class="btn btn-theme btn-lg btn-block">
