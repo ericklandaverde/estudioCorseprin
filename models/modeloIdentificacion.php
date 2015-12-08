@@ -24,9 +24,9 @@
 		//Ahora vamos a verificar si el tipo de archivo es un tipo de imagen permitido.
 		//Y que el tamano del archivo no exceda los 100kb
 		$permitidos = array("image/jpg", "image/jpeg", "image/png");
-		$limite_kb = 1000;
+		$limite_kb = 100;
 
-		if (in_array($_FILES['imagen']['type'], $permitidos) && $_FILES['imagen']['size'] <= $limite_kb * 5120){
+		if (in_array($_FILES['imagen']['type'], $permitidos) && $_FILES['imagen']['size'] <= $limite_kb * 512){
 			//Esta es la ruta donde copiaremos la imagen
 			//Recuerden que deben crear un directorio con este mismo nombre
 			//En el mismo lugar donde se encuentra el archivo subir.php
