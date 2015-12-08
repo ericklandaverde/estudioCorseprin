@@ -266,10 +266,10 @@ session_start();
 			                        </tr>
 			                        <tr>
 			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Actividad" name="actividadA" required></td>
-			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Avtividad" name="frecuenciaA" required></td>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaA" required></td>
 			                        </tr>
 			                        <tr>
-			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="actividadB" required></td>
+			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Actividad" name="actividadB" required></td>
 			                            <td><input type="text" class="form-control" id="inputClave" placeholder="Frecuencia anual" name="frecuenciaB" required></td>
 			                        </tr>
 			                    </table>
