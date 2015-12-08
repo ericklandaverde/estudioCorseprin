@@ -184,6 +184,20 @@ session_start();
 <!--                         </div> -->
                     </div>
 
+                     <script type="text/javascript">
+                    function mostrar(){
+                        document.getElementById('contenedorDeportes').style.display = 'block';}
+                    </script>
+                    <script type="text/javascript">
+                    function ocultar(){
+                        document.getElementById('contenedorDeportes').style.display = 'none';}
+                    </script>
+
+                    <div class="alert alert-warning">
+                        <label> Cuenta con cursos:</label>
+                        Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
+                        No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
+                    </div>
 
                     <div class="form-group" id="contenedorDeportes">
                         <label> d) Actividades Deportivas: </label>
