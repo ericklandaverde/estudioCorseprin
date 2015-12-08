@@ -75,7 +75,7 @@ session_start();
 					  </div>
 					  <div class="input-group">
 							<span class="input-group-addon"><label>Credencial  de elector: </label></span>
-							<input type="text" class="form-control" id="elector" placeholder="Escribe la clave de tu credencial de elector" name="documento" required>
+							<input type="text" class="form-control" id="elector" placeholder="Escribe la clave de tu credencial de elector" name="documento" maxlength="18" required>
 					  </div><br>
                       <div class="alert alert-info">
                       	<label>Cuenta con Cartilla Militar</label>
