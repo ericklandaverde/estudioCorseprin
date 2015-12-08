@@ -194,7 +194,7 @@ session_start();
                     </script>
 
                     <div class="alert alert-warning">
-                        <label> Cuenta con cursos:</label>
+                        <label> ¿Practicas algun deporte?:</label>
                         Si: <input type="radio" name="myRadioButton" onclick="mostrar()" checked/>
                         No: <input type="radio" name="myRadioButton" onclick="ocultar()"/>
                     </div>
