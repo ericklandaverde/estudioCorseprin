@@ -303,14 +303,15 @@ session_start();
                   <td><input type="checkbox" name="tipoPropiedad" value=" Tiene Casa"> Casa</td>
                   <td><input type="checkbox" name="tipoPropiedad" value=" Tiene Terreno"> Terreno</td>
                   <td><input type="checkbox" name="tipoPropiedad" value=" Tiene Departamento"> Departamento</td>
+                  <td> No cuento con ninguna propiedad:<input type="radio" name="myRadioButton" onclick="propiedad.disabled=true"/></td>
               </tr>
               <tr>
                   <td colspan="2"><label>Ubicacion: </label></td>
                   <td><label>Valor estimado: </label></td>
               </tr>
               <tr>
-                  <td colspan="2" ><input type="text" class="form-control" id="inputClave" placeholder="Ubicacion" name="ubicacion" required></td>
-                  <td><input type="number" class="form-control" id="inputClave" placeholder="Valor estimado" name="valorEstimadoT" required></td>
+                  <td colspan="2" ><input type="text" class="form-control" id="propiedad" placeholder="Ubicacion" name="ubicacion" required></td>
+                  <td><input type="number" class="form-control" id="propiedad" placeholder="Valor estimado" name="valorEstimadoT" required></td>
               </tr>
               <tr>
                   <td><label>Tipo de auto</label></td>
